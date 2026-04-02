@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-04-02T02:39:12.229290+00:00",
-  "generated_at_local": "2026-04-01 10:39 PM EDT",
+  "generated_at_utc": "2026-04-02T02:41:13.348473+00:00",
+  "generated_at_local": "2026-04-01 10:41 PM EDT",
   "news": {
     "world": [
       {
@@ -12,7 +12,7 @@
         "display_source": "news.google.com",
         "published_local": "Apr 1, 10:27 PM ET",
         "ai_title": "Trump says Iran war objectives 'nearing completion' in national address",
-        "ai_summary": "President Trump stated that U.S. goals in the Iran conflict are close to being achieved, signaling intensified military actions ahead."
+        "ai_summary": "President Trump stated that U.S. military goals in the Iran conflict are close to being achieved but did not specify when the fighting will end."
       },
       {
         "title": "Iran-US war latest: Trump addresses nation on ending conflict - The Independent",
@@ -22,19 +22,30 @@
         "source": "Google News World",
         "display_source": "news.google.com",
         "published_local": "Apr 1, 10:26 PM ET",
-        "ai_title": "Trump addresses nation on ending Iran-US conflict",
-        "ai_summary": "In a national speech, Trump outlined progress in the Iran war and hinted at forthcoming decisive measures."
+        "ai_title": "Trump addresses nation on Iran-US conflict status",
+        "ai_summary": "In a national address, Trump discussed progress in the Iran conflict, emphasizing military success without offering a clear end timeline."
       },
       {
-        "title": "Iran War Live Updates: Trump to Speak to Nation Tonight on War - The New York Times",
+        "title": "Live updates: Trump says Iran war is \u2018nearing completion\u2019 in address to the nation - cnn.com",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5nYllxUnhESkdpaTJVWEh3X2NaRDNaQ1NZZU96dGh4cXk3WjdqVlVrMk1ZS3pTREMyblV2V1k0M2lzLXpLVWZmdWk2YUJ6bW45bUY4SGZaVVozUEdKSFV4THd4dEpkTUNobF9YeFZSeHRzSGRhYUF3?oc=5",
+        "published": "Thu, 02 Apr 2026 02:19:00 GMT",
+        "summary": "Live updates: Trump says Iran war is \u2018nearing completion\u2019 in address to the nation cnn.com",
+        "source": "Google News International",
+        "display_source": "news.google.com",
+        "published_local": "Apr 1, 10:19 PM ET",
+        "ai_title": "Live updates: Trump says Iran war is \u2018nearing completion\u2019 in address to the nation - cnn.com",
+        "ai_summary": "Live updates: Trump says Iran war is \u2018nearing completion\u2019 in address to the nation cnn.com"
+      },
+      {
+        "title": "Iran War Live Updates: Trump Claims Military Success but Offers No Clear Timeline to End Fighting - nytimes.com",
         "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5FX1k1RVNLZEtqbUY2WnNnc2gyNWs2UkI4WlVFY3oxemhKV04tQ2RacjZyd2JoNDNhRjV0TG9iVUNRbHZSRTFuQU5kS1k0RHd4cmQ3LVRJS3o2Y1pEdWNOYWRvTFNVTXM2TERvd2xTWXhtclkxSTk3SA?oc=5",
         "published": "Thu, 02 Apr 2026 02:08:00 GMT",
-        "summary": "Iran War Live Updates: Trump to Speak to Nation Tonight on War The New York Times",
+        "summary": "Iran War Live Updates: Trump Claims Military Success but Offers No Clear Timeline to End Fighting nytimes.com",
         "source": "Google News International",
         "display_source": "news.google.com",
         "published_local": "Apr 1, 10:08 PM ET",
-        "ai_title": "Trump to speak to nation tonight on Iran war",
-        "ai_summary": "The president scheduled a national address focusing on the status and next steps in the Iran conflict."
+        "ai_title": "Trump claims military success in Iran war but no end date given",
+        "ai_summary": "Trump highlighted U.S. achievements in the Iran conflict while refraining from providing a definitive timeline to conclude hostilities."
       },
       {
         "title": "News | CoStar World News for April 2 - CoStar",
@@ -46,30 +57,19 @@
         "published_local": "Apr 1, 9:56 PM ET",
         "ai_title": "News | CoStar World News for April 2 - CoStar",
         "ai_summary": "News | CoStar World News for April 2 CoStar"
-      },
-      {
-        "title": "World Autism Awareness Day 2026 - World Health Organization (WHO)",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNeHQyMXpIM3EyRmpoQjZqU015TGRYWjJ4U3Q5U0UtQ2FMZ1Fmc2JnM0FBa0Z2WXNpNFBid1FEeGU1Yjk5MTY3MlE4RVJpclJNQVI4bHJaYmZsWXFacWpOVEQ3TjNjQjVNNzhIZm0yR2hKNHVHeG9rejZhY1ljUDhwNnFHU01rRXRGMXVoMzc4bDlqbnpVLTBva1RwZGQydF9La2hnNXpR?oc=5",
-        "published": "Thu, 02 Apr 2026 01:55:25 GMT",
-        "summary": "World Autism Awareness Day 2026 World Health Organization (WHO)",
-        "source": "Google News International",
-        "display_source": "news.google.com",
-        "published_local": "Apr 1, 9:55 PM ET",
-        "ai_title": "World Autism Awareness Day 2026 recognized by WHO",
-        "ai_summary": "The World Health Organization highlights global efforts to raise awareness about autism spectrum disorders."
       }
     ],
     "ai_tech_business": [
       {
-        "title": "AI machine sorts clothes faster than humans to boost textile recycling in China - The Washington Post",
+        "title": "AI machine sorts clothes faster than humans to boost textile recycling in China - washingtonpost.com",
         "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPNjZJOER2UWoxX0dmN1hWNUIydXpMazNDdnk2UlBpaWhNajVUWnRGU21jbXVTd0NyakNKM2F0YTVVTnBHbk9zZ1JJeEF5NEV2Ml9JX1d0QkNsU2FaaXBLa1FnSHA5aU83WW9ZeFlCdTJ1Mkh1WGxKd3BJanpiVGpnckJ4eHpFOXhEc1BQeExUUnZ3Z05rSkp0Y3Z1NmJZRnZiNkNuV004R3dKUkExeDNzUEdjSDlEc3JzUU1QLVdGLVlTWjVtVzNoTFNYZ2ZLUlRYM1Jyd3BNWVBHVnJ1dUFKNw?oc=5",
         "published": "Thu, 02 Apr 2026 02:23:22 GMT",
-        "summary": "AI machine sorts clothes faster than humans to boost textile recycling in China The Washington Post",
+        "summary": "AI machine sorts clothes faster than humans to boost textile recycling in China washingtonpost.com",
         "source": "Google News AI",
         "display_source": "news.google.com",
         "published_local": "Apr 1, 10:23 PM ET",
         "ai_title": "AI machine accelerates textile recycling in China",
-        "ai_summary": "A new AI-powered system sorts clothes faster than humans, enhancing efficiency in textile recycling processes."
+        "ai_summary": "A new AI-powered machine sorts clothes faster than humans, aiming to improve efficiency in textile recycling processes."
       },
       {
         "title": "ServiceNow Has to Sell the Same AI Technology That Could Replace It. Here's Why the Stock Is Down Nearly 50%. - The Motley Fool",
@@ -79,8 +79,8 @@
         "source": "Google News AI",
         "display_source": "news.google.com",
         "published_local": "Apr 1, 10:10 PM ET",
-        "ai_title": "ServiceNow stock drops amid AI technology sales",
-        "ai_summary": "ServiceNow faces investor concerns after selling AI tech that could potentially replace its own services."
+        "ai_title": "ServiceNow Has to Sell the Same AI Technology That Could Replace It. Here's Why the Stock Is Down Nearly 50%.\u2026",
+        "ai_summary": "ServiceNow Has to Sell the Same AI Technology That Could Replace It. Here's Why the Stock Is Down Nearly 50%. The Motley Fool"
       },
       {
         "title": "Arizona State University researcher warns against overtrusting AI in Iran strikes - AZ Family",
@@ -91,7 +91,7 @@
         "display_source": "news.google.com",
         "published_local": "Apr 1, 9:58 PM ET",
         "ai_title": "Researcher warns against overtrusting AI in Iran strikes",
-        "ai_summary": "An Arizona State University expert cautions about relying too heavily on AI for military strike decisions in Iran."
+        "ai_summary": "An Arizona State University expert cautions about the risks of relying too heavily on AI technology in military operations involving Iran."
       },
       {
         "title": "D'Amaro's Disney Priorities: Embrace Technology to Unlock New Possibilities - Laughing Place",
@@ -125,30 +125,41 @@
         "source": "Google News Washington",
         "display_source": "news.google.com",
         "published_local": "Apr 1, 9:47 PM ET",
-        "ai_title": "Growing pressure mounts to end U.S. partial government shutdown",
-        "ai_summary": "Calls increase from various sectors, including Trump and media outlets, urging Congress to reconvene amid shutdown."
+        "ai_title": "Pressure mounts to end partial government shutdown",
+        "ai_summary": "Calls grow for Congress to reconvene amid ongoing partial shutdown, with public and political figures urging resolution."
       },
       {
-        "title": "U.S. Lifts Sanctions on Venezuela\u2019s New Leader, Delcy Rodr\u00edguez - The New York Times",
+        "title": "U.S. Lifts Sanctions on Venezuela\u2019s New Leader, Delcy Rodr\u00edguez - nytimes.com",
         "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPSWNTSmNLb3lKNFhBYzRHaldLWld0YjY1c1ZVTk9VYUtnYTEzVHdhWkx4ZjJiblZKbGN6NVJrWUdRX2NNVkpJd0VkeGE5RDE3MWVaLXRBSkxSX2hGZXpYNmJOZmQ4Y0VoTWxWY2lUTEhsWlhkcGtSdzV4RWFIXzl1NFNMeFdZblE?oc=5",
         "published": "Thu, 02 Apr 2026 01:45:59 GMT",
-        "summary": "U.S. Lifts Sanctions on Venezuela\u2019s New Leader, Delcy Rodr\u00edguez The New York Times",
+        "summary": "U.S. Lifts Sanctions on Venezuela\u2019s New Leader, Delcy Rodr\u00edguez nytimes.com",
         "source": "Google News US Politics",
         "display_source": "news.google.com",
         "published_local": "Apr 1, 9:45 PM ET",
         "ai_title": "U.S. lifts sanctions on Venezuela\u2019s new leader",
-        "ai_summary": "Sanctions on Delcy Rodr\u00edguez, Venezuela\u2019s new leader, have been removed by the U.S., signaling a shift in policy."
+        "ai_summary": "The United States removed sanctions on Delcy Rodr\u00edguez, Venezuela\u2019s newly recognized leader, signaling a shift in policy."
       },
       {
-        "title": "Judge Halts White House Ballroom Construction - The New York Times",
+        "title": "Trump Signs Order Seeking Federal Control of Mail Voting as He Promotes False Claims - nytimes.com",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTzVzZ1A4b09PQ1dDODNkZTZWNzJKSVF3c1M2eGxKZkx2eWhMazlhN25zdnlGRkxBcTdSQ0dERC10TGJWNEdTQkpyeFRRbzdJTVlqQ0p2TUZGbUZCNC1YTzgzV3ZUcW9sZW45MlU0dzNKVGE2SEpfUW1XcmliLWJYV19Na19qME9NejlhNTRtcDRfdWhZd1lSWWRfM3g?oc=5",
+        "published": "Thu, 02 Apr 2026 00:52:00 GMT",
+        "summary": "Trump Signs Order Seeking Federal Control of Mail Voting as He Promotes False Claims nytimes.com",
+        "source": "Google News US Politics",
+        "display_source": "news.google.com",
+        "published_local": "Apr 1, 8:52 PM ET",
+        "ai_title": "Trump signs order for federal control of mail voting",
+        "ai_summary": "President Trump signed an executive order seeking federal oversight of mail-in voting, amid ongoing claims about election integrity."
+      },
+      {
+        "title": "Judge Halts White House Ballroom Construction - nytimes.com",
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5tTWFZUFE4Qml4b19QRGVCcnhkSVlOMVA3UjZkUDVKMDFVUTIzN19HUnNnZmxCZ3ozV0VmazZqMmI3NGZCVy1KWE1mRllXNzlBNGJUVHhDQkFZTVZES3gtVWpEdw?oc=5",
         "published": "Thu, 02 Apr 2026 00:52:00 GMT",
-        "summary": "Judge Halts White House Ballroom Construction The New York Times",
+        "summary": "Judge Halts White House Ballroom Construction nytimes.com",
         "source": "Google News Washington",
         "display_source": "news.google.com",
         "published_local": "Apr 1, 8:52 PM ET",
-        "ai_title": "Judge halts White House ballroom construction",
-        "ai_summary": "A judicial order has paused the construction of a new ballroom at the White House."
+        "ai_title": "Judge Halts White House Ballroom Construction - nytimes.com",
+        "ai_summary": "Judge Halts White House Ballroom Construction nytimes.com"
       },
       {
         "title": "Trump says US forces will 'finish the job' in Iran soon - KTEN",
@@ -160,17 +171,6 @@
         "published_local": "Apr 1, 8:50 PM ET",
         "ai_title": "Trump says US forces will 'finish the job' in Iran soon - KTEN",
         "ai_summary": "Trump says US forces will 'finish the job' in Iran soon KTEN"
-      },
-      {
-        "title": "Five Takeaways From the Supreme Court\u2019s Birthright Citizenship Case - The New York Times",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNY0xsRThQU3BrcVRSbmhPbGI4RVFCaW9oMWhtUlU2VmVfSVRTTWJPcmZIUjNEV2owcWN1MXBhclVzNExrVVNBRF9XckdRWjBfLVliREZUdmU4RDVMdGJXbG9KbmdwTE9TaXlSUmJVWTYwVEVkQldnQ0l4X0xzc0tLNXFlMTFRdElUeFdGQTZPUndOSkNPLVE?oc=5",
-        "published": "Thu, 02 Apr 2026 00:29:26 GMT",
-        "summary": "Five Takeaways From the Supreme Court\u2019s Birthright Citizenship Case The New York Times",
-        "source": "Google News US Politics",
-        "display_source": "news.google.com",
-        "published_local": "Apr 1, 8:29 PM ET",
-        "ai_title": "Supreme Court issues key takeaways on birthright citizenship case",
-        "ai_summary": "The court\u2019s recent ruling on birthright citizenship has significant implications for immigration policy."
       }
     ],
     "boston_local": [
@@ -183,7 +183,7 @@
         "display_source": "boston.com",
         "published_local": "Apr 1, 10:35 PM ET",
         "ai_title": "Stefon Diggs trial date set for assault and strangulation charges",
-        "ai_summary": "NFL player Stefon Diggs will face trial in May following charges from an incident last December."
+        "ai_summary": "NFL player Stefon Diggs will face trial in May following charges related to strangulation and assault from an incident last December."
       },
       {
         "title": "CYNTHIA ROSSANO Obituary (2026) - Wellesley, MA - Boston Globe - Legacy",
@@ -215,8 +215,8 @@
         "source": "Boston.com",
         "display_source": "boston.com",
         "published_local": "Apr 1, 10:03 PM ET",
-        "ai_title": "Report reveals details about State Police sergeant in fatal crash",
-        "ai_summary": "A new report raises questions about a State Police sergeant who allegedly caused a fatal crash while driving drunk."
+        "ai_title": "Report reveals details on State Police sergeant\u2019s fatal crash",
+        "ai_summary": "A new report details circumstances around a State Police sergeant allegedly driving drunk and causing a fatal accident, raising further questions."
       },
       {
         "title": "In a series of graphic posts over a span of three months, the Bay State resident repeatedly threatened to take Trump's life, court documents revealed. - Facebook",
@@ -226,21 +226,21 @@
         "source": "Google News Boston",
         "display_source": "news.google.com",
         "published_local": "Apr 1, 9:44 PM ET",
-        "ai_title": "Bay State resident charged with threatening Trump\u2019s life",
-        "ai_summary": "Court documents reveal repeated threats against former President Trump over several months."
+        "ai_title": "In a series of graphic posts over a span of three months, the Bay State resident repeatedly threatened to tak\u2026",
+        "ai_summary": "In a series of graphic posts over a span of three months, the Bay State resident repeatedly threatened to take Trump's life, court documents revealed. Facebook"
       }
     ],
     "trending": [
       {
-        "title": "Live updates: Trump says Iran war objectives 'nearing completion' in address to nation - BBC",
+        "title": "Live updates: Trump says Iran war objectives 'nearing completion' in address to nation - bbc.com",
         "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE43VTBSLTEwZVlycV9SYVNDOUEtb2FRekFMMnM4WTlQSHdxcFhZc3NDcWU1ZlFnanlpVE9fbl9hNEhEeU8teHRIZ2RNZjQ3N2kzckY3bg?oc=5",
         "published": "Thu, 02 Apr 2026 02:27:56 GMT",
-        "summary": "Live updates: Trump says Iran war objectives 'nearing completion' in address to nation BBC Oil prices surge with Brent rising 5% as Trump vows to hit Iran 'extremely hard' within weeks CNBC Trump defends decision to attack Iran, says conflict is \u2018nearing completion\u2019 The Washington Post Iran war live: Trump to address nation; Tehran denies seeking ceasefire Al Jazeera Trump: U.S. will bomb Iran \"back to stone ages\" over next 2-3 weeks Axios",
+        "summary": "Live updates: Trump says Iran war objectives 'nearing completion' in address to nation bbc.com Oil prices surge with Brent rising 5% as Trump vows to hit Iran 'extremely hard' within weeks cnbc.com Trump defends decision to attack Iran, says conflict is \u2018nearing completion\u2019 The Washington Post Iran war live: Trump to address nation; Tehran denies seeking ceasefire aljazeera.com Trump: U.S. will bomb Iran \"back to stone ages\" over next 2-3 weeks Axios",
         "source": "Google News US",
         "display_source": "news.google.com",
         "published_local": "Apr 1, 10:27 PM ET",
-        "ai_title": "Live updates: Trump says Iran war objectives 'nearing completion' in address to nation - BBC",
-        "ai_summary": "Live updates: Trump says Iran war objectives 'nearing completion' in address to nation BBC Oil prices surge with Brent rising 5% as Trump vows to hit Iran 'extremely hard' within\u2026"
+        "ai_title": "Live updates: Trump says Iran war objectives 'nearing completion' in address to nation - bbc.com",
+        "ai_summary": "Live updates: Trump says Iran war objectives 'nearing completion' in address to nation bbc.com Oil prices surge with Brent rising 5% as Trump vows to hit Iran 'extremely hard' wit\u2026"
       },
       {
         "title": "steph curry",
@@ -294,7 +294,7 @@
       "name": "OSINTdefender",
       "verified": false,
       "profile": "https://x.com/sentdefender",
-      "followers": 2118662,
+      "followers": 2118661,
       "tweets": [
         {
           "id": "2039521494183645278",
@@ -308,7 +308,7 @@
             "like_count": 13,
             "quote_count": 0,
             "bookmark_count": 1,
-            "impression_count": 4231
+            "impression_count": 4284
           },
           "retweeted_text": "",
           "reply_count": 0,
@@ -325,20 +325,20 @@
           "kind": "tweet",
           "created_at": "2026-04-02T01:39:23.000Z",
           "metrics": {
-            "retweet_count": 158,
-            "reply_count": 77,
-            "like_count": 1009,
+            "retweet_count": 159,
+            "reply_count": 78,
+            "like_count": 1023,
             "quote_count": 25,
-            "bookmark_count": 77,
-            "impression_count": 135631
+            "bookmark_count": 79,
+            "impression_count": 138717
           },
           "retweeted_text": "",
-          "reply_count": 77,
-          "like_count": 1009,
-          "retweet_count": 158,
+          "reply_count": 78,
+          "like_count": 1023,
+          "retweet_count": 159,
           "published_local": "Apr 1, 9:39 PM ET",
           "text_short": "Gold and silver prices collapse following tonight\u2019s Address to the Nation on the Iran War by President Donald J. Trump. https://t.co/Suptds4SvK",
-          "why_it_matters": "Market impact of Trump\u2019s Iran war address"
+          "why_it_matters": ""
         },
         {
           "id": "2039516591151325657",
@@ -347,20 +347,20 @@
           "kind": "tweet",
           "created_at": "2026-04-02T01:33:42.000Z",
           "metrics": {
-            "retweet_count": 117,
-            "reply_count": 119,
-            "like_count": 1962,
+            "retweet_count": 119,
+            "reply_count": 120,
+            "like_count": 2003,
             "quote_count": 16,
-            "bookmark_count": 82,
-            "impression_count": 148095
+            "bookmark_count": 84,
+            "impression_count": 149914
           },
           "retweeted_text": "",
-          "reply_count": 119,
-          "like_count": 1962,
-          "retweet_count": 117,
+          "reply_count": 120,
+          "like_count": 2003,
+          "retweet_count": 119,
           "published_local": "Apr 1, 9:33 PM ET",
           "text_short": "President Trump did not criticize NATO or announce the deployment of ground troops to Iran during tonight\u2019s Address to the Nation.",
-          "why_it_matters": "Clarification on Trump\u2019s stance regarding NATO and troop deployment"
+          "why_it_matters": ""
         },
         {
           "id": "2039515873711399386",
@@ -370,19 +370,19 @@
           "created_at": "2026-04-02T01:30:51.000Z",
           "metrics": {
             "retweet_count": 212,
-            "reply_count": 74,
-            "like_count": 792,
+            "reply_count": 75,
+            "like_count": 795,
             "quote_count": 31,
             "bookmark_count": 48,
-            "impression_count": 144234
+            "impression_count": 145677
           },
           "retweeted_text": "",
-          "reply_count": 74,
-          "like_count": 792,
+          "reply_count": 75,
+          "like_count": 795,
           "retweet_count": 212,
           "published_local": "Apr 1, 9:30 PM ET",
           "text_short": "Oil prices surge following tonight\u2019s address by U.S. President Donald J. Trump regarding the Iran War, with Crude Oil WTI surpassing $103 per barrel while Brent Crude Oil approaches $106. https://t.co/bmt2Y8j4mC",
-          "why_it_matters": "Oil price surge following Trump\u2019s Iran war speech"
+          "why_it_matters": ""
         }
       ]
     },
@@ -405,7 +405,7 @@
             "like_count": 17,
             "quote_count": 0,
             "bookmark_count": 1,
-            "impression_count": 5950
+            "impression_count": 5965
           },
           "retweeted_text": "",
           "reply_count": 0,
@@ -435,7 +435,7 @@
           "retweet_count": 931,
           "published_local": "Apr 1, 12:54 PM ET",
           "text_short": "RT @EricSchmittNYT: In an extraordinary move, Hegseth reverses Apache helicopter crew suspension before Army even investigates the incident\u2026",
-          "why_it_matters": "Military leadership controversy over Apache helicopter suspension"
+          "why_it_matters": ""
         },
         {
           "id": "2039341459149668403",
@@ -479,7 +479,7 @@
           "retweet_count": 31,
           "published_local": "Mar 31, 2:40 PM ET",
           "text_short": "RT @JM_Szuba: Horrifying reports of the attempted kidnapping of journalist @shellykittleson in Baghdad. The welfare of local people has al\u2026",
-          "why_it_matters": "Attempted kidnapping of journalist highlights risks in Baghdad"
+          "why_it_matters": ""
         },
         {
           "id": "2038995487429198332",
@@ -501,7 +501,7 @@
           "retweet_count": 2832,
           "published_local": "Mar 31, 11:03 AM ET",
           "text_short": "RT @michaeldweiss: New: We obtained phone calls between Russian Foreign Minister Sergei Lavrov and Hungarian Foreign Minister P\u00e9ter Szijj\u00e1r\u2026",
-          "why_it_matters": "Evidence of Russian-Hungarian collusion to lift EU sanctions"
+          "why_it_matters": ""
         }
       ]
     },
@@ -510,7 +510,7 @@
       "name": "Claude",
       "verified": false,
       "profile": "https://x.com/claudeai",
-      "followers": 963398,
+      "followers": 963402,
       "tweets": [
         {
           "id": "2038693742094246032",
@@ -524,7 +524,7 @@
             "like_count": 4759,
             "quote_count": 92,
             "bookmark_count": 1260,
-            "impression_count": 778657
+            "impression_count": 778772
           },
           "retweeted_text": "",
           "reply_count": 578,
@@ -546,7 +546,7 @@
             "like_count": 1871,
             "quote_count": 23,
             "bookmark_count": 1435,
-            "impression_count": 444045
+            "impression_count": 444065
           },
           "retweeted_text": "",
           "reply_count": 84,
@@ -568,7 +568,7 @@
             "like_count": 1842,
             "quote_count": 9,
             "bookmark_count": 149,
-            "impression_count": 477025
+            "impression_count": 477050
           },
           "retweeted_text": "",
           "reply_count": 37,
@@ -590,7 +590,7 @@
             "like_count": 3628,
             "quote_count": 53,
             "bookmark_count": 250,
-            "impression_count": 514234
+            "impression_count": 514239
           },
           "retweeted_text": "",
           "reply_count": 80,
@@ -598,7 +598,7 @@
           "retweet_count": 99,
           "published_local": "Mar 30, 1:01 PM ET",
           "text_short": "In one prompt, Claude can write the code, compile it, launch the app, click through it, find the bug, fix it, and verify the fix.",
-          "why_it_matters": "Claude AI\u2019s capability to autonomously debug and verify code"
+          "why_it_matters": ""
         },
         {
           "id": "2038663014098899416",
@@ -612,7 +612,7 @@
             "like_count": 59170,
             "quote_count": 2754,
             "bookmark_count": 25479,
-            "impression_count": 15536092
+            "impression_count": 15536501
           },
           "retweeted_text": "",
           "reply_count": 2530,
@@ -629,7 +629,7 @@
       "name": "OpenAI",
       "verified": true,
       "profile": "https://x.com/OpenAI",
-      "followers": 4704939,
+      "followers": 4704942,
       "tweets": [
         {
           "id": "2039085161971896807",
@@ -643,7 +643,7 @@
             "like_count": 7915,
             "quote_count": 762,
             "bookmark_count": 1040,
-            "impression_count": 3019387
+            "impression_count": 3020818
           },
           "retweeted_text": "",
           "reply_count": 959,
@@ -651,7 +651,7 @@
           "retweet_count": 698,
           "published_local": "Mar 31, 4:59 PM ET",
           "text_short": "Today, we closed our latest funding round with $122 billion in committed capital at an $852B post-money valuation. The fastest way to expand AI\u2019s benefits is to put useful intelligence in people\u2019s hands early and let access compound global\u2026",
-          "why_it_matters": "OpenAI secures $122B funding to accelerate AI development"
+          "why_it_matters": ""
         },
         {
           "id": "2037298931907084568",
@@ -709,7 +709,7 @@
             "like_count": 130,
             "quote_count": 3,
             "bookmark_count": 22,
-            "impression_count": 119765
+            "impression_count": 119766
           },
           "retweeted_text": "",
           "reply_count": 23,
@@ -731,7 +731,7 @@
             "like_count": 227,
             "quote_count": 6,
             "bookmark_count": 64,
-            "impression_count": 96975
+            "impression_count": 96977
           },
           "retweeted_text": "",
           "reply_count": 31,
@@ -744,6 +744,6 @@
       ]
     }
   ],
-  "overview": "President Trump addressed the nation on the Iran conflict, stating that U.S. war objectives are nearing completion and promising intensified military actions. This announcement caused significant market reactions, including surging oil prices and falling gold and silver prices. Meanwhile, AI technology advances continue, with innovations in textile recycling and ongoing debates about AI's role in military decisions.",
-  "podcast_script": "Good morning. Today\u2019s top story centers on President Donald Trump\u2019s national address regarding the ongoing conflict with Iran. Trump declared that U.S. objectives in the war are nearing completion, signaling a potential escalation with promises to hit Iran \"extremely hard\" in the coming weeks. This announcement triggered a sharp rise in oil prices, with Brent crude climbing 5%, while gold and silver prices fell. Despite the heightened rhetoric, Trump did not announce deployment of ground troops or criticize NATO, indicating a measured approach. In other news, AI technology is making strides in sustainability, with a new machine in China sorting clothes faster than humans to boost textile recycling efforts. However, experts caution against overreliance on AI in military operations, especially in sensitive contexts like the Iran strikes. On the political front, pressure mounts to end the U.S. partial government shutdown, with calls for Congress to reconvene. We\u2019ll continue monitoring these developments closely. Stay tuned for more updates."
+  "overview": "President Trump addressed the nation on the Iran conflict, stating that U.S. military objectives are nearing completion but did not provide a clear timeline for ending the fighting. The announcement triggered a surge in oil prices and market reactions. In technology, AI advancements continue with innovations in textile recycling and debates on AI's role in military operations. Meanwhile, U.S. political tensions persist amid a partial government shutdown and controversies over voting and sanctions.",
+  "podcast_script": "Good morning. Today\u2019s top story centers on President Trump\u2019s address regarding the U.S. conflict with Iran. Trump declared that military objectives are nearing completion, signaling progress but stopping short of a definitive end date. This announcement led to a sharp rise in oil prices, with Brent crude climbing 5%, reflecting market concerns over prolonged instability. Meanwhile, AI technology is making strides, notably with a new machine in China that sorts clothes faster than humans to enhance textile recycling efforts. However, experts caution against overreliance on AI in military contexts, highlighting risks in conflict zones like Iran. On the political front, pressure mounts to resolve the partial government shutdown, with calls for Congress to return. Additionally, the U.S. lifted sanctions on Venezuela\u2019s new leader, while Trump signed an order seeking federal control over mail voting amid ongoing election disputes. Locally in Boston, notable legal and safety developments include a trial date set for Stefon Diggs on assault charges and a report shedding light on a fatal crash involving a State Police sergeant. That\u2019s your briefing for today. Stay informed and have a productive day."
 }
