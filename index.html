@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neima Briefing</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#121a31; --panel2:#18213d; --text:#edf2ff; --muted:#9db0d1; --accent:#7cc6ff; --accent2:#b7ffcb; --border:rgba(255,255,255,.08); }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:linear-gradient(180deg,#08101f,#11182d 30%,#0c1222); color:var(--text); line-height:1.5; }
+    a { color:var(--accent); text-decoration:none; }
+    .wrap { max-width:1180px; margin:0 auto; padding:28px 18px 56px; }
+    .hero { background:linear-gradient(135deg,rgba(124,198,255,.16),rgba(183,255,203,.08)); border:1px solid var(--border); border-radius:24px; padding:26px; box-shadow:0 20px 60px rgba(0,0,0,.26); }
+    .eyebrow { color:var(--accent2); font-size:13px; text-transform:uppercase; letter-spacing:.12em; font-weight:700; }
+    h1 { margin:10px 0 8px; font-size:clamp(30px,5vw,54px); line-height:1.02; }
+    .hero p { color:var(--muted); font-size:18px; max-width:900px; }
+    .top-meta { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+    .pill { border:1px solid var(--border); background:rgba(255,255,255,.04); color:var(--text); padding:8px 12px; border-radius:999px; font-size:13px; }
+    .nav { display:flex; gap:10px; flex-wrap:wrap; margin:18px 0 26px; }
+    .nav a, .chip-link { display:inline-flex; align-items:center; gap:6px; border:1px solid var(--border); background:rgba(255,255,255,.04); color:#dce7ff; padding:7px 11px; border-radius:999px; font-size:13px; }
+    .section-block { margin-top:28px; }
+    .section-header { display:flex; align-items:end; justify-content:space-between; gap:12px; margin-bottom:12px; }
+    .section-header h2 { margin:0; font-size:24px; }
+    .section-header span { color:var(--muted); font-size:13px; }
+    .story-grid, .tweet-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:14px; }
+    .story-card, .tweet-card, .podcast-box, .account-block { background:linear-gradient(180deg,var(--panel),var(--panel2)); border:1px solid var(--border); border-radius:20px; padding:16px; box-shadow:0 12px 30px rgba(0,0,0,.2); }
+    .story-card h3 { margin:8px 0 8px; font-size:19px; line-height:1.2; }
+    .story-card p, .tweet-card p, .podcast-box p { margin:0 0 14px; color:#d7e2fb; }
+    .story-meta, .tweet-meta, .tweet-name, .tweet-metrics, .account-title span, .empty { color:var(--muted); font-size:13px; }
+    .tweet-head { display:flex; align-items:start; justify-content:space-between; gap:12px; margin-bottom:8px; }
+    .tweet-user { font-weight:800; font-size:17px; }
+    .account-block { padding:18px; margin-bottom:16px; }
+    .account-title { display:flex; align-items:center; gap:10px; margin-bottom:12px; font-size:18px; font-weight:700; }
+    .podcast-box { background:linear-gradient(180deg,rgba(124,198,255,.12),rgba(183,255,203,.06)); }
+    .error-box { padding:14px 16px; border:1px solid rgba(255,120,120,.25); background:rgba(130,20,20,.18); border-radius:16px; color:#ffd0d0; }
+    footer { margin-top:36px; color:var(--muted); font-size:13px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Twice-daily briefing</div>
+      <h1>Fast scan. Clear takeaways. No ugly wall of links.</h1>
+      <p>President Trump addressed the nation on the Iran conflict, stating that U.S. war objectives are nearing completion and promising intensified military actions. This announcement caused significant market reactions, including surging oil prices and falling gold and silver prices. Meanwhile, AI technology advances continue, with innovations in textile recycling and ongoing debates about AI&#x27;s role in military decisions.</p>
+      <div class="top-meta">
+        <div class="pill">Updated 2026-04-01 10:39 PM EDT</div>
+        <div class="pill">X watchlist first</div>
+        <div class="pill">AI summaries for each story</div>
+        <div class="pill">Compact source links</div>
+      </div>
+    </section>
+    <div class="nav">
+      <a href="#x-watchlist">X watchlist</a>
+      <a href="#sec-world">Top headlines / world news</a><a href="#sec-ai_tech_business">AI / tech / business highlights</a><a href="#sec-us_politics">US political news</a><a href="#sec-boston_local">Boston / local</a><a href="#sec-trending">Popular / trending</a>
+      <a href="#podcast">Podcast summary</a>
+    </div>
+    <section id="x-watchlist" class="section-block">
+      <div class="section-header"><h2>X watchlist</h2><span>Latest tweets and retweets from your tracked accounts</span></div>
+      <section class='account-block'><div class='account-title'><a href='https://x.com/sentdefender' target='_blank' rel='noopener'>@sentdefender</a><span>OSINTdefender</span></div><div class='tweet-grid'>
+    <article class="tweet-card">
+      <div class="tweet-head">
+        <div>
+          <div class="tweet-user">@sentdefender</div>
+          <div class="tweet-name">OSINTdefender</div>
+        </div>
+        <a class="chip-link" href="https://x.com/sentdefender/status/2039521494183645278" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+      <div class="tweet-meta">TWEET • Apr 1, 9:53 PM ET</div>
+      <p>@ianellisjones Congrats!</p>
+      <div class="tweet-metrics">❤ 13   ↻ 0   💬 0</div>
+    </article>
+    
+    <article class="tweet-card">
+      <div class="tweet-head">
+        <div>
+          <div class="tweet-user">@sentdefender</div>
+          <div class="tweet-name">OSINTdefender</div>
+        </div>
+        <a class="chip-link" href="https://x.com/sentdefender/status/2039518021664842083" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+      <div class="tweet-meta">TWEET • Apr 1, 9:39 PM ET • Market impact of Trump’s Iran war address</div>
+      <p>Gold and silver prices collapse following tonight’s Address to the Nation on the Iran War by President Donald J. Trump. https://t.co/Suptds4SvK</p>
+      <div class="tweet-metrics">❤ 1009   ↻ 158   💬 77</div>
+    </article>
+    
+    <article class="tweet-card">
+      <div class="tweet-head">
+        <div>
+          <div class="tweet-user">@sentdefender</div>
+          <div class="tweet-name">OSINTdefender</div>
+        </div>
+        <a class="chip-link" href="https://x.com/sentdefender/status/2039516591151325657" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+      <div class="tweet-meta">TWEET • Apr 1, 9:33 PM ET • Clarification on Trump’s stance regarding NATO and troop deployment</div>
+      <p>President Trump did not criticize NATO or announce the deployment of ground troops to Iran during tonight’s Address to the Nation.</p>
+      <div class="tweet-metrics">❤ 1962   ↻ 117   💬 119</div>
+    </article>
+    </div></section><section class='account-block'><div class='account-title'><a href='https://x.com/NatashaBertrand' target='_blank' rel='noopener'>@NatashaBertrand</a><span>Natasha Bertrand</span></div><div class='tweet-grid'>
+    <article class="tweet-card">
+      <div class="tweet-head">
+        <div>
+          <div class="tweet-user">@NatashaBertrand</div>
+          <div class="tweet-name">Natasha Bertrand</div>
+        </div>
+        <a class="chip-link" href="https://x.com/NatashaBertrand/status/2039491121424785625" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+      <div class="tweet-meta">TWEET • Apr 1, 7:52 PM ET</div>
+      <p>@Aviation_Intel Great hire, congrats @ianellisjones</p>
+      <div class="tweet-metrics">❤ 17   ↻ 3   💬 0</div>
+    </article>
+    
+    <article class="tweet-card">
+      <div class="tweet-head">
+        <div>
+          <div class="tweet-user">@NatashaBertrand</div>
+          <div class="tweet-name">Natasha Bertrand</div>
+        </div>
+        <a class="chip-link" href="https://x.com/NatashaBertrand/status/2039386026594943161" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+      <div class="tweet-meta">RETWEET • Apr 1, 12:54 PM ET • Military leadership controversy over Apache helicopter suspension</div>
+      <p>RT @EricSchmittNYT: In an extraordinary move, Hegseth reverses Apache helicopter crew suspension before Army even investigates the incident…</p>
+      <div class="tweet-metrics">❤ 0   ↻ 931   💬 0</div>
+    </article>
+    
+    <article class="tweet-card">
+      <div class="tweet-head">
+        <div>
+          <div class="tweet-user">@NatashaBertrand</div>
+          <div class="tweet-name">Natasha Bertrand</div>
+        </div>
+        <a class="chip-link" href="https://x.com/NatashaBertrand/status/2039341459149668403" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+      <div class="tweet-meta">RETWEET • Apr 1, 9:57 AM ET</div>
+      <p>RT @shashj: &quot;Within about two hours on Saturday, one of the [Apache] helicopters flew by [American] demonstrators six times at McGregor Par…</p>
+      <div class="tweet-metrics">❤ 0   ↻ 592   💬 0</div>
+    </article>
+    </div></section><section class='account-block'><div class='account-title'><a href='https://x.com/claudeai' target='_blank' rel='noopener'>@claudeai</a><span>Claude</span></div><div class='tweet-grid'>
+    <article class="tweet-card">
+      <div class="tweet-head">
+        <div>
+          <div class="tweet-user">@claudeai</div>
+          <div class="tweet-name">Claude</div>
+        </div>
+        <a class="chip-link" href="https://x.com/claudeai/status/2038693742094246032" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+      <div class="tweet-meta">QUOTE • Mar 30, 3:03 PM ET</div>
+      <p>Auto mode for Claude Code is now available on the Enterprise plan and for API users. To try it out, update your install and run claude --enable-auto-mode. https://t.co/m3CdLEfNeZ</p>
+      <div class="tweet-metrics">❤ 4759   ↻ 363   💬 578</div>
+    </article>
+    
+    <article class="tweet-card">
+      <div class="tweet-head">
+        <div>
+          <div class="tweet-user">@claudeai</div>
+          <div class="tweet-name">Claude</div>
+        </div>
+        <a class="chip-link" href="https://x.com/claudeai/status/2038663019983479234" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+      <div class="tweet-meta">TWEET • Mar 30, 1:01 PM ET</div>
+      <p>Now available in research preview on Pro and Max on macOS. Enable it with /mcp. Docs: https://t.co/x9kSKedkjz</p>
+      <div class="tweet-metrics">❤ 1871   ↻ 91   💬 84</div>
+    </article>
+    
+    <article class="tweet-card">
+      <div class="tweet-head">
+        <div>
+          <div class="tweet-user">@claudeai</div>
+          <div class="tweet-name">Claude</div>
+        </div>
+        <a class="chip-link" href="https://x.com/claudeai/status/2038663018427420698" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+      <div class="tweet-meta">TWEET • Mar 30, 1:01 PM ET</div>
+      <p>It works on anything you can open on your Mac: a compiled SwiftUI app, a local Electron build, or a GUI tool that doesn&#x27;t have a CLI.</p>
+      <div class="tweet-metrics">❤ 1842   ↻ 37   💬 37</div>
+    </article>
+    </div></section><section class='account-block'><div class='account-title'><a href='https://x.com/OpenAI' target='_blank' rel='noopener'>@OpenAI</a><span>OpenAI</span></div><div class='tweet-grid'>
+    <article class="tweet-card">
+      <div class="tweet-head">
+        <div>
+          <div class="tweet-user">@OpenAI</div>
+          <div class="tweet-name">OpenAI</div>
+        </div>
+        <a class="chip-link" href="https://x.com/OpenAI/status/2039085161971896807" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+      <div class="tweet-meta">TWEET • Mar 31, 4:59 PM ET • OpenAI secures $122B funding to accelerate AI development</div>
+      <p>Today, we closed our latest funding round with $122 billion in committed capital at an $852B post-money valuation. The fastest way to expand AI’s benefits is to put useful intelligence in people’s hands early and let access compound global…</p>
+      <div class="tweet-metrics">❤ 7915   ↻ 698   💬 959</div>
+    </article>
+    
+    <article class="tweet-card">
+      <div class="tweet-head">
+        <div>
+          <div class="tweet-user">@OpenAI</div>
+          <div class="tweet-name">OpenAI</div>
+        </div>
+        <a class="chip-link" href="https://x.com/OpenAI/status/2037298931907084568" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+      <div class="tweet-meta">RETWEET • Mar 26, 6:41 PM ET</div>
+      <p>RT @OpenAIDevs: We&#x27;re rolling out plugins in Codex. Codex now works seamlessly out of the box with the most important tools builders alrea…</p>
+      <div class="tweet-metrics">❤ 0   ↻ 597   💬 0</div>
+    </article>
+    
+    <article class="tweet-card">
+      <div class="tweet-head">
+        <div>
+          <div class="tweet-user">@OpenAI</div>
+          <div class="tweet-name">OpenAI</div>
+        </div>
+        <a class="chip-link" href="https://x.com/OpenAI/status/2036879423040086036" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+      <div class="tweet-meta">RETWEET • Mar 25, 2:54 PM ET</div>
+      <p>RT @OpenAIDevs: Students: build something real in the Codex Creator Challenge, powered by @joinHandshake Try new tools. Have fun. Break th…</p>
+      <div class="tweet-metrics">❤ 0   ↻ 101   💬 0</div>
+    </article>
+    </div></section>
+    </section>
+    <section id='sec-world' class='section-block'><div class='section-header'><h2>Top headlines / world news</h2></div><div class='story-grid'>
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 10:27 PM ET</div>
+      <h3>Trump says Iran war objectives &#x27;nearing completion&#x27; in national address</h3>
+      <p>President Trump stated that U.S. goals in the Iran conflict are close to being achieved, signaling intensified military actions ahead.</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE43VTBSLTEwZVlycV9SYVNDOUEtb2FRekFMMnM4WTlQSHdxcFhZc3NDcWU1ZlFnanlpVE9fbl9hNEhEeU8teHRIZ2RNZjQ3N2kzckY3bg?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 10:26 PM ET</div>
+      <h3>Trump addresses nation on ending Iran-US conflict</h3>
+      <p>In a national speech, Trump outlined progress in the Iran war and hinted at forthcoming decisive measures.</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMingFBVV95cUxPSkVGZWRXcW9ydzh5MEtoeE9ESlNwMFd1SE5ZQi1xX09IY2NxaG5LM0lGY3RYMkZZNnpiX2NuM1ZfUjNMUm9HcURUWTU1ekQ4VGY0TnpNYktnLUhTOGV2ZnFNa1hMbFZ0bE81bm0taUlMVFVKajRNLVdNeEZrcFBpaWUteTZpaWd2T1lNQkVVVXI2SkpTajlBU2w5UUN6dw?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 10:08 PM ET</div>
+      <h3>Trump to speak to nation tonight on Iran war</h3>
+      <p>The president scheduled a national address focusing on the status and next steps in the Iran conflict.</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMieEFVX3lxTE5FX1k1RVNLZEtqbUY2WnNnc2gyNWs2UkI4WlVFY3oxemhKV04tQ2RacjZyd2JoNDNhRjV0TG9iVUNRbHZSRTFuQU5kS1k0RHd4cmQ3LVRJS3o2Y1pEdWNOYWRvTFNVTXM2TERvd2xTWXhtclkxSTk3SA?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 9:56 PM ET</div>
+      <h3>News | CoStar World News for April 2 - CoStar</h3>
+      <p>News | CoStar World News for April 2 CoStar</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMie0FVX3lxTE5yaE9rUWFaeExMS3ByRG8wTTI4bGlCbk9DN0pCcldCVVBqcFk4RHJVYXdXY0UtQVE4LW95eEY3d2JuWjVESGlMSnk0QURVOVRLTnlZM1Y3bmhzcjhoaWRJMW13b3dsUjI4QVEtUUNrN3gxdHJMTXhuT1g0Zw?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 9:55 PM ET</div>
+      <h3>World Autism Awareness Day 2026 recognized by WHO</h3>
+      <p>The World Health Organization highlights global efforts to raise awareness about autism spectrum disorders.</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNeHQyMXpIM3EyRmpoQjZqU015TGRYWjJ4U3Q5U0UtQ2FMZ1Fmc2JnM0FBa0Z2WXNpNFBid1FEeGU1Yjk5MTY3MlE4RVJpclJNQVI4bHJaYmZsWXFacWpOVEQ3TjNjQjVNNzhIZm0yR2hKNHVHeG9rejZhY1ljUDhwNnFHU01rRXRGMXVoMzc4bDlqbnpVLTBva1RwZGQydF9La2hnNXpR?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    </div></section><section id='sec-ai_tech_business' class='section-block'><div class='section-header'><h2>AI / tech / business highlights</h2></div><div class='story-grid'>
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 10:23 PM ET</div>
+      <h3>AI machine accelerates textile recycling in China</h3>
+      <p>A new AI-powered system sorts clothes faster than humans, enhancing efficiency in textile recycling processes.</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxPNjZJOER2UWoxX0dmN1hWNUIydXpMazNDdnk2UlBpaWhNajVUWnRGU21jbXVTd0NyakNKM2F0YTVVTnBHbk9zZ1JJeEF5NEV2Ml9JX1d0QkNsU2FaaXBLa1FnSHA5aU83WW9ZeFlCdTJ1Mkh1WGxKd3BJanpiVGpnckJ4eHpFOXhEc1BQeExUUnZ3Z05rSkp0Y3Z1NmJZRnZiNkNuV004R3dKUkExeDNzUEdjSDlEc3JzUU1QLVdGLVlTWjVtVzNoTFNYZ2ZLUlRYM1Jyd3BNWVBHVnJ1dUFKNw?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 10:10 PM ET</div>
+      <h3>ServiceNow stock drops amid AI technology sales</h3>
+      <p>ServiceNow faces investor concerns after selling AI tech that could potentially replace its own services.</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOS1BVX1BlZ09pajU0MDVYMGx0TWNzd3gxaG9PYmVpZGRGSXNxc1BGYWdESWllLWdfN1htTUpaTEZUaWtTVndXSmhMclBpMmxjN09IbER5c1RUVTltVHFKQkRWWjJFWnR5cTJka2RJd2NRZUlRaG9fa25rUHhjS3RiQkxtSl9jZDA3WEdfcDB4T1NYU1laWG9QWA?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 9:58 PM ET</div>
+      <h3>Researcher warns against overtrusting AI in Iran strikes</h3>
+      <p>An Arizona State University expert cautions about relying too heavily on AI for military strike decisions in Iran.</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOUDl3cW9oVl9tNDJycVhfei1oazVOV3VtUTN0cTJVTVYyTm9EVVA5aF9QOUtCRHNOaktwb1lTbGxQS2xjdlZpUWhLNVRVQW9tQ2dsb3ZfQzZjZncwTE5ucF95bFQ1dmZfbkNYcHhuUk5JbXB4Wm0wbFRWbU15ZWFIbmdPZUVQQlNaR2VUeXhPQkpNT3QwaXpadmZMTnlQM0FVdWRSYTk0bjFoR1NrSWVNZ1ROZWJodw?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 9:48 PM ET</div>
+      <h3>D&#x27;Amaro&#x27;s Disney Priorities: Embrace Technology to Unlock New Possibilities - Laughing Place</h3>
+      <p>D&#x27;Amaro&#x27;s Disney Priorities: Embrace Technology to Unlock New Possibilities Laughing Place</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRVNWS2FyM3ZCM0ZnT0RzcF9wUGZXcVJyMURFVEtSb2xseTB3U2dHdi1pUDRYbkdWZXNTN0VuSmQtS2I1ZTc2TmhoX2VfWFZGWWJFZUtaUUFxSWw3TGRxdTVXaVNrMkEzQno5NDlvcV9NcTgtTUVHZ3otOFlYSjBLZ2VLVlU0d0wwQjhJ?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 9:31 PM ET</div>
+      <h3>Building Human Resilience for the Age of AI - Elon University</h3>
+      <p>Building Human Resilience for the Age of AI Elon University</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTVdzSmQ5aXhaZkYtdTdCUWlKamdpM3JIa25SYklSTFhRR2ozcUUzZTdhb2ZKVzc1Vk9yRDI2M2RjVjZhdEowTkJUOXprQThZREtrLXc1NFh5SkdEbUY5MFZBNzdnU3hFV29POFAtZWpDR3R5US02UEo1ZXpCTnMwTVM2alFSTzM1b2Q4?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    </div></section><section id='sec-us_politics' class='section-block'><div class='section-header'><h2>US political news</h2></div><div class='story-grid'>
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 9:47 PM ET</div>
+      <h3>Growing pressure mounts to end U.S. partial government shutdown</h3>
+      <p>Calls increase from various sectors, including Trump and media outlets, urging Congress to reconvene amid shutdown.</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMi-gFBVV95cUxQU1JqZk1HaVNOSUttWTBIQVJxMU8zbkpvdTMxWUxjdkZlX2k0eWp6OUtydE9sTDVPMVY0akJGUmFPcHVzbzV5clBiRVRGN1kzelcyNmtkSXd6S2FWdkw2TWcwbnhIMlJPb21pY0RRMi0zSUlLZEZRU0V1d3hlb29HbHJOQ1Q0WWtvdFFYdnNlVzNseG43Uk5NTDR4RzZzZFFMZV9yTUVDOVpZSjcwSUlubktVVmFJaHdYTEZnZzlaTktFTDhhWkxuYWZOQmNWeWt4RWhZd3d2aldOTVlQZUNuRkM4X1hKd1RCbXA1enRaSzJRV2VvS0JvczdR?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 9:45 PM ET</div>
+      <h3>U.S. lifts sanctions on Venezuela’s new leader</h3>
+      <p>Sanctions on Delcy Rodríguez, Venezuela’s new leader, have been removed by the U.S., signaling a shift in policy.</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPSWNTSmNLb3lKNFhBYzRHaldLWld0YjY1c1ZVTk9VYUtnYTEzVHdhWkx4ZjJiblZKbGN6NVJrWUdRX2NNVkpJd0VkeGE5RDE3MWVaLXRBSkxSX2hGZXpYNmJOZmQ4Y0VoTWxWY2lUTEhsWlhkcGtSdzV4RWFIXzl1NFNMeFdZblE?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 8:52 PM ET</div>
+      <h3>Judge halts White House ballroom construction</h3>
+      <p>A judicial order has paused the construction of a new ballroom at the White House.</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE5tTWFZUFE4Qml4b19QRGVCcnhkSVlOMVA3UjZkUDVKMDFVUTIzN19HUnNnZmxCZ3ozV0VmazZqMmI3NGZCVy1KWE1mRllXNzlBNGJUVHhDQkFZTVZES3gtVWpEdw?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 8:50 PM ET</div>
+      <h3>Trump says US forces will &#x27;finish the job&#x27; in Iran soon - KTEN</h3>
+      <p>Trump says US forces will &#x27;finish the job&#x27; in Iran soon KTEN</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcTNzYjAzZkNITkQxOWNMbEp6QXg5cWVPYXhNUzlFZ3JYbnBQb2JUVEJtMDRXQUJjQlh0Yk5ieERaTWU5RC1PRDhoTUxCUFItbzdMZ29jQlhUbEJacWJibHp2M1dDQ3J1eld2SktIY3Y1WjZoVktZa1Jjb2ZGTnM5M1M3Y29HVENHc2xJTTlkeG1iUWNNa1RMU2h1d0wwanBDTk9YVXpXREpVUUxsWW53MFk2cGNCSTM1bF9HQ2tqTkh6MWE0eEZOYjVXUGdERnk4ajRMNQ?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 8:29 PM ET</div>
+      <h3>Supreme Court issues key takeaways on birthright citizenship case</h3>
+      <p>The court’s recent ruling on birthright citizenship has significant implications for immigration policy.</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNY0xsRThQU3BrcVRSbmhPbGI4RVFCaW9oMWhtUlU2VmVfSVRTTWJPcmZIUjNEV2owcWN1MXBhclVzNExrVVNBRF9XckdRWjBfLVliREZUdmU4RDVMdGJXbG9KbmdwTE9TaXlSUmJVWTYwVEVkQldnQ0l4X0xzc0tLNXFlMTFRdElUeFdGQTZPUndOSkNPLVE?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    </div></section><section id='sec-boston_local' class='section-block'><div class='section-header'><h2>Boston / local</h2></div><div class='story-grid'>
+    <article class="story-card">
+      <div class="story-meta">boston.com • Apr 1, 10:35 PM ET</div>
+      <h3>Stefon Diggs trial date set for assault and strangulation charges</h3>
+      <p>NFL player Stefon Diggs will face trial in May following charges from an incident last December.</p>
+      <a class="chip-link" href="https://www.boston.com/news/new-england-patriots/2026/04/01/stefon-diggs-has-trial-date-set-in-strangulation-assault-case/" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 10:13 PM ET</div>
+      <h3>CYNTHIA ROSSANO Obituary (2026) - Wellesley, MA - Boston Globe - Legacy</h3>
+      <p>CYNTHIA ROSSANO Obituary (2026) - Wellesley, MA - Boston Globe Legacy</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMilAFBVV95cUxOZ2tBLVpfR1J2cGt2Y1k0Wnd6dHZxTEliOEtjd0dUal90bkUtYXBabVBKb0FnRU9CaDJtOXhGYWRHalRjdUFWZ1M2RVI4UklUaFFMUm5URExwcWNIbHM3Z2RhUG9tMWtvN3lMaWN4ZzRMeE9zckR6UHF1d093M2NYUlE4OVR0RHFaS2ZYZGc1YldCN0ha?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 10:09 PM ET</div>
+      <h3>MICHAEL MALEC Obituary (2026) - Newton, MA - Boston Globe - Legacy</h3>
+      <p>MICHAEL MALEC Obituary (2026) - Newton, MA - Boston Globe Legacy</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOT3JGZFJBcEdiYmpRUFItenU3SEVjZzZuM2NNVkNLbm93ZExDZlN4SWEwaFZmbXh5N0I3eTZoTWYzQ0U5RFBjMC1IcndiU3AteXRUWWUwZ2c1WmVCVVlLMU5kOEFBZ1hGWHZxRmNpNERraWlHcFRia1VRejBRamdHRTVkOGh1N0NvUUd2YzlUNVFOQQ?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">boston.com • Apr 1, 10:03 PM ET</div>
+      <h3>Report reveals details about State Police sergeant in fatal crash</h3>
+      <p>A new report raises questions about a State Police sergeant who allegedly caused a fatal crash while driving drunk.</p>
+      <a class="chip-link" href="https://www.boston.com/news/crime/2026/04/01/what-we-had-talked-about-take-that-to-the-grave-report-reveals-details-about-state-police-sergeant-who-allegedly-drove-drunk-caused-fatal-crash/" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 9:44 PM ET</div>
+      <h3>Bay State resident charged with threatening Trump’s life</h3>
+      <p>Court documents reveal repeated threats against former President Trump over several months.</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxOVWZQRDczY1BRTTJSTjhwaDVvejQtY2MwaGdWaWk0UE9hSDlDc185VmtVZ1U1QmdvMnFYb0JLcmZCZm43Qk1JV1hTSVV2bE1pVFRoMWh1dFZlc2dibFVJWmlHbjdrTEpFRkw4MlE3akNXdXBRS25Sd2Y0U1QwRkw4dnRxTE9DemVmWjBTTWVUR3FkLXRNXzVvbnpxendJQ25lT1Z4RmxxUl9xMEdkWElaUHpPaEMwRTY4SlFQNkZXd2xfZUkxVGNoV3lMSkhyd1NkRWl6T1dwZDFoM00?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    </div></section><section id='sec-trending' class='section-block'><div class='section-header'><h2>Popular / trending</h2></div><div class='story-grid'>
+    <article class="story-card">
+      <div class="story-meta">news.google.com • Apr 1, 10:27 PM ET</div>
+      <h3>Live updates: Trump says Iran war objectives &#x27;nearing completion&#x27; in address to nation - BBC</h3>
+      <p>Live updates: Trump says Iran war objectives &#x27;nearing completion&#x27; in address to nation BBC Oil prices surge with Brent rising 5% as Trump vows to hit Iran &#x27;extremely hard&#x27; within…</p>
+      <a class="chip-link" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE43VTBSLTEwZVlycV9SYVNDOUEtb2FRekFMMnM4WTlQSHdxcFhZc3NDcWU1ZlFnanlpVE9fbl9hNEhEeU8teHRIZ2RNZjQ3N2kzckY3bg?oc=5" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">trends.google.com • Apr 1, 10:20 PM ET</div>
+      <h3>steph curry</h3>
+      <p>steph curry</p>
+      <a class="chip-link" href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">trends.google.com • Apr 1, 10:20 PM ET</div>
+      <h3>nikola jokic</h3>
+      <p>nikola jokic</p>
+      <a class="chip-link" href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">trends.google.com • Apr 1, 10:20 PM ET</div>
+      <h3>avs game</h3>
+      <p>avs game</p>
+      <a class="chip-link" href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    
+    <article class="story-card">
+      <div class="story-meta">trends.google.com • Apr 1, 10:20 PM ET</div>
+      <h3>warriors schedule</h3>
+      <p>warriors schedule</p>
+      <a class="chip-link" href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener">Open story ↗</a>
+    </article>
+    </div></section>
+    <div id="podcast">
+        <section class='section-block'>
+          <div class='section-header'><h2>Podcast / verbal summary</h2></div>
+          <div class='podcast-box'>
+            <p>Good morning. Today’s top story centers on President Donald Trump’s national address regarding the ongoing conflict with Iran. Trump declared that U.S. objectives in the war are nearing completion, signaling a potential escalation with promises to hit Iran &quot;extremely hard&quot; in the coming weeks. This announcement triggered a sharp rise in oil prices, with Brent crude climbing 5%, while gold and silver prices fell. Despite the heightened rhetoric, Trump did not announce deployment of ground troops or criticize NATO, indicating a measured approach. In other news, AI technology is making strides in sustainability, with a new machine in China sorting clothes faster than humans to boost textile recycling efforts. However, experts caution against overreliance on AI in military operations, especially in sensitive contexts like the Iran strikes. On the political front, pressure mounts to end the U.S. partial government shutdown, with calls for Congress to reconvene. We’ll continue monitoring these developments closely. Stay tuned for more updates.</p>
+          </div>
+        </section>
+        </div>
+    <footer>
+      Built for quick scanning. Original formatted link: <a href="https://gist.github.com/neima3/d35473d32760585dc3e4d9098301cbf1">https://gist.github.com/neima3/d35473d32760585dc3e4d9098301cbf1</a>
+    </footer>
+  </div>
+</body>
+</html>
