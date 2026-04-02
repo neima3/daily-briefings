@@ -1,132 +1,132 @@
 {
-  "generated_at_utc": "2026-04-02T04:19:43.991564+00:00",
-  "generated_at_local": "2026-04-02 12:19 AM EDT",
+  "generated_at_utc": "2026-04-02T06:02:37.855801+00:00",
+  "generated_at_local": "2026-04-02 02:02 AM EDT",
   "news": {
     "world": [
       {
-        "title": "It\u2019s International Fact-Checking Day. Refresh your AI identification skills - News4JAX",
-        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQd1Z5MElFTldMZ0dWNk5fZUNhbW8xdmxqdEFBU21hZE4zVENabV93a2JIbGdURzR2elBNdG96U0tHMmRCWmxiU3N2T3JpdktEQ2RBTkhPM1pvN3J2RnFTUVFlLWhOWVlCbWFHWmNLUXRRaEc1TGdQYnJfYkNmd2VMeHZnS05xTHBPOTdtNU15dUFOZWRKeWNiZ0FXREJQd0pDS3VlV1U1MlRJMzVOSXY0Z2cyemNhRW54R3ZLM1pQal9Ndw?oc=5",
-        "published": "Thu, 02 Apr 2026 04:14:36 GMT",
-        "summary": "It\u2019s International Fact-Checking Day. Refresh your AI identification skills News4JAX",
-        "source": "Google News International",
-        "display_source": "news.google.com",
-        "published_local": "Apr 2, 12:14 AM ET",
-        "ai_title": "International Fact-Checking Day Highlights AI Identification Skills",
-        "ai_summary": "Today marks International Fact-Checking Day, emphasizing the need to refresh skills in identifying AI-generated content amid growing AI use."
-      },
-      {
-        "title": "Reporter who was kidnapped in Baghdad is known for pursuing gutsy, low-budget assignments - Audacy",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWEdvS3FpQ0VleDRJT0k1eE9hWUpUZjZsOU5PTU44MlN5VGppNnpQRmhhZTNPd1hKMnRtUURfUzhPX29pRlc3Zld2U1ZmOC1MTHZHSHpIb3NjQ0o0YnhGNDZJc19xV3VRTVcyYUdZRXRqUGtWdFJqMVU4MnFqaF83VnhSU2xQbmNqeDV5cnZtcGQ3bGg2M1cyNVYtRXBmMFk?oc=5",
-        "published": "Thu, 02 Apr 2026 04:12:53 GMT",
-        "summary": "Reporter who was kidnapped in Baghdad is known for pursuing gutsy, low-budget assignments Audacy",
-        "source": "Google News World",
-        "display_source": "news.google.com",
-        "published_local": "Apr 2, 12:12 AM ET",
-        "ai_title": "Reporter Kidnapped in Baghdad Known for Courageous Reporting",
-        "ai_summary": "A journalist with a reputation for pursuing gutsy, low-budget assignments was kidnapped in Baghdad, highlighting ongoing risks for reporters in conflict zones."
-      },
-      {
-        "title": "The Latest: Trump says Iran will be hit hard for next 2 or 3 weeks - News4JAX",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYjZsM2p0WVRDdXBnZzExS2xRSGlpcTdpazQ1WTlZak5RYWp5cWN4NHFJY0tFaTJtRmoxZEdqUkV3S1RUUmRiNzNUTEYwT2Rkc01NUWRWQmpHcTc0S2FFcFd6MHlmLTR4WFlyRnVUNVY0dzRuVW4tWlB5WE45REdZOFV6QjhDUXBDUFFZcl9ETGRYcXNuMFJtTEdKa0szby1XZlF6ZG9UeTUxWjlwTG1YMFRnWQ?oc=5",
-        "published": "Thu, 02 Apr 2026 04:09:11 GMT",
-        "summary": "The Latest: Trump says Iran will be hit hard for next 2 or 3 weeks News4JAX",
-        "source": "Google News World",
-        "display_source": "news.google.com",
-        "published_local": "Apr 2, 12:09 AM ET",
-        "ai_title": "Trump Vows Intense Action Against Iran Over Next Weeks",
-        "ai_summary": "President Trump announced that Iran will face heavy US military action for the next two to three weeks as part of ongoing conflict efforts."
-      },
-      {
-        "title": "Local World Cup watch parties revealed - Cascadia Daily News",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQc1NmWUdxSU1BQWhhd2JJVlFKb3Z5YndwVHNFa0RSWG5kYjB1Y0VXTGtsb0Vmbm1heTRza1N3QXJYREd3WXdNUFpBb2UtOG5KeU9wNFFPbVM3MFNBVzBISVRKS2RfaUpVVjVrXzVCSUpxbjg4T1paWXFQa3g0Qmw2RXMwTWR4Vm5L?oc=5",
-        "published": "Thu, 02 Apr 2026 04:07:19 GMT",
-        "summary": "Local World Cup watch parties revealed Cascadia Daily News",
-        "source": "Google News World",
-        "display_source": "news.google.com",
-        "published_local": "Apr 2, 12:07 AM ET",
-        "ai_title": "Local World Cup Watch Parties Announced",
-        "ai_summary": "Communities have revealed locations for World Cup watch parties, engaging fans in the global soccer event."
-      },
-      {
-        "title": "Live updates: Trump says war will end 'shortly'; Iran denies requesting a ceasefire - NBC News",
+        "title": "Live updates: Trump says war will end 'shortly'; Iran denies requesting a ceasefire - nbcnews.com",
         "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZ0FpbjNjWUE3QkEycUJTQUM2U2J6dlJmSGJKaTQwYjlUX3BWc3JMejk2OE1RN0M2bUtqbi1XbFBnanRaTzZLejRaeGl5dWtjaTI1M1AySDhJdXhKS25WanZzUU13RHV6VG5SUGZYQmZ3MEFrZGE4cjlBc1d6XzBNcVU2NzBBZTU0eUZqQUd4TW9PMmU2MXdzWXpnLXd1MFljV1hqanRyY0I?oc=5",
-        "published": "Thu, 02 Apr 2026 04:07:16 GMT",
-        "summary": "Live updates: Trump says war will end 'shortly'; Iran denies requesting a ceasefire NBC News",
+        "published": "Thu, 02 Apr 2026 05:30:36 GMT",
+        "summary": "Live updates: Trump says war will end 'shortly'; Iran denies requesting a ceasefire nbcnews.com",
         "source": "Google News World",
         "display_source": "news.google.com",
-        "published_local": "Apr 2, 12:07 AM ET",
-        "ai_title": "Trump Says War Will End Soon; Iran Denies Ceasefire Request",
-        "ai_summary": "In live updates, Trump stated the US-Iran war will conclude shortly, while Iran denies having requested a ceasefire."
+        "published_local": "Apr 2, 1:30 AM ET",
+        "ai_title": "Trump says war will end 'shortly'; Iran denies ceasefire request",
+        "ai_summary": "President Trump promises a swift end to the Iran conflict, while Iran denies seeking a ceasefire amid ongoing hostilities."
+      },
+      {
+        "title": "Rotating exhibit space aims to accelerate learning at Discovery World - mariettatimes.com",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQem9jcXk2aXFHOFNyM1M3NElvUkR4NTdkOTNITFFoQ2RaeGVYZG14elBabVd2RUdOZk1MUHQ0S2duaEhMclo4SE9wWFFDXzh5dl91U2x2Mmt3Q1dSdG1hT0xQbGxyZzFhYlFDUVM4OC02REp3REVZR0J0U3BzZXZfODc2cllCSWJmNWY4TXY3VUJkLUVYOGNUblhKSzZfWHdfY1kxTmp3cGUzMW02RHcxMVJKWkNVQUtoMmxLNXRTS21XQQ?oc=5",
+        "published": "Thu, 02 Apr 2026 05:26:15 GMT",
+        "summary": "Rotating exhibit space aims to accelerate learning at Discovery World mariettatimes.com",
+        "source": "Google News World",
+        "display_source": "news.google.com",
+        "published_local": "Apr 2, 1:26 AM ET",
+        "ai_title": "Discovery World launches rotating exhibit space to accelerate learning",
+        "ai_summary": "Discovery World introduces a new rotating exhibit space designed to enhance educational engagement and learning experiences."
+      },
+      {
+        "title": "Day 33 of Middle East conflict \u2014 Trump\u2019s first address to the nation on Iran war - CNN",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5nYllxUnhESkdpaTJVWEh3X2NaRDNaQ1NZZU96dGh4cXk3WjdqVlVrMk1ZS3pTREMyblV2V1k0M2lzLXpLVWZmdWk2YUJ6bW45bUY4SGZaVVozUEdKSFV4THd4dEpkTUNobF9YeFZSeHRzSGRhYUF3?oc=5",
+        "published": "Thu, 02 Apr 2026 05:16:00 GMT",
+        "summary": "Day 33 of Middle East conflict \u2014 Trump\u2019s first address to the nation on Iran war CNN",
+        "source": "Google News World",
+        "display_source": "news.google.com",
+        "published_local": "Apr 2, 1:16 AM ET",
+        "ai_title": "Day 33 of Middle East conflict: Trump\u2019s first Iran war address",
+        "ai_summary": "On the 33rd day of the Middle East conflict, President Trump delivers his first national address regarding the Iran war."
+      },
+      {
+        "title": "Video Shows US F-15 Trying To Chase Iran's Shahed Drone Over Iraq - NDTV",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOYmQxTE5jdWxKQXJsUHRUcTZFeGI5RXhjRHFicUpZMFFfWVE4d0Q2SUFRQmlFc2NrWFdrRVAtN3loYjhEdEVjQ0VUaUJCTnVFTWtZLTU0TGNiZm5OZzI1V3pVdG5ac3ZHQ3EtOVk1QU10WV9nTHEwbTRhell5VmxDN1VJRGFERnI4NzBvYkU3azhKcC1lSGZxa09uTml5SUFXeV9Gcnk0cE45TllqNjlQNnVYekE3Y2VNUWJj0gHDAUFVX3lxTE5TcVpxdWs0S09yMUxTbzZveXcxNmtpeExvZUFzNEpjTnY5NEZEVnpxNzdQT3pNdzM4MUo1QnlWMU9CWlRwYzEwNHpxNjdtWjkzM1Y2dlp4bWdsYXRjLWpyTE1UdG9KcWxzRFdiekJOeV9fdHNBMXJXT1duNjVJcWFKSGtXb1lhdUlrZl9Sd1lCT0V1R2Jia2dSNDR3VnNkd1FoaUt1YnQ4Z0xaTk1DQVU1aXhDQ2E4R2JiZFJRU3kta3lQcw?oc=5",
+        "published": "Thu, 02 Apr 2026 05:11:41 GMT",
+        "summary": "Video Shows US F-15 Trying To Chase Iran's Shahed Drone Over Iraq NDTV",
+        "source": "Google News World",
+        "display_source": "news.google.com",
+        "published_local": "Apr 2, 1:11 AM ET",
+        "ai_title": "US F-15 chases Iran's Shahed drone over Iraq",
+        "ai_summary": "Video footage captures a US F-15 fighter jet attempting to intercept an Iranian Shahed drone flying over Iraqi airspace."
+      },
+      {
+        "title": "UK gathers more than 30 countries to plot ways of reopening the Strait of Hormuz - Audacy",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOblRJU1N1ejFROUVzNVFURTUzSjlmRDBIUXlqVGVRX2N3N2JhbkhPRWdFWTlaZV9lQUtiejRBbkdTdkhUWXBoU2hzUzhZbzFBdzhTbWVyYzlyUmNoaFpFUlJ3cUQxbENBY2VTSnB3elhuaXhkZWI1MlI3d2hMQmtFWUJpZw?oc=5",
+        "published": "Thu, 02 Apr 2026 05:01:13 GMT",
+        "summary": "UK gathers more than 30 countries to plot ways of reopening the Strait of Hormuz Audacy",
+        "source": "Google News World",
+        "display_source": "news.google.com",
+        "published_local": "Apr 2, 1:01 AM ET",
+        "ai_title": "UK leads international effort to reopen Strait of Hormuz",
+        "ai_summary": "The UK gathers over 30 countries to coordinate strategies for reopening the critical Strait of Hormuz shipping lane."
       }
     ],
     "ai_tech_business": [
       {
-        "title": "AI Is Routine for College Students, Despite Campus Limits - Gallup News",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOYW9Gd0t2V2k4MkVoRXJJQnlQRm5QZkYwdkU0UnAxb0pCcFQyOVhvd0dybE5temV0QlVUTTBXaFJPemg1LUQ0OUJkc0twOWhTWHJYemJvaTZ6LU5CNW9DLVhfS1RPRWNuWVhYZ3hNWHZKTHVUa2pqdnZLcEJvQzVER3FyMzJFUkpOT1k3cHRXVGw?oc=5",
-        "published": "Thu, 02 Apr 2026 04:16:11 GMT",
-        "summary": "AI Is Routine for College Students, Despite Campus Limits Gallup News",
-        "source": "Google News AI",
-        "display_source": "news.google.com",
-        "published_local": "Apr 2, 12:16 AM ET",
-        "ai_title": "College Students Routinely Use AI Despite Campus Restrictions",
-        "ai_summary": "Gallup reports that AI tools are commonly used by college students even though many campuses impose limits on their use."
-      },
-      {
-        "title": "College Students Weigh AI's Impact on Majors and Careers - Gallup News",
-        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSmd1clE4ajVaaU9aZnpzRjhLWXE5dTV0Y3h1UnNjOGhKd3E1X2pySjZuQm1XRFltMzRDS21FZDdXbU0xSDBTZW5qT1RGd3Zrc0E3N2VxbTdTN0xIVGFwRjZibngtSHFka3lQTzU3Y29jdlRaTTEwNkVUVmo4X0g1X2M3MUVDbUVhMXF4OUtB?oc=5",
-        "published": "Thu, 02 Apr 2026 04:16:11 GMT",
-        "summary": "College Students Weigh AI's Impact on Majors and Careers Gallup News",
-        "source": "Google News AI",
-        "display_source": "news.google.com",
-        "published_local": "Apr 2, 12:16 AM ET",
-        "ai_title": "Students Consider AI's Impact on Majors and Careers",
-        "ai_summary": "College students are evaluating how AI will influence their academic choices and future job prospects."
-      },
-      {
-        "title": "Cincinnati doctors built an AI assistant to improve heart failure care - Cincinnati Enquirer",
-        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdTNweDBqbkhGUXBIdE9XZTJJNUFDRjlnX21pNnhQOEpxQkFuaWRjNC05bzhCanBpUVV5Q0xzX05kd0VnNzZRNXJNZ1YzTjBJZUgyNTZqTHRha2p2cjkyT2xVRm1rcnZyTGFXSEtIMWR0bERPcl9oMTdEcDhJSnVyUnVHeXRYaTlMWVpXaGJ2dlVZdnZPYm0xWGxha0RRUmx2WDVVX0Y3Rm1ycHNXUnl4V3ZBUUdCMVVla2JCNjQ5dWpPTHFDeWtnb1hZa1o?oc=5",
-        "published": "Thu, 02 Apr 2026 04:15:00 GMT",
-        "summary": "Cincinnati doctors built an AI assistant to improve heart failure care Cincinnati Enquirer",
-        "source": "Google News AI",
-        "display_source": "news.google.com",
-        "published_local": "Apr 2, 12:15 AM ET",
-        "ai_title": "Cincinnati Doctors Develop AI Assistant for Heart Failure Care",
-        "ai_summary": "Medical professionals in Cincinnati have created an AI tool aimed at improving treatment for heart failure patients."
-      },
-      {
-        "title": "Contesting the Frontier: Rethinking US Energy Innovation Policy in a Semi-Settled Landscape - American Enterprise Institute - AEI",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRC1UMDFYeThmaDh5TklEd05MSnk0bU9JV0c0MFlFOWZra2lmdmEzbjVTNlZVNElPcnFUMVk3YWlQekRsS0tTZzNmbEctNGhkOWxXTWxBUmZXc0IteWlqQVk5am8xeXJ2N1Y2MngtYTRmY2V6UkRUX1JnNW1LQkJzSlZQX3ZnblNVRXhTWk1JMzBicmFUN2tsR3VVaGdUZ2Vsd1g1dG55eGh3Z1NRcW1neVFISW5uNDRYTU82RXlNUEdad1ZSMWpYck1qTnBRaUxpeUE?oc=5",
-        "published": "Thu, 02 Apr 2026 04:13:56 GMT",
-        "summary": "Contesting the Frontier: Rethinking US Energy Innovation Policy in a Semi-Settled Landscape American Enterprise Institute - AEI",
+        "title": "Aakriti Singh Promoted to Director, Business & Technology Insights at Gartner - CXO Digitalpulse",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPeVhZemE1TV9OV0hVWFNDMlZJU1k4eVMyMnJjTktCam0zMG03bllrYklGNk9mRGtZUHBOUkhmVGQzOVRmS1Y1aWVuS2wyd0cxaXpJWmZxVjV3Qmg2eHM4UUNSemFETWlvSTRSZU5DU3d5OEw4alhSNjJqaHJ0VlJwQkZPSTJ1dkY2RmZLWjZlZFMtcEY5STVfV2RIN3NGYnNWRFhOZWlVRnlORFk?oc=5",
+        "published": "Thu, 02 Apr 2026 05:26:16 GMT",
+        "summary": "Aakriti Singh Promoted to Director, Business & Technology Insights at Gartner CXO Digitalpulse",
         "source": "Google News Tech Business",
         "display_source": "news.google.com",
-        "published_local": "Apr 2, 12:13 AM ET",
-        "ai_title": "Rethinking US Energy Innovation Policy in a Changing Landscape",
-        "ai_summary": "The American Enterprise Institute calls for updated US energy innovation policies reflecting a semi-settled technological environment."
+        "published_local": "Apr 2, 1:26 AM ET",
+        "ai_title": "Aakriti Singh promoted to Director at Gartner",
+        "ai_summary": "Gartner appoints Aakriti Singh as Director of Business & Technology Insights, highlighting leadership growth."
       },
       {
-        "title": "The Artificial Intelligence (AI) Sell-Off Has Gone Too Far. Here Are the Stocks I'd Buy Before the Market Figures It Out. - The Motley Fool",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQYUFWR0hVamZRaXJxazdJT1R0MlJnSnJSYXlrSmQwZThPVk9rMWVTbmVnbHpjeko5RUl3bFAyMzVKb0JuS0xIZ05jTk01NnpGaWlPR09qY1k1U2pXdTBqOG9WSTR6NlUtTWtxcHZkWGRuSy1MRFNrYnd4NWo1RS13SVJPRGhnd2ZBY0VSYXpqLUh1VzlwYmJ2Yw?oc=5",
-        "published": "Thu, 02 Apr 2026 04:07:25 GMT",
-        "summary": "The Artificial Intelligence (AI) Sell-Off Has Gone Too Far. Here Are the Stocks I'd Buy Before the Market Figures It Out. The Motley Fool",
+        "title": "Crisis contractor for OpenAI, Anthropic eyes a move to combat extremism",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUzB4X19KQlVrNUozZHM4enItNnRBbFlaZDhqSjUtMzI4cVNkY3BtMjJqeWR6YVBZRFEzU21sTVNCdFNaUFRYeVRFdVgybnZHSlJKcE1jeU9yY0I1U1A3WkRQZUVhMlRXWUFXRm5NV3BaVVhWWTVjR3pSUGE3NEV3Tm94M1lOSGxRdVpYLWxSY1E3WFhoLVFJZDlNd01mZW9EVXVGNnVDSGlGbnYwMlA1VUdTUHE5UGwwbEFzWS1kZEc1b2ZHbGc?oc=5",
+        "published": "Thu, 02 Apr 2026 05:22:00 GMT",
+        "summary": "Crisis contractor for OpenAI, Anthropic eyes a move to combat extremism Reuters",
         "source": "Google News AI",
         "display_source": "news.google.com",
-        "published_local": "Apr 2, 12:07 AM ET",
-        "ai_title": "Analysts Say AI Stock Sell-Off Overdone; Recommend Buying",
-        "ai_summary": "The Motley Fool suggests the recent AI-related stock sell-off has gone too far and identifies stocks worth buying before market correction."
+        "published_local": "Apr 2, 1:22 AM ET",
+        "ai_title": "OpenAI contractor Anthropic targets extremism",
+        "ai_summary": "Anthropic, a crisis contractor for OpenAI, plans initiatives to combat extremism using AI technologies."
+      },
+      {
+        "title": "Oracle Helps Drive Malaysia's Digital Innovation Ambition by Training 300,000 Students and Professionals in Artificial Intelligence, Cloud, and Emerging Technologies - Barchart.com",
+        "link": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNeTdNMDk2ZldrM1k4ZERkTG5CUFIzaEYwQXZnRTRXbGI2dEtVd0twT2dvWkRXNmJ0V0lyeDJaalQxMFJnaEVrOGZ6MjFlUGJzUDFJNjFiaHpvZGRmZE1mbndHZFhZTlFjTlFKakdzRFZNZEFRM1ozVjZZeDB5c2JVQXhCOGc1X3VJQVZnVDdxdlJKenpqY01kV2hvV2pmZWhNa3dJSGJFcFZGZFN0WWZNaVpjZFF6aTRqOWxuR09fcVBiQnUyVEZBY09LRzBBMXI1bmNNNXF0Zzk3VzBGWW9LLUhTcnd5Q1NUNVdRdTU1QndtN1Q3cEc0b25yM0FKZWdJOVBWTkY3MUpiZlVaNnZKTFp4bUFVYXhCanF5SXN6RlFnSlNuRlNrM1JyLXlUcUZs?oc=5",
+        "published": "Thu, 02 Apr 2026 05:16:00 GMT",
+        "summary": "Oracle Helps Drive Malaysia's Digital Innovation Ambition by Training 300,000 Students and Professionals in Artificial Intelligence, Cloud, and Emerging Technologies Barchart.com",
+        "source": "Google News AI",
+        "display_source": "news.google.com",
+        "published_local": "Apr 2, 1:16 AM ET",
+        "ai_title": "Oracle trains 300,000 in AI and cloud in Malaysia",
+        "ai_summary": "Oracle supports Malaysia\u2019s digital innovation by training hundreds of thousands in AI, cloud, and emerging tech."
+      },
+      {
+        "title": "UAPB launches AI and Data Center - Pine Bluff Commercial News",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQMURPcC1HRG16SmRmRVYyTEpVSFIxMEZ4VW1DSnRoYVRoS3dmeE1zSWJJM0k3alNwZ2lZWDN1d29fVi1sYlpaWHktTUJVQlZ2ZU5Ha21DcjM1aTM0LXMwYjNsS240NERWb296NkplRzNhOW11SVJOTTFZZ1pxV081TUJTdnlUZw?oc=5",
+        "published": "Thu, 02 Apr 2026 05:15:00 GMT",
+        "summary": "UAPB launches AI and Data Center Pine Bluff Commercial News",
+        "source": "Google News AI",
+        "display_source": "news.google.com",
+        "published_local": "Apr 2, 1:15 AM ET",
+        "ai_title": "UAPB launches new AI and Data Center",
+        "ai_summary": "University of Arkansas at Pine Bluff inaugurates an AI and Data Center to advance research and technology education."
+      },
+      {
+        "title": "Travel marketing's AI identity crisis - PhocusWire",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdVZuZERJalNUVjFyMlV2OEtKMm5SZ013M1hJeHpsdmRBSm5LbVE1OEVhTjlla194OVBCSzc2T3RuOXFFWUVjaUc2WUtTWHd4ZDZmWG5TX21uVldWblozcXNVZThsNlV2X3c5R04yd2FkUjBVNE5NcklRSDZUWHV4UVUtYUFCWGVJU3pKNVpUQWhKOUwycG1lcVF3ZldQVXE1?oc=5",
+        "published": "Thu, 02 Apr 2026 05:07:23 GMT",
+        "summary": "Travel marketing's AI identity crisis PhocusWire",
+        "source": "Google News AI",
+        "display_source": "news.google.com",
+        "published_local": "Apr 2, 1:07 AM ET",
+        "ai_title": "Travel marketing faces AI identity challenges",
+        "ai_summary": "The travel marketing sector grapples with defining AI\u2019s role and impact amid rapid technological changes."
       }
     ],
     "us_politics": [
       {
-        "title": "Schmidt Happens: Political content is polarizing on social media - thepostathens.com",
-        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPU3dKZ2JvVmVXSzdqbUJUOUN4WXVHOUlSektJeklPRGt5ZGtDdGpKdmtvV25jVkotQW9jYVU1MDVJSEZoZWVLQ0FYNGxZOVBqRlFfRFozbklXZlNSZVVvOF82MFZlSnF6bGloMUhZTzNtRTAzakVIU190cVQ4aXlFY3BNZVpMTzN4Ums5d1NtUGc1ZlVSNkx1S1U4Q3M5bFh1ZG1FX0NXeE8wTzYxR01IckxBOU90MnR5RXpFb0x6VF9SaFJCRTJGOW5yQkV6UzZlVEZkaW9R?oc=5",
-        "published": "Thu, 02 Apr 2026 04:00:00 GMT",
-        "summary": "Schmidt Happens: Political content is polarizing on social media thepostathens.com",
+        "title": "Donald Trump approval rating: today\u2019s polls and popularity tracked - The Times",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdUlad0pzLUU5YlhIUXUyTUVVR1ZPSGFQX2h3ZDk2eW5wXzEwdXg4eXZiRE5KN0FQVU4wSlRUNkxnQnlzSzB2OTFDQVg0ZS1yQnhzY1B3UlNZNXlKQnZ0dEV0ODFTRmpuWVBEM09wVUlHNGlwNWdybm13VTRlMExEQVdFYzlyUnNXNG1oSHFrdjVuc2JWN2VvZWYwWGtvVzVvelNsMw?oc=5",
+        "published": "Thu, 02 Apr 2026 04:53:16 GMT",
+        "summary": "Donald Trump approval rating: today\u2019s polls and popularity tracked The Times",
         "source": "Google News US Politics",
         "display_source": "news.google.com",
-        "published_local": "Apr 2, 12:00 AM ET",
-        "ai_title": "Political Content Polarizes Social Media, Study Finds",
-        "ai_summary": "Research highlights how political posts contribute to increased polarization on social media platforms."
+        "published_local": "Apr 2, 12:53 AM ET",
+        "ai_title": "Tracking Donald Trump\u2019s approval ratings",
+        "ai_summary": "Latest polls monitor President Trump\u2019s popularity amid ongoing political and international developments."
       },
       {
         "title": "Judge Halts White House Ballroom Construction - The New York Times",
@@ -136,19 +136,8 @@
         "source": "Google News Washington",
         "display_source": "news.google.com",
         "published_local": "Apr 1, 11:34 PM ET",
-        "ai_title": "Judge Halts White House Ballroom Construction",
-        "ai_summary": "A court order has paused ongoing construction of a new ballroom at the White House."
-      },
-      {
-        "title": "\u2018We have all the cards\u2019: Trump says US war on Iran \u2018nearing completion\u2019 - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWU8zLTdPM0hmTk5MTDhQQjVYaHpUNV9zMHBjeGNZRmJDLS0wRUZoS2Z3cm9pWGdVczBMY2licnY5N1VoNWttbmRsVGdXVG1pNE51MjVxTUVJSDBaWjhETWlzU1RLaEpCQ082dG42SEpQUDhZV1hxX3ZhZjlVU1pZY2Nna3ZfZDI4TXc?oc=5",
-        "published": "Thu, 02 Apr 2026 02:51:00 GMT",
-        "summary": "\u2018We have all the cards\u2019: Trump says US war on Iran \u2018nearing completion\u2019 The Guardian",
-        "source": "Google News US Politics",
-        "display_source": "news.google.com",
-        "published_local": "Apr 1, 10:51 PM ET",
-        "ai_title": "Trump Claims US War on Iran Nearing Completion",
-        "ai_summary": "Trump asserts that the US holds all advantages and that the conflict with Iran is close to ending."
+        "ai_title": "Judge halts White House ballroom construction",
+        "ai_summary": "A court order suspends construction of a new ballroom at the White House pending further review."
       },
       {
         "title": "Trump slurs his way through jaw-dropping Iran war address with no clear end in sight - The Independent",
@@ -158,8 +147,19 @@
         "source": "Google News US Politics",
         "display_source": "news.google.com",
         "published_local": "Apr 1, 10:39 PM ET",
-        "ai_title": "Trump's Iran War Address Marked by Slurred Speech and Uncertainty",
-        "ai_summary": "Observers note Trump's recent speech on the Iran conflict was marred by unclear delivery and no definitive end timeline."
+        "ai_title": "Trump\u2019s Iran war address criticized for lack of clarity",
+        "ai_summary": "Critics highlight President Trump\u2019s slurred and unclear speech on the Iran conflict with no defined end strategy."
+      },
+      {
+        "title": "Ranch Group Engages in White House Meetings, Presses Cattle Industry Reforms - Tri-State Livestock News",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTTQwTzkwTkt0UURJcG9BUVQzaTVYQ29sQTh1SkZpRWVXUkVROFRtbjFZNTJka1NRZmI1dzRaekoxWEJzZE1EUERUR2hENlloanZhd2lfYkp0T3pnMEZBaU81MlhETnNoa0F2akI5ZW9IQ3lWRU1qdUZYOUk0V2s0WDNTV3NhLWtkSDdJelVmcmd3MFJ2aUZMSjczTHZvSEVhbVRteA?oc=5",
+        "published": "Thu, 02 Apr 2026 02:37:28 GMT",
+        "summary": "Ranch Group Engages in White House Meetings, Presses Cattle Industry Reforms Tri-State Livestock News",
+        "source": "Google News Washington",
+        "display_source": "news.google.com",
+        "published_local": "Apr 1, 10:37 PM ET",
+        "ai_title": "Ranch group presses White House on cattle reforms",
+        "ai_summary": "Industry representatives meet with the White House to advocate for reforms in the cattle sector."
       },
       {
         "title": "Trump news at a glance: president makes fresh threat to pull US out of Nato - The Guardian",
@@ -169,21 +169,21 @@
         "source": "Google News US Politics",
         "display_source": "news.google.com",
         "published_local": "Apr 1, 10:36 PM ET",
-        "ai_title": "Trump Threatens to Withdraw US from NATO",
-        "ai_summary": "The president issued a fresh threat to pull the United States out of the NATO alliance."
+        "ai_title": "Trump threatens to pull US out of NATO",
+        "ai_summary": "President Trump issues a fresh threat to withdraw the United States from the NATO alliance."
       }
     ],
     "boston_local": [
       {
-        "title": "Next Weather: WBZ Update - CBS News",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1MVmU5WEJQenh6czRrQjF3UDlwNmd5Wlk1Nk05RGVzb2VBampPdF84RGpKU3J0TEJyZTlJMlc5WmkxOVJoa2FhZ2hwMzZtZzBuMFB1U3pHY3M1NF9wbnE4YVFzS1IwRk96OXM1ZktYY0NfNXc?oc=5",
-        "published": "Thu, 02 Apr 2026 03:45:00 GMT",
-        "summary": "Next Weather: WBZ Update CBS News",
+        "title": "Boston Red Sox Announce Disappointing Injury News Before Astros Game - heavy.com",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZ3dyVkc1UXZSOE83SVB1cHJOVnUtR1h1WTRHTDYtSWpyNlhqcXY1UmxxVnJpeXdQTE5kcGVlVGFwOVBsamJJWjNPY1ZXY2tGN19xdmdzRkhqVjFaaFRmMm5PWC0zUmlyVGxrY2tybXo0Sm0temFPZ1Vlcnd4NG5HakJaVTNUTXR5am1iUU13a21kXzM1em9MZlhkTEV2NDc2bTlPeXNaQQ?oc=5",
+        "published": "Thu, 02 Apr 2026 04:26:13 GMT",
+        "summary": "Boston Red Sox Announce Disappointing Injury News Before Astros Game heavy.com",
         "source": "Google News Boston",
         "display_source": "news.google.com",
-        "published_local": "Apr 1, 11:45 PM ET",
-        "ai_title": "WBZ Provides Next Weather Update for Boston",
-        "ai_summary": "CBS News delivers the latest weather forecast for the Boston area."
+        "published_local": "Apr 2, 12:26 AM ET",
+        "ai_title": "Red Sox announce injury setbacks before Astros game",
+        "ai_summary": "Boston Red Sox report disappointing injury news ahead of their game against the Houston Astros."
       },
       {
         "title": "600 businesses, employees, and entrepreneurs debriefed on World Cup economic impacts in Boston - Boston 25 News",
@@ -193,8 +193,8 @@
         "source": "Google News Boston",
         "display_source": "news.google.com",
         "published_local": "Apr 1, 11:30 PM ET",
-        "ai_title": "Boston Businesses Debrief on World Cup Economic Impact",
-        "ai_summary": "Over 600 local businesses and entrepreneurs discussed the economic effects of the World Cup on Boston."
+        "ai_title": "Boston businesses debriefed on World Cup economic impact",
+        "ai_summary": "Over 600 local businesses and entrepreneurs discuss the economic effects of the World Cup in Boston."
       },
       {
         "title": "Trump says US forces will \u2018finish the job\u2019 soon in first prime-time speech since starting Iran war",
@@ -204,8 +204,19 @@
         "source": "Boston.com",
         "display_source": "boston.com",
         "published_local": "Apr 1, 11:18 PM ET",
-        "ai_title": "Trump Promises US Forces Will 'Finish the Job' in Iran War",
-        "ai_summary": "In his first prime-time speech since the conflict began, Trump defended the war and vowed completion soon."
+        "ai_title": "Trump vows to 'finish the job' in Iran war in prime-time speech",
+        "ai_summary": "In his first prime-time address since the conflict began, Trump defends the war and promises decisive action."
+      },
+      {
+        "title": "The Top Restaurants in Boston Right Now \u2014 Resy | Right This Way - Resy | Right This Way",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1LLUx0aDJ4bXNNQXVLVXNRdG9GYnloQURpMkk2RUZXWmdqcXpFTWl4ZWhVZU93OVl2RExCZzdMdHphUXkwU05XTGZBUjdSSnZ2VVBNU2pPbjlzcHRQUVRlcW9Pdlo?oc=5",
+        "published": "Thu, 02 Apr 2026 03:14:23 GMT",
+        "summary": "The Top Restaurants in Boston Right Now \u2014 Resy | Right This Way Resy | Right This Way",
+        "source": "Google News Boston",
+        "display_source": "news.google.com",
+        "published_local": "Apr 1, 11:14 PM ET",
+        "ai_title": "Top restaurants in Boston right now",
+        "ai_summary": "A current guide highlights the leading dining establishments in Boston."
       },
       {
         "title": "\u200bThe 2026 Red Sox\u2019 run prevention approach has been a disaster out of the gate",
@@ -215,76 +226,65 @@
         "source": "Boston.com",
         "display_source": "boston.com",
         "published_local": "Apr 1, 11:03 PM ET",
-        "ai_title": "Red Sox's 2026 Run Prevention Strategy Falters Early",
-        "ai_summary": "Boston's baseball team faces early struggles with their run prevention approach, prompting urgency for improvement."
-      },
-      {
-        "title": "Woman reunited with dog that disappeared after stranger kicked him in Dorchester - NBC Boston",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUmxkdjRVZXh4ZkZxLVdUQnZDdGY1VHoza2NjSHlrVTJjZGJVcmxSZ3FDSkptM3doZEdOU1VZUVpsQnJ3UFNHcGRfVHFpSFdNTHBrZFdodmI3LUw3QUhNLUEtNllIb21VcVJENTdoWFlvaC1Xd2xMRXdCTkozcm41eFBZSHlMTERoOGNOTzBLZUVGcXJxbUdRQ0VYRFB4dkxCaTc3aEo4UDlaUU42Q2MxM1ZaNTRBLXF6TmZaZVJ1YjhQLUQt0gHMAUFVX3lxTFBfeUV0OWhZWTBDZm1CQzBfV1cwUllkZ0hUZGtWU1ZoaEUtcWZ5WllZUjVQUTItUGVrZEU3dFZuRF9YeTZZQVhtZUdibWN0ZXladjI0eGJDZE45M2FfUU05VnB4QV8zMk1hXzE3cjAzYkFZeElnRC1XZnViNlZnbjBIaW9MZVBLU09BZjVNbG1zTks4UWp3MDE1czRzUmpVLXc3dm5PT3VmVElnY0x0TUtUajA0RUxHOUptQVpLZGEta3hjUkxnS3pjeFp3Vw?oc=5",
-        "published": "Thu, 02 Apr 2026 03:03:13 GMT",
-        "summary": "Woman reunited with dog that disappeared after stranger kicked him in Dorchester NBC Boston",
-        "source": "Google News Boston",
-        "display_source": "news.google.com",
-        "published_local": "Apr 1, 11:03 PM ET",
-        "ai_title": "Woman Reunited with Dog After Stranger Kicked It in Dorchester",
-        "ai_summary": "A Dorchester woman was reunited with her dog following an incident where a stranger kicked the animal."
+        "ai_title": "Red Sox\u2019s 2026 run prevention approach off to poor start",
+        "ai_summary": "Boston\u2019s strategy to prevent runs in the 2026 season faces early challenges and underperformance."
       }
     ],
     "trending": [
       {
-        "title": "cardi",
+        "title": "anya taylor-joy",
         "link": "https://trends.google.com/trending/rss?geo=US",
-        "published": "Wed, 1 Apr 2026 21:00:00 -0700",
+        "published": "Wed, 1 Apr 2026 22:40:00 -0700",
         "summary": "",
         "source": "Google Trends US",
         "display_source": "trends.google.com",
-        "published_local": "Apr 2, 12:00 AM ET",
-        "ai_title": "Cardi B Trending",
-        "ai_summary": "Cardi B remains a top trending topic in popular culture."
+        "published_local": "Apr 2, 1:40 AM ET",
+        "ai_title": "Anya Taylor-Joy trending",
+        "ai_summary": "Anya Taylor-Joy remains a popular search topic today."
       },
       {
-        "title": "drake",
+        "title": "lol",
         "link": "https://trends.google.com/trending/rss?geo=US",
-        "published": "Wed, 1 Apr 2026 21:00:00 -0700",
+        "published": "Wed, 1 Apr 2026 22:40:00 -0700",
         "summary": "",
         "source": "Google Trends US",
         "display_source": "trends.google.com",
-        "published_local": "Apr 2, 12:00 AM ET",
-        "ai_title": "Drake Trending",
-        "ai_summary": "Drake continues to be a significant trending figure in entertainment."
+        "published_local": "Apr 2, 1:40 AM ET",
+        "ai_title": "Trending term: lol",
+        "ai_summary": "\"lol\" is currently trending in popular searches."
       },
       {
-        "title": "california lottery",
+        "title": "north west",
         "link": "https://trends.google.com/trending/rss?geo=US",
-        "published": "Wed, 1 Apr 2026 21:00:00 -0700",
+        "published": "Wed, 1 Apr 2026 22:30:00 -0700",
         "summary": "",
         "source": "Google Trends US",
         "display_source": "trends.google.com",
-        "published_local": "Apr 2, 12:00 AM ET",
-        "ai_title": "California Lottery Trending",
-        "ai_summary": "Interest in the California lottery is trending among the public."
+        "published_local": "Apr 2, 1:30 AM ET",
+        "ai_title": "North West trending",
+        "ai_summary": "North West is a trending topic in current popular searches."
       },
       {
-        "title": "nhl playoff picture",
+        "title": "machine gun kelly",
         "link": "https://trends.google.com/trending/rss?geo=US",
-        "published": "Wed, 1 Apr 2026 21:00:00 -0700",
+        "published": "Wed, 1 Apr 2026 22:30:00 -0700",
         "summary": "",
         "source": "Google Trends US",
         "display_source": "trends.google.com",
-        "published_local": "Apr 2, 12:00 AM ET",
-        "ai_title": "NHL Playoff Picture Trending",
-        "ai_summary": "The NHL playoff standings and prospects are a trending sports topic."
+        "published_local": "Apr 2, 1:30 AM ET",
+        "ai_title": "Machine Gun Kelly trending",
+        "ai_summary": "Machine Gun Kelly is among today\u2019s top trending search terms."
       },
       {
-        "title": "brady ebert",
-        "link": "https://trends.google.com/trending/rss?geo=US",
-        "published": "Wed, 1 Apr 2026 21:00:00 -0700",
-        "summary": "",
-        "source": "Google Trends US",
-        "display_source": "trends.google.com",
-        "published_local": "Apr 2, 12:00 AM ET",
-        "ai_title": "Brady Ebert Trending",
-        "ai_summary": "Brady Ebert is gaining attention in trending discussions."
+        "title": "Oil Prices Jump and Stocks Drop After Trump\u2019s White House Speech - The New York Times",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMVJDVElvemFPSlBZeXlsUFdjeHJnakNtNUxhNWh6cXBXSHNsYUxZc0ZLMGpmVF9LT2hFVXZyNl9aYWFKRWFZRUZCTHQ4VW91dlVIdnBJVm9DdzExdmIxUV9FWFh1dWV1S2RhYXJrbEZWTXdZV21yRVkyMmtOQjhJQ2VoZ1NxZV9tdWJZejd5SQ?oc=5",
+        "published": "Thu, 02 Apr 2026 05:27:28 GMT",
+        "summary": "Oil Prices Jump and Stocks Drop After Trump\u2019s White House Speech The New York Times Live updates: Iran war news, oil prices surge on Trump\u2019s vow to hit Iran \u2018extremely hard\u2019 CNN Trump\u2019s threat to hit Iran 'extremely hard' jolts Asian stocks, U.S. futures and oil first CNBC Hopes dim for swift end to Iran war after Trump speech, oil prices surge anew Reuters Oil's worst-case scenario: $200 if Hormuz remains closed Axios",
+        "source": "Google News US",
+        "display_source": "news.google.com",
+        "published_local": "Apr 2, 1:27 AM ET",
+        "ai_title": "Oil prices jump after Trump\u2019s White House speech",
+        "ai_summary": "Oil prices surge and stocks drop following Trump\u2019s vow to hit Iran 'extremely hard' in his address."
       }
     ]
   },
@@ -294,7 +294,7 @@
       "name": "OSINTdefender",
       "verified": false,
       "profile": "https://x.com/sentdefender",
-      "followers": 2118790,
+      "followers": 2118816,
       "tweets": [
         {
           "id": "2039540692825801040",
@@ -303,7 +303,7 @@
           "kind": "retweet",
           "created_at": "2026-04-02T03:09:28.000Z",
           "metrics": {
-            "retweet_count": 189,
+            "retweet_count": 199,
             "reply_count": 0,
             "like_count": 0,
             "quote_count": 0,
@@ -313,10 +313,10 @@
           "retweeted_text": "U.S. Air Force B-52H \u201cStratofortress\u201d Long-Range Strategic Bombers with the Bomber Barons and Knighthawks of the 23rd and 69th Bomb Squadrons, assigned to the 5th Bomb Wing, each fully-loaded with 20 GBU-31 2,000lb Joint Direct Attack Munitions (JDAM), take off from RAF Fairford https://t.co/v0iJOQg8VG",
           "reply_count": 0,
           "like_count": 0,
-          "retweet_count": 189,
+          "retweet_count": 199,
           "published_local": "Apr 1, 11:09 PM ET",
           "text_short": "RT @sentdefender: U.S. Air Force B-52H \u201cStratofortress\u201d Long-Range Strategic Bombers with the Bomber Barons and Knighthawks of the 23rd and\u2026",
-          "why_it_matters": "Shows US strategic bomber readiness with fully armed B-52s at RAF Fairford."
+          "why_it_matters": "Shows U.S. military readiness with strategic bombers deployed"
         },
         {
           "id": "2039539763552686561",
@@ -325,20 +325,20 @@
           "kind": "tweet",
           "created_at": "2026-04-02T03:05:47.000Z",
           "metrics": {
-            "retweet_count": 47,
-            "reply_count": 88,
-            "like_count": 462,
-            "quote_count": 11,
-            "bookmark_count": 28,
-            "impression_count": 59940
+            "retweet_count": 70,
+            "reply_count": 120,
+            "like_count": 699,
+            "quote_count": 16,
+            "bookmark_count": 42,
+            "impression_count": 94474
           },
           "retweeted_text": "",
-          "reply_count": 88,
-          "like_count": 462,
-          "retweet_count": 47,
+          "reply_count": 120,
+          "like_count": 699,
+          "retweet_count": 70,
           "published_local": "Apr 1, 11:05 PM ET",
           "text_short": "Post tonight by U.S. Secretary of Defense Pete Hegseth stating: \u201cBack to the Stone Age.\u201d Parroting a phrase said today by President Trump in his Address to the Nation and in a post on TruthSocial, in which he threatened to bomb Iran \u201cback\u2026",
-          "why_it_matters": "Highlights Defense Secretary echoing Trump's 'Stone Age' bombing threat to Iran."
+          "why_it_matters": "Highlights Defense Secretary echoing Trump\u2019s tough stance on Iran"
         },
         {
           "id": "2039538687139107115",
@@ -347,20 +347,20 @@
           "kind": "tweet",
           "created_at": "2026-04-02T03:01:30.000Z",
           "metrics": {
-            "retweet_count": 165,
-            "reply_count": 49,
-            "like_count": 1166,
-            "quote_count": 7,
-            "bookmark_count": 204,
-            "impression_count": 122291
+            "retweet_count": 241,
+            "reply_count": 54,
+            "like_count": 1626,
+            "quote_count": 10,
+            "bookmark_count": 302,
+            "impression_count": 186896
           },
           "retweeted_text": "",
-          "reply_count": 49,
-          "like_count": 1166,
-          "retweet_count": 165,
+          "reply_count": 54,
+          "like_count": 1626,
+          "retweet_count": 241,
           "published_local": "Apr 1, 11:01 PM ET",
           "text_short": "Video footage showing an alleged Iranian ballistic missile impact earlier tonight on Naval Support Activity Bahrain, the home of the U.S. Navy\u2019s Fifth Fleet Headquarters, located within the Kingdom of Bahrain\u2019s capital Manama on Awal Islan\u2026",
-          "why_it_matters": "Visual evidence of Iranian missile strike on US Fifth Fleet base in Bahrain."
+          "why_it_matters": "Visual evidence of Iranian missile strike on U.S. naval base"
         },
         {
           "id": "2039521494183645278",
@@ -371,18 +371,18 @@
           "metrics": {
             "retweet_count": 0,
             "reply_count": 0,
-            "like_count": 17,
+            "like_count": 18,
             "quote_count": 0,
             "bookmark_count": 1,
-            "impression_count": 5484
+            "impression_count": 6059
           },
           "retweeted_text": "",
           "reply_count": 0,
-          "like_count": 17,
+          "like_count": 18,
           "retweet_count": 0,
           "published_local": "Apr 1, 9:53 PM ET",
           "text_short": "@ianellisjones Congrats!",
-          "why_it_matters": "Acknowledges congratulations to a new hire or achievement."
+          "why_it_matters": "Acknowledges a congratulatory message"
         },
         {
           "id": "2039518021664842083",
@@ -391,20 +391,20 @@
           "kind": "tweet",
           "created_at": "2026-04-02T01:39:23.000Z",
           "metrics": {
-            "retweet_count": 200,
-            "reply_count": 97,
-            "like_count": 1443,
-            "quote_count": 29,
-            "bookmark_count": 117,
-            "impression_count": 214536
+            "retweet_count": 223,
+            "reply_count": 100,
+            "like_count": 1669,
+            "quote_count": 32,
+            "bookmark_count": 138,
+            "impression_count": 250589
           },
           "retweeted_text": "",
-          "reply_count": 97,
-          "like_count": 1443,
-          "retweet_count": 200,
+          "reply_count": 100,
+          "like_count": 1669,
+          "retweet_count": 223,
           "published_local": "Apr 1, 9:39 PM ET",
           "text_short": "Gold and silver prices collapse following tonight\u2019s Address to the Nation on the Iran War by President Donald J. Trump. https://t.co/Suptds4SvK",
-          "why_it_matters": "Notes market reaction with gold and silver prices falling after Trump's Iran war speech."
+          "why_it_matters": "Market reaction to Trump\u2019s Iran war speech affecting precious metals"
         }
       ]
     },
@@ -413,7 +413,7 @@
       "name": "Natasha Bertrand",
       "verified": false,
       "profile": "https://x.com/NatashaBertrand",
-      "followers": 728792,
+      "followers": 728794,
       "tweets": [
         {
           "id": "2039491121424785625",
@@ -424,18 +424,18 @@
           "metrics": {
             "retweet_count": 3,
             "reply_count": 0,
-            "like_count": 18,
+            "like_count": 20,
             "quote_count": 0,
             "bookmark_count": 1,
-            "impression_count": 6474
+            "impression_count": 6852
           },
           "retweeted_text": "",
           "reply_count": 0,
-          "like_count": 18,
+          "like_count": 20,
           "retweet_count": 3,
           "published_local": "Apr 1, 7:52 PM ET",
           "text_short": "@Aviation_Intel Great hire, congrats @ianellisjones",
-          "why_it_matters": "Congratulates a notable aviation hire."
+          "why_it_matters": "Congratulates a notable hire in aviation intelligence"
         },
         {
           "id": "2039386026594943161",
@@ -444,7 +444,7 @@
           "kind": "retweet",
           "created_at": "2026-04-01T16:54:53.000Z",
           "metrics": {
-            "retweet_count": 936,
+            "retweet_count": 935,
             "reply_count": 0,
             "like_count": 0,
             "quote_count": 0,
@@ -454,10 +454,10 @@
           "retweeted_text": "In an extraordinary move, Hegseth reverses Apache helicopter crew suspension before Army even investigates the incident, undercutting the service's authority and underscoring his contempt for legal guardrails in the military w/@ESCochrane https://t.co/vfKWyF4Nho",
           "reply_count": 0,
           "like_count": 0,
-          "retweet_count": 936,
+          "retweet_count": 935,
           "published_local": "Apr 1, 12:54 PM ET",
           "text_short": "RT @EricSchmittNYT: In an extraordinary move, Hegseth reverses Apache helicopter crew suspension before Army even investigates the incident\u2026",
-          "why_it_matters": "Highlights Defense Secretary reversing Apache crew suspension pre-investigation."
+          "why_it_matters": "Underscores controversy over Defense Secretary\u2019s intervention in military discipline"
         },
         {
           "id": "2039341459149668403",
@@ -466,7 +466,7 @@
           "kind": "retweet",
           "created_at": "2026-04-01T13:57:47.000Z",
           "metrics": {
-            "retweet_count": 596,
+            "retweet_count": 601,
             "reply_count": 0,
             "like_count": 0,
             "quote_count": 0,
@@ -476,10 +476,10 @@
           "retweeted_text": "\"Within about two hours on Saturday, one of the [Apache] helicopters flew by [American] demonstrators six times at McGregor Park in Clarksville, Tennessee, dipping as low as 625 feet\" https://t.co/YTFJx7bG3U",
           "reply_count": 0,
           "like_count": 0,
-          "retweet_count": 596,
+          "retweet_count": 601,
           "published_local": "Apr 1, 9:57 AM ET",
           "text_short": "RT @shashj: \"Within about two hours on Saturday, one of the [Apache] helicopters flew by [American] demonstrators six times at McGregor Par\u2026",
-          "why_it_matters": "Reports low-flying Apache helicopter maneuvers near US demonstrators."
+          "why_it_matters": "Reports on aggressive military helicopter maneuvers near protesters"
         },
         {
           "id": "2039050260480229791",
@@ -501,7 +501,7 @@
           "retweet_count": 31,
           "published_local": "Mar 31, 2:40 PM ET",
           "text_short": "RT @JM_Szuba: Horrifying reports of the attempted kidnapping of journalist @shellykittleson in Baghdad. The welfare of local people has al\u2026",
-          "why_it_matters": "Raises concern over attempted kidnapping of journalist in Baghdad."
+          "why_it_matters": "Raises alarm over attempted kidnapping of journalist in Baghdad"
         },
         {
           "id": "2038995487429198332",
@@ -510,7 +510,7 @@
           "kind": "retweet",
           "created_at": "2026-03-31T15:03:01.000Z",
           "metrics": {
-            "retweet_count": 2834,
+            "retweet_count": 2835,
             "reply_count": 0,
             "like_count": 0,
             "quote_count": 0,
@@ -520,10 +520,10 @@
           "retweeted_text": "New: We obtained phone calls between Russian Foreign Minister Sergei Lavrov and Hungarian Foreign Minister P\u00e9ter Szijj\u00e1rt\u00f3 showing them conspiring to lift EU sanctions on Russia -- from oligarchs to banks to the shadow fleet. Full story with consortium partners at @InsiderEng:",
           "reply_count": 0,
           "like_count": 0,
-          "retweet_count": 2834,
+          "retweet_count": 2835,
           "published_local": "Mar 31, 11:03 AM ET",
           "text_short": "RT @michaeldweiss: New: We obtained phone calls between Russian Foreign Minister Sergei Lavrov and Hungarian Foreign Minister P\u00e9ter Szijj\u00e1r\u2026",
-          "why_it_matters": "Reveals leaked calls showing Russia-Hungary collusion to lift EU sanctions."
+          "why_it_matters": "Reveals leaked calls exposing Russia-EU sanction conspiracies"
         }
       ]
     },
@@ -532,7 +532,7 @@
       "name": "Claude",
       "verified": false,
       "profile": "https://x.com/claudeai",
-      "followers": 963713,
+      "followers": 963946,
       "tweets": [
         {
           "id": "2038693742094246032",
@@ -542,19 +542,19 @@
           "created_at": "2026-03-30T19:03:59.000Z",
           "metrics": {
             "retweet_count": 363,
-            "reply_count": 580,
-            "like_count": 4767,
-            "quote_count": 92,
-            "bookmark_count": 1261,
-            "impression_count": 784581
+            "reply_count": 585,
+            "like_count": 4777,
+            "quote_count": 93,
+            "bookmark_count": 1264,
+            "impression_count": 789307
           },
           "retweeted_text": "",
-          "reply_count": 580,
-          "like_count": 4767,
+          "reply_count": 585,
+          "like_count": 4777,
           "retweet_count": 363,
           "published_local": "Mar 30, 3:03 PM ET",
           "text_short": "Auto mode for Claude Code is now available on the Enterprise plan and for API users. To try it out, update your install and run claude --enable-auto-mode. https://t.co/m3CdLEfNeZ",
-          "why_it_matters": "Announces new auto mode feature for Claude Code on Enterprise and API plans."
+          "why_it_matters": "Announces new auto mode feature for Claude Code users"
         },
         {
           "id": "2038663019983479234",
@@ -564,19 +564,19 @@
           "created_at": "2026-03-30T17:01:55.000Z",
           "metrics": {
             "retweet_count": 92,
-            "reply_count": 84,
-            "like_count": 1874,
+            "reply_count": 85,
+            "like_count": 1876,
             "quote_count": 23,
-            "bookmark_count": 1436,
-            "impression_count": 445680
+            "bookmark_count": 1438,
+            "impression_count": 446853
           },
           "retweeted_text": "",
-          "reply_count": 84,
-          "like_count": 1874,
+          "reply_count": 85,
+          "like_count": 1876,
           "retweet_count": 92,
           "published_local": "Mar 30, 1:01 PM ET",
           "text_short": "Now available in research preview on Pro and Max on macOS. Enable it with /mcp. Docs: https://t.co/x9kSKedkjz",
-          "why_it_matters": "Introduces Claude Code research preview available on macOS Pro and Max."
+          "why_it_matters": "Introduces research preview of new feature on macOS"
         },
         {
           "id": "2038663018427420698",
@@ -586,19 +586,19 @@
           "created_at": "2026-03-30T17:01:54.000Z",
           "metrics": {
             "retweet_count": 37,
-            "reply_count": 37,
-            "like_count": 1844,
+            "reply_count": 38,
+            "like_count": 1846,
             "quote_count": 9,
             "bookmark_count": 150,
-            "impression_count": 478748
+            "impression_count": 479945
           },
           "retweeted_text": "",
-          "reply_count": 37,
-          "like_count": 1844,
+          "reply_count": 38,
+          "like_count": 1846,
           "retweet_count": 37,
           "published_local": "Mar 30, 1:01 PM ET",
           "text_short": "It works on anything you can open on your Mac: a compiled SwiftUI app, a local Electron build, or a GUI tool that doesn't have a CLI.",
-          "why_it_matters": "Explains Claude Code's ability to interact with various Mac apps and GUIs."
+          "why_it_matters": "Demonstrates Claude\u2019s ability to interact with various Mac apps"
         },
         {
           "id": "2038663016187621727",
@@ -609,18 +609,18 @@
           "metrics": {
             "retweet_count": 99,
             "reply_count": 80,
-            "like_count": 3630,
+            "like_count": 3628,
             "quote_count": 53,
             "bookmark_count": 250,
-            "impression_count": 514641
+            "impression_count": 515108
           },
           "retweeted_text": "",
           "reply_count": 80,
-          "like_count": 3630,
+          "like_count": 3628,
           "retweet_count": 99,
           "published_local": "Mar 30, 1:01 PM ET",
           "text_short": "In one prompt, Claude can write the code, compile it, launch the app, click through it, find the bug, fix it, and verify the fix.",
-          "why_it_matters": "Describes Claude's capability to write, test, and fix code autonomously."
+          "why_it_matters": "Highlights Claude\u2019s end-to-end coding and debugging capabilities"
         },
         {
           "id": "2038663014098899416",
@@ -629,20 +629,20 @@
           "kind": "tweet",
           "created_at": "2026-03-30T17:01:53.000Z",
           "metrics": {
-            "retweet_count": 4862,
+            "retweet_count": 4863,
             "reply_count": 2531,
-            "like_count": 59198,
-            "quote_count": 2756,
-            "bookmark_count": 25484,
-            "impression_count": 15554805
+            "like_count": 59210,
+            "quote_count": 2754,
+            "bookmark_count": 25487,
+            "impression_count": 15573977
           },
           "retweeted_text": "",
           "reply_count": 2531,
-          "like_count": 59198,
-          "retweet_count": 4862,
+          "like_count": 59210,
+          "retweet_count": 4863,
           "published_local": "Mar 30, 1:01 PM ET",
           "text_short": "Computer use is now in Claude Code. Claude can open your apps, click through your UI, and test what it built, right from the CLI. Now in research preview on Pro and Max plans. https://t.co/s2FDQaDmr1",
-          "why_it_matters": "Promotes Claude Code's computer interaction features now in research preview."
+          "why_it_matters": "Promotes Claude Code\u2019s UI testing from the command line"
         }
       ]
     },
@@ -651,7 +651,7 @@
       "name": "OpenAI",
       "verified": true,
       "profile": "https://x.com/OpenAI",
-      "followers": 4705092,
+      "followers": 4705156,
       "tweets": [
         {
           "id": "2039085161971896807",
@@ -660,20 +660,20 @@
           "kind": "tweet",
           "created_at": "2026-03-31T20:59:21.000Z",
           "metrics": {
-            "retweet_count": 702,
-            "reply_count": 968,
-            "like_count": 7962,
-            "quote_count": 766,
-            "bookmark_count": 1046,
-            "impression_count": 3084259
+            "retweet_count": 703,
+            "reply_count": 976,
+            "like_count": 8002,
+            "quote_count": 769,
+            "bookmark_count": 1050,
+            "impression_count": 3148168
           },
           "retweeted_text": "",
-          "reply_count": 968,
-          "like_count": 7962,
-          "retweet_count": 702,
+          "reply_count": 976,
+          "like_count": 8002,
+          "retweet_count": 703,
           "published_local": "Mar 31, 4:59 PM ET",
           "text_short": "Today, we closed our latest funding round with $122 billion in committed capital at an $852B post-money valuation. The fastest way to expand AI\u2019s benefits is to put useful intelligence in people\u2019s hands early and let access compound global\u2026",
-          "why_it_matters": "Announces $122B funding round at $852B valuation to expand AI benefits globally."
+          "why_it_matters": "OpenAI secures $122B funding at $852B valuation to expand AI access"
         },
         {
           "id": "2037298931907084568",
@@ -695,7 +695,7 @@
           "retweet_count": 597,
           "published_local": "Mar 26, 6:41 PM ET",
           "text_short": "RT @OpenAIDevs: We're rolling out plugins in Codex. Codex now works seamlessly out of the box with the most important tools builders alrea\u2026",
-          "why_it_matters": "Rolls out Codex plugins integrating with popular productivity tools."
+          "why_it_matters": "Codex integrates plugins with popular developer tools"
         },
         {
           "id": "2036879423040086036",
@@ -717,7 +717,7 @@
           "retweet_count": 101,
           "published_local": "Mar 25, 2:54 PM ET",
           "text_short": "RT @OpenAIDevs: Students: build something real in the Codex Creator Challenge, powered by @joinHandshake Try new tools. Have fun. Break th\u2026",
-          "why_it_matters": "Invites students to participate in Codex Creator Challenge with $10K in prizes."
+          "why_it_matters": "Announces Codex Creator Challenge for student developers"
         },
         {
           "id": "2036855700132147593",
@@ -731,7 +731,7 @@
             "like_count": 130,
             "quote_count": 3,
             "bookmark_count": 22,
-            "impression_count": 119918
+            "impression_count": 120105
           },
           "retweeted_text": "",
           "reply_count": 23,
@@ -739,7 +739,7 @@
           "retweet_count": 13,
           "published_local": "Mar 25, 1:20 PM ET",
           "text_short": "Listen to the OpenAI Podcast on\u2014 Spotify https://t.co/hLcRdGrfUX Apple https://t.co/0AdZ1ZteOV YouTube https://t.co/HrNsP17JsO",
-          "why_it_matters": "Promotes OpenAI Podcast availability on major platforms."
+          "why_it_matters": "Promotes OpenAI Podcast availability on major platforms"
         },
         {
           "id": "2036855698617938422",
@@ -753,7 +753,7 @@
             "like_count": 227,
             "quote_count": 6,
             "bookmark_count": 64,
-            "impression_count": 97092
+            "impression_count": 97218
           },
           "retweeted_text": "",
           "reply_count": 31,
@@ -761,11 +761,11 @@
           "retweet_count": 20,
           "published_local": "Mar 25, 1:20 PM ET",
           "text_short": "More on our approach to the Model Spec: https://t.co/zoBjdnmKRk",
-          "why_it_matters": "Shares details on OpenAI's Model Spec approach."
+          "why_it_matters": "Details OpenAI\u2019s approach to Model Spec transparency"
         }
       ]
     }
   ],
-  "overview": "Tensions escalate as President Trump asserts that the US war on Iran is nearing completion, promising a hard-hitting campaign over the next weeks. Meanwhile, International Fact-Checking Day highlights the importance of verifying AI-generated content amid widespread AI use by college students. Locally, Boston assesses economic impacts from the World Cup while dealing with community and sports updates.",
-  "podcast_script": "Good morning. Today, global headlines focus on escalating US-Iran tensions. President Trump declared the war effort against Iran is nearing completion, promising intense action in the coming weeks, while Iran denies ceasefire requests. This conflict dominates political discourse and market reactions, with gold and silver prices dropping following Trump's address. In media news, a reporter known for courageous, low-budget assignments was recently kidnapped in Baghdad, underscoring the risks journalists face in conflict zones. On the tech front, International Fact-Checking Day reminds us to sharpen our skills in identifying AI-generated content, especially as AI use becomes routine among college students despite institutional limits. In Boston, over 600 businesses and entrepreneurs reviewed the economic impact of the World Cup, reflecting the event's local significance. Sports fans are watching the Red Sox's challenging start to their 2026 season, while a Dorchester woman was reunited with her dog after a distressing incident. Finally, trending topics include Cardi B, Drake, and the NHL playoff picture, capturing popular culture and sports interest. Stay tuned for more updates throughout the day."
+  "overview": "Tensions escalate in the Middle East as President Trump delivers a prime-time address on the Iran conflict, promising a swift end to the war and threatening severe retaliation. Global markets react with rising oil prices and falling stocks amid uncertainty. Meanwhile, the UK leads international efforts to reopen the strategic Strait of Hormuz, and significant developments unfold in AI and tech sectors with leadership changes and new initiatives.",
+  "podcast_script": "Good morning. Today\u2019s top story centers on escalating tensions in the Middle East. President Trump delivered his first prime-time address on the Iran conflict, asserting that U.S. forces will \"finish the job\" soon and warning of severe consequences for Iran. Despite Trump\u2019s claims, Iran denies requesting a ceasefire, and the conflict enters its 33rd day with no clear end in sight. This address rattled global markets, pushing oil prices higher and causing stock declines worldwide. In response, the UK has convened over 30 countries to strategize reopening the Strait of Hormuz, a vital oil shipping route currently at risk. On the tech front, Gartner announced Aakriti Singh\u2019s promotion to Director of Business & Technology Insights, while Oracle is advancing Malaysia\u2019s digital ambitions by training 300,000 students and professionals in AI and cloud technologies. Additionally, the University of Arkansas at Pine Bluff launched a new AI and Data Center to bolster research and innovation. In U.S. politics, a judge halted White House ballroom construction, and ranch groups engaged the administration on cattle industry reforms. That\u2019s your briefing for today. Stay informed and have a productive day."
 }
