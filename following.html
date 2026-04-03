@@ -1,1 +1,810 @@
-<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Home Feed — Deep Midnight Edition | The Informed Curator</title><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/><script>tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-tint":"#b4c5ff","secondary":"#adcbda","on-surface-variant":"#c3c6d7","inverse-surface":"#dfe2eb","primary-container":"#2d66ee","on-primary":"#002979","outline-variant":"#434655","secondary-container":"#304d5a","on-surface":"#dfe2eb","on-primary-fixed-variant":"#003daa","inverse-primary":"#0652db","tertiary":"#ffb695","surface-container":"#1c2026","primary-fixed-dim":"#b4c5ff","surface":"#10141a","on-tertiary-fixed":"#351000","on-error-container":"#ffdad6","on-secondary-fixed":"#001f2a","on-primary-container":"#f5f4ff","error":"#ffb4ab","error-container":"#93000a","on-secondary-fixed-variant":"#2e4b57","surface-container-highest":"#31353c","surface-container-high":"#262a31","primary":"#b4c5ff","on-tertiary-container":"#fff3ef","outline":"#8d90a0","on-background":"#dfe2eb","surface-container-low":"#181c22","secondary-fixed":"#c9e7f7","surface-bright":"#353940","on-secondary":"#163440","inverse-on-surface":"#2d3137","tertiary-fixed":"#ffdbcc","secondary-fixed-dim":"#adcbda","primary-fixed":"#dbe1ff","on-primary-fixed":"#00174c","tertiary-fixed-dim":"#ffb695","tertiary-container":"#bf4c00","surface-variant":"#31353c","surface-dim":"#10141a","surface-container-lowest":"#0a0e14","on-error":"#690005","on-tertiary-fixed-variant":"#7b2e00","on-tertiary":"#571f00","background":"#10141a","on-secondary-container":"#9fbdcc"},fontFamily:{headline:["Manrope"],body:["Inter"],label:["Inter"]},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"}}}}</script><style>body{background-color:#10141a;color:#dfe2eb;font-family:Inter,sans-serif}.material-symbols-outlined{font-variation-settings:"FILL" 0,"wght" 400,"GRAD" 0,"opsz" 24}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#10141a}::-webkit-scrollbar-thumb{background:#31353c;border-radius:10px}</style></head><body class="bg-surface text-on-surface"><header class="fixed top-0 w-full z-50 bg-[#10141a]/80 backdrop-blur-xl"><div class="flex justify-between items-center h-16 px-6 max-w-[1440px] mx-auto"><div class="flex items-center gap-8"><span class="text-xl font-bold text-[#b4c5ff] tracking-tighter font-headline">The Informed Curator</span><nav class="hidden md:flex gap-6 items-center"><a class="font-headline font-bold text-sm tracking-tight text-[#b4c5ff] border-b-2 border-[#2d66ee] pb-1" href="./index.html">Home Feed</a><a class="font-headline font-bold text-sm tracking-tight text-slate-400 hover:text-white transition-colors" href="./trending.html">Trending</a><a class="font-headline font-bold text-sm tracking-tight text-slate-400 hover:text-white transition-colors" href="./following.html">Following</a></nav></div><div class="flex items-center gap-4"><div class="hidden md:block relative"><div class="bg-surface-container-high rounded-full px-4 py-1.5 flex items-center gap-2"><span class="material-symbols-outlined text-on-surface-variant text-sm">search</span><input class="bg-transparent border-none focus:ring-0 text-sm w-48 text-on-surface" placeholder="Search briefing sections..." type="text"/></div></div><a href="#podcast" class="material-symbols-outlined text-on-surface-variant hover:bg-white/5 p-2 rounded-full transition-all">graphic_eq</a><div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">N</div></div></div><div class="bg-[#1c222a] h-[1px] w-full"></div></header><div class="flex max-w-[1440px] mx-auto pt-16"><aside class="hidden lg:flex flex-col w-80 p-6 gap-8 h-screen sticky top-16 border-r border-white/5 bg-[#10141a]"><div class="flex flex-col gap-4"><div class="p-4 bg-surface-container-low rounded-xl border border-white/5"><div class="flex items-center gap-3 mb-2"><div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-variation-settings:&quot;FILL&quot; 1;">auto_awesome</span></div><div><h3 class="font-headline font-black text-primary text-sm">The Daily Brief</h3><p class="text-[0.875rem] text-slate-500 font-body">2026-04-03 07:00 PM EDT</p></div></div><a href="https://neima3.github.io/daily-briefings/" class="block w-full mt-2 py-2 bg-primary-container text-on-primary-container text-xs font-bold rounded-xl text-center active:opacity-80 transition-all">Open formatted briefing</a></div><nav class="flex flex-col gap-1"><a href="./index.html" class="flex items-center gap-4 p-3 text-[#b4c5ff] font-semibold bg-[#2d66ee]/10 rounded-xl cursor-pointer"><span class="material-symbols-outlined" style="font-variation-settings:&quot;FILL&quot; 1;">home</span><span class="font-body text-[0.875rem]">Home</span></a><a href="./trending.html" class="flex items-center gap-4 p-3 text-slate-500 hover:text-slate-300 hover:bg-white/5 rounded-xl transition-all cursor-pointer"><span class="material-symbols-outlined">trending_up</span><span class="font-body text-[0.875rem]">Trending</span></a><a href="./index.html#stories" class="flex items-center gap-4 p-3 text-slate-500 hover:text-slate-300 hover:bg-white/5 rounded-xl transition-all cursor-pointer"><span class="material-symbols-outlined">auto_awesome</span><span class="font-body text-[0.875rem]">Curated</span></a><a href="./following.html" class="flex items-center gap-4 p-3 text-slate-500 hover:text-slate-300 hover:bg-white/5 rounded-xl transition-all cursor-pointer"><span class="material-symbols-outlined">dynamic_feed</span><span class="font-body text-[0.875rem]">Streams</span></a><a href="./index.html#podcast" class="flex items-center gap-4 p-3 text-slate-500 hover:text-slate-300 hover:bg-white/5 rounded-xl transition-all cursor-pointer"><span class="material-symbols-outlined">bookmark</span><span class="font-body text-[0.875rem]">Bookmarks</span></a></nav></div><section class="flex flex-col gap-4"><h4 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant px-3">Briefing pulse</h4><div class="grid grid-cols-1 gap-3"><div class="bg-surface-container-low p-4 rounded-xl border-l-2 border-primary/20 hover:border-primary transition-all"><p class="text-[10px] text-on-surface-variant uppercase tracking-wider font-bold mb-1">Updated</p><p class="font-bold text-on-surface">2026-04-03 07:00 PM EDT</p></div><div class="bg-surface-container-low p-4 rounded-xl border-l-2 border-primary/20 hover:border-primary transition-all"><p class="text-[10px] text-on-surface-variant uppercase tracking-wider font-bold mb-1">Stories in brief</p><p class="font-bold text-on-surface">25</p></div><div class="bg-surface-container-low p-4 rounded-xl border-l-2 border-primary/20 hover:border-primary transition-all"><p class="text-[10px] text-on-surface-variant uppercase tracking-wider font-bold mb-1">Tracked X accounts</p><p class="font-bold text-on-surface">4</p></div><div class="bg-surface-container-low p-4 rounded-xl border-l-2 border-primary/20 hover:border-primary transition-all"><p class="text-[10px] text-on-surface-variant uppercase tracking-wider font-bold mb-1">Podcast mode</p><p class="font-bold text-on-surface">Ready</p></div></div></section></aside><main id="home" class="flex-1 min-w-0 p-6 lg:p-8 space-y-8 bg-surface"><section class="relative h-[420px] rounded-3xl overflow-hidden group cursor-pointer"><div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(45,102,238,0.45),_transparent_35%),linear-gradient(135deg,#17213d_0%,#10141a_60%,#0a0e14_100%)]"></div><div class="absolute inset-0 bg-gradient-to-t from-[#10141a] via-[#10141a]/40 to-transparent"></div><div class="absolute bottom-0 left-0 p-8 w-full md:w-3/4"><div class="flex items-center gap-2 mb-4"><span class="px-2 py-1 bg-primary-container text-on-primary-container text-[10px] font-bold rounded uppercase tracking-tighter">Top headlines / world news</span><span class="text-xs text-white/70 font-medium">Updated 2026-04-03 07:00 PM EDT</span></div><h1 class="text-3xl md:text-5xl font-headline font-extrabold text-white leading-tight mb-4 tracking-tighter">US Fighter Jet Shot Down Over Iran; Crew Status Uncertain</h1><p class="text-lg text-on-surface-variant font-body line-clamp-3 max-w-2xl mb-6">A U.S. fighter jet was shot down over Iran, with one crew member rescued and the other still missing as search efforts continue.</p><div class="flex items-center gap-4"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9FN01jYmFiZTE1Z0F6eVdfTHpTNlJNYU05MERqQ1dHOTNhRVhmYTdtdGhlc2JmbUdud1hnN2ZRdElvbF9BSEpDaHN0dHZaV2YtSEhkU2pVRlhnVm84MEtwMmNmbndkNHdLYVNRZVc3LWRUbk1Qb3I4?oc=5" target="_blank" rel="noopener" class="px-6 py-2.5 bg-primary-container text-on-primary-container rounded-full font-bold text-sm hover:brightness-110 transition-all active:scale-95">Read Full Story</a><a href="#podcast" class="p-2.5 bg-white/10 text-white rounded-full hover:bg-white/20 transition-all"><span class="material-symbols-outlined text-xl">graphic_eq</span></a></div></div></section><section id="trending"><div class="flex items-center justify-between mb-6"><h3 class="text-xl font-headline font-bold flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-variation-settings:&quot;FILL&quot; 1;">bolt</span>Momentum Snapshot</h3><a class="text-sm text-primary hover:underline font-medium" href="https://neima3.github.io/daily-briefings/">Open live page</a></div><div class="grid grid-cols-2 md:grid-cols-4 gap-4"><div class="bg-surface-container-low p-4 rounded-xl border-l-2 border-primary/20 hover:border-primary transition-all"><p class="text-[10px] text-on-surface-variant uppercase tracking-wider font-bold mb-1">Updated</p><p class="font-bold text-on-surface">2026-04-03 07:00 PM EDT</p></div><div class="bg-surface-container-low p-4 rounded-xl border-l-2 border-primary/20 hover:border-primary transition-all"><p class="text-[10px] text-on-surface-variant uppercase tracking-wider font-bold mb-1">Stories in brief</p><p class="font-bold text-on-surface">25</p></div><div class="bg-surface-container-low p-4 rounded-xl border-l-2 border-primary/20 hover:border-primary transition-all"><p class="text-[10px] text-on-surface-variant uppercase tracking-wider font-bold mb-1">Tracked X accounts</p><p class="font-bold text-on-surface">4</p></div><div class="bg-surface-container-low p-4 rounded-xl border-l-2 border-primary/20 hover:border-primary transition-all"><p class="text-[10px] text-on-surface-variant uppercase tracking-wider font-bold mb-1">Podcast mode</p><p class="font-bold text-on-surface">Ready</p></div></div></section><div class="grid grid-cols-1 xl:grid-cols-12 gap-8"><div id="discussions" class="xl:col-span-7 space-y-3"><h2 class="font-headline font-bold text-xl mb-6 px-1">Recent Discussions</h2><article class="bg-surface-container-low p-5 rounded-3xl border border-white/5 hover:border-white/10 transition-all group"><div class="flex gap-4"><div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">chat</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between mb-1"><div class="flex items-center gap-1.5 overflow-hidden"><span class="font-bold text-on-surface truncate">OSINTdefender</span><span class="text-on-surface-variant text-sm truncate">@sentdefender</span><span class="text-on-surface-variant text-sm">• Apr 3, 6:51 PM ET</span></div><a href="https://x.com/sentdefender/status/2040200520128716996" target="_blank" rel="noopener" class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">north_east</a></div><p class="text-on-surface font-body text-[0.9375rem] leading-relaxed mb-4">Reports of possible explosions in and around the Syrian capital of Damascus.</p><div class="mt-3 rounded-2xl border border-outline-variant/30 p-4 bg-surface-container-lowest"><p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-2">Why it matters</p><p class="text-sm text-on-surface-variant leading-snug">Reports of explosions in Damascus signal rising regional instability.</p></div><div class="flex items-center justify-between max-w-md text-on-surface-variant mt-4 text-xs"><div class="flex items-center gap-2 hover:text-primary transition-colors"><span class="material-symbols-outlined text-[1.15rem]">chat_bubble</span><span>23</span></div><div class="flex items-center gap-2 hover:text-emerald-400 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">repeat</span><span>33</span></div><div class="flex items-center gap-2 hover:text-rose-500 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">favorite</span><span>191</span></div><div class="text-[11px] text-on-surface-variant">❤ 191 · ↻ 33 · 💬 23</div></div></div></div></article><article class="bg-surface-container-low p-5 rounded-3xl border border-white/5 hover:border-white/10 transition-all group"><div class="flex gap-4"><div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">chat</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between mb-1"><div class="flex items-center gap-1.5 overflow-hidden"><span class="font-bold text-on-surface truncate">OSINTdefender</span><span class="text-on-surface-variant text-sm truncate">@sentdefender</span><span class="text-on-surface-variant text-sm">• Apr 3, 6:00 PM ET</span></div><a href="https://x.com/sentdefender/status/2040187613185749297" target="_blank" rel="noopener" class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">north_east</a></div><p class="text-on-surface font-body text-[0.9375rem] leading-relaxed mb-4">Statement today from Republican Sen. John Curtis of Utah, as several Republican lawmakers begin to break from President Trump over the ongoing and escalating Iran War: “I stand by the President’s actions taken in defense of our national se…</p><div class="mt-3 rounded-2xl border border-outline-variant/30 p-4 bg-surface-container-lowest"><p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-2">Why it matters</p><p class="text-sm text-on-surface-variant leading-snug">Senator Curtis supports Trump’s Middle East actions, highlighting GOP divisions.</p></div><div class="flex items-center justify-between max-w-md text-on-surface-variant mt-4 text-xs"><div class="flex items-center gap-2 hover:text-primary transition-colors"><span class="material-symbols-outlined text-[1.15rem]">chat_bubble</span><span>88</span></div><div class="flex items-center gap-2 hover:text-emerald-400 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">repeat</span><span>147</span></div><div class="flex items-center gap-2 hover:text-rose-500 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">favorite</span><span>940</span></div><div class="text-[11px] text-on-surface-variant">❤ 940 · ↻ 147 · 💬 88</div></div></div></div></article><article class="bg-surface-container-low p-5 rounded-3xl border border-white/5 hover:border-white/10 transition-all group"><div class="flex gap-4"><div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">format_quote</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between mb-1"><div class="flex items-center gap-1.5 overflow-hidden"><span class="font-bold text-on-surface truncate">Natasha Bertrand</span><span class="text-on-surface-variant text-sm truncate">@NatashaBertrand</span><span class="text-on-surface-variant text-sm">• Apr 3, 5:15 PM ET</span></div><a href="https://x.com/NatashaBertrand/status/2040176398845821314" target="_blank" rel="noopener" class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">north_east</a></div><p class="text-on-surface font-body text-[0.9375rem] leading-relaxed mb-4">An A-10 Thunderbolt II was struck by Iran on Friday, forcing the pilot to eject, according to a US official familiar with the matter. The pilot of the A-10, also known as a Warthog, was able to navigate the plane out of Iranian territory b…</p><div class="mt-3 rounded-2xl border border-outline-variant/30 p-4 bg-surface-container-lowest"><p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-2">Why it matters</p><p class="text-sm text-on-surface-variant leading-snug">US official confirms A-10 pilot ejected safely after Iranian missile strike.</p></div><div class="flex items-center justify-between max-w-md text-on-surface-variant mt-4 text-xs"><div class="flex items-center gap-2 hover:text-primary transition-colors"><span class="material-symbols-outlined text-[1.15rem]">chat_bubble</span><span>0</span></div><div class="flex items-center gap-2 hover:text-emerald-400 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">repeat</span><span>79</span></div><div class="flex items-center gap-2 hover:text-rose-500 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">favorite</span><span>184</span></div><div class="text-[11px] text-on-surface-variant">❤ 184 · ↻ 79 · 💬 0</div></div></div></div></article><article class="bg-surface-container-low p-5 rounded-3xl border border-white/5 hover:border-white/10 transition-all group"><div class="flex gap-4"><div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">repeat</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between mb-1"><div class="flex items-center gap-1.5 overflow-hidden"><span class="font-bold text-on-surface truncate">Natasha Bertrand</span><span class="text-on-surface-variant text-sm truncate">@NatashaBertrand</span><span class="text-on-surface-variant text-sm">• Apr 3, 3:59 PM ET</span></div><a href="https://x.com/NatashaBertrand/status/2040157216544522433" target="_blank" rel="noopener" class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">north_east</a></div><p class="text-on-surface font-body text-[0.9375rem] leading-relaxed mb-4">RT @TheIntelFrog: 🤯🤯🤯 2 aircraft lost in combat with at least 1 crew member unaccounted for at this time...</p><div class="mt-3 rounded-2xl border border-outline-variant/30 p-4 bg-surface-container-lowest"><p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-2">Why it matters</p><p class="text-sm text-on-surface-variant leading-snug">Two aircraft lost in combat raises stakes in Iran conflict.</p></div><div class="flex items-center justify-between max-w-md text-on-surface-variant mt-4 text-xs"><div class="flex items-center gap-2 hover:text-primary transition-colors"><span class="material-symbols-outlined text-[1.15rem]">chat_bubble</span><span>0</span></div><div class="flex items-center gap-2 hover:text-emerald-400 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">repeat</span><span>36</span></div><div class="flex items-center gap-2 hover:text-rose-500 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">favorite</span><span>0</span></div><div class="text-[11px] text-on-surface-variant">❤ 0 · ↻ 36 · 💬 0</div></div></div></div></article><article class="bg-surface-container-low p-5 rounded-3xl border border-white/5 hover:border-white/10 transition-all group"><div class="flex gap-4"><div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">chat</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between mb-1"><div class="flex items-center gap-1.5 overflow-hidden"><span class="font-bold text-on-surface truncate">Claude</span><span class="text-on-surface-variant text-sm truncate">@claudeai</span><span class="text-on-surface-variant text-sm">• Apr 3, 11:17 AM ET</span></div><a href="https://x.com/claudeai/status/2040086268562842097" target="_blank" rel="noopener" class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">north_east</a></div><p class="text-on-surface font-body text-[0.9375rem] leading-relaxed mb-4">Microsoft 365 connectors are now available on every Claude plan. Connect Outlook, OneDrive, and SharePoint to bring your email, docs, and files into the conversation. Get started here: https://t.co/EdoQeT8BBN https://t.co/sOrigP41FJ</p><div class="mt-3 rounded-2xl border border-outline-variant/30 p-4 bg-surface-container-lowest"><p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-2">Why it matters</p><p class="text-sm text-on-surface-variant leading-snug">Microsoft 365 integration expands Claude AI’s productivity reach.</p></div><div class="flex items-center justify-between max-w-md text-on-surface-variant mt-4 text-xs"><div class="flex items-center gap-2 hover:text-primary transition-colors"><span class="material-symbols-outlined text-[1.15rem]">chat_bubble</span><span>618</span></div><div class="flex items-center gap-2 hover:text-emerald-400 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">repeat</span><span>888</span></div><div class="flex items-center gap-2 hover:text-rose-500 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">favorite</span><span>11605</span></div><div class="text-[11px] text-on-surface-variant">❤ 11605 · ↻ 888 · 💬 618</div></div></div></div></article><article class="bg-surface-container-low p-5 rounded-3xl border border-white/5 hover:border-white/10 transition-all group"><div class="flex gap-4"><div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">format_quote</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between mb-1"><div class="flex items-center gap-1.5 overflow-hidden"><span class="font-bold text-on-surface truncate">Claude</span><span class="text-on-surface-variant text-sm truncate">@claudeai</span><span class="text-on-surface-variant text-sm">• Apr 2, 6:46 PM ET</span></div><a href="https://x.com/claudeai/status/2039836891508261106" target="_blank" rel="noopener" class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">north_east</a></div><p class="text-on-surface font-body text-[0.9375rem] leading-relaxed mb-4">Computer use in Claude Cowork and Claude Code Desktop is now available on Windows. https://t.co/TXjkhVhS7W</p><div class="mt-3 rounded-2xl border border-outline-variant/30 p-4 bg-surface-container-lowest"><p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-2">Why it matters</p><p class="text-sm text-on-surface-variant leading-snug">Claude Cowork and Code Desktop now support Windows users.</p></div><div class="flex items-center justify-between max-w-md text-on-surface-variant mt-4 text-xs"><div class="flex items-center gap-2 hover:text-primary transition-colors"><span class="material-symbols-outlined text-[1.15rem]">chat_bubble</span><span>623</span></div><div class="flex items-center gap-2 hover:text-emerald-400 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">repeat</span><span>1003</span></div><div class="flex items-center gap-2 hover:text-rose-500 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">favorite</span><span>10743</span></div><div class="text-[11px] text-on-surface-variant">❤ 10743 · ↻ 1003 · 💬 623</div></div></div></div></article><article class="bg-surface-container-low p-5 rounded-3xl border border-white/5 hover:border-white/10 transition-all group"><div class="flex gap-4"><div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">repeat</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between mb-1"><div class="flex items-center gap-1.5 overflow-hidden"><span class="font-bold text-on-surface truncate">OpenAI</span><span class="text-on-surface-variant text-sm truncate">@OpenAI</span><span class="text-on-surface-variant text-sm">• Apr 2, 2:27 PM ET</span></div><a href="https://x.com/OpenAI/status/2039771689131897173" target="_blank" rel="noopener" class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">north_east</a></div><p class="text-on-surface font-body text-[0.9375rem] leading-relaxed mb-4">RT @tbpn: OpenAI Acquires TBPN https://t.co/Sdw32Weo4z</p><div class="mt-3 rounded-2xl border border-outline-variant/30 p-4 bg-surface-container-lowest"><p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-2">Why it matters</p><p class="text-sm text-on-surface-variant leading-snug">OpenAI expands capabilities with TBPN acquisition.</p></div><div class="flex items-center justify-between max-w-md text-on-surface-variant mt-4 text-xs"><div class="flex items-center gap-2 hover:text-primary transition-colors"><span class="material-symbols-outlined text-[1.15rem]">chat_bubble</span><span>0</span></div><div class="flex items-center gap-2 hover:text-emerald-400 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">repeat</span><span>92</span></div><div class="flex items-center gap-2 hover:text-rose-500 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">favorite</span><span>0</span></div><div class="text-[11px] text-on-surface-variant">❤ 0 · ↻ 92 · 💬 0</div></div></div></div></article><article class="bg-surface-container-low p-5 rounded-3xl border border-white/5 hover:border-white/10 transition-all group"><div class="flex gap-4"><div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">format_quote</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between mb-1"><div class="flex items-center gap-1.5 overflow-hidden"><span class="font-bold text-on-surface truncate">OpenAI</span><span class="text-on-surface-variant text-sm truncate">@OpenAI</span><span class="text-on-surface-variant text-sm">• Apr 2, 12:56 PM ET</span></div><a href="https://x.com/OpenAI/status/2039748699350532097" target="_blank" rel="noopener" class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">north_east</a></div><p class="text-on-surface font-body text-[0.9375rem] leading-relaxed mb-4">ChatGPT is now available in CarPlay. The voice mode you know, now available on-the-go. Rolling out to iPhone users running iOS 26.4+ where CarPlay is supported. https://t.co/yk3qdLa99r https://t.co/aXQqH9MNuG</p><div class="mt-3 rounded-2xl border border-outline-variant/30 p-4 bg-surface-container-lowest"><p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-2">Why it matters</p><p class="text-sm text-on-surface-variant leading-snug">ChatGPT now accessible via CarPlay for hands-free use.</p></div><div class="flex items-center justify-between max-w-md text-on-surface-variant mt-4 text-xs"><div class="flex items-center gap-2 hover:text-primary transition-colors"><span class="material-symbols-outlined text-[1.15rem]">chat_bubble</span><span>641</span></div><div class="flex items-center gap-2 hover:text-emerald-400 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">repeat</span><span>781</span></div><div class="flex items-center gap-2 hover:text-rose-500 transition-colors"><span class="material-symbols-outlined text-[1.15rem]">favorite</span><span>10324</span></div><div class="text-[11px] text-on-surface-variant">❤ 10324 · ↻ 781 · 💬 641</div></div></div></div></article></div><div id="stories" class="xl:col-span-5 space-y-6"><h2 class="font-headline font-bold text-xl mb-6 px-1">Top Stories</h2><div class="flex gap-4 bg-surface-container-lowest p-4 rounded-3xl border border-white/5 hover:bg-surface-container-low transition-all cursor-pointer group"><div class="flex-1"><span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant mb-1 block">Public Radar</span><h3 class="font-headline font-bold text-md text-on-surface leading-tight group-hover:text-primary transition-colors">Fire Erupts at San Francisco International Airport</h3><p class="text-xs text-on-surface-variant mt-2 line-clamp-2">A fire burned cargo containers and debris at San Francisco International Airport, prompting emergency response.</p><div class="mt-3 flex items-center gap-3 text-[10px] text-on-surface-variant"><span>Apr 3, 6:36 PM ET</span><span>•</span><span>news.google.com</span></div></div><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxPN3h3Z1lFTHRKdnpBTnRXRlFOVV9VUWdoenAxZGlOWW00a2ZBQ21kNWJnMzBrRUdIaG8ta2FVVmJ1ZlphSzhRZG1RbGpZbVU5OUdpdTdYamdEN2NGQzhocXJuQ3ZDdkVuM0hGMXJOOHJNcUtfaUFyZ0tzWDFqWHNxY1dNcWdOVE0yNko0Nk1JbDA?oc=5" target="_blank" rel="noopener" class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-gradient-to-br from-primary/20 to-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">north_east</span></a></div><div class="flex gap-4 bg-surface-container-lowest p-4 rounded-3xl border border-white/5 hover:bg-surface-container-low transition-all cursor-pointer group"><div class="flex-1"><span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant mb-1 block">Public Radar</span><h3 class="font-headline font-bold text-md text-on-surface leading-tight group-hover:text-primary transition-colors">US Officials Confirm Fighter Jet Downed Over Iran</h3><p class="text-xs text-on-surface-variant mt-2 line-clamp-2">U.S. officials confirm an F-15 fighter jet was shot down over Iran, with search and rescue operations underway.</p><div class="mt-3 flex items-center gap-3 text-[10px] text-on-surface-variant"><span>Apr 3, 5:44 PM ET</span><span>•</span><span>news.google.com</span></div></div><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPTGlIcmp6ajhocl9IYVNsSVE1TmFlaUUwSFJ5RkREMWhhNlhfN3NqeTgxa2lJZ1pjenY0blE2ZU1kV25USHd6VUY4UGJ0ekRZVUltU1k5NzUtSm5iVUU3cVk0Mmt1Z25XeE1LSHdKRlhHYXhUdm5jemVGTDZVQ1pVeEIxbWhYRGdfMTI5c1dfMXF1bkp3NkZYWmhMLUJuTF9udTFsUHNXd1Z0OEpNQVVGc3ZaR0FCbGtwU2FrNmMtRG5OTDVI?oc=5" target="_blank" rel="noopener" class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-gradient-to-br from-primary/20 to-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">north_east</span></a></div><div class="flex gap-4 bg-surface-container-lowest p-4 rounded-3xl border border-white/5 hover:bg-surface-container-low transition-all cursor-pointer group"><div class="flex-1"><span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant mb-1 block">Public Radar</span><h3 class="font-headline font-bold text-md text-on-surface leading-tight group-hover:text-primary transition-colors">One Crew Member Rescued After US Jet Downed in Iran</h3><p class="text-xs text-on-surface-variant mt-2 line-clamp-2">One crew member was rescued following the downing of a U.S. fighter jet in Iran; search continues for the second crew member.</p><div class="mt-3 flex items-center gap-3 text-[10px] text-on-surface-variant"><span>Apr 3, 5:39 PM ET</span><span>•</span><span>news.google.com</span></div></div><a href="https://news.google.com/rss/articles/CBMickFVX3lxTFB1X0VUMVZ6TUFhejJCb01YajYzVnNQRklkeGZTWm13OGlWMnNoWkliaWZMN3U3YnM2eW5JMmU2dlpDRmFQb2REeGg2Ty1hOExwbFNoTXRfUUNZZFhGcnIxdERvWnVfSmJNNHV6aU9JRkpudw?oc=5" target="_blank" rel="noopener" class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-gradient-to-br from-primary/20 to-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">north_east</span></a></div><div class="flex gap-4 bg-surface-container-lowest p-4 rounded-3xl border border-white/5 hover:bg-surface-container-low transition-all cursor-pointer group"><div class="flex-1"><span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant mb-1 block">AI / Tech</span><h3 class="font-headline font-bold text-md text-on-surface leading-tight group-hover:text-primary transition-colors">Digital Promise and TNTP Collaborate on AI Guidance for Schools</h3><p class="text-xs text-on-surface-variant mt-2 line-clamp-2">Two organizations partner to develop frameworks guiding responsible AI use in educational settings.</p><div class="mt-3 flex items-center gap-3 text-[10px] text-on-surface-variant"><span>Apr 3, 6:36 PM ET</span><span>•</span><span>news.google.com</span></div></div><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNUU1DVU1Belg1VHFsM0pyUGg0ZDRORFFyaWFvS2RKVmZzek5QSmdZYm5lcXBUMzBZcXcyMzlfal80TlZNOVB6Qmx1YUV6blljOHo5MWlQVkZpUmhTeVc0SjZZeHd3V1llbmNwMmZUcmJsOTBLZTByMlZ5Yk5lQ1JRamFVQ2dOY3ZwQjl1dDFXNDl1RUc0ZnQ4d0oxTnExVG5XM1lNbA?oc=5" target="_blank" rel="noopener" class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-gradient-to-br from-primary/20 to-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">north_east</span></a></div><div class="flex gap-4 bg-surface-container-lowest p-4 rounded-3xl border border-white/5 hover:bg-surface-container-low transition-all cursor-pointer group"><div class="flex-1"><span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant mb-1 block">AI / Tech</span><h3 class="font-headline font-bold text-md text-on-surface leading-tight group-hover:text-primary transition-colors">Anonymous Social App Gains Traction in Saudi Arabia</h3><p class="text-xs text-on-surface-variant mt-2 line-clamp-2">The app Fizz has unexpectedly become popular in Saudi Arabia, reflecting unique social media dynamics.</p><div class="mt-3 flex items-center gap-3 text-[10px] text-on-surface-variant"><span>Apr 3, 6:24 PM ET</span><span>•</span><span>techcrunch.com</span></div></div><a href="https://techcrunch.com/2026/04/03/the-anonymous-social-app-that-thinks-it-can-work-in-saudi-arabia/" target="_blank" rel="noopener" class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-gradient-to-br from-primary/20 to-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">north_east</span></a></div><div class="flex gap-4 bg-surface-container-lowest p-4 rounded-3xl border border-white/5 hover:bg-surface-container-low transition-all cursor-pointer group"><div class="flex-1"><span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant mb-1 block">AI / Tech</span><h3 class="font-headline font-bold text-md text-on-surface leading-tight group-hover:text-primary transition-colors">Ireland Emerges as a Growing Hub for AI and Tech</h3><p class="text-xs text-on-surface-variant mt-2 line-clamp-2">Ireland is gaining prominence in the AI and technology sectors, attracting investment and talent.</p><div class="mt-3 flex items-center gap-3 text-[10px] text-on-surface-variant"><span>Apr 3, 6:23 PM ET</span><span>•</span><span>news.google.com</span></div></div><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxOWGhfYVh2VzhESVlZdG5XVWRzZktuMDRkdVI5WFowbkhOSThHNWhVRmxpSzdiR1BBeHVRWGktM2piM3N3OXE5N1d5RldxazFPVHJPSWZxRUVCcWRxNi0wZmNJa0k4WTdra3E5bnc0MEVtb1RBdjFoVktvZHJPWXk1czRYMWhfSURJckE1eUNUYXJfLWJ0bWJJWEc2RDJSNVNBM2p6TFRscw?oc=5" target="_blank" rel="noopener" class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-gradient-to-br from-primary/20 to-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">north_east</span></a></div><div class="flex gap-4 bg-surface-container-lowest p-4 rounded-3xl border border-white/5 hover:bg-surface-container-low transition-all cursor-pointer group"><div class="flex-1"><span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant mb-1 block">US Politics</span><h3 class="font-headline font-bold text-md text-on-surface leading-tight group-hover:text-primary transition-colors">Trump Targets ‘Woke’ Federal Programs in Budget Proposal</h3><p class="text-xs text-on-surface-variant mt-2 line-clamp-2">Trump’s budget proposal seeks to cut federal programs he labels as ‘woke.’</p><div class="mt-3 flex items-center gap-3 text-[10px] text-on-surface-variant"><span>Apr 3, 6:55 PM ET</span><span>•</span><span>news.google.com</span></div></div><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxPZUhqSlNmMDNZQjhxSVpZbUlBTEFUU1ozTzFTTUFoc29pbi1FTHFZQUphc2NMZEdLTlBoSTh0OHRLdU5xajNPczlFc2dRZS1tMzZ6NGh3Tk9ueXA0V0NmYzJRc0hwUEZfSENWRjJlVGc0ZUJtZTRZT3VxX2pGbmpGRTF2YmY?oc=5" target="_blank" rel="noopener" class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-gradient-to-br from-primary/20 to-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">north_east</span></a></div><div class="flex gap-4 bg-surface-container-lowest p-4 rounded-3xl border border-white/5 hover:bg-surface-container-low transition-all cursor-pointer group"><div class="flex-1"><span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant mb-1 block">US Politics</span><h3 class="font-headline font-bold text-md text-on-surface leading-tight group-hover:text-primary transition-colors">US Military Archbishop Questions Justification of Iran Conflict</h3><p class="text-xs text-on-surface-variant mt-2 line-clamp-2">The US military archbishop stated the Iran conflict does not meet the ‘just war’ criteria.</p><div class="mt-3 flex items-center gap-3 text-[10px] text-on-surface-variant"><span>Apr 3, 6:39 PM ET</span><span>•</span><span>news.google.com</span></div></div><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPZ0psYkxnS2N6dnRDZWpNOGRzcmdyRlZ3QmFNT3JFTVlDLWNITWdSR0hnUUNiUGRmS3g5LWdRcGFZaGVvVTRQVnBnN0ZIenBpVXRSTndFLUV5cXo0OXk5eUY3MVJ3WmVMRi1jZFZFM1dEbFpQTWZZYmZCN3RWYnBjYQ?oc=5" target="_blank" rel="noopener" class="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-gradient-to-br from-primary/20 to-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary text-3xl">north_east</span></a></div><section class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/10"><h4 class="text-lg font-headline font-bold mb-6">Trending Topics</h4><div class="space-y-6"><div class="group cursor-pointer"><div class="flex justify-between items-start"><div><p class="text-xs text-on-surface-variant/60 font-medium">1 · Trending right now</p><p class="text-base font-bold text-on-surface group-hover:text-primary transition-colors">Bulls vs Knicks Trending</p></div><span class="material-symbols-outlined text-on-surface-variant/40 group-hover:text-primary transition-colors">more_horiz</span></div><p class="text-[10px] mt-1 text-on-surface-variant uppercase font-bold tracking-tighter">trends.google.com</p></div><div class="group cursor-pointer pt-6 border-t border-outline-variant/10"><div class="flex justify-between items-start"><div><p class="text-xs text-on-surface-variant/60 font-medium">2 · Trending right now</p><p class="text-base font-bold text-on-surface group-hover:text-primary transition-colors">Hawks vs Nets Trending</p></div><span class="material-symbols-outlined text-on-surface-variant/40 group-hover:text-primary transition-colors">more_horiz</span></div><p class="text-[10px] mt-1 text-on-surface-variant uppercase font-bold tracking-tighter">trends.google.com</p></div><div class="group cursor-pointer pt-6 border-t border-outline-variant/10"><div class="flex justify-between items-start"><div><p class="text-xs text-on-surface-variant/60 font-medium">3 · Trending right now</p><p class="text-base font-bold text-on-surface group-hover:text-primary transition-colors">Flyers vs Islanders Trending</p></div><span class="material-symbols-outlined text-on-surface-variant/40 group-hover:text-primary transition-colors">more_horiz</span></div><p class="text-[10px] mt-1 text-on-surface-variant uppercase font-bold tracking-tighter">trends.google.com</p></div><div class="group cursor-pointer pt-6 border-t border-outline-variant/10"><div class="flex justify-between items-start"><div><p class="text-xs text-on-surface-variant/60 font-medium">4 · Trending right now</p><p class="text-base font-bold text-on-surface group-hover:text-primary transition-colors">NBA Playoffs Start Date Sought</p></div><span class="material-symbols-outlined text-on-surface-variant/40 group-hover:text-primary transition-colors">more_horiz</span></div><p class="text-[10px] mt-1 text-on-surface-variant uppercase font-bold tracking-tighter">trends.google.com</p></div></div></section></div></div><section class="space-y-6"><h3 class="text-2xl font-headline font-bold">Narrative Arcs</h3><article class="bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/5"><div class="p-8"><div class="flex items-center gap-3 mb-4"><div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div><span class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">Top headlines / world news</span></div><div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div class="md:col-span-2"><h2 class="text-2xl font-headline font-bold text-on-surface mb-4">US Fighter Jet Shot Down Over Iran; Crew Status Uncertain</h2><p class="text-on-surface-variant text-sm leading-relaxed">A U.S. fighter jet was shot down over Iran, with one crew member rescued and the other still missing as search efforts continue.</p><div class="mt-8 flex gap-3 flex-wrap"><span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold text-on-surface-variant">news.google.com</span><span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold text-on-surface-variant">Apr 3, 6:51 PM ET</span><span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold text-on-surface-variant">AI Summary</span></div></div><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9FN01jYmFiZTE1Z0F6eVdfTHpTNlJNYU05MERqQ1dHOTNhRVhmYTdtdGhlc2JmbUdud1hnN2ZRdElvbF9BSEpDaHN0dHZaV2YtSEhkU2pVRlhnVm84MEtwMmNmbndkNHdLYVNRZVc3LWRUbk1Qb3I4?oc=5" target="_blank" rel="noopener" class="bg-surface-container-highest rounded-xl p-6 relative overflow-hidden group cursor-pointer block"><div class="absolute inset-0 bg-gradient-to-br from-primary/15 to-transparent group-hover:from-primary/25 transition-all duration-700"></div><div class="relative z-10 flex flex-col h-full"><p class="text-sm font-bold mb-2">Source</p><p class="text-[10px] text-on-surface-variant leading-tight">Compact link out to the full story. No giant ugly URL walls.</p><div class="mt-auto pt-4 flex items-center justify-between"><span class="text-xs font-bold text-primary">Open story</span><span class="material-symbols-outlined text-primary">arrow_forward</span></div></div></a></div></div></article><article class="bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/5"><div class="p-8"><div class="flex items-center gap-3 mb-4"><div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div><span class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">AI / tech / business highlights</span></div><div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div class="md:col-span-2"><h2 class="text-2xl font-headline font-bold text-on-surface mb-4">AI Deepfakes and Malware Increase Cybersecurity Challenges</h2><p class="text-on-surface-variant text-sm leading-relaxed">The growing use of AI for creating deepfakes and malware is complicating defense strategies for cybersecurity professionals.</p><div class="mt-8 flex gap-3 flex-wrap"><span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold text-on-surface-variant">news.google.com</span><span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold text-on-surface-variant">Apr 3, 6:36 PM ET</span><span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold text-on-surface-variant">AI Summary</span></div></div><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRUY5MVZHdnl4VFFPRDZsT3lGcFl1aG41ejE0aERPMXF5bUZObzdWd3ludUVjQkxYNVhuWGVjalc3SlJmVzZPV0ZOUnQ0ZF9DSlJOVGpGZUNXRkVDTFJUbnBRT0p1bEg0WngyZXpkRDhRaVR6aGpWQzNNV1lFMzNkX0N5blVkTU92akxhbkZBNTY2dzNBTzhLVVJqd3BFcE55SF9ocE5Vd0c4ZnlaZi0ybThWVnZaWmpB?oc=5" target="_blank" rel="noopener" class="bg-surface-container-highest rounded-xl p-6 relative overflow-hidden group cursor-pointer block"><div class="absolute inset-0 bg-gradient-to-br from-primary/15 to-transparent group-hover:from-primary/25 transition-all duration-700"></div><div class="relative z-10 flex flex-col h-full"><p class="text-sm font-bold mb-2">Source</p><p class="text-[10px] text-on-surface-variant leading-tight">Compact link out to the full story. No giant ugly URL walls.</p><div class="mt-auto pt-4 flex items-center justify-between"><span class="text-xs font-bold text-primary">Open story</span><span class="material-symbols-outlined text-primary">arrow_forward</span></div></div></a></div></div></article><article class="bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/5"><div class="p-8"><div class="flex items-center gap-3 mb-4"><div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div><span class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">US political news</span></div><div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div class="md:col-span-2"><h2 class="text-2xl font-headline font-bold text-on-surface mb-4">Trump Orders DHS Staff Paid Amid Partial Government Shutdown</h2><p class="text-on-surface-variant text-sm leading-relaxed">Former President Trump issued an order ensuring Department of Homeland Security employees receive pay despite a partial shutdown.</p><div class="mt-8 flex gap-3 flex-wrap"><span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold text-on-surface-variant">news.google.com</span><span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold text-on-surface-variant">Apr 3, 6:57 PM ET</span><span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold text-on-surface-variant">AI Summary</span></div></div><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQUjVmV0p6UW5zc055MmN5MkVCSVpLQlFySXVHQ252Wk5BTXp3c0ZkOG5WbW14OEtCZDYtSDFKSEF1dEZkOTIyYnZ3cmNfNzVEeHgyR1pQQWYwQ2NmYW92UDE0N0Q5bk8xeXQxMWRSVmZvbjBuVTFBazNGZWRrMG5RYzdpblVoQ0RwejJqdVlaT21iX3lLSlpkZjJ3?oc=5" target="_blank" rel="noopener" class="bg-surface-container-highest rounded-xl p-6 relative overflow-hidden group cursor-pointer block"><div class="absolute inset-0 bg-gradient-to-br from-primary/15 to-transparent group-hover:from-primary/25 transition-all duration-700"></div><div class="relative z-10 flex flex-col h-full"><p class="text-sm font-bold mb-2">Source</p><p class="text-[10px] text-on-surface-variant leading-tight">Compact link out to the full story. No giant ugly URL walls.</p><div class="mt-auto pt-4 flex items-center justify-between"><span class="text-xs font-bold text-primary">Open story</span><span class="material-symbols-outlined text-primary">arrow_forward</span></div></div></a></div></div></article><article class="bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/5"><div class="p-8"><div class="flex items-center gap-3 mb-4"><div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div><span class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">Boston / local</span></div><div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div class="md:col-span-2"><h2 class="text-2xl font-headline font-bold text-on-surface mb-4">San Diego Padres Face Boston Red Sox in MLB Matchup</h2><p class="text-on-surface-variant text-sm leading-relaxed">Coverage of the recent MLB game between the Padres and Red Sox.</p><div class="mt-8 flex gap-3 flex-wrap"><span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold text-on-surface-variant">news.google.com</span><span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold text-on-surface-variant">Apr 3, 6:21 PM ET</span><span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold text-on-surface-variant">AI Summary</span></div></div><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQLXFYdXV6SWJ6eG1oS3N4ZGFaQzU2NXpwVGpUanlOZUt1ZV80Y2EwWlhCM194UTgzal9QR2FfdjdtZ2o1cjhRWDJTT2VTSlI5SkpVZmNXc1dMcFRSdEVvSEI2ZU54VDZKR0VrN2lOTTk5VFh3SEFjVWJwZTV6d1RzcFY3OWVXZXdVVUpvUDVQQmdkakRtNS1lZ05QYzBpM3k3QU9wM0NuNm13VXhtVzVnT0diU1g?oc=5" target="_blank" rel="noopener" class="bg-surface-container-highest rounded-xl p-6 relative overflow-hidden group cursor-pointer block"><div class="absolute inset-0 bg-gradient-to-br from-primary/15 to-transparent group-hover:from-primary/25 transition-all duration-700"></div><div class="relative z-10 flex flex-col h-full"><p class="text-sm font-bold mb-2">Source</p><p class="text-[10px] text-on-surface-variant leading-tight">Compact link out to the full story. No giant ugly URL walls.</p><div class="mt-auto pt-4 flex items-center justify-between"><span class="text-xs font-bold text-primary">Open story</span><span class="material-symbols-outlined text-primary">arrow_forward</span></div></div></a></div></div></article><article class="bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/5"><div class="p-8"><div class="flex items-center gap-3 mb-4"><div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div><span class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">Popular / trending</span></div><div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div class="md:col-span-2"><h2 class="text-2xl font-headline font-bold text-on-surface mb-4">Bulls vs Knicks Trending</h2><p class="text-on-surface-variant text-sm leading-relaxed">High interest in the Bulls vs Knicks basketball game.</p><div class="mt-8 flex gap-3 flex-wrap"><span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold text-on-surface-variant">trends.google.com</span><span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold text-on-surface-variant">Apr 3, 6:40 PM ET</span><span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold text-on-surface-variant">AI Summary</span></div></div><a href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener" class="bg-surface-container-highest rounded-xl p-6 relative overflow-hidden group cursor-pointer block"><div class="absolute inset-0 bg-gradient-to-br from-primary/15 to-transparent group-hover:from-primary/25 transition-all duration-700"></div><div class="relative z-10 flex flex-col h-full"><p class="text-sm font-bold mb-2">Source</p><p class="text-[10px] text-on-surface-variant leading-tight">Compact link out to the full story. No giant ugly URL walls.</p><div class="mt-auto pt-4 flex items-center justify-between"><span class="text-xs font-bold text-primary">Open story</span><span class="material-symbols-outlined text-primary">arrow_forward</span></div></div></a></div></div></article></section><section id="podcast" class="p-6 bg-primary-container/10 rounded-2xl border border-primary/20"><div class="flex items-center gap-3 mb-2"><span class="material-symbols-outlined text-primary text-sm">psychology</span><p class="text-xs font-bold text-primary uppercase tracking-widest">Verbal briefing</p></div><p class="text-sm text-on-surface leading-relaxed">Good morning. Today’s top story centers on escalating tensions in the Middle East, where a U.S. fighter jet was shot down over Iran. One crew member has been rescued and is in U.S. custody receiving medical treatment, while search efforts continue for the second. This incident marks a significant development in the ongoing Iran conflict, with U.S. officials and allies closely monitoring the situation. Meanwhile, in technology, the rise of AI-driven threats such as deepfakes and malware is complicating cybersecurity defenses. On a positive note, organizations like Digital Promise and TNTP are collaborating to develop AI guidance for schools, aiming to harness AI’s potential responsibly in education. Closer to home in Boston, the police union has called for the mayor’s resignation amid allegations involving secret recordings, and a 12-year-old was arrested in a tragic school bullying incident resulting in a classmate’s death. Sports fans can look forward to updates on the Patriots’ offseason schedule and recent MLB matchups. Stay tuned for more updates as these stories develop.</p></section></main></div><footer class="md:hidden fixed bottom-0 w-full bg-[#10141a]/90 backdrop-blur-xl border-t border-white/5 z-50"><div class="flex justify-around items-center h-16"><a href="#home" class="flex flex-col items-center gap-1 text-[#b4c5ff]"><span class="material-symbols-outlined" style="font-variation-settings:&quot;FILL&quot; 1;">home</span><span class="text-[10px] font-bold">Home</span></a><a href="#trending" class="flex flex-col items-center gap-1 text-slate-500"><span class="material-symbols-outlined">trending_up</span><span class="text-[10px]">Trending</span></a><a href="#discussions" class="flex flex-col items-center gap-1 text-slate-500"><span class="material-symbols-outlined">forum</span><span class="text-[10px]">X</span></a><a href="#podcast" class="flex flex-col items-center gap-1 text-slate-500"><span class="material-symbols-outlined">graphic_eq</span><span class="text-[10px]">Audio</span></a></div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Following — Deep Midnight Edition | The Informed Curator</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #11182b;
+      --panel-2: #182139;
+      --border: rgba(255,255,255,0.08);
+      --text: #e8ecf8;
+      --muted: #9ea8c7;
+      --brand: #8fa9ff;
+      --brand-2: #5f7dff;
+      --green: #67d18e;
+      --red: #ff7b89;
+      --shadow: 0 20px 60px rgba(0,0,0,0.35);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif; background: radial-gradient(circle at top right, rgba(95,125,255,0.18), transparent 24%), var(--bg); color: var(--text); }
+    a { color: inherit; text-decoration: none; }
+    .layout { max-width: 1420px; margin: 0 auto; padding: 24px; }
+    .topbar { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(16px); background: rgba(11,16,32,0.88); border-bottom: 1px solid var(--border); }
+    .topbar-inner { max-width: 1420px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { font-weight: 800; letter-spacing: -0.04em; color: var(--brand); font-size: 22px; }
+    .nav { display: flex; gap: 12px; flex-wrap: wrap; }
+    .nav a { padding: 10px 14px; border-radius: 999px; color: var(--muted); border: 1px solid transparent; }
+    .nav a.active { background: rgba(143,169,255,0.12); color: var(--text); border-color: rgba(143,169,255,0.25); }
+    .masthead { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 22px; margin-top: 28px; }
+    .hero, .metrics-shell, .section-shell, .audio-panel, .controls-shell, .roster-shell { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border: 1px solid var(--border); border-radius: 26px; box-shadow: var(--shadow); }
+    .hero { padding: 28px; min-height: 320px; display: flex; flex-direction: column; justify-content: flex-end; background-image: radial-gradient(circle at top right, rgba(143,169,255,0.22), transparent 26%), linear-gradient(160deg, rgba(24,33,57,0.96), rgba(11,16,32,0.96)); }
+    .hero .eyebrow { display: inline-flex; width: fit-content; padding: 8px 12px; border-radius: 999px; background: rgba(95,125,255,0.18); color: var(--brand); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+    .hero h1 { margin: 16px 0 12px; font-size: clamp(34px, 5vw, 56px); line-height: 0.98; letter-spacing: -0.05em; max-width: 900px; }
+    .hero p { margin: 0 0 20px; color: var(--muted); font-size: 17px; line-height: 1.6; max-width: 860px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .button, .chip-link { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border: 1px solid var(--border); border-radius: 999px; background: rgba(255,255,255,0.03); color: var(--text); font-size: 14px; }
+    .button.primary { background: linear-gradient(135deg, var(--brand-2), #7f97ff); color: #061022; border-color: transparent; font-weight: 700; }
+    .metrics-shell { padding: 20px; }
+    .section-kicker { color: var(--brand); font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 10px; }
+    .section-copy { color: var(--muted); line-height: 1.65; }
+    .metric-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+    .metric-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 18px; padding: 14px; }
+    .metric-label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; }
+    .metric-value { font-size: 18px; font-weight: 800; margin-top: 6px; }
+    .overview { margin-top: 24px; color: var(--muted); line-height: 1.75; }
+    .two-up { display: grid; grid-template-columns: 1fr; gap: 22px; margin-top: 22px; }
+    .section-shell { padding: 22px; }
+    .section-shell h2, .audio-panel h2, .roster-shell h2 { margin: 0 0 10px; font-size: 28px; letter-spacing: -0.03em; }
+    .markets-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); gap: 14px; margin-top: 18px; }
+    .market-card { display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 20px; padding: 16px; min-height: 160px; }
+    .market-top { display: flex; justify-content: space-between; gap: 10px; align-items: start; }
+    .market-label { font-weight: 800; font-size: 15px; }
+    .market-kind, .muted { color: var(--muted); font-size: 13px; }
+    .market-price { margin-top: 18px; font-weight: 800; font-size: 28px; letter-spacing: -0.03em; }
+    .market-delta { margin-top: 8px; font-weight: 800; }
+    .market-delta.up { color: var(--green); }
+    .market-delta.down { color: var(--red); }
+    .market-note { margin-top: 12px; color: var(--muted); font-size: 13px; line-height: 1.45; }
+    .audio-panel { padding: 22px; }
+    .audio-panel audio { width: 100%; margin-top: 18px; }
+    .audio-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
+    .transcript-label { margin: 18px 0 8px; font-weight: 800; color: var(--brand); text-transform: uppercase; letter-spacing: 0.08em; font-size: 12px; }
+    .transcript-copy { color: var(--muted); line-height: 1.7; margin: 0; }
+    .roster-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 18px; }
+    .roster-card { display: flex; gap: 12px; align-items: center; padding: 14px; border-radius: 18px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); }
+    .avatar { width: 48px; height: 48px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(255,255,255,0.08); }
+    .avatar-fallback { display: grid; place-items: center; background: linear-gradient(135deg, rgba(143,169,255,0.3), rgba(95,125,255,0.15)); font-weight: 800; color: var(--text); }
+    .identity-title { font-weight: 800; }
+    .identity-subtitle { color: var(--muted); font-size: 13px; margin-top: 4px; }
+    .controls-shell { padding: 18px 22px; margin-top: 22px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; }
+    .filter-group, .sort-group { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .filter-chip { border: 1px solid var(--border); background: rgba(255,255,255,0.02); color: var(--muted); border-radius: 999px; padding: 10px 14px; cursor: pointer; font-weight: 700; }
+    .filter-chip.active { color: var(--text); border-color: rgba(143,169,255,0.3); background: rgba(143,169,255,0.1); }
+    select, input[type="search"] { background: rgba(255,255,255,0.03); color: var(--text); border: 1px solid var(--border); border-radius: 14px; padding: 10px 12px; font-size: 14px; }
+    .stream-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; margin-top: 20px; }
+    .stream-card { background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.06); border-radius: 22px; padding: 18px; display: flex; flex-direction: column; gap: 14px; min-height: 250px; }
+    .stream-card.hidden { display: none; }
+    .card-header { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
+    .identity-header { align-items: center; }
+    .identity-wrap { display: flex; gap: 12px; align-items: center; }
+    .pill { display: inline-flex; padding: 7px 10px; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+    .pill-news { background: rgba(95,125,255,0.12); color: var(--brand); }
+    .pill-x { background: rgba(255,255,255,0.08); color: #d9e1ff; }
+    .pill-markets { background: rgba(103,209,142,0.14); color: var(--green); }
+    .card-title { font-size: 22px; line-height: 1.15; font-weight: 800; letter-spacing: -0.03em; }
+    .card-copy { color: var(--muted); line-height: 1.65; margin: 0; }
+    .tweet-stats { margin-top: auto; }
+    .card-footer { display: flex; gap: 10px; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-top: auto; }
+    .market-stream-price { font-size: 24px; font-weight: 800; letter-spacing: -0.03em; }
+    .empty-state { padding: 28px; border: 1px dashed rgba(255,255,255,0.15); border-radius: 18px; color: var(--muted); }
+    .footer-note { color: var(--muted); font-size: 13px; margin: 24px 0 8px; }
+    @media (max-width: 980px) {
+      .masthead { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 720px) {
+      .layout { padding: 16px; }
+      .topbar-inner { padding: 14px 16px; flex-direction: column; align-items: start; }
+      .hero { min-height: 280px; }
+      .controls-shell { align-items: start; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div>
+        <div class="brand">The Informed Curator</div>
+        <div class="muted">Your watchlist feed with profile pictures, direct profile links, and sort controls.</div>
+      </div>
+      <nav class="nav">
+        <a href="./index.html" class="">Home Feed</a>
+        <a href="./trending.html" class="">Trending</a>
+        <a href="./following.html" class="active">Following</a>
+        <a href="#podcast">Podcast</a>
+      </nav>
+    </div>
+  </header>
+  <div class="layout">
+    <section class="masthead">
+      <article class="hero">
+        <span class="eyebrow">X watchlist</span>
+        <h1>Updates on US casualties in ongoing Iran conflict</h1>
+        <p>As the Iran War continues to rage in the Middle East, the U.S. Department of Defense has now added the number of American casualties sustained so far during the conflict to the Defense Casualty Analysis System (DCAS), which states that a total of 365 American servicemembers have</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://x.com/sentdefender/status/2040205899424497849" target="_blank" rel="noopener">Open lead item ↗</a>
+          <a class="button" href="https://neima3.github.io/daily-briefings/" target="_blank" rel="noopener">Open public page ↗</a>
+        </div>
+      </article>
+      <aside class="metrics-shell">
+        <div class="section-kicker">Briefing pulse</div>
+        <div class="metric-grid"><div class="metric-card"><div class="metric-label">Updated</div><div class="metric-value">2026-04-03 07:55 PM EDT</div></div><div class="metric-card"><div class="metric-label">Stories</div><div class="metric-value">25</div></div><div class="metric-card"><div class="metric-label">Tracked X accounts</div><div class="metric-value">4</div></div><div class="metric-card"><div class="metric-label">Markets</div><div class="metric-value">7</div></div><div class="metric-card"><div class="metric-label">Podcast</div><div class="metric-value">Playable</div></div></div>
+        <p class="overview">Tensions escalate as a U.S. fighter jet is shot down over Iran, with one pilot rescued and another missing amid ongoing military conflict. Meanwhile, AI continues to reshape education and business landscapes, while U.S. politics focus on defense budgets and voting machine disputes. Markets show modest gains in major indexes despite geopolitical uncertainties.</p>
+      </aside>
+    </section>
+
+    <section class="two-up">
+      <section class="section-shell">
+        <div class="section-kicker">Markets</div>
+        <h2>Full market pulse</h2>
+        <p class="section-copy">Dow, Nasdaq, S&P, crypto, and key commodity moves are baked into every run now.</p>
+        <div class="markets-grid">
+    <a class="market-card" href="https://stooq.com/q/?s=%5Edji" target="_blank" rel="noopener">
+      <div class="market-top">
+        <span class="market-label">Dow</span>
+        <span class="market-kind">index</span>
+      </div>
+      <div class="market-price">46,504.67</div>
+      <div class="market-delta up">+0.08%</div>
+      <p class="market-note">Dow up slightly by 0.08%, showing modest market stability</p>
+    </a>
+    
+    <a class="market-card" href="https://stooq.com/q/?s=%5Espx" target="_blank" rel="noopener">
+      <div class="market-top">
+        <span class="market-label">S&amp;P 500</span>
+        <span class="market-kind">index</span>
+      </div>
+      <div class="market-price">6,582.69</div>
+      <div class="market-delta up">+1.08%</div>
+      <p class="market-note">S&amp;P 500 rises over 1%, reflecting positive investor sentiment</p>
+    </a>
+    
+    <a class="market-card" href="https://stooq.com/q/?s=%5Endq" target="_blank" rel="noopener">
+      <div class="market-top">
+        <span class="market-label">Nasdaq 100</span>
+        <span class="market-kind">index</span>
+      </div>
+      <div class="market-price">21,879.18</div>
+      <div class="market-delta up">+1.89%</div>
+      <p class="market-note">Nasdaq 100 leads gains with nearly 1.9% increase amid tech strength</p>
+    </a>
+    
+    <a class="market-card" href="https://stooq.com/q/?s=btc.v" target="_blank" rel="noopener">
+      <div class="market-top">
+        <span class="market-label">Bitcoin</span>
+        <span class="market-kind">crypto</span>
+      </div>
+      <div class="market-price">66,945.65</div>
+      <div class="market-delta down">-0.04%</div>
+      <p class="market-note">Bitcoin dips marginally by 0.04%, indicating slight crypto pullback</p>
+    </a>
+    
+    <a class="market-card" href="https://stooq.com/q/?s=eth.v" target="_blank" rel="noopener">
+      <div class="market-top">
+        <span class="market-label">Ethereum</span>
+        <span class="market-kind">crypto</span>
+      </div>
+      <div class="market-price">2,053.68</div>
+      <div class="market-delta down">-0.24%</div>
+      <p class="market-note">Ethereum falls about 0.24%, continuing minor downward trend</p>
+    </a>
+    
+    <a class="market-card" href="https://stooq.com/q/?s=gc.f" target="_blank" rel="noopener">
+      <div class="market-top">
+        <span class="market-label">Gold</span>
+        <span class="market-kind">commodity</span>
+      </div>
+      <div class="market-price">4,679.70</div>
+      <div class="market-delta up">+0.00%</div>
+      <p class="market-note">Gold prices steady with no change, maintaining safe-haven status</p>
+    </a>
+    
+    <a class="market-card" href="https://stooq.com/q/?s=cl.f" target="_blank" rel="noopener">
+      <div class="market-top">
+        <span class="market-label">Crude Oil</span>
+        <span class="market-kind">commodity</span>
+      </div>
+      <div class="market-price">111.54</div>
+      <div class="market-delta up">+0.00%</div>
+      <p class="market-note">Crude oil prices unchanged, reflecting stable energy markets</p>
+    </a>
+    </div>
+      </section>
+      
+        <section id="podcast" class="audio-panel">
+          <div class="section-kicker">Podcast mode</div>
+          <h2>Listen in the browser</h2>
+          <p class="section-copy">The latest podcast version is uploaded with each briefing run. Hit play, scrub, or download it directly from the page.</p>
+          <audio controls preload="none" src="./podcast.mp3"></audio>
+          <div class="audio-actions">
+            <a class="chip-link" href="./podcast.mp3" target="_blank" rel="noopener">Open audio ↗</a>
+            <a class="chip-link" href="./podcast.mp3" download>Download MP3</a>
+          </div>
+          <p class="transcript-label">Transcript</p>
+          <p class="transcript-copy">Welcome to your premium briefing. Today, the spotlight is on escalating tensions in the Middle East after a U.S. fighter jet was shot down over Iran. One pilot has been rescued and is in U.S. custody receiving medical care, while the other remains missing. This incident underscores the fragile state of regional security and ongoing military confrontations. In technology, AI is driving significant shifts: college students are reconsidering their majors as AI reshapes the workforce, and tech leaders in Ireland and Scotland emphasize scaling their economies amid this transformation. On the political front, Georgia lawmakers ended their session without resolving voting machine conflicts, while former President Trump has proposed a record $1.5 trillion defense budget for 2027, signaling a focus on military spending. U.S. intelligence reports indicate Iran is rapidly repairing missile bunkers, maintaining its strategic capabilities. Turning to markets, major U.S. indexes are up modestly, with the Nasdaq 100 leading gains, while cryptocurrencies like Bitcoin and Ethereum have dipped slightly. Commodities such as gold and crude oil remain steady. Stay tuned for more updates as these stories develop.</p>
+        </section>
+        
+    </section>
+
+    <section class="roster-shell"><div class="section-kicker">Watchlist</div><h2>Tracked accounts</h2><div class="roster-grid"><a class="roster-card" href="https://x.com/sentdefender" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/><div><div class="identity-title">OSINTdefender</div><div class="muted">@sentdefender · 2127409 followers</div></div></a><a class="roster-card" href="https://x.com/NatashaBertrand" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1507284795486879753/uMQ_pbsq_normal.jpg" alt="@NatashaBertrand avatar"/><div><div class="identity-title">Natasha Bertrand</div><div class="muted">@NatashaBertrand · 728947 followers</div></div></a><a class="roster-card" href="https://x.com/claudeai" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/><div><div class="identity-title">Claude</div><div class="muted">@claudeai · 972320 followers</div></div></a><a class="roster-card" href="https://x.com/OpenAI" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/><div><div class="identity-title">OpenAI</div><div class="muted">@OpenAI · 4707414 followers</div></div></a></div></section>
+
+    <section class="controls-shell">
+      <div>
+        <div class="section-kicker">Stream controls</div>
+        <div class="filter-group">
+          <button class="filter-chip" data-filter="all">All</button>
+          <button class="filter-chip" data-filter="news">News</button>
+          <button class="filter-chip" data-filter="x">X / Twitter</button>
+          <button class="filter-chip" data-filter="markets">Markets</button>
+        </div>
+      </div>
+      <div class="sort-group">
+        <input id="streamSearch" type="search" placeholder="Search cards..." />
+        <select id="streamSort">
+          <option value="latest">Latest</option>
+          <option value="engagement">Highest engagement / move</option>
+          <option value="type">Group by type</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="section-shell">
+      <div class="section-kicker">Live briefing stream</div>
+      <h2>Watchlist first</h2>
+      <p class="section-copy">Filter by source type, search by keyword, or sort by latest versus biggest move.</p>
+      <div id="streamGrid" class="stream-grid">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775257966" data-score="918">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/>
+          <div>
+            <div class="identity-title">OSINTdefender</div>
+            <div class="identity-subtitle">@sentdefender</div>
+          </div>
+        </div>
+        <span class="pill pill-x">TWEET</span>
+      </div>
+      <div class="card-title">Updates on US casualties in ongoing Iran conflict</div>
+      <p class="card-copy">As the Iran War continues to rage in the Middle East, the U.S. Department of Defense has now added the number of American casualties sustained so far during the conflict to the Defense Casualty Analysis System (DCAS), which states that a total of 365 American servicemembers have</p>
+      <div class="tweet-stats muted">❤ 640 · ↻ 97 · 💬 84 · Apr 3, 7:12 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/sentdefender" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/sentdefender/status/2040205899424497849" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775256683" data-score="1059">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/>
+          <div>
+            <div class="identity-title">OSINTdefender</div>
+            <div class="identity-subtitle">@sentdefender</div>
+          </div>
+        </div>
+        <span class="pill pill-x">TWEET</span>
+      </div>
+      <div class="card-title">Reports of explosions near Damascus signal regional instability</div>
+      <p class="card-copy">Reports of possible explosions in and around the Syrian capital of Damascus.</p>
+      <div class="tweet-stats muted">❤ 839 · ↻ 89 · 💬 42 · Apr 3, 6:51 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/sentdefender" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/sentdefender/status/2040200520128716996" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775253606" data-score="1826">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/>
+          <div>
+            <div class="identity-title">OSINTdefender</div>
+            <div class="identity-subtitle">@sentdefender</div>
+          </div>
+        </div>
+        <span class="pill pill-x">TWEET</span>
+      </div>
+      <div class="card-title">Republican lawmakers show mixed support on Iran war actions</div>
+      <p class="card-copy">Statement today from Republican Sen. John Curtis of Utah, as several Republican lawmakers begin to break from President Trump over the ongoing and escalating Iran War: “I stand by the President’s actions taken in defense of our national security interests in the Middle East. But…</p>
+      <div class="tweet-stats muted">❤ 1338 · ↻ 194 · 💬 100 · Apr 3, 6:00 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/sentdefender" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/sentdefender/status/2040187613185749297" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775253180" data-score="596">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/>
+          <div>
+            <div class="identity-title">OSINTdefender</div>
+            <div class="identity-subtitle">@sentdefender</div>
+          </div>
+        </div>
+        <span class="pill pill-x">TWEET</span>
+      </div>
+      <div class="card-title">Uncertainty over footage of downed US drone or aircraft</div>
+      <p class="card-copy">There is a possibility this could also be footage from the shoot down of one of the MQ-9s that were also downed earlier today over Iran, though the location of the screen graphics and the angle of the aircraft makes it difficult to discern whether this is an MQ-9 or in fact an h…</p>
+      <div class="tweet-stats muted">❤ 492 · ↻ 36 · 💬 32 · Apr 3, 5:53 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/sentdefender" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/sentdefender/status/2040185828446773542" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775252370" data-score="2477">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/>
+          <div>
+            <div class="identity-title">OSINTdefender</div>
+            <div class="identity-subtitle">@sentdefender</div>
+          </div>
+        </div>
+        <span class="pill pill-x">QUOTE</span>
+      </div>
+      <div class="card-title">Multiple US aircraft incidents in CENTCOM area reported</div>
+      <p class="card-copy">There have been several incidents involving U.S. aircraft in the U.S. Central Command (CENTCOM) area of operation (AO) within the last 24 hours: 1. A U.S. Air Force F-15E &quot;Strike Eagle&quot; was hit by Iranian fire and crashed in Iran. Both crew members survived, with 1 being rescued…</p>
+      <div class="tweet-stats muted">❤ 1825 · ↻ 272 · 💬 108 · Apr 3, 5:39 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/sentdefender" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/sentdefender/status/2040182428807905314" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775250932" data-score="378">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1507284795486879753/uMQ_pbsq_normal.jpg" alt="@NatashaBertrand avatar"/>
+          <div>
+            <div class="identity-title">Natasha Bertrand</div>
+            <div class="identity-subtitle">@NatashaBertrand</div>
+          </div>
+        </div>
+        <span class="pill pill-x">QUOTE</span>
+      </div>
+      <div class="card-title">US A-10 pilot ejects after Iran strike, escapes Iranian territory</div>
+      <p class="card-copy">An A-10 Thunderbolt II was struck by Iran on Friday, forcing the pilot to eject, according to a US official familiar with the matter. The pilot of the A-10, also known as a Warthog, was able to navigate the plane out of Iranian territory before ejecting from the aircraft and htt…</p>
+      <div class="tweet-stats muted">❤ 208 · ↻ 85 · 💬 0 · Apr 3, 5:15 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/NatashaBertrand" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/NatashaBertrand/status/2040176398845821314" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775246359" data-score="74">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1507284795486879753/uMQ_pbsq_normal.jpg" alt="@NatashaBertrand avatar"/>
+          <div>
+            <div class="identity-title">Natasha Bertrand</div>
+            <div class="identity-subtitle">@NatashaBertrand</div>
+          </div>
+        </div>
+        <span class="pill pill-x">RETWEET</span>
+      </div>
+      <div class="card-title">Two US aircraft lost in combat, one crew member missing</div>
+      <p class="card-copy">RT @TheIntelFrog: 🤯🤯🤯 2 aircraft lost in combat with at least 1 crew member unaccounted for at this time...</p>
+      <div class="tweet-stats muted">❤ 0 · ↻ 37 · 💬 0 · Apr 3, 3:59 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/NatashaBertrand" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/NatashaBertrand/status/2040157216544522433" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775232975" data-score="958">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1507284795486879753/uMQ_pbsq_normal.jpg" alt="@NatashaBertrand avatar"/>
+          <div>
+            <div class="identity-title">Natasha Bertrand</div>
+            <div class="identity-subtitle">@NatashaBertrand</div>
+          </div>
+        </div>
+        <span class="pill pill-x">TWEET</span>
+      </div>
+      <div class="card-title">One US pilot rescued and receiving medical care in custody</div>
+      <p class="card-copy">Good news: US forces rescued one of the crew members of a downed US fighter jet in Iran, according to three sources familiar with the matter. Two of the sources said the pilot was alive, in US custody and receiving medical treatment. It wasn’t clear what the status of the</p>
+      <div class="tweet-stats muted">❤ 578 · ↻ 190 · 💬 0 · Apr 3, 12:16 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/NatashaBertrand" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/NatashaBertrand/status/2040101081296896162" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775226872" data-score="1139">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1507284795486879753/uMQ_pbsq_normal.jpg" alt="@NatashaBertrand avatar"/>
+          <div>
+            <div class="identity-title">Natasha Bertrand</div>
+            <div class="identity-subtitle">@NatashaBertrand</div>
+          </div>
+        </div>
+        <span class="pill pill-x">TWEET</span>
+      </div>
+      <div class="card-title">US fighter jet downed over Iran confirmed, search underway</div>
+      <p class="card-copy">A US fighter jet has been shot down over Iran, three US sources said confirming Iranian state media reports. US forces have launched search and rescue efforts, the sources said. Potential rescue efforts appeared to be captured in video posted to social media and geolocated by</p>
+      <div class="tweet-stats muted">❤ 753 · ↻ 192 · 💬 2 · Apr 3, 10:34 AM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/NatashaBertrand" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/NatashaBertrand/status/2040075482666852663" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775172604" data-score="610">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1507284795486879753/uMQ_pbsq_normal.jpg" alt="@NatashaBertrand avatar"/>
+          <div>
+            <div class="identity-title">Natasha Bertrand</div>
+            <div class="identity-subtitle">@NatashaBertrand</div>
+          </div>
+        </div>
+        <span class="pill pill-x">RETWEET</span>
+      </div>
+      <div class="card-title">US intelligence notes Iran retains significant missile and drone arsenal</div>
+      <p class="card-copy">RT @halbritz: NEW: Roughly half of Iran’s missile launchers are still intact and thousands of one-way attack drones remain in Iran’s arsena…</p>
+      <div class="tweet-stats muted">❤ 0 · ↻ 305 · 💬 0 · Apr 2, 7:30 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/NatashaBertrand" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/NatashaBertrand/status/2039847866290602148" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775229444" data-score="14479">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/>
+          <div>
+            <div class="identity-title">Claude</div>
+            <div class="identity-subtitle">@claudeai</div>
+          </div>
+        </div>
+        <span class="pill pill-x">TWEET</span>
+      </div>
+      <div class="card-title">Claude AI integrates Microsoft 365 for enhanced productivity</div>
+      <p class="card-copy">Microsoft 365 connectors are now available on every Claude plan. Connect Outlook, OneDrive, and SharePoint to bring your email, docs, and files into the conversation. Get started here: https://t.co/EdoQeT8BBN https://t.co/sOrigP41FJ</p>
+      <div class="tweet-stats muted">❤ 11980 · ↻ 935 · 💬 629 · Apr 3, 11:17 AM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/claudeai" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/claudeai/status/2040086268562842097" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775169987" data-score="13429">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/>
+          <div>
+            <div class="identity-title">Claude</div>
+            <div class="identity-subtitle">@claudeai</div>
+          </div>
+        </div>
+        <span class="pill pill-x">QUOTE</span>
+      </div>
+      <div class="card-title">Claude Cowork and Code Desktop now support Windows</div>
+      <p class="card-copy">Computer use in Claude Cowork and Claude Code Desktop is now available on Windows. https://t.co/TXjkhVhS7W</p>
+      <div class="tweet-stats muted">❤ 10787 · ↻ 1009 · 💬 624 · Apr 2, 6:46 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/claudeai" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/claudeai/status/2039836891508261106" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774897439" data-score="6275">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/>
+          <div>
+            <div class="identity-title">Claude</div>
+            <div class="identity-subtitle">@claudeai</div>
+          </div>
+        </div>
+        <span class="pill pill-x">QUOTE</span>
+      </div>
+      <div class="card-title">Auto mode available for Claude Code on Enterprise and API</div>
+      <p class="card-copy">Auto mode for Claude Code is now available on the Enterprise plan and for API users. To try it out, update your install and run claude --enable-auto-mode. https://t.co/m3CdLEfNeZ</p>
+      <div class="tweet-stats muted">❤ 4918 · ↻ 373 · 💬 611 · Mar 30, 3:03 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/claudeai" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/claudeai/status/2038693742094246032" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774890115" data-score="2193">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/>
+          <div>
+            <div class="identity-title">Claude</div>
+            <div class="identity-subtitle">@claudeai</div>
+          </div>
+        </div>
+        <span class="pill pill-x">TWEET</span>
+      </div>
+      <div class="card-title">New research preview features for Claude on macOS</div>
+      <p class="card-copy">Now available in research preview on Pro and Max on macOS. Enable it with /mcp. Docs: https://t.co/x9kSKedkjz</p>
+      <div class="tweet-stats muted">❤ 1911 · ↻ 97 · 💬 88 · Mar 30, 1:01 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/claudeai" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/claudeai/status/2038663019983479234" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774890114" data-score="1991">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/>
+          <div>
+            <div class="identity-title">Claude</div>
+            <div class="identity-subtitle">@claudeai</div>
+          </div>
+        </div>
+        <span class="pill pill-x">TWEET</span>
+      </div>
+      <div class="card-title">Claude works with diverse Mac applications beyond CLI</div>
+      <p class="card-copy">It works on anything you can open on your Mac: a compiled SwiftUI app, a local Electron build, or a GUI tool that doesn&#x27;t have a CLI.</p>
+      <div class="tweet-stats muted">❤ 1870 · ↻ 39 · 💬 43 · Mar 30, 1:01 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/claudeai" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/claudeai/status/2038663018427420698" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775154442" data-score="184">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/>
+          <div>
+            <div class="identity-title">OpenAI</div>
+            <div class="identity-subtitle">@OpenAI</div>
+          </div>
+        </div>
+        <span class="pill pill-x">RETWEET</span>
+      </div>
+      <div class="card-title">OpenAI acquires TBPN to expand capabilities</div>
+      <p class="card-copy">RT @tbpn: OpenAI Acquires TBPN https://t.co/Sdw32Weo4z</p>
+      <div class="tweet-stats muted">❤ 0 · ↻ 92 · 💬 0 · Apr 2, 2:27 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/OpenAI" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/OpenAI/status/2039771689131897173" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775148961" data-score="12558">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/>
+          <div>
+            <div class="identity-title">OpenAI</div>
+            <div class="identity-subtitle">@OpenAI</div>
+          </div>
+        </div>
+        <span class="pill pill-x">QUOTE</span>
+      </div>
+      <div class="card-title">ChatGPT now accessible via CarPlay for iPhone users</div>
+      <p class="card-copy">ChatGPT is now available in CarPlay. The voice mode you know, now available on-the-go. Rolling out to iPhone users running iOS 26.4+ where CarPlay is supported. https://t.co/yk3qdLa99r https://t.co/aXQqH9MNuG</p>
+      <div class="tweet-stats muted">❤ 10350 · ↻ 783 · 💬 642 · Apr 2, 12:56 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/OpenAI" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/OpenAI/status/2039748699350532097" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774990761" data-score="10942">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/>
+          <div>
+            <div class="identity-title">OpenAI</div>
+            <div class="identity-subtitle">@OpenAI</div>
+          </div>
+        </div>
+        <span class="pill pill-x">TWEET</span>
+      </div>
+      <div class="card-title">OpenAI closes $122B funding round at $852B valuation</div>
+      <p class="card-copy">Today, we closed our latest funding round with $122 billion in committed capital at an $852B post-money valuation. The fastest way to expand AI’s benefits is to put useful intelligence in people’s hands early and let access compound globally. This funding gives us resources to</p>
+      <div class="tweet-stats muted">❤ 8391 · ↻ 741 · 💬 1069 · Mar 31, 4:59 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/OpenAI" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/OpenAI/status/2039085161971896807" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774564891" data-score="1196">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/>
+          <div>
+            <div class="identity-title">OpenAI</div>
+            <div class="identity-subtitle">@OpenAI</div>
+          </div>
+        </div>
+        <span class="pill pill-x">RETWEET</span>
+      </div>
+      <div class="card-title">Codex introduces plugins integrating popular tools</div>
+      <p class="card-copy">RT @OpenAIDevs: We&#x27;re rolling out plugins in Codex. Codex now works seamlessly out of the box with the most important tools builders alrea…</p>
+      <div class="tweet-stats muted">❤ 0 · ↻ 598 · 💬 0 · Mar 26, 6:41 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/OpenAI" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/OpenAI/status/2037298931907084568" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774464872" data-score="202">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/>
+          <div>
+            <div class="identity-title">OpenAI</div>
+            <div class="identity-subtitle">@OpenAI</div>
+          </div>
+        </div>
+        <span class="pill pill-x">RETWEET</span>
+      </div>
+      <div class="card-title">Codex Creator Challenge offers $10K in API credits for students</div>
+      <p class="card-copy">RT @OpenAIDevs: Students: build something real in the Codex Creator Challenge, powered by @joinHandshake Try new tools. Have fun. Break th…</p>
+      <div class="tweet-stats muted">❤ 0 · ↻ 101 · 💬 0 · Mar 25, 2:54 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/OpenAI" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/OpenAI/status/2036879423040086036" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card market-stream" data-type="markets" data-section="markets" data-ts="0" data-score="0.07598555263080377">
+      <div class="card-header">
+        <span class="pill pill-markets">Markets</span>
+        <span class="market-kind">index</span>
+      </div>
+      <div class="market-stream-price">Dow · 46,504.67</div>
+      <div class="market-delta up">35.31 / +0.08%</div>
+      <p class="card-copy">Dow up slightly by 0.08%, showing modest market stability</p>
+      <div class="card-footer">
+        <span class="muted">stooq.com</span>
+        <a class="chip-link" href="https://stooq.com/q/?s=%5Edji" target="_blank" rel="noopener">Open market ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card market-stream" data-type="markets" data-section="markets" data-ts="0" data-score="1.076066277575349">
+      <div class="card-header">
+        <span class="pill pill-markets">Markets</span>
+        <span class="market-kind">index</span>
+      </div>
+      <div class="market-stream-price">S&amp;P 500 · 6,582.69</div>
+      <div class="market-delta up">70.08 / +1.08%</div>
+      <p class="card-copy">S&amp;P 500 rises over 1%, reflecting positive investor sentiment</p>
+      <div class="card-footer">
+        <span class="muted">stooq.com</span>
+        <a class="chip-link" href="https://stooq.com/q/?s=%5Espx" target="_blank" rel="noopener">Open market ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card market-stream" data-type="markets" data-section="markets" data-ts="0" data-score="1.8938624809756837">
+      <div class="card-header">
+        <span class="pill pill-markets">Markets</span>
+        <span class="market-kind">index</span>
+      </div>
+      <div class="market-stream-price">Nasdaq 100 · 21,879.18</div>
+      <div class="market-delta up">406.66 / +1.89%</div>
+      <p class="card-copy">Nasdaq 100 leads gains with nearly 1.9% increase amid tech strength</p>
+      <div class="card-footer">
+        <span class="muted">stooq.com</span>
+        <a class="chip-link" href="https://stooq.com/q/?s=%5Endq" target="_blank" rel="noopener">Open market ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card market-stream" data-type="markets" data-section="markets" data-ts="0" data-score="0.03771786884784649">
+      <div class="card-header">
+        <span class="pill pill-markets">Markets</span>
+        <span class="market-kind">crypto</span>
+      </div>
+      <div class="market-stream-price">Bitcoin · 66,945.65</div>
+      <div class="market-delta down">-25.26 / -0.04%</div>
+      <p class="card-copy">Bitcoin dips marginally by 0.04%, indicating slight crypto pullback</p>
+      <div class="card-footer">
+        <span class="muted">stooq.com</span>
+        <a class="chip-link" href="https://stooq.com/q/?s=btc.v" target="_blank" rel="noopener">Open market ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card market-stream" data-type="markets" data-section="markets" data-ts="0" data-score="0.2395298588954929">
+      <div class="card-header">
+        <span class="pill pill-markets">Markets</span>
+        <span class="market-kind">crypto</span>
+      </div>
+      <div class="market-stream-price">Ethereum · 2,053.68</div>
+      <div class="market-delta down">-4.93 / -0.24%</div>
+      <p class="card-copy">Ethereum falls about 0.24%, continuing minor downward trend</p>
+      <div class="card-footer">
+        <span class="muted">stooq.com</span>
+        <a class="chip-link" href="https://stooq.com/q/?s=eth.v" target="_blank" rel="noopener">Open market ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card market-stream" data-type="markets" data-section="markets" data-ts="0" data-score="0">
+      <div class="card-header">
+        <span class="pill pill-markets">Markets</span>
+        <span class="market-kind">commodity</span>
+      </div>
+      <div class="market-stream-price">Gold · 4,679.70</div>
+      <div class="market-delta up">0.0000 / +0.00%</div>
+      <p class="card-copy">Gold prices steady with no change, maintaining safe-haven status</p>
+      <div class="card-footer">
+        <span class="muted">stooq.com</span>
+        <a class="chip-link" href="https://stooq.com/q/?s=gc.f" target="_blank" rel="noopener">Open market ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card market-stream" data-type="markets" data-section="markets" data-ts="0" data-score="0">
+      <div class="card-header">
+        <span class="pill pill-markets">Markets</span>
+        <span class="market-kind">commodity</span>
+      </div>
+      <div class="market-stream-price">Crude Oil · 111.54</div>
+      <div class="market-delta up">0.0000 / +0.00%</div>
+      <p class="card-copy">Crude oil prices unchanged, reflecting stable energy markets</p>
+      <div class="card-footer">
+        <span class="muted">stooq.com</span>
+        <a class="chip-link" href="https://stooq.com/q/?s=cl.f" target="_blank" rel="noopener">Open market ↗</a>
+      </div>
+    </article>
+    </div>
+      <p class="footer-note">Updated 2026-04-03 07:55 PM EDT. Markets sourced from Stooq. News from tested RSS feeds. X cards now carry profile pictures when available.</p>
+    </section>
+  </div>
+  <script>
+    (function() {
+      const defaultFilter = "x";
+      const chips = Array.from(document.querySelectorAll('.filter-chip'));
+      const cards = Array.from(document.querySelectorAll('.stream-card'));
+      const searchInput = document.getElementById('streamSearch');
+      const sortSelect = document.getElementById('streamSort');
+      let currentFilter = defaultFilter;
+
+      function setActiveChip() {
+        chips.forEach(chip => chip.classList.toggle('active', chip.dataset.filter === currentFilter));
+      }
+
+      function applyFilterAndSort() {
+        const term = (searchInput.value || '').trim().toLowerCase();
+        cards.forEach(card => {
+          const text = card.innerText.toLowerCase();
+          const type = card.dataset.type;
+          const visible = (currentFilter === 'all' || type === currentFilter) && (!term || text.includes(term));
+          card.classList.toggle('hidden', !visible);
+        });
+
+        const visibleCards = cards.filter(card => !card.classList.contains('hidden'));
+        const sortMode = sortSelect.value;
+        visibleCards.sort((a, b) => {
+          if (sortMode === 'engagement') {
+            return Number(b.dataset.score || 0) - Number(a.dataset.score || 0);
+          }
+          if (sortMode === 'type') {
+            const typeCompare = (a.dataset.type || '').localeCompare(b.dataset.type || '');
+            if (typeCompare !== 0) return typeCompare;
+          }
+          return Number(b.dataset.ts || 0) - Number(a.dataset.ts || 0);
+        });
+
+        const grid = document.getElementById('streamGrid');
+        visibleCards.forEach(card => grid.appendChild(card));
+      }
+
+      chips.forEach(chip => chip.addEventListener('click', () => {
+        currentFilter = chip.dataset.filter;
+        setActiveChip();
+        applyFilterAndSort();
+      }));
+      searchInput.addEventListener('input', applyFilterAndSort);
+      sortSelect.addEventListener('change', applyFilterAndSort);
+      setActiveChip();
+      applyFilterAndSort();
+    })();
+  </script>
+</body>
+</html>
