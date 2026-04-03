@@ -1,186 +1,186 @@
-# Neima Briefing — 2026-04-03 09:29 AM EDT
+# Neima Briefing — 2026-04-03 07:00 PM EDT
 
-Tensions escalate in the Iran conflict with recent U.S. strikes and Iran's claim of downing a U.S. fighter jet, impacting global food prices. Meanwhile, AI continues to reshape industries from education to healthcare, and U.S. politics focus on defense spending and unresolved voting machine disputes in Georgia. Locally, Boston stories highlight community spirit and upcoming events.
+Tensions escalate as a U.S. fighter jet is shot down over Iran, with one crew member rescued and search ongoing for the other. In tech, AI threats like deepfakes and malware grow, while educational partnerships aim to guide AI use in schools. Locally, Boston faces police union unrest and a tragic school incident, amid ongoing sports updates.
 
 ## X watchlist
 
 ### @sentdefender (OSINTdefender)
 
-- A U.S. Air Force C-130 Hercules, possibly a HC-130J “Combat King II” Combat Search and Rescue (CSAR) Aircraft, and a pair of MH-60G “Pave Hawk” Combat Search and Rescue (CSAR) Helicopters seen earlier over the Kohgiluyeh and Boyer-Ahmad Pr…
-  Why it matters: Visual confirmation of U.S. CSAR aircraft operating over southern Iran.
-  Apr 3, 9:24 AM ET • TWEET
-  https://x.com/sentdefender/status/2040057819198575084
-- As Combat Search and Rescue (CSAR) Operations by the U.S. Air Force for a downed F-15E Strike Eagle are actively underway on the ground in Southern Iran, President Trump says in a post on TruthSocial: “With a little more time, we can easil…
-  Why it matters: Trump signals potential escalation in Iran conflict following CSAR operations.
-  Apr 3, 9:15 AM ET • TWEET
-  https://x.com/sentdefender/status/2040055664358166779
-- For the first time since the start of Operation Epic Fury, Iran has successfully shot down a U.S. fighter jet, with a search and rescue effort underway to locate two crew in Southern Iran, a source familiar with the incident tells Axios.
-  Why it matters: First confirmed downing of a U.S. fighter jet in current Iran operations.
-  Apr 3, 8:56 AM ET • TWEET
-  https://x.com/sentdefender/status/2040050832775807026
+- Reports of possible explosions in and around the Syrian capital of Damascus.
+  Why it matters: Reports of explosions in Damascus signal rising regional instability.
+  Apr 3, 6:51 PM ET • TWEET
+  https://x.com/sentdefender/status/2040200520128716996
+- Statement today from Republican Sen. John Curtis of Utah, as several Republican lawmakers begin to break from President Trump over the ongoing and escalating Iran War: “I stand by the President’s actions taken in defense of our national se…
+  Why it matters: Senator Curtis supports Trump’s Middle East actions, highlighting GOP divisions.
+  Apr 3, 6:00 PM ET • TWEET
+  https://x.com/sentdefender/status/2040187613185749297
+- There is a possibility this could also be footage from the shoot down of one of the MQ-9s that were also downed earlier today over Iran, though the location of the screen graphics and the angle of the aircraft makes it difficult to discern…
+  Why it matters: Uncertainty over aircraft type shot down complicates conflict assessment.
+  Apr 3, 5:53 PM ET • TWEET
+  https://x.com/sentdefender/status/2040185828446773542
 
 ### @NatashaBertrand (Natasha Bertrand)
 
-- RT @halbritz: NEW: Roughly half of Iran’s missile launchers are still intact and thousands of one-way attack drones remain in Iran’s arsena…
-  Why it matters: Iran retains significant missile and drone capabilities despite strikes.
-  Apr 2, 7:30 PM ET • RETWEET
-  https://x.com/NatashaBertrand/status/2039847866290602148
-- RT @jimsciutto: Exclusive: Roughly half of Iran’s missile launchers are still intact and 1000s of one-way attack drones remain in Iran’s ar…
-  Why it matters: Exclusive intel reveals resilience of Iran's military assets amid attacks.
-  Apr 2, 7:30 PM ET • RETWEET
-  https://x.com/NatashaBertrand/status/2039847857667150032
-- Hegseth asked Army Chief of Staff Randy George to step down, sources say. George will be retiring “effective immediately,” the Pentagon confirms.
-  Why it matters: Army Chief of Staff Randy George to retire immediately amid leadership changes.
-  Apr 2, 5:23 PM ET • TWEET
-  https://x.com/NatashaBertrand/status/2039816101652013324
+- An A-10 Thunderbolt II was struck by Iran on Friday, forcing the pilot to eject, according to a US official familiar with the matter. The pilot of the A-10, also known as a Warthog, was able to navigate the plane out of Iranian territory b…
+  Why it matters: US official confirms A-10 pilot ejected safely after Iranian missile strike.
+  Apr 3, 5:15 PM ET • QUOTE
+  https://x.com/NatashaBertrand/status/2040176398845821314
+- RT @TheIntelFrog: 🤯🤯🤯 2 aircraft lost in combat with at least 1 crew member unaccounted for at this time...
+  Why it matters: Two aircraft lost in combat raises stakes in Iran conflict.
+  Apr 3, 3:59 PM ET • RETWEET
+  https://x.com/NatashaBertrand/status/2040157216544522433
+- Good news: US forces rescued one of the crew members of a downed US fighter jet in Iran, according to three sources familiar with the matter. Two of the sources said the pilot was alive, in US custody and receiving medical treatment. It wa…
+  Why it matters: One crew member rescued and in US custody offers a hopeful update.
+  Apr 3, 12:16 PM ET • TWEET
+  https://x.com/NatashaBertrand/status/2040101081296896162
 
 ### @claudeai (Claude)
 
+- Microsoft 365 connectors are now available on every Claude plan. Connect Outlook, OneDrive, and SharePoint to bring your email, docs, and files into the conversation. Get started here: https://t.co/EdoQeT8BBN https://t.co/sOrigP41FJ
+  Why it matters: Microsoft 365 integration expands Claude AI’s productivity reach.
+  Apr 3, 11:17 AM ET • TWEET
+  https://x.com/claudeai/status/2040086268562842097
 - Computer use in Claude Cowork and Claude Code Desktop is now available on Windows. https://t.co/TXjkhVhS7W
-  Why it matters: Claude AI now supports computer use on Windows platforms.
+  Why it matters: Claude Cowork and Code Desktop now support Windows users.
   Apr 2, 6:46 PM ET • QUOTE
   https://x.com/claudeai/status/2039836891508261106
 - Auto mode for Claude Code is now available on the Enterprise plan and for API users. To try it out, update your install and run claude --enable-auto-mode. https://t.co/m3CdLEfNeZ
-  Why it matters: Auto mode feature introduced for Claude Code on Enterprise and API plans.
+  Why it matters: Auto mode in Claude Code enhances developer workflow on Enterprise and API plans.
   Mar 30, 3:03 PM ET • QUOTE
   https://x.com/claudeai/status/2038693742094246032
-- Now available in research preview on Pro and Max on macOS. Enable it with /mcp. Docs: https://t.co/x9kSKedkjz
-  Why it matters: Claude AI research preview expands to Pro and Max users on macOS.
-  Mar 30, 1:01 PM ET • TWEET
-  https://x.com/claudeai/status/2038663019983479234
 
 ### @OpenAI (OpenAI)
 
 - RT @tbpn: OpenAI Acquires TBPN https://t.co/Sdw32Weo4z
-  Why it matters: OpenAI announces acquisition of TBPN to expand capabilities.
+  Why it matters: OpenAI expands capabilities with TBPN acquisition.
   Apr 2, 2:27 PM ET • RETWEET
   https://x.com/OpenAI/status/2039771689131897173
 - ChatGPT is now available in CarPlay. The voice mode you know, now available on-the-go. Rolling out to iPhone users running iOS 26.4+ where CarPlay is supported. https://t.co/yk3qdLa99r https://t.co/aXQqH9MNuG
-  Why it matters: ChatGPT voice mode now available on CarPlay for iPhone users.
+  Why it matters: ChatGPT now accessible via CarPlay for hands-free use.
   Apr 2, 12:56 PM ET • QUOTE
   https://x.com/OpenAI/status/2039748699350532097
 - Today, we closed our latest funding round with $122 billion in committed capital at an $852B post-money valuation. The fastest way to expand AI’s benefits is to put useful intelligence in people’s hands early and let access compound global…
-  Why it matters: OpenAI closes funding round with $122B capital at $852B valuation.
+  Why it matters: OpenAI secures $122B funding, boosting AI development resources.
   Mar 31, 4:59 PM ET • TWEET
   https://x.com/OpenAI/status/2039085161971896807
 
 ## Top headlines / world news
 
-- U.N. Links Iran War to 2.4% Rise in Global Food Prices
-  The United Nations reports that the ongoing conflict in Iran has contributed to a 2.4% increase in world food prices, highlighting the war's economic ripple effects.
-  news.google.com • Apr 3, 9:14 AM ET
-  https://news.google.com/rss/articles/CBMisgFBVV95cUxNdzFNNVBmcTBwUWVwSF9MM2ZTUHJ3Z0h0STBKVlJMLTE3RFk4MVJuMTZoRkJENXVyOTZzVkZjcmlycGF0RkpoQld4QTNMaVEwVmxkR2o0SWtweXU0YjQ0WUVhRjhXbTlQdENiVjZBYzNSc1ZVZGlHQTdLaDhFUXdYWTQwVXAtbXROcnR0Y0wzSUdsNE1FdkhudVNodmNCTjdrOGgxaVNQel9uLU1JT1FIeXRB0gG3AUFVX3lxTFB6Q3RHVWpwZzNBSWFYelFJS1BjSGlDb2lWQjVzT2kxTTVoXzN0RGgxX0JsSDc3YW5NVUphUy1GMlNDM2NBU1p0aW05eGd6NC14LUNaT3pCb19CMFdMRlpwN3V6Zi1GZmh3RWxSV01PV0Q3NGVNTkpCa0pqMHpRZ21pTHlmeGtrV1A2djZZaU16amlJdHBnTE5GbzRzSW45WkVSbm53bEtpS0hfUkhpdXdyR3Bvb25NYw?oc=5
-- Iran Leaders Rally in Tehran to Assert Wartime Control
-  Iranian officials joined crowds in Tehran to project strength and control amid ongoing conflict and international pressure.
-  news.google.com • Apr 3, 9:12 AM ET
-  https://news.google.com/rss/articles/CBMixgFBVV95cUxQY1R1bkJEQnQ0c010bkdmUXhUU3BnaU55emd3VDRfVzdIU3JBN1diMW1rakk1Q21LS01FQ1o3T1hyS1R4cklxN0FLU1U2UGNGR01adkZXRTM2UjVSVzkwRDBhSnZPTFVnOU9fNWJ1VXpTWm9sUWRjT3hyUU93MUdZdVAydVlJT1QxMm0tOFVrQUs5bnk3N282NDlWd29SV1RUVVR0ZXd3QWJ0YVhUODF6bW1OcDhGejlLZnV5ZThLcmc5cTgtc1E?oc=5
-- Trump Warns U.S. 'Hasn't Even Started' After Iran Bridge Strike
-  Following a U.S. strike that destroyed a bridge in Iran, former President Trump issued a warning suggesting further military actions could escalate.
-  news.google.com • Apr 3, 9:11 AM ET
-  https://news.google.com/rss/articles/CBMivwFBVV95cUxOQm9zdThxNk9yZGxPSWFycjJ1SXhOTDhZNUxPc0tKVmc3ZjlINDU0WC03VHY1QnRkdjUwNUozOV96aXp0R2pWSkV5QUhSaFB2SmNEM09Xa1VNSjNCbGYyNFNGN0o3OV84SUlFTE5pUUVDNjhna29fQmt6UXpyNzhjWXBaM3lTbEpyWGItbjlEVEN3S0tSdGdkZUJBR0NTWGpoVWJ2TnBGeVZmR0w5ckpvV08tY0c2b1ZIbXJHeEdBNA?oc=5
-- Funny old world: the week's offbeat news - CBS 19 News
-  Funny old world: the week's offbeat news CBS 19 News
-  news.google.com • Apr 3, 8:55 AM ET
-  https://news.google.com/rss/articles/CBMitAFBVV95cUxNblMyd3FUYlMyT1FCWkhYSWxUN3ZuUTUwX2c0YWtISHRINExqb25UNzF2dkdFVGpRMkduTmwxU2pCNnBDVmZfOW1lRktZc2NCZVZhQVRkLTJDSlltNHdibldsOUZVVWd2VFJQdmxSY011OFNDSHlPNXlKeEFpSGx5dmZoS184MFVLQnJfQi1SVFVBV1ktSHQyQ0p1S09MZW9IMnNSR2hTRXVzODd3WXdTT0txQlQ?oc=5
-- Iran Claims to Have Downed U.S. Fighter Jet
-  Iran released photos alleging they shot down a U.S. F-15E fighter jet, with search and rescue operations underway for the crew.
-  news.google.com • Apr 3, 8:36 AM ET
-  https://news.google.com/rss/articles/CBMijwFBVV95cUxObVlIWE5WVkQ3UDhwWU1USURPQVdVWjY1ZEF4VUlqcXB3S1JDLXE1VVJrU05POUpJNXB6V19ETWd5TmpZaDBFOUM3WXA5ay1kNFpFRldFQW9YcGFvZGhqTWdWdEtfVlo4clMxU1dEQ1JJOElyZS1Mb011dm9ob3pmRk5pUVYxTTJYeEtyT3Zacw?oc=5
+- US Fighter Jet Shot Down Over Iran; Crew Status Uncertain
+  A U.S. fighter jet was shot down over Iran, with one crew member rescued and the other still missing as search efforts continue.
+  news.google.com • Apr 3, 6:51 PM ET
+  https://news.google.com/rss/articles/CBMid0FVX3lxTE9FN01jYmFiZTE1Z0F6eVdfTHpTNlJNYU05MERqQ1dHOTNhRVhmYTdtdGhlc2JmbUdud1hnN2ZRdElvbF9BSEpDaHN0dHZaV2YtSEhkU2pVRlhnVm84MEtwMmNmbndkNHdLYVNRZVc3LWRUbk1Qb3I4?oc=5
+- Fire Erupts at San Francisco International Airport
+  A fire burned cargo containers and debris at San Francisco International Airport, prompting emergency response.
+  news.google.com • Apr 3, 6:36 PM ET
+  https://news.google.com/rss/articles/CBMikAFBVV95cUxPN3h3Z1lFTHRKdnpBTnRXRlFOVV9VUWdoenAxZGlOWW00a2ZBQ21kNWJnMzBrRUdIaG8ta2FVVmJ1ZlphSzhRZG1RbGpZbVU5OUdpdTdYamdEN2NGQzhocXJuQ3ZDdkVuM0hGMXJOOHJNcUtfaUFyZ0tzWDFqWHNxY1dNcWdOVE0yNko0Nk1JbDA?oc=5
+- US Officials Confirm Fighter Jet Downed Over Iran
+  U.S. officials confirm an F-15 fighter jet was shot down over Iran, with search and rescue operations underway.
+  news.google.com • Apr 3, 5:44 PM ET
+  https://news.google.com/rss/articles/CBMixAFBVV95cUxPTGlIcmp6ajhocl9IYVNsSVE1TmFlaUUwSFJ5RkREMWhhNlhfN3NqeTgxa2lJZ1pjenY0blE2ZU1kV25USHd6VUY4UGJ0ekRZVUltU1k5NzUtSm5iVUU3cVk0Mmt1Z25XeE1LSHdKRlhHYXhUdm5jemVGTDZVQ1pVeEIxbWhYRGdfMTI5c1dfMXF1bkp3NkZYWmhMLUJuTF9udTFsUHNXd1Z0OEpNQVVGc3ZaR0FCbGtwU2FrNmMtRG5OTDVI?oc=5
+- One Crew Member Rescued After US Jet Downed in Iran
+  One crew member was rescued following the downing of a U.S. fighter jet in Iran; search continues for the second crew member.
+  news.google.com • Apr 3, 5:39 PM ET
+  https://news.google.com/rss/articles/CBMickFVX3lxTFB1X0VUMVZ6TUFhejJCb01YajYzVnNQRklkeGZTWm13OGlWMnNoWkliaWZMN3U3YnM2eW5JMmU2dlpDRmFQb2REeGg2Ty1hOExwbFNoTXRfUUNZZFhGcnIxdERvWnVfSmJNNHV6aU9JRkpudw?oc=5
+- US F-15 Downed Over Iran; Rescue Efforts Ongoing
+  After a U.S. F-15 was shot down over Iran, one crew member was rescued while efforts continue to locate the other pilot.
+  news.google.com • Apr 3, 5:35 PM ET
+  https://news.google.com/rss/articles/CBMiogFBVV95cUxOZkViNTFMUmJmb3FXQXRVcGxwa2NjWlJnR1hyemJXNGduS1B2WG5MRHA1MDVzYU1nQ1l5Qno5M0V6czlnQ2NHMGphU0ZPam1TeXVTUWtOX0h4X0x3UFhKNEVYTE05Rmw3T3Fvdm01el8wR1J3d2U4NEtjR21USWtDZW1Tb1FtRWZDSkp1NXhINXZWdk5mM2xnRWV0bldON005ZlE?oc=5
 
 ## AI / tech / business highlights
 
-- AI Forecasts NASCAR Whelen Modified Tour Race Outcomes
-  Artificial intelligence is being used to predict results for the NASCAR Whelen Modified Tour 150 at Thompson Speedway.
-  news.google.com • Apr 3, 9:28 AM ET
-  https://news.google.com/rss/articles/CBMivwFBVV95cUxPT1cwQ3RFS1VPVFNOTzZKRkhyWFRJVEt3dlRLWUF6Q1M4R1I5SDlSdmlxWUllY2otcVJoMGlnR3JSTC16T2MxMDdEakJkS0s5NU5IVlh0akZCSE9MQnpwUDRjdHBweXJRMzE5MFJtTHh4QmdfV1o1XzBlZGNIX21DNDhQa3BuSDFOdWFuMmE4cXRTLU5ES2pzbURaT3Mwc1l6V2hJTEhTMG40UmVmVTRwVkFWbFVSdzl0U3hTMlhpRQ?oc=5
-- AI Influences How Students Choose College Majors
-  Artificial intelligence tools are changing the decision-making process for students selecting their college majors.
-  news.google.com • Apr 3, 9:24 AM ET
-  https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWFY1R2pvOUVCMUVCeXhWQUtWbndsQ1RLYnpyX29XalRpZ0pfTFVpLVRoeUl1cDk4RnFuN2l5dFhjSF95OXlMVF9Vb3hKd3pRVzRScVN1Z1o3UzdwUWVwUUFUVTJIVjhTVWZWUjNJSk04OXo0V0VVc0ZNcU9JRkpRYVhvVDdraGotcGxn?oc=5
-- Healthcare Sector Poised to Scale AI Innovations
-  Experts emphasize that now is the critical time to expand AI applications in healthcare to improve outcomes and efficiency.
-  news.google.com • Apr 3, 9:22 AM ET
-  https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQzN6Q19PS1pIYnA0QXVMTzhRTWk2SFNYM1g1Z094ZEVYLXQyRlFUMGphZ0g4cUJlSWJSOVQzR3ZhWXh6QXRRV1R0OWwwZVk0WkxfVlB6dmxELUhzbi04T1BSdVRxRnpObTk2LXg2SEc3SE5YNmM5ejFWQWl1OG9nckl0MDBuTlFI?oc=5
-- AI Stock Surges 862% in 12 Months, Overlooked by Wall Street
-  An AI-focused stock has risen dramatically over the past year, yet it remains underappreciated by mainstream investors.
-  news.google.com • Apr 3, 9:22 AM ET
-  https://news.google.com/rss/articles/CBMi8gFBVV95cUxNLWtKZVkwcnRlOUZUdHkzNDJVdFZ0MlZIbjhGZHNkVklXWFJXRnJNdVF5REtndXdPc0ZYNmlIUmtmYzl5ZmphUnBjdVl1NV8wa1JyNnc0TnplLU0zM0F1WU9uNDRXdmt6RkJiYkRKR25TX001anFSeE1adlo1cGlTMXBqQ2lHbjhCQ3JIaTYxalhrbVhsU3JocTdtWU5pWmZmUEpHNDFqY3JwRTVnVEZWWVBMN0ExM3VSM0NjNWYyWkg3dVRiLTg0dEdVQUxIT2xodENMZnhzREZjX2dyTjBoc1Z1R09QTXRGMERIMWRtMEtIZw?oc=5
-- Google's Latest AI Development Could Yield Unexpected Market Leader
-  Google's newest AI project may create a surprising winner in the tech industry, according to analysts.
-  news.google.com • Apr 3, 9:16 AM ET
-  https://news.google.com/rss/articles/CBMikgFBVV95cUxPTnNUaVdSOEFuSkItRlJHX3Z0bmJ0REl4aEpDUlpuUV9lOEV0VC1YNEtIeU5JUXdSNlBsSHJ1c0FnZ2wxZlA0WTMzU0pJSGJCRmJpYlByVThTT09mdXY1Yklkakx2Z2dNVDFXeERETlpWNGlHY2tSdXVhWmEtUncxUjczUWZWdVFtNWZXUUVNZkdyUQ?oc=5
+- AI Deepfakes and Malware Increase Cybersecurity Challenges
+  The growing use of AI for creating deepfakes and malware is complicating defense strategies for cybersecurity professionals.
+  news.google.com • Apr 3, 6:36 PM ET
+  https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRUY5MVZHdnl4VFFPRDZsT3lGcFl1aG41ejE0aERPMXF5bUZObzdWd3ludUVjQkxYNVhuWGVjalc3SlJmVzZPV0ZOUnQ0ZF9DSlJOVGpGZUNXRkVDTFJUbnBRT0p1bEg0WngyZXpkRDhRaVR6aGpWQzNNV1lFMzNkX0N5blVkTU92akxhbkZBNTY2dzNBTzhLVVJqd3BFcE55SF9ocE5Vd0c4ZnlaZi0ybThWVnZaWmpB?oc=5
+- Digital Promise and TNTP Collaborate on AI Guidance for Schools
+  Two organizations partner to develop frameworks guiding responsible AI use in educational settings.
+  news.google.com • Apr 3, 6:36 PM ET
+  https://news.google.com/rss/articles/CBMipAFBVV95cUxNUU1DVU1Belg1VHFsM0pyUGg0ZDRORFFyaWFvS2RKVmZzek5QSmdZYm5lcXBUMzBZcXcyMzlfal80TlZNOVB6Qmx1YUV6blljOHo5MWlQVkZpUmhTeVc0SjZZeHd3V1llbmNwMmZUcmJsOTBLZTByMlZ5Yk5lQ1JRamFVQ2dOY3ZwQjl1dDFXNDl1RUc0ZnQ4d0oxTnExVG5XM1lNbA?oc=5
+- Anonymous Social App Gains Traction in Saudi Arabia
+  The app Fizz has unexpectedly become popular in Saudi Arabia, reflecting unique social media dynamics.
+  techcrunch.com • Apr 3, 6:24 PM ET
+  https://techcrunch.com/2026/04/03/the-anonymous-social-app-that-thinks-it-can-work-in-saudi-arabia/
+- Ireland Emerges as a Growing Hub for AI and Tech
+  Ireland is gaining prominence in the AI and technology sectors, attracting investment and talent.
+  news.google.com • Apr 3, 6:23 PM ET
+  https://news.google.com/rss/articles/CBMipwFBVV95cUxOWGhfYVh2VzhESVlZdG5XVWRzZktuMDRkdVI5WFowbkhOSThHNWhVRmxpSzdiR1BBeHVRWGktM2piM3N3OXE5N1d5RldxazFPVHJPSWZxRUVCcWRxNi0wZmNJa0k4WTdra3E5bnc0MEVtb1RBdjFoVktvZHJPWXk1czRYMWhfSURJckE1eUNUYXJfLWJ0bWJJWEc2RDJSNVNBM2p6TFRscw?oc=5
+- Job Seekers Adapt Behavior When Evaluated by AI
+  Research shows job applicants mask emotions and act more analytically when assessed by artificial intelligence systems.
+  news.google.com • Apr 3, 6:12 PM ET
+  https://news.google.com/rss/articles/CBMitwFBVV95cUxNMU5mU2dnUVJZRUNxbHY3dGRXdGFTSkxFODlhdE1NeWlhM01qUHVBRzh1RUpnN0FORjFVcVNRWHN1dS1FWFRwX2FhZTNmd3RYU2g2R3lnUFExUUUteXV2SU1obWNnVXFlemxsNllCVmRqQUtoT0pVcEpIdmZIczJzTHp2NG1QaWhCYnFVRDZIMl9LMzd3SVhwTGE5SDNXZEh5WVZYZnJra3Q3cUpaZzU1MDIzWk1tWkk?oc=5
 
 ## US political news
 
-- Debate Over U.S. Targeting of Iran Civilian Infrastructure Intensifies
-  Questions arise about whether U.S. strikes on Iran's civilian infrastructure constitute war crimes amid ongoing conflict.
-  news.google.com • Apr 3, 9:00 AM ET
-  https://news.google.com/rss/articles/CBMiugFBVV95cUxNcGlZMFlLZnQ5dk1rbnptWkNnMkI5aVlKb2VsbHVUNV9HMkdSak9oWjhNYkRmWkJXZFFlcURoRGg2MExGcktDQkNzWDdDczV3VU5EckxwWlhoNGlZZW5xMjluVG9BdjdLeVJnYk52eWNDQ0lvMGpzeEtJR3hTc3h0eG5xU2EybllkcWNDZ1Zva0lQeEdZVExGUVF1TW9JTUl3cnFiTEp5OG40MVZrM0lXWWdaU2piQUZab3c?oc=5
-- Georgia Lawmakers End Session Without Resolving Voting Machine Dispute
-  The annual legislative session concluded with no agreement on conflicts surrounding voting machines in Georgia.
-  news.google.com • Apr 3, 8:50 AM ET
-  https://news.google.com/rss/articles/CBMie0FVX3lxTE5qSnlVZVgzZFZtTXd2NUk4cFVxSG13ZUlqMFNuemxZakR3Zjl3Y0tEb2NQcDdMUFdxY0lfNGlJVXl4TndkemMxaHk3Z0ZRVW5PTE1qTS00TFZzUjExbS1YZVZ4c2N1aUszcmc2bDF3Y201UDRYeVZIc2pTVQ?oc=5
-- White House Requests $1.5 Trillion Defense Budget
-  The administration seeks a substantial increase in defense spending in its new budget proposal.
-  news.google.com • Apr 3, 8:23 AM ET
-  https://news.google.com/rss/articles/CBMitwFBVV95cUxOTjdOa3QzZThLYVU1d2I4WmxRUGcxTmt3X3lrSWUtUExoeUZDMGRIMVBaN1FWWXBzTnBLZFNMX1pRLVE0c19yLWZCaDRGUkNQMmREU3N5bUJNNzhfT3pNejJCWFNKLTF4V1cxRy1IMTdMTUdVWG5HVjc3R2RBUUY2SHJEZFpGRXc3cUZDeHUyX0JFenJOXzdFZ25USmdSMnYtUHY1dzRBXzhyaVBJbURyenh0ckVMWms?oc=5
-- Midwest Veterans Oppose Iran War After Loss of Six Soldiers
-  Six U.S. soldiers from the Midwest who died in the Iran conflict have prompted local veterans to voice opposition to the war.
-  news.google.com • Apr 3, 8:14 AM ET
-  https://news.google.com/rss/articles/CBMijwFBVV95cUxORG5Fbl9TMWM4OXVDdEdqUHBOTWlaQjE0ODBKeDdMNnJydFRRMko3VTFTWGdFbkhfRkRsV1I1M3dEUTJkVGsxS0ZPWER3Nm1WNE9pRU9LZGM3U2U1WlJYazE4SU0zeEpsaDlKNXV2Z2pTSzlnclB5NDFZNDJQVk1hNmZIR3lVbk85WVd1dHlwaw?oc=5
-- Cuba Releases Over 2,000 Prisoners Amid U.S. Pressure
-  In response to U.S. diplomatic efforts, Cuba has freed 2,010 prisoners as part of ongoing negotiations.
-  news.google.com • Apr 3, 7:59 AM ET
-  https://news.google.com/rss/articles/CBMibkFVX3lxTFBTNDVPdXRQdkZOTHN3NWgtOFJYdXo2V2RkazVzY3UyLXF1T2RWMWhybG9pRVRVSkxOWWpFYWhYUVJ0akJndlZyTXc0cWNHTl9TQkFFMEhKR0JaLXNZcm9DaU15MFNmVmFVMTBsbFZB?oc=5
+- Trump Orders DHS Staff Paid Amid Partial Government Shutdown
+  Former President Trump issued an order ensuring Department of Homeland Security employees receive pay despite a partial shutdown.
+  news.google.com • Apr 3, 6:57 PM ET
+  https://news.google.com/rss/articles/CBMimgFBVV95cUxQUjVmV0p6UW5zc055MmN5MkVCSVpLQlFySXVHQ252Wk5BTXp3c0ZkOG5WbW14OEtCZDYtSDFKSEF1dEZkOTIyYnZ3cmNfNzVEeHgyR1pQQWYwQ2NmYW92UDE0N0Q5bk8xeXQxMWRSVmZvbjBuVTFBazNGZWRrMG5RYzdpblVoQ0RwejJqdVlaT21iX3lLSlpkZjJ3?oc=5
+- Trump Targets ‘Woke’ Federal Programs in Budget Proposal
+  Trump’s budget proposal seeks to cut federal programs he labels as ‘woke.’
+  news.google.com • Apr 3, 6:55 PM ET
+  https://news.google.com/rss/articles/CBMihAFBVV95cUxPZUhqSlNmMDNZQjhxSVpZbUlBTEFUU1ozTzFTTUFoc29pbi1FTHFZQUphc2NMZEdLTlBoSTh0OHRLdU5xajNPczlFc2dRZS1tMzZ6NGh3Tk9ueXA0V0NmYzJRc0hwUEZfSENWRjJlVGc0ZUJtZTRZT3VxX2pGbmpGRTF2YmY?oc=5
+- US Military Archbishop Questions Justification of Iran Conflict
+  The US military archbishop stated the Iran conflict does not meet the ‘just war’ criteria.
+  news.google.com • Apr 3, 6:39 PM ET
+  https://news.google.com/rss/articles/CBMigAFBVV95cUxPZ0psYkxnS2N6dnRDZWpNOGRzcmdyRlZ3QmFNT3JFTVlDLWNITWdSR0hnUUNiUGRmS3g5LWdRcGFZaGVvVTRQVnBnN0ZIenBpVXRSTndFLUV5cXo0OXk5eUY3MVJ3WmVMRi1jZFZFM1dEbFpQTWZZYmZCN3RWYnBjYQ?oc=5
+- One Crew Member Rescued From US Jet Shot Down in Iran
+  US officials confirm one crew member was rescued after a fighter jet was downed over Iran.
+  news.google.com • Apr 3, 5:56 PM ET
+  https://news.google.com/rss/articles/CBMie0FVX3lxTE9mN3NwMnBlUTNpeEItMUFiQ3Z0R3ZuQjRyd3pUY0FaS05RTmFZOXBGWVFMZnBHLTNfa2NWNUthNlpGbEZSSk1QMmplQWpiTU9IYjZ5Q0g5bm1BNy1LNDdmY0VwUk9ZWFZjaXRlc2o4N0VfQ216OGhpV1pLZw?oc=5
+- Democratic AGs Sue Trump Over Mail Voting Restrictions
+  Democratic attorneys general filed a lawsuit against Trump’s order limiting mail-in voting.
+  news.google.com • Apr 3, 5:41 PM ET
+  https://news.google.com/rss/articles/CBMimgFBVV95cUxOVDNzT1RfaGxVREZTWGQtZjhzS0pZMjluZi11N3NIaGVfREVSUjlscjhELUtVTzl1RkNGaHJjcVEtaVZVV2Z0ZGR5NUxfZmQyRFlwaDVxNnJHbTFLaGZhUVJNUlFZbFFtSjc1Rm5qb2hRR0dENDdIdWRUejVmbUZXMmVZSTZEdE1tV29tWmpDVTZFcVZtVGtad3ZB?oc=5
 
 ## Boston / local
 
-- MBTA-Themed Sweater Knitted in Tribute to Boston Commutes
-  A local artist created a sweater inspired by Boston's MBTA system, gaining positive attention online.
-  boston.com • Apr 3, 9:18 AM ET
-  https://www.boston.com/news/local-news/2026/04/03/mbta-knit-sweater/
-- WBZ Mid-Morning Weather Forecast for April 3, 2026
-  Local weather update provides the mid-morning forecast for Boston and surrounding areas.
-  news.google.com • Apr 3, 9:15 AM ET
-  https://news.google.com/rss/articles/CBMilwFBVV95cUxPWDg4Q0FmeDd6ZzFnNGJ2UTZuVnVkejZMd2ppZDZZSE1NcVdHWDJKZlZsdDF6ZmtqdXRwZ2NUMnowZEJxQmQwakltNUM5XzVLeFFfaFFfMW9yNnlMMmhsanppU2I5T3VBUjNrZ0tZVDVlZEo3b19rTVBaaWV2eHRKVDdwU0o5LTRsMlc1bm9hb25OWTZqb0pv?oc=5
-- Deven Pintabone - Boston Agent Magazine
-  Deven Pintabone Boston Agent Magazine
-  news.google.com • Apr 3, 8:24 AM ET
-  https://news.google.com/rss/articles/CBMif0FVX3lxTE1sS190WmZ5b3E2clFKM1A1RTYyNWJ2RTZWLXppUUhFckE5bGpNb2NYN1JsTkZkR2w5a1hFLU9mMTA3UThVbm1fT0N5dDBuZXM5U255eWoyZTVwVHpQVktLMTRUNHZxZUhZaWdTQjNtUFRTT20wZzFRTWtzRUo2bTQ?oc=5
-- Wellesley Senior to Run First Boston Marathon After Years Cheering
-  An 18-year-old from Wellesley prepares to run the Boston Marathon to support a local learning center.
-  boston.com • Apr 3, 7:49 AM ET
-  https://www.boston.com/community/boston-marathon/2026/04/03/emmie-laudano-tierney-learning-center/
-- Greater Boston Weekly News Quiz Highlights Local Stories
-  A quiz covering recent local news includes topics like a celebrity surprise and a notable break-in.
-  boston.com • Apr 3, 7:43 AM ET
-  https://www.boston.com/culture/quizzes/2026/04/03/greater-boston-news-quiz-beverly-lady-gaga-love-overboard/
+- San Diego Padres Face Boston Red Sox in MLB Matchup
+  Coverage of the recent MLB game between the Padres and Red Sox.
+  news.google.com • Apr 3, 6:21 PM ET
+  https://news.google.com/rss/articles/CBMitAFBVV95cUxQLXFYdXV6SWJ6eG1oS3N4ZGFaQzU2NXpwVGpUanlOZUt1ZV80Y2EwWlhCM194UTgzal9QR2FfdjdtZ2o1cjhRWDJTT2VTSlI5SkpVZmNXc1dMcFRSdEVvSEI2ZU54VDZKR0VrN2lOTTk5VFh3SEFjVWJwZTV6d1RzcFY3OWVXZXdVVUpvUDVQQmdkakRtNS1lZ05QYzBpM3k3QU9wM0NuNm13VXhtVzVnT0diU1g?oc=5
+- Patriots Announce Offseason Workout Schedule
+  The New England Patriots released dates for their upcoming offseason workouts.
+  boston.com • Apr 3, 5:59 PM ET
+  https://www.boston.com/sports/new-england-patriots/2026/04/03/patriots-offseason-workout-schedule-2026-otas-minicamp/
+- Patriots Consider Doubling Up on Edge Rushers in Draft
+  Latest ESPN mock draft suggests the Patriots may draft multiple edge rushers.
+  boston.com • Apr 3, 5:42 PM ET
+  https://www.boston.com/sports/new-england-patriots/2026/04/03/patriots-mock-draft-espn-cashius-howell-gabe-jacas-comments/
+- Lawrence Police Union Calls for Mayor’s Resignation
+  Amid allegations of secret recordings, the Lawrence police union demands the mayor step down.
+  news.google.com • Apr 3, 5:40 PM ET
+  https://news.google.com/rss/articles/CBMihgFBVV95cUxNTGlKQkVlNEo4b19ka1RJelJudG1GdGZ6RWM4VXFhdEZuM1BEM2JCYVBuNXprMDRfVlBTUUtPOFdvRENGcFlQRDdzdTNQTkVjWkh5eVZZV0xxODBqT1hpRDdnTVZhcjFKckwzVk1YVnlHYW1OSk4yZ0ZaRi1IU0pZMWFkazE1Zw?oc=5
+- 12-Year-Old Arrested in Death of Classmate at Local School
+  A 12-year-old was arrested following a fatal bullying incident involving a metal water bottle.
+  boston.com • Apr 3, 5:35 PM ET
+  https://www.boston.com/news/crime/2026/04/03/12-year-old-was-arrested-in-death-of-a-classmate-who-was-hit-in-the-head-by-a-metal-water-bottle/
 
 ## Popular / trending
 
-- CSK vs PBKS Trending Sports Topic
-  The cricket match between CSK and PBKS is currently trending among sports fans.
-  trends.google.com • Apr 3, 9:10 AM ET
+- Bulls vs Knicks Trending
+  High interest in the Bulls vs Knicks basketball game.
+  trends.google.com • Apr 3, 6:40 PM ET
   https://trends.google.com/trending/rss?geo=US
-- Tigers Game Gains Popular Attention
-  Interest spikes around the latest Tigers game in sports trending topics.
-  trends.google.com • Apr 3, 9:00 AM ET
+- Hawks vs Nets Trending
+  The Hawks vs Nets matchup is drawing significant attention.
+  trends.google.com • Apr 3, 6:40 PM ET
   https://trends.google.com/trending/rss?geo=US
-- Walt Disney World Trending Among Travelers
-  Walt Disney World remains a popular search topic for travel and entertainment.
-  trends.google.com • Apr 3, 9:00 AM ET
+- Flyers vs Islanders Trending
+  The Flyers vs Islanders game is trending among sports fans.
+  trends.google.com • Apr 3, 6:40 PM ET
   https://trends.google.com/trending/rss?geo=US
-- Noah Cyrus Trending in Entertainment
-  Noah Cyrus is a current focus in entertainment news and social media.
-  trends.google.com • Apr 3, 8:50 AM ET
+- NBA Playoffs Start Date Sought
+  Public interest grows around the start date for the NBA playoffs.
+  trends.google.com • Apr 3, 6:30 PM ET
   https://trends.google.com/trending/rss?geo=US
-- PECO Trending in Energy Sector
-  PECO is gaining attention, likely related to energy or utility news.
-  trends.google.com • Apr 3, 8:50 AM ET
+- Jose Ramirez Trending
+  Jose Ramirez is a trending topic, likely related to sports news.
+  trends.google.com • Apr 3, 6:30 PM ET
   https://trends.google.com/trending/rss?geo=US
 
 ## Podcast script
 
-Good morning. Today's top story centers on the escalating conflict involving Iran. The U.N. reports a 2.4% rise in global food prices linked to the war, underscoring the broader economic impact. Iran's leaders have taken to Tehran's streets to demonstrate control amid wartime pressures, while the U.S. has conducted strikes, including one that destroyed a key bridge. Notably, Iran claims to have downed a U.S. fighter jet, with ongoing search and rescue operations underway. In U.S. politics, the White House has proposed a $1.5 trillion defense budget amid debates over voting machine conflicts in Georgia. On the technology front, AI is influencing how students choose college majors and is poised to revolutionize healthcare delivery. Boston locals are sharing inspiring stories, such as a high school senior preparing to run the Boston Marathon and creative tributes to the MBTA. Stay tuned for more updates and have a productive day.
+Good morning. Today’s top story centers on escalating tensions in the Middle East, where a U.S. fighter jet was shot down over Iran. One crew member has been rescued and is in U.S. custody receiving medical treatment, while search efforts continue for the second. This incident marks a significant development in the ongoing Iran conflict, with U.S. officials and allies closely monitoring the situation. Meanwhile, in technology, the rise of AI-driven threats such as deepfakes and malware is complicating cybersecurity defenses. On a positive note, organizations like Digital Promise and TNTP are collaborating to develop AI guidance for schools, aiming to harness AI’s potential responsibly in education. Closer to home in Boston, the police union has called for the mayor’s resignation amid allegations involving secret recordings, and a 12-year-old was arrested in a tragic school bullying incident resulting in a classmate’s death. Sports fans can look forward to updates on the Patriots’ offseason schedule and recent MLB matchups. Stay tuned for more updates as these stories develop.
 
 Formatted version: https://neima3.github.io/daily-briefings/
