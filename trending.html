@@ -5,123 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trending — Deep Midnight Edition | The Informed Curator</title>
   <style>
-    :root { --bg:#0b1020; --panel:#11182b; --panel-2:#182139; --border:rgba(255,255,255,0.08); --text:#e8ecf8; --muted:#9ea8c7; --brand:#8fa9ff; --brand-2:#5f7dff; --green:#67d18e; --red:#ff7b89; --shadow:0 20px 60px rgba(0,0,0,0.35); }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,sans-serif; background:radial-gradient(circle at top right, rgba(95,125,255,0.18), transparent 24%), var(--bg); color:var(--text); }
-    a { color:inherit; text-decoration:none; }
-    .layout { max-width:1420px; margin:0 auto; padding:24px; }
-    .topbar { position:sticky; top:0; z-index:20; backdrop-filter:blur(16px); background:rgba(11,16,32,0.88); border-bottom:1px solid var(--border); }
-    .topbar-inner { max-width:1420px; margin:0 auto; padding:16px 24px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
-    .brand { font-weight:800; letter-spacing:-0.04em; color:var(--brand); font-size:22px; }
-    .nav { display:flex; gap:12px; flex-wrap:wrap; }
-    .nav a { padding:10px 14px; border-radius:999px; color:var(--muted); border:1px solid transparent; }
-    .nav a.active { background:rgba(143,169,255,0.12); color:var(--text); border-color:rgba(143,169,255,0.25); }
-    .masthead { display:grid; grid-template-columns:1.35fr .65fr; gap:18px; margin-top:26px; align-items:stretch; }
-    .hero, .section-shell, .audio-panel, .controls-shell, .roster-shell { background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid var(--border); border-radius:26px; box-shadow:var(--shadow); }
-    .hero { padding:28px; min-height:300px; display:flex; flex-direction:column; justify-content:flex-end; background-image:radial-gradient(circle at top right, rgba(143,169,255,0.22), transparent 26%), linear-gradient(160deg, rgba(24,33,57,0.96), rgba(11,16,32,0.96)); }
-    .hero .eyebrow { display:inline-flex; width:fit-content; padding:8px 12px; border-radius:999px; background:rgba(95,125,255,0.18); color:var(--brand); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; }
-    .hero h1 { margin:16px 0 12px; font-size:clamp(34px,5vw,56px); line-height:0.98; letter-spacing:-0.05em; max-width:900px; }
-    .hero p { margin:0 0 18px; color:var(--muted); font-size:17px; line-height:1.6; max-width:860px; }
-    .hero-actions,.audio-actions,.filter-group,.sort-group { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
-    .button,.chip-link { display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border:1px solid var(--border); border-radius:999px; background:rgba(255,255,255,0.03); color:var(--text); font-size:14px; }
-    .button.primary { background:linear-gradient(135deg,var(--brand-2),#7f97ff); color:#061022; border-color:transparent; font-weight:700; }
-    .section-shell,.audio-panel,.controls-shell,.roster-shell { padding:20px; }
-    .section-kicker { color:var(--brand); font-size:12px; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:8px; }
-    .section-copy,.overview,.card-copy,.muted,.transcript-copy { color:var(--muted); line-height:1.65; }
-    .section-shell h2,.audio-panel h2,.roster-shell h2 { margin:0 0 8px; font-size:26px; letter-spacing:-0.03em; }
-    .overview.compact-overview { margin:14px 0 0; }
-    .market-strip { margin-top:18px; }
-    .markets-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:10px; }
-    .market-card.compact { display:grid; gap:4px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); border-radius:18px; padding:12px; min-height:auto; }
-    .market-label { font-weight:800; font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); }
-    .market-price { font-weight:800; font-size:20px; letter-spacing:-0.03em; }
-    .market-delta { font-size:13px; font-weight:800; }
-    .market-delta.up { color:var(--green); }
-    .market-delta.down { color:var(--red); }
-    .compact-player { display:grid; gap:12px; align-content:start; }
-    .compact-player audio { width:100%; }
-    details.transcript-toggle { width:100%; }
-    details.transcript-toggle summary { cursor:pointer; color:var(--brand); font-weight:700; }
-    .smart-top-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:18px; }
-    .emphasis-shell { background:linear-gradient(180deg, rgba(143,169,255,0.06), rgba(255,255,255,0.01)); }
-    .mini-stack { display:grid; gap:14px; margin-top:14px; }
-    .controls-shell { margin-top:18px; display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; }
-    .filter-chip { border:1px solid var(--border); background:rgba(255,255,255,0.02); color:var(--muted); border-radius:999px; padding:10px 14px; cursor:pointer; font-weight:700; }
-    .filter-chip.active { color:var(--text); border-color:rgba(143,169,255,0.3); background:rgba(143,169,255,0.1); }
-    select,input[type="search"] { background:rgba(255,255,255,0.03); color:var(--text); border:1px solid var(--border); border-radius:14px; padding:10px 12px; font-size:14px; }
-    .stream-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:16px; margin-top:18px; }
-    .stream-card { background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border:1px solid rgba(255,255,255,0.06); border-radius:22px; padding:18px; display:flex; flex-direction:column; gap:12px; min-height:230px; }
-    .stream-card.hidden { display:none; }
-    .card-header { display:flex; justify-content:space-between; gap:12px; align-items:start; }
-    .identity-header { align-items:center; }
-    .identity-wrap { display:flex; gap:12px; align-items:center; }
-    .avatar { width:48px; height:48px; border-radius:999px; object-fit:cover; border:1px solid rgba(255,255,255,0.08); }
-    .avatar-fallback { display:grid; place-items:center; background:linear-gradient(135deg, rgba(143,169,255,0.3), rgba(95,125,255,0.15)); font-weight:800; color:var(--text); }
-    .identity-title { font-weight:800; }
-    .identity-subtitle { color:var(--muted); font-size:13px; margin-top:4px; }
-    .pill { display:inline-flex; padding:7px 10px; border-radius:999px; font-size:11px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; }
-    .pill-news { background:rgba(95,125,255,0.12); color:var(--brand); }
-    .pill-x { background:rgba(255,255,255,0.08); color:#d9e1ff; }
-    .card-title { font-size:22px; line-height:1.15; font-weight:800; letter-spacing:-0.03em; }
-    .tweet-stats { margin-top:auto; }
-    .card-footer { display:flex; gap:10px; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-top:auto; }
-    .metric-grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:12px; }
-    .metric-grid-wide { grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); }
-    .metric-card { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.05); border-radius:18px; padding:14px; }
-    .metric-label { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:0.08em; font-weight:700; }
-    .metric-value { font-size:18px; font-weight:800; margin-top:6px; }
-    .roster-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:16px; }
-    .roster-card { display:flex; gap:12px; align-items:center; padding:14px; border-radius:18px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); }
-    .pulse-bottom,.roster-shell { margin-top:18px; }
-    .empty-state { padding:28px; border:1px dashed rgba(255,255,255,0.15); border-radius:18px; color:var(--muted); }
-    .footer-note { color:var(--muted); font-size:13px; margin:22px 0 0; }
-    @media (max-width: 980px) { .masthead,.smart-top-grid { grid-template-columns:1fr; } }
-    @media (max-width: 720px) { .layout { padding:16px; } .topbar-inner { padding:14px 16px; flex-direction:column; align-items:start; } .hero { min-height:260px; } }
+    :root { --bg:#0b1020; --panel:#11182b; --border:rgba(255,255,255,0.08); --text:#e8ecf8; --muted:#9ea8c7; --brand:#8fa9ff; --brand-2:#5f7dff; --green:#67d18e; --red:#ff7b89; --shadow:0 20px 60px rgba(0,0,0,0.35); }
+    * { box-sizing:border-box; } body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,sans-serif; background:radial-gradient(circle at top right, rgba(95,125,255,0.18), transparent 24%), var(--bg); color:var(--text); } a { color:inherit; text-decoration:none; }
+    .layout { max-width:1520px; margin:0 auto; padding:24px; } .topbar { position:sticky; top:0; z-index:20; backdrop-filter:blur(16px); background:rgba(11,16,32,0.88); border-bottom:1px solid var(--border); } .topbar-inner { max-width:1520px; margin:0 auto; padding:16px 24px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .brand { font-weight:800; letter-spacing:-0.04em; color:var(--brand); font-size:22px; } .nav { display:flex; gap:12px; flex-wrap:wrap; } .nav a { padding:10px 14px; border-radius:999px; color:var(--muted); border:1px solid transparent; } .nav a.active { background:rgba(143,169,255,0.12); color:var(--text); border-color:rgba(143,169,255,0.25); }
+    .hero,.section-shell,.audio-panel,.controls-shell,.roster-shell,.right-rail-card { background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid var(--border); border-radius:26px; box-shadow:var(--shadow); }
+    .masthead { display:grid; grid-template-columns:1.35fr .65fr; gap:18px; margin-top:26px; align-items:stretch; } .hero { padding:28px; min-height:300px; display:flex; flex-direction:column; justify-content:flex-end; background-image:radial-gradient(circle at top right, rgba(143,169,255,0.22), transparent 26%), linear-gradient(160deg, rgba(24,33,57,0.96), rgba(11,16,32,0.96)); }
+    .hero .eyebrow,.pill,.source-tier,.section-tab,.filter-chip,.dismiss-chip,.save-chip { display:inline-flex; align-items:center; }
+    .hero .eyebrow { width:fit-content; padding:8px 12px; border-radius:999px; background:rgba(95,125,255,0.18); color:var(--brand); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; }
+    .hero h1 { margin:16px 0 12px; font-size:clamp(34px,5vw,56px); line-height:0.98; letter-spacing:-0.05em; max-width:900px; } .hero p { margin:0 0 18px; color:var(--muted); font-size:17px; line-height:1.6; max-width:860px; }
+    .hero-actions,.audio-actions,.filter-group,.sort-group,.section-tabs,.card-actions { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+    .button,.chip-link,.breaking-chip,.dismiss-chip,.save-chip,.section-tab,.filter-chip { border:1px solid var(--border); border-radius:999px; background:rgba(255,255,255,0.03); color:var(--text); }
+    .button,.chip-link,.dismiss-chip,.save-chip,.section-tab,.filter-chip { padding:10px 14px; font-size:14px; } .button.primary { background:linear-gradient(135deg,var(--brand-2),#7f97ff); color:#061022; border-color:transparent; font-weight:700; }
+    .section-shell,.audio-panel,.controls-shell,.roster-shell,.right-rail-card { padding:20px; } .section-kicker { color:var(--brand); font-size:12px; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:8px; }
+    .section-copy,.overview,.card-copy,.muted,.transcript-copy { color:var(--muted); line-height:1.65; } .section-shell h2,.audio-panel h2,.roster-shell h2,.right-rail-card h3 { margin:0 0 8px; font-size:26px; letter-spacing:-0.03em; }
+    .market-strip,.breaking-rail,.smart-top-grid,.controls-shell,.pulse-bottom,.roster-shell { margin-top:18px; } .markets-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:10px; } .market-card.compact { display:grid; gap:4px; padding:12px; min-height:auto; border:1px solid rgba(255,255,255,0.06); border-radius:18px; background:rgba(255,255,255,0.03); } .market-label { font-weight:800; font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); } .market-price { font-weight:800; font-size:20px; letter-spacing:-0.03em; } .market-delta { font-size:13px; font-weight:800; } .market-delta.up { color:var(--green); } .market-delta.down { color:var(--red); }
+    .compact-player { display:grid; gap:12px; align-content:start; } .compact-player audio { width:100%; } details.transcript-toggle summary,.cluster-card summary { cursor:pointer; color:var(--brand); font-weight:700; }
+    .breaking-grid { display:grid; grid-template-columns:1.2fr 1fr .8fr; gap:14px; } .breaking-stack,.mini-stack,.saved-list,.narrative-list { display:grid; gap:10px; } .breaking-chip { display:flex; gap:10px; align-items:flex-start; padding:12px 14px; border-radius:16px; } .breaking-label { font-size:11px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:#ffd27a; } .breaking-label.hot { color:#ff9ec4; } .compact-mover { justify-content:space-between; }
+    .smart-top-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; } .emphasis-shell { background:linear-gradient(180deg, rgba(143,169,255,0.06), rgba(255,255,255,0.01)); }
+    .controls-shell { display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; } .section-tabs { margin-top:12px; } .section-tab.active,.filter-chip.active { color:var(--text); border-color:rgba(143,169,255,0.3); background:rgba(143,169,255,0.1); } .dismiss-chip,.save-chip { cursor:pointer; font-size:12px; font-weight:700; color:var(--muted); } .dismiss-chip:hover,.save-chip:hover { color:var(--text); border-color:rgba(255,255,255,.18); }
+    select,input[type=search] { background:rgba(255,255,255,0.03); color:var(--text); border:1px solid var(--border); border-radius:14px; padding:10px 12px; font-size:14px; }
+    .app-grid { display:grid; grid-template-columns:minmax(0,1fr) 320px; gap:18px; align-items:start; } .stream-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:16px; margin-top:18px; }
+    .stream-card { background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border:1px solid rgba(255,255,255,0.06); border-radius:22px; padding:18px; display:flex; flex-direction:column; gap:12px; min-height:230px; } .featured-card { min-height:320px; padding:22px; border-color:rgba(143,169,255,0.18); background:linear-gradient(180deg, rgba(143,169,255,0.10), rgba(255,255,255,0.03)); } .featured-card .card-title { font-size:28px; } .featured-card .card-copy { font-size:15px; } .stream-card.hidden { display:none; }
+    .card-header { display:flex; justify-content:space-between; gap:12px; align-items:start; } .badge-row { display:flex; gap:8px; flex-wrap:wrap; align-items:center; } .identity-header { align-items:center; } .identity-wrap { display:flex; gap:12px; align-items:center; } .avatar { width:48px; height:48px; border-radius:999px; object-fit:cover; border:1px solid rgba(255,255,255,0.08); } .avatar-fallback { display:grid; place-items:center; background:linear-gradient(135deg, rgba(143,169,255,0.3), rgba(95,125,255,0.15)); font-weight:800; color:var(--text); } .identity-title { font-weight:800; } .identity-subtitle { color:var(--muted); font-size:13px; margin-top:4px; }
+    .pill { padding:7px 10px; border-radius:999px; font-size:11px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; } .pill-news { background:rgba(95,125,255,0.12); color:var(--brand); } .pill-x { background:rgba(255,255,255,0.08); color:#d9e1ff; } .pill-importance { background:rgba(255,196,87,0.14); color:#ffd27a; }
+    .card-title { font-size:22px; line-height:1.15; font-weight:800; letter-spacing:-0.03em; } .tweet-stats { margin-top:auto; } .card-footer { display:flex; gap:10px; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-top:auto; } .source-meta { display:flex; gap:6px; align-items:center; flex-wrap:wrap; } .source-tier { padding:3px 8px; border-radius:999px; font-size:11px; font-weight:800; } .tier-1 { background:rgba(103,209,142,0.16); color:#8cf0b0; } .tier-2 { background:rgba(143,169,255,0.16); color:#b7c9ff; } .tier-3 { background:rgba(255,255,255,0.08); color:#d7def5; }
+    .metric-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; } .metric-grid-wide { grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); } .metric-card { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.05); border-radius:18px; padding:14px; } .metric-label { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:0.08em; font-weight:700; } .metric-value { font-size:18px; font-weight:800; margin-top:6px; }
+    .cluster-card { border:1px solid rgba(255,255,255,0.06); border-radius:18px; padding:14px; background:rgba(255,255,255,0.03); } .cluster-card ul { margin:10px 0 0; padding-left:18px; display:grid; gap:8px; } .cluster-count { margin-left:10px; color:var(--muted); font-size:12px; font-weight:700; }
+    .saved-item { display:flex; justify-content:space-between; gap:10px; align-items:flex-start; padding:12px; border-radius:16px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); } .saved-item a { font-weight:700; } .saved-remove { cursor:pointer; background:transparent; border:none; color:var(--muted); font-size:12px; }
+    .roster-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:16px; } .roster-card { display:flex; gap:12px; align-items:center; padding:14px; border-radius:18px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); } .empty-state { padding:20px; border:1px dashed rgba(255,255,255,0.15); border-radius:18px; color:var(--muted); } .footer-note { color:var(--muted); font-size:13px; margin:22px 0 0; }
+    @media (max-width:1100px) { .app-grid,.masthead,.smart-top-grid,.breaking-grid { grid-template-columns:1fr; } } @media (max-width:720px) { .layout { padding:16px; } .topbar-inner { padding:14px 16px; flex-direction:column; align-items:start; } .hero { min-height:260px; } }
   </style>
 </head>
 <body>
-  <header class="topbar">
-    <div class="topbar-inner">
-      <div><div class="brand">The Informed Curator</div><div class="muted">Bias toward the fastest-moving narratives and highest-signal stories, with controls if you want to change the ranking.</div></div>
-      <nav class="nav">
-        <a href="./index.html" class="">Home Feed</a>
-        <a href="./trending.html" class="active">Trending</a>
-        <a href="./following.html" class="">Following</a>
-        <a href="#podcast">Podcast</a>
-      </nav>
-    </div>
-  </header>
+  <header class="topbar"><div class="topbar-inner"><div><div class="brand">The Informed Curator</div><div class="muted">Fastest-moving narratives, clustered into usable threads instead of headline sludge.</div></div><nav class="nav"><a href="./index.html" class="">Home Feed</a><a href="./trending.html" class="active">Trending</a><a href="./following.html" class="">Following</a><a href="#podcast">Podcast</a></nav></div></header>
   <div class="layout">
-    <section class="masthead">
-      <article class="hero">
-        <span class="eyebrow">Smart lead · World</span>
-        <h1>Two US Aircraft Shot Down in Iran Conflict; One Crew Member Missing</h1>
-        <p>Two US military aircraft were shot down in Iran, marking a dramatic escalation. One crew member remains missing amid ongoing search efforts.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWFdRcTMwd2xsa28wQ3hzbUhiazI4bHlsb3NYLVBEbEMzZDlRRWZYcDVINzc3QnZDbDVwam84X3VrNmljRWN1cTU4cmp5NmdsNjJTWW1UdUFwNjhRaTVVZGs2VGRDbnpBYmV0TnVCVmhfT0NPZWJiaFRpWXRkdU1lR1I0RXNsTnlYaXJHY2Z3ZDB4TFppa3Vab2IwSE9kYl9SMGt1Mks4Vno4T0ZqVzdIM0t0LWtJVWZiXzd3bDdtcUUtZ210dDJSdUtPaS1TU0FXV3hfY1FIUjg?oc=5" target="_blank" rel="noopener">Open lead item ↗</a>
-          <a class="button" href="https://neima3.github.io/daily-briefings/" target="_blank" rel="noopener">Open public page ↗</a>
-        </div>
-      </article>
-      
-        <section id="podcast" class="audio-panel compact-player">
-          <div>
-            <div class="section-kicker">Podcast mode</div>
-            <h2>Listen in browser</h2>
-          </div>
-          <audio controls preload="none" src="./podcast.mp3"></audio>
-          <div class="audio-actions">
-            <a class="chip-link" href="./podcast.mp3" target="_blank" rel="noopener">Open audio ↗</a>
-            <a class="chip-link" href="./podcast.mp3" download>Download MP3</a>
-            <details class="transcript-toggle"><summary>Expand transcript</summary><p class="transcript-copy">Welcome to your daily briefing. Today, the conflict in Iran intensifies with two US military aircraft shot down, the first such losses to enemy fire in over 20 years. One crew member remains missing, prompting urgent search and rescue efforts. Iran has also executed two individuals tied to opposition groups, underscoring the ongoing internal crackdown. On the diplomatic front, China signals support for negotiations amid the US-Israel-Iran tensions, hinting at possible avenues for de-escalation. In technology and business, artificial intelligence is transforming the global film industry and driving strategic pivots in companies like Duolingo, though concerns about an AI hype cycle correction linger. Markets are mixed today, with the Dow and S&amp;P 500 posting modest gains while Bitcoin and Ethereum see slight declines. Stay tuned for more updates as these stories develop.</p></details>
-          </div>
+    <section class="masthead"><article class="hero"><span class="eyebrow">For You · World</span><h1>Iran Executes Two Linked to Opposition Group</h1><p>Iran has executed two individuals associated with an opposition group, according to media reports, escalating political repression.</p><div class="hero-actions"><a class="button primary track-link" data-track-key="hero" data-track-section="hero" data-track-type="hero" href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbmp2WWhRYTdIWmIxOThQc2c3RTNYX2hjNlYzcHpHTjQ0VU5XeUJWU3o3bzNkbU41LWJFWEZ0bXk2NmdzZWtfSEhVQ2lwbEl6TXVIZm83Y1cybEhOcHBVY2hvQUxIcGQxR3VSWWl0WVJFeU95ZXVNd3kwYmN0MzZLTFcxV3ozbzhYQW1uYW9YazVvNlhlS2JvMGlYZ2FTVHQtQjVmOGZmMzU?oc=5" target="_blank" rel="noopener">Open lead item ↗</a><a class="button" href="https://neima3.github.io/daily-briefings/" target="_blank" rel="noopener">Open public page ↗</a></div></article>
+        <section id="podcast" class="audio-panel compact-player"><div><div class="section-kicker">Podcast mode</div><h2>Listen in browser</h2></div><audio controls preload="none" src="./podcast.mp3"></audio><div class="audio-actions"><a class="chip-link" href="./podcast.mp3" target="_blank" rel="noopener">Open audio ↗</a><a class="chip-link" href="./podcast.mp3" download>Download MP3</a><details class="transcript-toggle"><summary>Expand transcript</summary><p class="transcript-copy">Welcome to today&#x27;s briefing. The Iran conflict intensified as US military aircraft were shot down for the first time in over two decades, including an F-15E and an A-10 Thunderbolt II. Rescue operations are underway, with at least one pilot confirmed alive and in US custody. Meanwhile, Iran executed two individuals linked to opposition groups, further heightening regional tensions. In Washington, former President Trump attended Supreme Court oral arguments but left early, and he has submitted his initial proposals to Congress involving spending increases and budget cuts. China has expressed support for diplomatic solutions in the ongoing US-Israel-Iran conflict. On the technology front, researchers are advancing safer AI-enabled medical devices, and AI is reshaping the global film industry. Duolingo is also shifting its growth strategy to prioritize AI, balancing growth with margin trade-offs. In local news, Massachusetts comedian rescued after a crash expresses gratitude, while political figures faced boos at the Red Sox home opener. Markets showed modest gains in major US indices, while cryptocurrencies saw slight declines. That&#x27;s your briefing for today.</p></details></div></section>
         </section>
-        
-    </section>
-
-    <section class="section-shell market-strip">
-      <div class="section-kicker">Markets</div>
-      <h2>Quick tape</h2>
-      <div class="markets-grid">
+    <section class="section-shell market-strip"><div class="section-kicker">Markets</div><h2>Quick tape</h2><div class="markets-grid">
     <a class="market-card compact" href="https://stooq.com/q/?s=%5Edji" target="_blank" rel="noopener">
       <span class="market-label">Dow</span>
       <span class="market-price">46,504.67</span>
@@ -142,14 +64,14 @@
     
     <a class="market-card compact" href="https://stooq.com/q/?s=btc.v" target="_blank" rel="noopener">
       <span class="market-label">Bitcoin</span>
-      <span class="market-price">66,908.54</span>
-      <span class="market-delta down">-0.09%</span>
+      <span class="market-price">66,932.52</span>
+      <span class="market-delta down">-0.06%</span>
     </a>
     
     <a class="market-card compact" href="https://stooq.com/q/?s=eth.v" target="_blank" rel="noopener">
       <span class="market-label">Ethereum</span>
-      <span class="market-price">2,053.79</span>
-      <span class="market-delta down">-0.23%</span>
+      <span class="market-price">2,054.41</span>
+      <span class="market-delta down">-0.20%</span>
     </a>
     
     <a class="market-card compact" href="https://stooq.com/q/?s=gc.f" target="_blank" rel="noopener">
@@ -163,163 +85,21 @@
       <span class="market-price">111.54</span>
       <span class="market-delta up">+0.00%</span>
     </a>
-    </div>
-    </section>
-
+    </div></section>
     
     <section class="section-shell breaking-rail">
       <div class="breaking-grid">
-        <div><div class="section-kicker">Breaking now</div><div class="breaking-stack"><a class="breaking-chip" href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWFdRcTMwd2xsa28wQ3hzbUhiazI4bHlsb3NYLVBEbEMzZDlRRWZYcDVINzc3QnZDbDVwam84X3VrNmljRWN1cTU4cmp5NmdsNjJTWW1UdUFwNjhRaTVVZGs2VGRDbnpBYmV0TnVCVmhfT0NPZWJiaFRpWXRkdU1lR1I0RXNsTnlYaXJHY2Z3ZDB4TFppa3Vab2IwSE9kYl9SMGt1Mks4Vno4T0ZqVzdIM0t0LWtJVWZiXzd3bDdtcUUtZ210dDJSdUtPaS1TU0FXV3hfY1FIUjg?oc=5" target="_blank" rel="noopener"><span class="breaking-label">Breaking</span><span>Two US Aircraft Shot Down in Iran Conflict; One Crew Member Missing</span></a><a class="breaking-chip" href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbmp2WWhRYTdIWmIxOThQc2c3RTNYX2hjNlYzcHpHTjQ0VU5XeUJWU3o3bzNkbU41LWJFWEZ0bXk2NmdzZWtfSEhVQ2lwbEl6TXVIZm83Y1cybEhOcHBVY2hvQUxIcGQxR3VSWWl0WVJFeU95ZXVNd3kwYmN0MzZLTFcxV3ozbzhYQW1uYW9YazVvNlhlS2JvMGlYZ2FTVHQtQjVmOGZmMzU?oc=5" target="_blank" rel="noopener"><span class="breaking-label">Breaking</span><span>Iran Executes Two Linked to Opposition Groups</span></a><a class="breaking-chip" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9FN01jYmFiZTE1Z0F6eVdfTHpTNlJNYU05MERqQ1dHOTNhRVhmYTdtdGhlc2JmbUdud1hnN2ZRdElvbF9BSEpDaHN0dHZaV2YtSEhkU2pVRlhnVm84MEtwMmNmbndkNHdLYVNRZVc3LWRUbk1Qb3I4?oc=5" target="_blank" rel="noopener"><span class="breaking-label">Breaking</span><span>Status Unknown for US Service Member After Fighter Jet Downed in Iran</span></a></div></div>
+        <div><div class="section-kicker">Breaking now</div><div class="breaking-stack"><a class="breaking-chip track-link" data-track-key="iran executes two linked to opposition group" data-track-section="world" data-track-type="news" href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbmp2WWhRYTdIWmIxOThQc2c3RTNYX2hjNlYzcHpHTjQ0VU5XeUJWU3o3bzNkbU41LWJFWEZ0bXk2NmdzZWtfSEhVQ2lwbEl6TXVIZm83Y1cybEhOcHBVY2hvQUxIcGQxR3VSWWl0WVJFeU95ZXVNd3kwYmN0MzZLTFcxV3ozbzhYQW1uYW9YazVvNlhlS2JvMGlYZ2FTVHQtQjVmOGZmMzU?oc=5" target="_blank" rel="noopener"><span class="breaking-label">Breaking</span><span>Iran Executes Two Linked to Opposition Group</span></a><a class="breaking-chip track-link" data-track-key="us fighter jet shot down over iran service member status unknown" data-track-section="world" data-track-type="news" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9FN01jYmFiZTE1Z0F6eVdfTHpTNlJNYU05MERqQ1dHOTNhRVhmYTdtdGhlc2JmbUdud1hnN2ZRdElvbF9BSEpDaHN0dHZaV2YtSEhkU2pVRlhnVm84MEtwMmNmbndkNHdLYVNRZVc3LWRUbk1Qb3I4?oc=5" target="_blank" rel="noopener"><span class="breaking-label">Breaking</span><span>US Fighter Jet Shot Down Over Iran; Service Member Status Unknown</span></a><a class="breaking-chip track-link" data-track-key="good friday observed worldwide in photos" data-track-section="world" data-track-type="news" href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQ2E2YWszNTNUZWZ1ZmxxelRMcVNLUGZyRVpWdzZOUXUtbm9YamEwSVg5N2FJWVZ5WWo4d1BKcHhWclpZR28wSDBDNGp4a296X1AtS0ZJYjhWODVDVHNIWG9pS0x6QnBSWXpnZ2h5OTJFOVF0Y3pGNW01bXZCWVpvdURmVEg3QVhPVlFJaHB1ZDZQdU51MGVTYkd1LVpEOWpXX2xhd0NhdE5wdw?oc=5" target="_blank" rel="noopener"><span class="breaking-label">Breaking</span><span>Good Friday Observed Worldwide in Photos</span></a></div></div>
         <div><div class="section-kicker">Hot watchlist</div><div class="breaking-stack"><div class="empty-state">No hot watchlist items right now.</div></div></div>
-        <div><div class="section-kicker">Biggest movers</div><div class="breaking-stack"><a class="breaking-chip compact-mover" href="https://stooq.com/q/?s=%5Endq" target="_blank" rel="noopener"><span>Nasdaq 100</span><strong>+1.89%</strong></a><a class="breaking-chip compact-mover" href="https://stooq.com/q/?s=%5Espx" target="_blank" rel="noopener"><span>S&amp;P 500</span><strong>+1.08%</strong></a><a class="breaking-chip compact-mover" href="https://stooq.com/q/?s=eth.v" target="_blank" rel="noopener"><span>Ethereum</span><strong>-0.23%</strong></a></div></div>
+        <div><div class="section-kicker">Biggest movers</div><div class="breaking-stack"><a class="breaking-chip compact-mover" href="https://stooq.com/q/?s=%5Endq" target="_blank" rel="noopener"><span>Nasdaq 100</span><strong>+1.89%</strong></a><a class="breaking-chip compact-mover" href="https://stooq.com/q/?s=%5Espx" target="_blank" rel="noopener"><span>S&amp;P 500</span><strong>+1.08%</strong></a><a class="breaking-chip compact-mover" href="https://stooq.com/q/?s=eth.v" target="_blank" rel="noopener"><span>Ethereum</span><strong>-0.20%</strong></a></div></div>
       </div>
     </section>
     
     
     <section class="smart-top-grid">
-      <div class="section-shell emphasis-shell">
-        <div class="section-kicker">Popular watchlist</div>
-        <h2>Top tweets</h2>
-        <div class="mini-stack"><div class="empty-state">No watchlist posts right now.</div></div>
-      </div>
-      <div class="section-shell emphasis-shell">
-        <div class="section-kicker">Top headlines</div>
-        <h2>Most important news</h2>
-        <div class="mini-stack">
-    <article class="stream-card featured-card" data-type="news" data-section="world" data-ts="1775280888" data-score="2574157287">
-      <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">World</span><span class="pill pill-importance">Breaking</span></div>
-        <span class="muted">Apr 4, 1:34 AM ET</span>
-      </div>
-      <div class="card-title">Two US Aircraft Shot Down in Iran Conflict; One Crew Member Missing</div>
-      <p class="card-copy">Two US military aircraft were shot down in Iran, marking a dramatic escalation. One crew member remains missing amid ongoing search efforts.</p>
-      <div class="card-footer">
-        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="two us aircraft shot down in iran conflict one crew member missing">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWFdRcTMwd2xsa28wQ3hzbUhiazI4bHlsb3NYLVBEbEMzZDlRRWZYcDVINzc3QnZDbDVwam84X3VrNmljRWN1cTU4cmp5NmdsNjJTWW1UdUFwNjhRaTVVZGs2VGRDbnpBYmV0TnVCVmhfT0NPZWJiaFRpWXRkdU1lR1I0RXNsTnlYaXJHY2Z3ZDB4TFppa3Vab2IwSE9kYl9SMGt1Mks4Vno4T0ZqVzdIM0t0LWtJVWZiXzd3bDdtcUUtZ210dDJSdUtPaS1TU0FXV3hfY1FIUjg?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
-      </div>
-    </article>
-    
-    <article class="stream-card" data-type="news" data-section="world" data-ts="1775278980" data-score="2574154521">
-      <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">World</span><span class="pill pill-importance">Breaking</span></div>
-        <span class="muted">Apr 4, 1:03 AM ET</span>
-      </div>
-      <div class="card-title">Iran Executes Two Linked to Opposition Groups</div>
-      <p class="card-copy">Iran has executed two individuals associated with opposition groups, reflecting continued internal repression.</p>
-      <div class="card-footer">
-        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="iran executes two linked to opposition groups">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbmp2WWhRYTdIWmIxOThQc2c3RTNYX2hjNlYzcHpHTjQ0VU5XeUJWU3o3bzNkbU41LWJFWEZ0bXk2NmdzZWtfSEhVQ2lwbEl6TXVIZm83Y1cybEhOcHBVY2hvQUxIcGQxR3VSWWl0WVJFeU95ZXVNd3kwYmN0MzZLTFcxV3ozbzhYQW1uYW9YazVvNlhlS2JvMGlYZ2FTVHQtQjVmOGZmMzU?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
-      </div>
-    </article>
-    
-    <article class="stream-card" data-type="news" data-section="world" data-ts="1775278020" data-score="2574153129">
-      <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">World</span><span class="pill pill-importance">Breaking</span></div>
-        <span class="muted">Apr 4, 12:47 AM ET</span>
-      </div>
-      <div class="card-title">Status Unknown for US Service Member After Fighter Jet Downed in Iran</div>
-      <p class="card-copy">The fate of a US service member remains unclear following the downing of a fighter jet over Iran, with rescue operations underway.</p>
-      <div class="card-footer">
-        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="status unknown for us service member after fighter jet downed in iran">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9FN01jYmFiZTE1Z0F6eVdfTHpTNlJNYU05MERqQ1dHOTNhRVhmYTdtdGhlc2JmbUdud1hnN2ZRdElvbF9BSEpDaHN0dHZaV2YtSEhkU2pVRlhnVm84MEtwMmNmbndkNHdLYVNRZVc3LWRUbk1Qb3I4?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
-      </div>
-    </article>
-    
-    <article class="stream-card" data-type="news" data-section="world" data-ts="1775276280" data-score="2574150606">
-      <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">World</span><span class="pill pill-importance">Breaking</span></div>
-        <span class="muted">Apr 4, 12:18 AM ET</span>
-      </div>
-      <div class="card-title">Good Friday Observed Worldwide in Photos</div>
-      <p class="card-copy">Global observances of Good Friday are captured in a series of photographs highlighting diverse traditions.</p>
-      <div class="card-footer">
-        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="good friday observed worldwide in photos">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQ2E2YWszNTNUZWZ1ZmxxelRMcVNLUGZyRVpWdzZOUXUtbm9YamEwSVg5N2FJWVZ5WWo4d1BKcHhWclpZR28wSDBDNGp4a296X1AtS0ZJYjhWODVDVHNIWG9pS0x6QnBSWXpnZ2h5OTJFOVF0Y3pGNW01bXZCWVpvdURmVEg3QVhPVlFJaHB1ZDZQdU51MGVTYkd1LVpEOWpXX2xhd0NhdE5wdw?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
-      </div>
-    </article>
-    </div>
-      </div>
-    </section>
-    
-
-    <section class="controls-shell">
-      <div>
-        <div class="section-kicker">Smart feed controls</div>
-        <div class="filter-group">
-          <button class="filter-chip" data-filter="all">All</button>
-          <button class="filter-chip" data-filter="news">News</button>
-          <button class="filter-chip" data-filter="x">X / Twitter</button>
-        </div>
-      </div>
-      <div class="sort-group">
-        <input id="streamSearch" type="search" placeholder="Search cards..." />
-        <select id="streamSort">
-          <option value="smart">Smart feed</option>
-          <option value="latest">Latest</option>
-          <option value="engagement">Popularity / impact</option>
-          <option value="type">Group by type</option>
-        </select>
-      </div>
-    </section>
-
-    <section class="section-shell">
-      <div class="section-kicker">Live briefing stream</div>
-      <h2>Smart live briefing</h2>
-      <p class="section-copy">Default ranking blends popularity, importance, relevance, and recency. You can still switch the sort any time.</p>
-      <div id="streamGrid" class="stream-grid">
-    <article class="stream-card" data-type="news" data-section="world" data-ts="1775280888" data-score="2574157287">
-      <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">World</span><span class="pill pill-importance">Breaking</span></div>
-        <span class="muted">Apr 4, 1:34 AM ET</span>
-      </div>
-      <div class="card-title">Two US Aircraft Shot Down in Iran Conflict; One Crew Member Missing</div>
-      <p class="card-copy">Two US military aircraft were shot down in Iran, marking a dramatic escalation. One crew member remains missing amid ongoing search efforts.</p>
-      <div class="card-footer">
-        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="two us aircraft shot down in iran conflict one crew member missing">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWFdRcTMwd2xsa28wQ3hzbUhiazI4bHlsb3NYLVBEbEMzZDlRRWZYcDVINzc3QnZDbDVwam84X3VrNmljRWN1cTU4cmp5NmdsNjJTWW1UdUFwNjhRaTVVZGs2VGRDbnpBYmV0TnVCVmhfT0NPZWJiaFRpWXRkdU1lR1I0RXNsTnlYaXJHY2Z3ZDB4TFppa3Vab2IwSE9kYl9SMGt1Mks4Vno4T0ZqVzdIM0t0LWtJVWZiXzd3bDdtcUUtZ210dDJSdUtPaS1TU0FXV3hfY1FIUjg?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
-      </div>
-    </article>
-    
-    <article class="stream-card" data-type="news" data-section="world" data-ts="1775278980" data-score="2574154521">
-      <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">World</span><span class="pill pill-importance">Breaking</span></div>
-        <span class="muted">Apr 4, 1:03 AM ET</span>
-      </div>
-      <div class="card-title">Iran Executes Two Linked to Opposition Groups</div>
-      <p class="card-copy">Iran has executed two individuals associated with opposition groups, reflecting continued internal repression.</p>
-      <div class="card-footer">
-        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="iran executes two linked to opposition groups">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbmp2WWhRYTdIWmIxOThQc2c3RTNYX2hjNlYzcHpHTjQ0VU5XeUJWU3o3bzNkbU41LWJFWEZ0bXk2NmdzZWtfSEhVQ2lwbEl6TXVIZm83Y1cybEhOcHBVY2hvQUxIcGQxR3VSWWl0WVJFeU95ZXVNd3kwYmN0MzZLTFcxV3ozbzhYQW1uYW9YazVvNlhlS2JvMGlYZ2FTVHQtQjVmOGZmMzU?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
-      </div>
-    </article>
-    
-    <article class="stream-card" data-type="news" data-section="world" data-ts="1775278020" data-score="2574153129">
-      <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">World</span><span class="pill pill-importance">Breaking</span></div>
-        <span class="muted">Apr 4, 12:47 AM ET</span>
-      </div>
-      <div class="card-title">Status Unknown for US Service Member After Fighter Jet Downed in Iran</div>
-      <p class="card-copy">The fate of a US service member remains unclear following the downing of a fighter jet over Iran, with rescue operations underway.</p>
-      <div class="card-footer">
-        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="status unknown for us service member after fighter jet downed in iran">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9FN01jYmFiZTE1Z0F6eVdfTHpTNlJNYU05MERqQ1dHOTNhRVhmYTdtdGhlc2JmbUdud1hnN2ZRdElvbF9BSEpDaHN0dHZaV2YtSEhkU2pVRlhnVm84MEtwMmNmbndkNHdLYVNRZVc3LWRUbk1Qb3I4?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
-      </div>
-    </article>
-    
-    <article class="stream-card" data-type="news" data-section="world" data-ts="1775276280" data-score="2574150606">
-      <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">World</span><span class="pill pill-importance">Breaking</span></div>
-        <span class="muted">Apr 4, 12:18 AM ET</span>
-      </div>
-      <div class="card-title">Good Friday Observed Worldwide in Photos</div>
-      <p class="card-copy">Global observances of Good Friday are captured in a series of photographs highlighting diverse traditions.</p>
-      <div class="card-footer">
-        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="good friday observed worldwide in photos">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQ2E2YWszNTNUZWZ1ZmxxelRMcVNLUGZyRVpWdzZOUXUtbm9YamEwSVg5N2FJWVZ5WWo4d1BKcHhWclpZR28wSDBDNGp4a296X1AtS0ZJYjhWODVDVHNIWG9pS0x6QnBSWXpnZ2h5OTJFOVF0Y3pGNW01bXZCWVpvdURmVEg3QVhPVlFJaHB1ZDZQdU51MGVTYkd1LVpEOWpXX2xhd0NhdE5wdw?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
-      </div>
-    </article>
-    
-    <article class="stream-card" data-type="news" data-section="world" data-ts="1775275363" data-score="2574149276">
+      <div class="section-shell emphasis-shell"><div class="section-kicker">Popular watchlist</div><h2>Top tweets</h2><div class="mini-stack"><div class="empty-state">No watchlist posts right now.</div></div></div>
+      <div class="section-shell emphasis-shell"><div class="section-kicker">Top headlines</div><h2>Most important news</h2><div class="mini-stack">
+    <article class="stream-card featured-card" data-type="news" data-section="world" data-topic="world" data-priority="breaking" data-ts="1775275363" data-base-score="2574149276" data-source-tier="Tier 2" data-key="what on earth news8000 com"> 
       <div class="card-header">
         <div class="badge-row"><span class="pill pill-news">World</span><span class="pill pill-importance">Breaking</span></div>
         <span class="muted">Apr 4, 12:02 AM ET</span>
@@ -328,11 +108,59 @@
       <p class="card-copy">What on Earth news8000.com</p>
       <div class="card-footer">
         <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="what on earth news8000 com">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZWZrbGQ5c0Zna2dEaG4zZ0E3RFFuQjYyclNPQlpZVVhtakM3QkRPazluRzBSNzY5UVRWY0VBRHlTc3ZEZW5ReGxiaDFOdnhwZEpWTzIxcVVfaGdlWTZhYzJMajkzWXAtZk4wejRkWVZwSm01cGVmX1VlZUdESkdmOGlxY21NTWxqc0QyTlFZY2M5MjFlc29OLXp1WmRLd082N1ZWSjV5RG5DZw?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="what on earth news8000 com">Less like this</button><button class="save-chip" data-save-key="what on earth news8000 com" data-save-title="What on Earth - news8000.com" data-save-url="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZWZrbGQ5c0Zna2dEaG4zZ0E3RFFuQjYyclNPQlpZVVhtakM3QkRPazluRzBSNzY5UVRWY0VBRHlTc3ZEZW5ReGxiaDFOdnhwZEpWTzIxcVVfaGdlWTZhYzJMajkzWXAtZk4wejRkWVZwSm01cGVmX1VlZUdESkdmOGlxY21NTWxqc0QyTlFZY2M5MjFlc29OLXp1WmRLd082N1ZWSjV5RG5DZw?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="what on earth news8000 com" data-track-section="world" data-track-type="news" href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZWZrbGQ5c0Zna2dEaG4zZ0E3RFFuQjYyclNPQlpZVVhtakM3QkRPazluRzBSNzY5UVRWY0VBRHlTc3ZEZW5ReGxiaDFOdnhwZEpWTzIxcVVfaGdlWTZhYzJMajkzWXAtZk4wejRkWVZwSm01cGVmX1VlZUdESkdmOGlxY21NTWxqc0QyTlFZY2M5MjFlc29OLXp1WmRLd082N1ZWSjV5RG5DZw?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
       </div>
     </article>
     
-    <article class="stream-card" data-type="news" data-section="ai_tech_business" data-ts="1775280582" data-score="2094831086">
+    <article class="stream-card" data-type="news" data-section="world" data-topic="world" data-priority="breaking" data-ts="1775275260" data-base-score="2574149127" data-source-tier="Tier 2" data-key="more seniors priced out of living alone seek roommates"> 
+      <div class="card-header">
+        <div class="badge-row"><span class="pill pill-news">World</span><span class="pill pill-importance">Breaking</span></div>
+        <span class="muted">Apr 4, 12:01 AM ET</span>
+      </div>
+      <div class="card-title">More Seniors Priced Out of Living Alone Seek Roommates</div>
+      <p class="card-copy">Rising costs are forcing more seniors aged 65 and older to seek roommates as living alone becomes unaffordable.</p>
+      <div class="card-footer">
+        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="more seniors priced out of living alone seek roommates">Less like this</button><button class="save-chip" data-save-key="more seniors priced out of living alone seek roommates" data-save-title="More Seniors Priced Out of Living Alone Seek Roommates" data-save-url="https://news.google.com/rss/articles/CBMi0wFBVV95cUxNYkhESGcwdlBsM3RxMVFMRGFmNGFjYy1hRW9VdmVXWVJYaUVGYkF0b3B5MUZQNEhIa2xVR2s1WjZSbGN3SHREMXpxWGZ4LUJyQjFyVVZmT2FkdkNJcjFIdG9ublNGU2ZTdHJtbi1Scy13eXNMdzlVenBJRjJFbzk1anhWYlIwT3FGdF9QOXpqOHFZYTNrWDJJUmRfQVZOSzkwMkRGeGlyZ2tjZDctUVY4Uml2SEltdXFFZFhYekowNlQ3UkhJc0FSeWlvbkF1aGR2Q0Fv?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="more seniors priced out of living alone seek roommates" data-track-section="world" data-track-type="news" href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxNYkhESGcwdlBsM3RxMVFMRGFmNGFjYy1hRW9VdmVXWVJYaUVGYkF0b3B5MUZQNEhIa2xVR2s1WjZSbGN3SHREMXpxWGZ4LUJyQjFyVVZmT2FkdkNJcjFIdG9ublNGU2ZTdHJtbi1Scy13eXNMdzlVenBJRjJFbzk1anhWYlIwT3FGdF9QOXpqOHFZYTNrWDJJUmRfQVZOSzkwMkRGeGlyZ2tjZDctUVY4Uml2SEltdXFFZFhYekowNlQ3UkhJc0FSeWlvbkF1aGR2Q0Fv?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="news" data-section="ai_tech_business" data-topic="ai_tech_business" data-priority="worth-watching" data-ts="1775282400" data-base-score="2094833232" data-source-tier="Tier 2" data-key="guidance proposed for safer ai enabled medical devices"> 
+      <div class="card-header">
+        <div class="badge-row"><span class="pill pill-news">AI / Tech</span><span class="pill pill-importance">Worth watching</span></div>
+        <span class="muted">Apr 4, 2:00 AM ET</span>
+      </div>
+      <div class="card-title">Guidance Proposed for Safer AI-Enabled Medical Devices</div>
+      <p class="card-copy">Researchers have offered new recommendations to enhance the safety of AI-integrated medical devices.</p>
+      <div class="card-footer">
+        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="guidance proposed for safer ai enabled medical devices">Less like this</button><button class="save-chip" data-save-key="guidance proposed for safer ai enabled medical devices" data-save-title="Guidance Proposed for Safer AI-Enabled Medical Devices" data-save-url="https://news.google.com/rss/articles/CBMisAFBVV95cUxOMXdCNVFJLXo3Tmlrd1JDdVFaeUFCN0xCWENSX1JZbDRxS2VkZVpLcDNnT0g5Mmg2V1M1a0xVb2pWWTFLbV9zcG1CYlo2VjVTdkZLTUpLbm9lVG9UcW1NV2FXQXNnVnNTNjZHeFlhNXE2S1NqN0o3dXA2bWRWSmQ3UDh3eGw4ekJNNWkzeUtQWW9PR3FURl9aUk5ob004SnJqejg4TWpmc25OTHVXaFdHcg?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="guidance proposed for safer ai enabled medical devices" data-track-section="ai_tech_business" data-track-type="news" href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOMXdCNVFJLXo3Tmlrd1JDdVFaeUFCN0xCWENSX1JZbDRxS2VkZVpLcDNnT0g5Mmg2V1M1a0xVb2pWWTFLbV9zcG1CYlo2VjVTdkZLTUpLbm9lVG9UcW1NV2FXQXNnVnNTNjZHeFlhNXE2S1NqN0o3dXA2bWRWSmQ3UDh3eGw4ekJNNWkzeUtQWW9PR3FURl9aUk5ob004SnJqejg4TWpmc25OTHVXaFdHcg?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="news" data-section="ai_tech_business" data-topic="ai_tech_business" data-priority="worth-watching" data-ts="1775281620" data-base-score="2094832311" data-source-tier="Tier 2" data-key="ai pharaoh and the fight for the human soul the times of israel"> 
+      <div class="card-header">
+        <div class="badge-row"><span class="pill pill-news">AI / Tech</span><span class="pill pill-importance">Worth watching</span></div>
+        <span class="muted">Apr 4, 1:47 AM ET</span>
+      </div>
+      <div class="card-title">AI, Pharaoh, and the Fight for the Human Soul - The Times of Israel</div>
+      <p class="card-copy">AI, Pharaoh, and the Fight for the Human Soul The Times of Israel</p>
+      <div class="card-footer">
+        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="ai pharaoh and the fight for the human soul the times of israel">Less like this</button><button class="save-chip" data-save-key="ai pharaoh and the fight for the human soul the times of israel" data-save-title="AI, Pharaoh, and the Fight for the Human Soul - The Times of Israel" data-save-url="https://news.google.com/rss/articles/CBMiggFBVV95cUxQSmo2eDVPUE9YUjJuV2YzeDNwSmRsNktTR21qa2Vnb2Y3NDhsQ1RjMnpvZGRPbnhEUjA4UzA0VkhDN0tjOVZQeWIzN2d6NmVmWmtKVHc1WGE0WXNjakVTSmNzaXlCNHlzVEVxZFBqcm1ZcnMwY3N3dXFyMzR5dFJwRm9B?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="ai pharaoh and the fight for the human soul the times of israel" data-track-section="ai_tech_business" data-track-type="news" href="https://news.google.com/rss/articles/CBMiggFBVV95cUxQSmo2eDVPUE9YUjJuV2YzeDNwSmRsNktTR21qa2Vnb2Y3NDhsQ1RjMnpvZGRPbnhEUjA4UzA0VkhDN0tjOVZQeWIzN2d6NmVmWmtKVHc1WGE0WXNjakVTSmNzaXlCNHlzVEVxZFBqcm1ZcnMwY3N3dXFyMzR5dFJwRm9B?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+      </div>
+    </article>
+    </div></div>
+    </section>
+    
+    <div class="app-grid">
+      <div>
+        <section class="controls-shell">
+          <div><div class="section-kicker">Smart feed controls</div><div class="filter-group"><button class="filter-chip" data-filter="all">All</button><button class="filter-chip" data-filter="news">News</button><button class="filter-chip" data-filter="x">X / Twitter</button></div><div class="section-tabs"><button class="section-tab" data-tab="all">All</button><button class="section-tab" data-tab="breaking">Breaking</button><button class="section-tab" data-tab="world">World</button><button class="section-tab" data-tab="ai_tech_business">AI</button><button class="section-tab" data-tab="us_politics">Politics</button><button class="section-tab" data-tab="x">X</button></div></div>
+          <div class="sort-group"><input id="streamSearch" type="search" placeholder="Search cards..." /><select id="streamSort"><option value="for-you">For You</option><option value="smart">Smart feed</option><option value="latest">Latest</option><option value="engagement">Popularity / impact</option><option value="type">Group by type</option></select></div>
+        </section>
+        <section class="section-shell"><div class="section-kicker">Live briefing stream</div><h2>For You live briefing</h2><p class="section-copy">No duplicates from the rails above. Ranking adapts to what you click, save, and hide.</p><div id="streamGrid" class="stream-grid">
+    <article class="stream-card" data-type="news" data-section="ai_tech_business" data-topic="ai_tech_business" data-priority="worth-watching" data-ts="1775280582" data-base-score="2094831086" data-source-tier="Tier 2" data-key="april 6 2026 campusmemo sfsu edu"> 
       <div class="card-header">
         <div class="badge-row"><span class="pill pill-news">AI / Tech</span><span class="pill pill-importance">Worth watching</span></div>
         <span class="muted">Apr 4, 1:29 AM ET</span>
@@ -341,102 +169,89 @@
       <p class="card-copy">April 6, 2026 campusmemo.sfsu.edu</p>
       <div class="card-footer">
         <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="april 6 2026 campusmemo sfsu edu">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SYk9FWjhwRy02UGk4WTlXa1lodlk3TU9peW1BaVNsUUJkWEVRZnhZTWZvbjhRM3Nfal9VUGc0ckdBU3o1ajN1UkFPdGtqSlhBVXlfXzM5ZXE?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="april 6 2026 campusmemo sfsu edu">Less like this</button><button class="save-chip" data-save-key="april 6 2026 campusmemo sfsu edu" data-save-title="April 6, 2026 - campusmemo.sfsu.edu" data-save-url="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SYk9FWjhwRy02UGk4WTlXa1lodlk3TU9peW1BaVNsUUJkWEVRZnhZTWZvbjhRM3Nfal9VUGc0ckdBU3o1ajN1UkFPdGtqSlhBVXlfXzM5ZXE?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="april 6 2026 campusmemo sfsu edu" data-track-section="ai_tech_business" data-track-type="news" href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SYk9FWjhwRy02UGk4WTlXa1lodlk3TU9peW1BaVNsUUJkWEVRZnhZTWZvbjhRM3Nfal9VUGc0ckdBU3o1ajN1UkFPdGtqSlhBVXlfXzM5ZXE?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
       </div>
     </article>
     
-    <article class="stream-card" data-type="news" data-section="ai_tech_business" data-ts="1775278800" data-score="2094828984">
+    <article class="stream-card" data-type="news" data-section="ai_tech_business" data-topic="ai_tech_business" data-priority="worth-watching" data-ts="1775278800" data-base-score="2094828984" data-source-tier="Tier 2" data-key="ai transforming the world s largest film industry"> 
       <div class="card-header">
         <div class="badge-row"><span class="pill pill-news">AI / Tech</span><span class="pill pill-importance">Worth watching</span></div>
         <span class="muted">Apr 4, 1:00 AM ET</span>
       </div>
-      <div class="card-title">AI Reshapes the Global Film Industry</div>
-      <p class="card-copy">Artificial intelligence is significantly transforming the world&#x27;s largest film industry, impacting production and creativity.</p>
+      <div class="card-title">AI Transforming the World’s Largest Film Industry</div>
+      <p class="card-copy">Artificial intelligence is significantly reshaping production and workflows in the global film industry.</p>
       <div class="card-footer">
         <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="ai reshapes the global film industry">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNMlpuQ0JEaTZlYXpGSk5xVGpWY3Vnd3ZJRE5rZVJSMXhmS3pQVzk5Z3N1UEZPX1lFT2dpMzBFcy1kNUhZRFVhZlNIMEVILWR4bENWSnY4M09ZYm5CSVdVOWFBdEhBTm53MVVQbU9HLW8xR0x5VE81X2toMFQyTU50Wll1aF9BWHBnSWlNY29UaDdQMTJMem1XUEFGc1g?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="ai transforming the world s largest film industry">Less like this</button><button class="save-chip" data-save-key="ai transforming the world s largest film industry" data-save-title="AI Transforming the World’s Largest Film Industry" data-save-url="https://news.google.com/rss/articles/CBMinAFBVV95cUxNMlpuQ0JEaTZlYXpGSk5xVGpWY3Vnd3ZJRE5rZVJSMXhmS3pQVzk5Z3N1UEZPX1lFT2dpMzBFcy1kNUhZRFVhZlNIMEVILWR4bENWSnY4M09ZYm5CSVdVOWFBdEhBTm53MVVQbU9HLW8xR0x5VE81X2toMFQyTU50Wll1aF9BWHBnSWlNY29UaDdQMTJMem1XUEFGc1g?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="ai transforming the world s largest film industry" data-track-section="ai_tech_business" data-track-type="news" href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNMlpuQ0JEaTZlYXpGSk5xVGpWY3Vnd3ZJRE5rZVJSMXhmS3pQVzk5Z3N1UEZPX1lFT2dpMzBFcy1kNUhZRFVhZlNIMEVILWR4bENWSnY4M09ZYm5CSVdVOWFBdEhBTm53MVVQbU9HLW8xR0x5VE81X2toMFQyTU50Wll1aF9BWHBnSWlNY29UaDdQMTJMem1XUEFGc1g?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
       </div>
     </article>
     
-    <article class="stream-card" data-type="news" data-section="ai_tech_business" data-ts="1775278016" data-score="2094828058">
+    <article class="stream-card" data-type="news" data-section="ai_tech_business" data-topic="ai_tech_business" data-priority="worth-watching" data-ts="1775278016" data-base-score="2094828058" data-source-tier="Tier 2" data-key="duolingo s ai first growth strategy raises questions"> 
       <div class="card-header">
         <div class="badge-row"><span class="pill pill-news">AI / Tech</span><span class="pill pill-importance">Worth watching</span></div>
         <span class="muted">Apr 4, 12:46 AM ET</span>
       </div>
-      <div class="card-title">Does Duolingo’s AI-First Growth Pivot And Margin Trade-Off Change The Bull Case For DUOL? - simplywall.st</div>
-      <p class="card-copy">Does Duolingo’s AI-First Growth Pivot And Margin Trade-Off Change The Bull Case For DUOL? simplywall.st</p>
+      <div class="card-title">Duolingo’s AI-First Growth Strategy Raises Questions</div>
+      <p class="card-copy">Duolingo’s pivot to AI-driven growth involves trade-offs in margins, prompting debate over its long-term prospects.</p>
       <div class="card-footer">
         <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="does duolingo s ai first growth pivot and margin trade off change the bull case for duol simplywall st">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNU8xVlc4MkVrb1ktMWFLdVZjcXJKMzFaOTRqTnRUYmJPcE1lYzdHM2FYeVU4aHl6SnZjWFVXUGFnTDlFeGs0eFo3NDJNMGg3bnA0TWkwdDFOcDJ1a2pnRFR2bmxVaEJBSVRCTVdwMDlpOW1Gd2F5V0ZseHFyOUVac1VvRmpGNW5vQmNtanVhRS1ib1IxcjZySzlLcm83eC04MmFYVDNQc3E5dGZHSFBtOEJvdWE0WWRlSTJLY19yVnpMSjBSMmJUdGF5WmJyUWNHekHSAdcBQVVfeXFMUEZ6LXVjTS1RVUlhNl8xa1h6NGFZc2NGY1B0QVhFa1RabkVrRjVYdmlNcWtvRF9kaHNieDRNRHhVM1ZXRHZlelRQZjVpazNLOGR4VU5jTkN6MEpVcjh5c1ZyZHc0WUlhbk5qT0lxY1NoMTVCamRPMlBfejh5UTgzazFzUm9meUlEb2hXSndkUnowWGJzWUc5bk5tNmZkYnhReDNsV3RpWkZUM0hlRDRvaE9mVmRLNGlTcWt2N2UyOUpJSVFoU0FKbjBjWmV4TXVJdlRLdDk4cHM?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="duolingo s ai first growth strategy raises questions">Less like this</button><button class="save-chip" data-save-key="duolingo s ai first growth strategy raises questions" data-save-title="Duolingo’s AI-First Growth Strategy Raises Questions" data-save-url="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNU8xVlc4MkVrb1ktMWFLdVZjcXJKMzFaOTRqTnRUYmJPcE1lYzdHM2FYeVU4aHl6SnZjWFVXUGFnTDlFeGs0eFo3NDJNMGg3bnA0TWkwdDFOcDJ1a2pnRFR2bmxVaEJBSVRCTVdwMDlpOW1Gd2F5V0ZseHFyOUVac1VvRmpGNW5vQmNtanVhRS1ib1IxcjZySzlLcm83eC04MmFYVDNQc3E5dGZHSFBtOEJvdWE0WWRlSTJLY19yVnpMSjBSMmJUdGF5WmJyUWNHekHSAdcBQVVfeXFMUEZ6LXVjTS1RVUlhNl8xa1h6NGFZc2NGY1B0QVhFa1RabkVrRjVYdmlNcWtvRF9kaHNieDRNRHhVM1ZXRHZlelRQZjVpazNLOGR4VU5jTkN6MEpVcjh5c1ZyZHc0WUlhbk5qT0lxY1NoMTVCamRPMlBfejh5UTgzazFzUm9meUlEb2hXSndkUnowWGJzWUc5bk5tNmZkYnhReDNsV3RpWkZUM0hlRDRvaE9mVmRLNGlTcWt2N2UyOUpJSVFoU0FKbjBjWmV4TXVJdlRLdDk4cHM?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="duolingo s ai first growth strategy raises questions" data-track-section="ai_tech_business" data-track-type="news" href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNU8xVlc4MkVrb1ktMWFLdVZjcXJKMzFaOTRqTnRUYmJPcE1lYzdHM2FYeVU4aHl6SnZjWFVXUGFnTDlFeGs0eFo3NDJNMGg3bnA0TWkwdDFOcDJ1a2pnRFR2bmxVaEJBSVRCTVdwMDlpOW1Gd2F5V0ZseHFyOUVac1VvRmpGNW5vQmNtanVhRS1ib1IxcjZySzlLcm83eC04MmFYVDNQc3E5dGZHSFBtOEJvdWE0WWRlSTJLY19yVnpMSjBSMmJUdGF5WmJyUWNHekHSAdcBQVVfeXFMUEZ6LXVjTS1RVUlhNl8xa1h6NGFZc2NGY1B0QVhFa1RabkVrRjVYdmlNcWtvRF9kaHNieDRNRHhVM1ZXRHZlelRQZjVpazNLOGR4VU5jTkN6MEpVcjh5c1ZyZHc0WUlhbk5qT0lxY1NoMTVCamRPMlBfejh5UTgzazFzUm9meUlEb2hXSndkUnowWGJzWUc5bk5tNmZkYnhReDNsV3RpWkZUM0hlRDRvaE9mVmRLNGlTcWt2N2UyOUpJSVFoU0FKbjBjWmV4TXVJdlRLdDk4cHM?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
       </div>
     </article>
     
-    <article class="stream-card" data-type="news" data-section="ai_tech_business" data-ts="1775277832" data-score="2094827841">
-      <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">AI / Tech</span><span class="pill pill-importance">Worth watching</span></div>
-        <span class="muted">Apr 4, 12:43 AM ET</span>
-      </div>
-      <div class="card-title">2026 Best &amp; Brightest Business Major: Noah George, USC (Marshall) - Poets&amp;Quants for Undergrads</div>
-      <p class="card-copy">2026 Best &amp; Brightest Business Major: Noah George, USC (Marshall) Poets&amp;Quants for Undergrads</p>
-      <div class="card-footer">
-        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="2026 best brightest business major noah george usc marshall poets quants for undergrads">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQRFBpNDI0Z0RSTmJmbWYzYjlYaEFKVXRKc0ZONHFReklzUTREQlN6T0dqdnk4cnVjaVh4Q3pianVwN3lMWFVsSEhGSUZxRG1rR1A1Z3drNTJkbFd0T2VCU2xXNTFFbzhJVWd3OUVtbi1oWTNsUHlDRkhzb2FVQTZaMDRIWDJmcWdNVEJmanVPck9jOTZ0eFdiLWstd2lOdG4wNkR0QUFMZDhPS3RSUUE?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
-      </div>
-    </article>
-    
-    <article class="stream-card" data-type="news" data-section="ai_tech_business" data-ts="1775277150" data-score="2094827037">
-      <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">AI / Tech</span><span class="pill pill-importance">Worth watching</span></div>
-        <span class="muted">Apr 4, 12:32 AM ET</span>
-      </div>
-      <div class="card-title">AI Hype Cycle Faces Risk of Collapse with Market Implications</div>
-      <p class="card-copy">Experts warn that the current AI hype cycle may collapse, potentially affecting markets and investor sentiment.</p>
-      <div class="card-footer">
-        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="ai hype cycle faces risk of collapse with market implications">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxPNktGY09Id3RkdDBoOVBLTUcydU9VRjlURGd3V3NqUVNPMjByemxIQ1d3MGN0cDc2OExqVlNmREpIUTNDWXAzSXl0SnY3Szh3RUJNbVFjeXI0TU9FSGJ6dzRhUTE1YmVkdHNqbWwxeWJrNzVVNENveVZqVUliQXV5WjhlM1pPUFhGVnpOdHBVY052TmhleWNjZGFDekdxdVVaV3p5dENuMUFHaFg1UGVvUnk2MF9nRnBYOGVibG9aV2FoYklYVUVqTEg1MGJ3MnZXYTBTQjdlYVI3X01uVld4dkNKcVM?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
-      </div>
-    </article>
-    
-    <article class="stream-card" data-type="news" data-section="us_politics" data-ts="1775280845" data-score="2041572971">
+    <article class="stream-card" data-type="news" data-section="us_politics" data-topic="us_politics" data-priority="worth-watching" data-ts="1775282322" data-base-score="2041574670" data-source-tier="Tier 2" data-key="trump attends supreme court arguments leaves early"> 
       <div class="card-header">
         <div class="badge-row"><span class="pill pill-news">US Politics</span><span class="pill pill-importance">Worth watching</span></div>
-        <span class="muted">Apr 4, 1:34 AM ET</span>
+        <span class="muted">Apr 4, 1:58 AM ET</span>
       </div>
-      <div class="card-title">Trump Attends Supreme Court Arguments, Leaves After One Hour</div>
-      <p class="card-copy">Former President Trump attended Supreme Court oral arguments but departed after approximately one hour.</p>
+      <div class="card-title">Trump Attends Supreme Court Arguments, Leaves Early</div>
+      <p class="card-copy">Former President Trump attended Supreme Court oral arguments but departed after about an hour.</p>
       <div class="card-footer">
         <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="trump attends supreme court arguments leaves after one hour">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMigwFBVV95cUxPRDIyMnB3TngzcGx2bzExVWpnOGVtNWlGNmhTUnktMUVzMFRMMUk1blJzcGpiUDlqNlJxN21hbzhPRFd4dlMtaWZZeGp4SjFicDVUNk5KN0lSYkxZSzY1RXFUamVmN0RORzNuYW9WaDNTaGVpWlV4VmNsakhlZ0lmOElQbw?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="trump attends supreme court arguments leaves early">Less like this</button><button class="save-chip" data-save-key="trump attends supreme court arguments leaves early" data-save-title="Trump Attends Supreme Court Arguments, Leaves Early" data-save-url="https://news.google.com/rss/articles/CBMigwFBVV95cUxPRDIyMnB3TngzcGx2bzExVWpnOGVtNWlGNmhTUnktMUVzMFRMMUk1blJzcGpiUDlqNlJxN21hbzhPRFd4dlMtaWZZeGp4SjFicDVUNk5KN0lSYkxZSzY1RXFUamVmN0RORzNuYW9WaDNTaGVpWlV4VmNsakhlZ0lmOElQbw?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="trump attends supreme court arguments leaves early" data-track-section="us_politics" data-track-type="news" href="https://news.google.com/rss/articles/CBMigwFBVV95cUxPRDIyMnB3TngzcGx2bzExVWpnOGVtNWlGNmhTUnktMUVzMFRMMUk1blJzcGpiUDlqNlJxN21hbzhPRFd4dlMtaWZZeGp4SjFicDVUNk5KN0lSYkxZSzY1RXFUamVmN0RORzNuYW9WaDNTaGVpWlV4VmNsakhlZ0lmOElQbw?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
       </div>
     </article>
     
-    <article class="stream-card" data-type="news" data-section="us_politics" data-ts="1775276208" data-score="2041567639">
+    <article class="stream-card" data-type="news" data-section="us_politics" data-topic="us_politics" data-priority="worth-watching" data-ts="1775281337" data-base-score="2041573537" data-source-tier="Tier 2" data-key="us military aircraft shot down by enemy fire for first time in 20 years"> 
       <div class="card-header">
         <div class="badge-row"><span class="pill pill-news">US Politics</span><span class="pill pill-importance">Worth watching</span></div>
-        <span class="muted">Apr 4, 12:16 AM ET</span>
+        <span class="muted">Apr 4, 1:42 AM ET</span>
       </div>
-      <div class="card-title">US military aircraft hit in Iran war are first shot down by enemy fire in over 20 years - Audacy</div>
-      <p class="card-copy">US military aircraft hit in Iran war are first shot down by enemy fire in over 20 years Audacy</p>
+      <div class="card-title">US Military Aircraft Shot Down by Enemy Fire for First Time in 20 Years</div>
+      <p class="card-copy">US military aircraft were shot down in the Iran conflict, marking the first such losses to enemy fire in over two decades.</p>
       <div class="card-footer">
         <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="us military aircraft hit in iran war are first shot down by enemy fire in over 20 years audacy">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMifkFVX3lxTE5pZGZKSGRxeTFjRURvUWRTaGRtRlViWnAzQWUwUjVFRE93c3F4NWdQR2dkb2ppeDBLQk1HTkpBYUhnUzNleEVYRlNTQUZxZzVmd054SjZmSzh1eWYtTGh5NTN6Um5yeFRpM2hsX3hvcDRhUDZYR1BHaTdQV3ZCUQ?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="us military aircraft shot down by enemy fire for first time in 20 years">Less like this</button><button class="save-chip" data-save-key="us military aircraft shot down by enemy fire for first time in 20 years" data-save-title="US Military Aircraft Shot Down by Enemy Fire for First Time in 20 Years" data-save-url="https://news.google.com/rss/articles/CBMifkFVX3lxTE1jVHNweUVxRWZmMVBoTkNpUHVPOHJkeEQ0ZkFLeEpiRzlzVDJxSERicGc1NVVycHlHRzRyb3U3dEZkNnJEM19JR0ExRDJ0XzZrRE1aM2J0WVZuNzlEaVVaMlpXc3I5S0VZbUtCR2hPQUQ0ckNRZXpoVVVOaDc4QQ?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="us military aircraft shot down by enemy fire for first time in 20 years" data-track-section="us_politics" data-track-type="news" href="https://news.google.com/rss/articles/CBMifkFVX3lxTE1jVHNweUVxRWZmMVBoTkNpUHVPOHJkeEQ0ZkFLeEpiRzlzVDJxSERicGc1NVVycHlHRzRyb3U3dEZkNnJEM19JR0ExRDJ0XzZrRE1aM2J0WVZuNzlEaVVaMlpXc3I5S0VZbUtCR2hPQUQ0ckNRZXpoVVVOaDc4QQ?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
       </div>
     </article>
     
-    <article class="stream-card" data-type="news" data-section="us_politics" data-ts="1775271508" data-score="2041562234">
+    <article class="stream-card" data-type="news" data-section="us_politics" data-topic="us_politics" data-priority="worth-watching" data-ts="1775275363" data-base-score="2041566667" data-source-tier="Tier 2" data-key="trump proposes spending and budget cuts to congress"> 
+      <div class="card-header">
+        <div class="badge-row"><span class="pill pill-news">US Politics</span><span class="pill pill-importance">Worth watching</span></div>
+        <span class="muted">Apr 4, 12:02 AM ET</span>
+      </div>
+      <div class="card-title">Trump Proposes Spending and Budget Cuts to Congress</div>
+      <p class="card-copy">Trump submitted his initial budget proposals to Congress, combining increased spending with cuts.</p>
+      <div class="card-footer">
+        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="trump proposes spending and budget cuts to congress">Less like this</button><button class="save-chip" data-save-key="trump proposes spending and budget cuts to congress" data-save-title="Trump Proposes Spending and Budget Cuts to Congress" data-save-url="https://news.google.com/rss/articles/CBMitAFBVV95cUxQS3RoMUZhWmRCdmdraDd3dGdJZXZ4SjRLcVF0NEEweklteHd2NjNjNEZ3Z1NzMXdQekNEeHBxTU9mSEs4TFJvdkZBcDlfRHFCa3ZnazRQd0IzNjk2Y056cVZZSmlQbXNqYXVOejVIcVFWSVJOM2habk1idkNQbUFUNnVVRDV6X05fYUQ1Z2dtTjZ2OTE3STZPNC1DSHdFTTlmRjBQa04teWhXTEozaG84MXQzbTU?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="trump proposes spending and budget cuts to congress" data-track-section="us_politics" data-track-type="news" href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQS3RoMUZhWmRCdmdraDd3dGdJZXZ4SjRLcVF0NEEweklteHd2NjNjNEZ3Z1NzMXdQekNEeHBxTU9mSEs4TFJvdkZBcDlfRHFCa3ZnazRQd0IzNjk2Y056cVZZSmlQbXNqYXVOejVIcVFWSVJOM2habk1idkNQbUFUNnVVRDV6X05fYUQ1Z2dtTjZ2OTE3STZPNC1DSHdFTTlmRjBQa04teWhXTEozaG84MXQzbTU?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="news" data-section="us_politics" data-topic="us_politics" data-priority="worth-watching" data-ts="1775271508" data-base-score="2041562234" data-source-tier="Tier 2" data-key="china signals support for diplomacy in us israel iran war"> 
       <div class="card-header">
         <div class="badge-row"><span class="pill pill-news">US Politics</span><span class="pill pill-importance">Worth watching</span></div>
         <span class="muted">Apr 3, 10:58 PM ET</span>
       </div>
-      <div class="card-title">China Supports Diplomacy in US-Israel-Iran Conflict</div>
-      <p class="card-copy">China signals backing for diplomatic efforts amid escalating tensions involving the US, Israel, and Iran.</p>
+      <div class="card-title">China Signals Support for Diplomacy in US-Israel Iran War</div>
+      <p class="card-copy">China has expressed support for diplomatic efforts to resolve tensions in the US-Israel-Iran conflict.</p>
       <div class="card-footer">
         <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="china supports diplomacy in us israel iran conflict">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPRnp3RGNRbmk1RW10cFVHcVFPcWpOZDhEV2dUOERwMEtHLVVNVEp6Y0dXZE01TElwY1BVRTlGTEpDXzRxdk9mWWxRMnRraTNqMVYwT09XMmc1eTdJSEF0ejg5WjEyQU5XU3BOVnVaeU9jLXdtNEZZajA2RzROWG1NOWx1bElIWEY4QzhXZw?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="china signals support for diplomacy in us israel iran war">Less like this</button><button class="save-chip" data-save-key="china signals support for diplomacy in us israel iran war" data-save-title="China Signals Support for Diplomacy in US-Israel Iran War" data-save-url="https://news.google.com/rss/articles/CBMijAFBVV95cUxPRnp3RGNRbmk1RW10cFVHcVFPcWpOZDhEV2dUOERwMEtHLVVNVEp6Y0dXZE01TElwY1BVRTlGTEpDXzRxdk9mWWxRMnRraTNqMVYwT09XMmc1eTdJSEF0ejg5WjEyQU5XU3BOVnVaeU9jLXdtNEZZajA2RzROWG1NOWx1bElIWEY4QzhXZw?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="china signals support for diplomacy in us israel iran war" data-track-section="us_politics" data-track-type="news" href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPRnp3RGNRbmk1RW10cFVHcVFPcWpOZDhEV2dUOERwMEtHLVVNVEp6Y0dXZE01TElwY1BVRTlGTEpDXzRxdk9mWWxRMnRraTNqMVYwT09XMmc1eTdJSEF0ejg5WjEyQU5XU3BOVnVaeU9jLXdtNEZZajA2RzROWG1NOWx1bElIWEY4QzhXZw?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
       </div>
     </article>
     
-    <article class="stream-card" data-type="news" data-section="us_politics" data-ts="1775271321" data-score="2041562019">
+    <article class="stream-card" data-type="news" data-section="us_politics" data-topic="us_politics" data-priority="worth-watching" data-ts="1775271321" data-base-score="2041562019" data-source-tier="Tier 2" data-key="trump directs officials to pay all d h s employees the new york times"> 
       <div class="card-header">
         <div class="badge-row"><span class="pill pill-news">US Politics</span><span class="pill pill-importance">Worth watching</span></div>
         <span class="muted">Apr 3, 10:55 PM ET</span>
@@ -445,89 +260,115 @@
       <p class="card-copy">Trump Directs Officials to Pay All D.H.S. Employees The New York Times</p>
       <div class="card-footer">
         <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="trump directs officials to pay all d h s employees the new york times">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPeEtzMnY1S1hYbGJtbm5jQ0RrQ19aeGZWdFhKV19HamNpNHJ3dHB5dDJ2OVBwMEZMTFl0SklRcHBiQnlBSk9uZVA2V0hKWnVFTXNCYkZBc2RhamtCdGpxWHBCaUhuanpxS0RXUTVncmxuOGJ6ZFlhOFhGQkpDemRzSw?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="trump directs officials to pay all d h s employees the new york times">Less like this</button><button class="save-chip" data-save-key="trump directs officials to pay all d h s employees the new york times" data-save-title="Trump Directs Officials to Pay All D.H.S. Employees - The New York Times" data-save-url="https://news.google.com/rss/articles/CBMigAFBVV95cUxPeEtzMnY1S1hYbGJtbm5jQ0RrQ19aeGZWdFhKV19HamNpNHJ3dHB5dDJ2OVBwMEZMTFl0SklRcHBiQnlBSk9uZVA2V0hKWnVFTXNCYkZBc2RhamtCdGpxWHBCaUhuanpxS0RXUTVncmxuOGJ6ZFlhOFhGQkpDemRzSw?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="trump directs officials to pay all d h s employees the new york times" data-track-section="us_politics" data-track-type="news" href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPeEtzMnY1S1hYbGJtbm5jQ0RrQ19aeGZWdFhKV19HamNpNHJ3dHB5dDJ2OVBwMEZMTFl0SklRcHBiQnlBSk9uZVA2V0hKWnVFTXNCYkZBc2RhamtCdGpxWHBCaUhuanpxS0RXUTVncmxuOGJ6ZFlhOFhGQkpDemRzSw?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
       </div>
     </article>
     
-    <article class="stream-card" data-type="news" data-section="us_politics" data-ts="1775270158" data-score="2041560681">
+    <article class="stream-card" data-type="news" data-section="boston_local" data-topic="boston_local" data-priority="boston" data-ts="1775281837" data-base-score="1775281837" data-source-tier="Tier 2" data-key="massachusetts comedian rescued after toll plaza crash speaks out"> 
       <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">US Politics</span><span class="pill pill-importance">Worth watching</span></div>
-        <span class="muted">Apr 3, 10:35 PM ET</span>
+        <div class="badge-row"><span class="pill pill-news">Boston</span><span class="pill pill-importance">Boston</span></div>
+        <span class="muted">Apr 4, 1:50 AM ET</span>
       </div>
-      <div class="card-title">Trump Seeks Hundreds of Millions for White House Renovations - National Today</div>
-      <p class="card-copy">Trump Seeks Hundreds of Millions for White House Renovations National Today</p>
+      <div class="card-title">Massachusetts Comedian Rescued After Toll Plaza Crash Speaks Out</div>
+      <p class="card-copy">A Massachusetts comedian shares gratitude after being rescued from a burning car by New Hampshire’s governor and security team.</p>
       <div class="card-footer">
         <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="trump seeks hundreds of millions for white house renovations national today">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMivAFBVV95cUxNdzZyeGRiRWpjNkdwTHJiQ201Ykp4QzROdkc5dU5IYmVkOXZfM1VxTlI2YzN3aFBxZUpldWZFTEtYMkNrYVZoVEF1RHd4NXZyY1gtdzkzWkhrMWNSQlhvVm83bXhqUGNlQzdYU084UEt6U19HVFR3X1RjSWVBWUZlVWJNUjFIVGtCR2NYTHNOb2lqTTB4UGVPUjBJajJacVNnNWYzdnNLTFp3MURqTjlHRWJjNFVMT09WU0V0MQ?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="massachusetts comedian rescued after toll plaza crash speaks out">Less like this</button><button class="save-chip" data-save-key="massachusetts comedian rescued after toll plaza crash speaks out" data-save-title="Massachusetts Comedian Rescued After Toll Plaza Crash Speaks Out" data-save-url="https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZkNrTExuYS1uWEl0VFNKVHhRRDBVcnFHYUw4cDVNaGVocV9ybkVJaTVCLVhtYmRhdW1BTnh6UndHMkZFYkFzdldqZGNWRkY5OUktbW9CSjZPQ3pKbC16VnpvNkFTd3hvLTladkxGdFltdmRUWnlwZVhqMjZLZ3J5aGFLc3NlUzN4QTktcHBWWC1FcVhqMGVjRjlORmJhTGNENy1ueFBhMWp3SDZDSzA5elhnckJuSVVuOUxLbXpFcXdYZVcxbjhuZ1J6aldnLXk4angyLWE2VU1Td28?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="massachusetts comedian rescued after toll plaza crash speaks out" data-track-section="boston_local" data-track-type="news" href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZkNrTExuYS1uWEl0VFNKVHhRRDBVcnFHYUw4cDVNaGVocV9ybkVJaTVCLVhtYmRhdW1BTnh6UndHMkZFYkFzdldqZGNWRkY5OUktbW9CSjZPQ3pKbC16VnpvNkFTd3hvLTladkxGdFltdmRUWnlwZVhqMjZLZ3J5aGFLc3NlUzN4QTktcHBWWC1FcVhqMGVjRjlORmJhTGNENy1ueFBhMWp3SDZDSzA5elhnckJuSVVuOUxLbXpFcXdYZVcxbjhuZ1J6aldnLXk4angyLWE2VU1Td28?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
       </div>
     </article>
     
-    <article class="stream-card" data-type="news" data-section="boston_local" data-ts="1775279606" data-score="1775279606">
+    <article class="stream-card" data-type="news" data-section="boston_local" data-topic="boston_local" data-priority="boston" data-ts="1775281065" data-base-score="1775281065" data-source-tier="Tier 2" data-key="democrat leaders booed at red sox home opener"> 
+      <div class="card-header">
+        <div class="badge-row"><span class="pill pill-news">Boston</span><span class="pill pill-importance">Boston</span></div>
+        <span class="muted">Apr 4, 1:37 AM ET</span>
+      </div>
+      <div class="card-title">Democrat Leaders Booed at Red Sox Home Opener</div>
+      <p class="card-copy">Democratic political figures faced boos from the crowd during the Red Sox home opener.</p>
+      <div class="card-footer">
+        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="democrat leaders booed at red sox home opener">Less like this</button><button class="save-chip" data-save-key="democrat leaders booed at red sox home opener" data-save-title="Democrat Leaders Booed at Red Sox Home Opener" data-save-url="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZm9uMlBjTEVNa1lXbnBmUkdLOEJla0RRTkwxODNraXY5cUNOS2xnRHdjU1pyMlB6RDlSVUhLR1k1amFYQXh2VTFxOVQwMTFUNFR3VG51cU9OSjFQSlNmTGZLTGZ5S1VRemRoTmgxNDEwZmU5LUVFYWZWU3lWN0xZa3FBelVyR3dOM0JzOUVQam9pVkpfMldubmZObHVpLUJYcHctbnlkRnBvUQ?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="democrat leaders booed at red sox home opener" data-track-section="boston_local" data-track-type="news" href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZm9uMlBjTEVNa1lXbnBmUkdLOEJla0RRTkwxODNraXY5cUNOS2xnRHdjU1pyMlB6RDlSVUhLR1k1amFYQXh2VTFxOVQwMTFUNFR3VG51cU9OSjFQSlNmTGZLTGZ5S1VRemRoTmgxNDEwZmU5LUVFYWZWU3lWN0xZa3FBelVyR3dOM0JzOUVQam9pVkpfMldubmZObHVpLUJYcHctbnlkRnBvUQ?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="news" data-section="boston_local" data-topic="boston_local" data-priority="boston" data-ts="1775281005" data-base-score="1775281005" data-source-tier="Tier 2" data-key="democratic states sue to block trump s mail in voting order"> 
+      <div class="card-header">
+        <div class="badge-row"><span class="pill pill-news">Boston</span><span class="pill pill-importance">Boston</span></div>
+        <span class="muted">Apr 4, 1:36 AM ET</span>
+      </div>
+      <div class="card-title">Democratic States Sue to Block Trump’s Mail-In Voting Order</div>
+      <p class="card-copy">Several Democratic-led states have filed lawsuits to block a Trump administration order on mail-in voting.</p>
+      <div class="card-footer">
+        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="democratic states sue to block trump s mail in voting order">Less like this</button><button class="save-chip" data-save-key="democratic states sue to block trump s mail in voting order" data-save-title="Democratic States Sue to Block Trump’s Mail-In Voting Order" data-save-url="https://news.google.com/rss/articles/CBMitAFBVV95cUxQT2lCV1pkRWVseVJya2JTOFZEQm5HT0JOWVBNZjEzRi1ZR2N2UFJEUVRQM3lhekdtakRsRUJiYkQ0Sk1JelVtQkhZNHBFU3UwMzktZ29rSllwdGdNRlVGRm50bzhTSGw0aGM1R0YwLWF6aUJjak5abDJBa01zVVJBdEE5OUtUM0NfTlVuUlA1MmxoWlNaR2dhV043MEpLUHFqSWNQbmdQWGg1cUlKY21nSVpLaTk?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="democratic states sue to block trump s mail in voting order" data-track-section="boston_local" data-track-type="news" href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQT2lCV1pkRWVseVJya2JTOFZEQm5HT0JOWVBNZjEzRi1ZR2N2UFJEUVRQM3lhekdtakRsRUJiYkQ0Sk1JelVtQkhZNHBFU3UwMzktZ29rSllwdGdNRlVGRm50bzhTSGw0aGM1R0YwLWF6aUJjak5abDJBa01zVVJBdEE5OUtUM0NfTlVuUlA1MmxoWlNaR2dhV043MEpLUHFqSWNQbmdQWGg1cUlKY21nSVpLaTk?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="news" data-section="boston_local" data-topic="boston_local" data-priority="boston" data-ts="1775279691" data-base-score="1775279691" data-source-tier="Tier 2" data-key="fenway crowd boos healey wu during opening day appearance national today"> 
+      <div class="card-header">
+        <div class="badge-row"><span class="pill pill-news">Boston</span><span class="pill pill-importance">Boston</span></div>
+        <span class="muted">Apr 4, 1:14 AM ET</span>
+      </div>
+      <div class="card-title">Fenway Crowd Boos Healey, Wu During Opening Day Appearance - National Today</div>
+      <p class="card-copy">Fenway Crowd Boos Healey, Wu During Opening Day Appearance National Today</p>
+      <div class="card-footer">
+        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="fenway crowd boos healey wu during opening day appearance national today">Less like this</button><button class="save-chip" data-save-key="fenway crowd boos healey wu during opening day appearance national today" data-save-title="Fenway Crowd Boos Healey, Wu During Opening Day Appearance - National Today" data-save-url="https://news.google.com/rss/articles/CBMiswFBVV95cUxQZmExWnpMa2ZSNFdjenRyaUhPMlRnVGtGemZvN19RMkZQVDcxMGRTZDQ2VGJxNmpnQWtBa0RwT1ZsVEIxa09KWThfZWZUTm40dHpwQldKVXpWNEMtaWZGVzZicTJWaTRzMEFRRjZMdG9tc19LbkZfZ1ZjNi00OTlpelJTd2h0ZFJGcWM5R2ZUM3FFWTdScHd0VGl1eVhUam1saDFZWWtVb0tqanVwUVVDTGtacw?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="fenway crowd boos healey wu during opening day appearance national today" data-track-section="boston_local" data-track-type="news" href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQZmExWnpMa2ZSNFdjenRyaUhPMlRnVGtGemZvN19RMkZQVDcxMGRTZDQ2VGJxNmpnQWtBa0RwT1ZsVEIxa09KWThfZWZUTm40dHpwQldKVXpWNEMtaWZGVzZicTJWaTRzMEFRRjZMdG9tc19LbkZfZ1ZjNi00OTlpelJTd2h0ZFJGcWM5R2ZUM3FFWTdScHd0VGl1eVhUam1saDFZWWtVb0tqanVwUVVDTGtacw?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="news" data-section="boston_local" data-topic="boston_local" data-priority="boston" data-ts="1775279606" data-base-score="1775279606" data-source-tier="Tier 2" data-key="bruins seek playoff momentum against lightning"> 
       <div class="card-header">
         <div class="badge-row"><span class="pill pill-news">Boston</span><span class="pill pill-importance">Boston</span></div>
         <span class="muted">Apr 4, 1:13 AM ET</span>
       </div>
-      <div class="card-title">Bruins Seek Playoff Boost Against Lightning - National Today</div>
-      <p class="card-copy">Bruins Seek Playoff Boost Against Lightning National Today</p>
+      <div class="card-title">Bruins Seek Playoff Momentum Against Lightning</div>
+      <p class="card-copy">The Boston Bruins aim to boost their playoff chances in an upcoming series against the Tampa Bay Lightning.</p>
       <div class="card-footer">
         <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="bruins seek playoff boost against lightning national today">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPUVcybW54Yng2Qi1rU1lKeDRSLWM3WWd3U0VYakpzT1lDaGk2V3FLZGt6SmpuVjVjaUhkVldRZ3hHY3o4aXpSNHNEbEVpblNzMElQbFJHdVIyc2FTYTFBQ083ZXhxdV9wdWttVzB1M3lnSTFLMjlUMXVzWEtVczlac0J3QWk4U0lIdXpmaDFzZHBmRF8yU1VuT2EzNnFvY1U0?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="bruins seek playoff momentum against lightning">Less like this</button><button class="save-chip" data-save-key="bruins seek playoff momentum against lightning" data-save-title="Bruins Seek Playoff Momentum Against Lightning" data-save-url="https://news.google.com/rss/articles/CBMioAFBVV95cUxPUVcybW54Yng2Qi1rU1lKeDRSLWM3WWd3U0VYakpzT1lDaGk2V3FLZGt6SmpuVjVjaUhkVldRZ3hHY3o4aXpSNHNEbEVpblNzMElQbFJHdVIyc2FTYTFBQ083ZXhxdV9wdWttVzB1M3lnSTFLMjlUMXVzWEtVczlac0J3QWk4U0lIdXpmaDFzZHBmRF8yU1VuT2EzNnFvY1U0?oc=5" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="bruins seek playoff momentum against lightning" data-track-section="boston_local" data-track-type="news" href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPUVcybW54Yng2Qi1rU1lKeDRSLWM3WWd3U0VYakpzT1lDaGk2V3FLZGt6SmpuVjVjaUhkVldRZ3hHY3o4aXpSNHNEbEVpblNzMElQbFJHdVIyc2FTYTFBQ083ZXhxdV9wdWttVzB1M3lnSTFLMjlUMXVzWEtVczlac0J3QWk4U0lIdXpmaDFzZHBmRF8yU1VuT2EzNnFvY1U0?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
       </div>
     </article>
     
-    <article class="stream-card" data-type="news" data-section="boston_local" data-ts="1775279210" data-score="1775279210">
+    <article class="stream-card" data-type="news" data-section="trending" data-topic="trending" data-priority="trending" data-ts="1775281800" data-base-score="1597753620" data-source-tier="Monitor" data-key="ky3 weather"> 
       <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">Boston</span><span class="pill pill-importance">Boston</span></div>
-        <span class="muted">Apr 4, 1:06 AM ET</span>
+        <div class="badge-row"><span class="pill pill-news">Trending</span><span class="pill pill-importance">Trending</span></div>
+        <span class="muted">Apr 4, 1:50 AM ET</span>
       </div>
-      <div class="card-title">Democrat Leaders Booed at Red Sox Home Opener - National Today</div>
-      <p class="card-copy">Democrat Leaders Booed at Red Sox Home Opener National Today</p>
+      <div class="card-title">ky3 weather</div>
+      <p class="card-copy">ky3 weather</p>
       <div class="card-footer">
-        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="democrat leaders booed at red sox home opener national today">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNUGRRNGZjOVNFNm9pMWJ1NGVlbTZqTi16SG5LV3RGQnlrUWxUQ19uTmRWT1BBNzB3Mi1mdERJWlVodGkyTUtEdlBDUHdyMUxlYTFCTmhvRjJ1YTRLYnpZcHhnYy1TTlM2UGdicXpuYXd2MlZRQzh6dE9Bc2VYczlnQ3lVbUZudkF3Rm9FZS0telBlelRFLVRFWEtjQjZkOThnNXlsbl9B?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+        <span class="muted source-meta">trends.google.com · <span class="source-tier tier-3">Monitor</span></span>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="ky3 weather">Less like this</button><button class="save-chip" data-save-key="ky3 weather" data-save-title="ky3 weather" data-save-url="https://trends.google.com/trending/rss?geo=US" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="ky3 weather" data-track-section="trending" data-track-type="news" href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener">Open story ↗</a></div>
       </div>
     </article>
     
-    <article class="stream-card" data-type="news" data-section="boston_local" data-ts="1775279208" data-score="1775279208">
+    <article class="stream-card" data-type="news" data-section="trending" data-topic="trending" data-priority="trending" data-ts="1775281200" data-base-score="1597753080" data-source-tier="Monitor" data-key="jordan peele"> 
       <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">Boston</span><span class="pill pill-importance">Boston</span></div>
-        <span class="muted">Apr 4, 1:06 AM ET</span>
+        <div class="badge-row"><span class="pill pill-news">Trending</span><span class="pill pill-importance">Trending</span></div>
+        <span class="muted">Apr 4, 1:40 AM ET</span>
       </div>
-      <div class="card-title">Red Sox&#x27;s Durbin ends season-opening hitless streak in home opener - National Today</div>
-      <p class="card-copy">Red Sox&#x27;s Durbin ends season-opening hitless streak in home opener National Today</p>
+      <div class="card-title">jordan peele</div>
+      <p class="card-copy">jordan peele</p>
       <div class="card-footer">
-        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="red sox s durbin ends season opening hitless streak in home opener national today">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMivgFBVV95cUxOU3J0VHM1MjRpZGVQVmV0Ymt1TS03UVRUd09NanhpWHl6VXhhVjdmcS10eG9mNkFsbHNpcnVESVlTRUJGcGk4SkYtbExfSEx4Ym1QZE5LR01yQXJ2ei1ScUxUUFVHMXBzdGxYSERCc24xQWgwbUQ4TTFYSmpETHNkZ1VxTjZuVmxDeDRaZ3VWMGQzbG43NDM0Yl9SYmdkZG9mUFg3RFAxTlFUNXRfRzNKTGdOOFVCQ1ozdngtNFJn?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+        <span class="muted source-meta">trends.google.com · <span class="source-tier tier-3">Monitor</span></span>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="jordan peele">Less like this</button><button class="save-chip" data-save-key="jordan peele" data-save-title="jordan peele" data-save-url="https://trends.google.com/trending/rss?geo=US" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="jordan peele" data-track-section="trending" data-track-type="news" href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener">Open story ↗</a></div>
       </div>
     </article>
     
-    <article class="stream-card" data-type="news" data-section="boston_local" data-ts="1775278003" data-score="1775278003">
+    <article class="stream-card" data-type="news" data-section="trending" data-topic="trending" data-priority="trending" data-ts="1775280600" data-base-score="1597752540" data-source-tier="Monitor" data-key="alaskaair"> 
       <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">Boston</span><span class="pill pill-importance">Boston</span></div>
-        <span class="muted">Apr 4, 12:46 AM ET</span>
+        <div class="badge-row"><span class="pill pill-news">Trending</span><span class="pill pill-importance">Trending</span></div>
+        <span class="muted">Apr 4, 1:30 AM ET</span>
       </div>
-      <div class="card-title">‘There are people that are in fear&#x27; over security policy at Tewksbury Hospital - NBC Boston</div>
-      <p class="card-copy">‘There are people that are in fear&#x27; over security policy at Tewksbury Hospital NBC Boston</p>
+      <div class="card-title">alaskaair</div>
+      <p class="card-copy">alaskaair</p>
       <div class="card-footer">
-        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="there are people that are in fear over security policy at tewksbury hospital nbc boston">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMivwFBVV95cUxNT2RtZ3doc1l5RWM1TGxTSlphd2FmUDNJQzF4VV9vT1U5bXJQaVlpVUtONjdjb1YtWGRKU0NxcWJsUFFEMU9FTTkzZ2FTVFotbFlOeGl1N3l2eDhIVlVwZFVtZ3NiR1k4cG92V2ZCNExsdjdzaGoyVnV0czFqMnVDYl9hcU5zSEJvZFV0a21kRXNBLXA3RjFFQUxNSGNIV2NYdVFCSUNscFYtRW5vY1ZfZjhEbG0zcnBhRTRsaTRKc9IBxwFBVV95cUxPUWZmZHZhWTNrVEZzbW5qZTFYanhUVENpeFdMV2dTX0xYbC1KMF9qQW52dnFvTm9sNnlWYk1DbG9iTFVSMkV6Ul9QQzhFZmJIcFhGSTdLWklqaTVhTHBTV2RnZm5VT0Ewdk1FMG1HMUZvVnI5Umc3cWc0cXhZRDN4a0dOdlJNTGV0VTR3NWttVmg2clVfMmsxNDJLUUxoSVhkQjlxVEtjU3p2Qlg3QVVObkdpVkxjSGVZYS1sY0ZRVnZUVm9CUE9N?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
+        <span class="muted source-meta">trends.google.com · <span class="source-tier tier-3">Monitor</span></span>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="alaskaair">Less like this</button><button class="save-chip" data-save-key="alaskaair" data-save-title="alaskaair" data-save-url="https://trends.google.com/trending/rss?geo=US" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="alaskaair" data-track-section="trending" data-track-type="news" href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener">Open story ↗</a></div>
       </div>
     </article>
     
-    <article class="stream-card" data-type="news" data-section="boston_local" data-ts="1775273624" data-score="1775273624">
-      <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">Boston</span><span class="pill pill-importance">Boston</span></div>
-        <span class="muted">Apr 3, 11:33 PM ET</span>
-      </div>
-      <div class="card-title">Celtics Dominate Bucks with 133-101 Victory</div>
-      <p class="card-copy">The Boston Celtics secured a commanding win over the Milwaukee Bucks, led by Jayson Tatum&#x27;s near triple-double performance.</p>
-      <div class="card-footer">
-        <span class="muted source-meta">boston.com · <span class="source-tier tier-3">Monitor</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="celtics dominate bucks with 133 101 victory">Less like this</button><a class="chip-link" href="https://www.boston.com/sports/boston-celtics/2026/04/03/celtics-start-fast-again-and-roll-to-133-101-blowout-of-the-bucks/" target="_blank" rel="noopener">Open story ↗</a></div>
-      </div>
-    </article>
-    
-    <article class="stream-card" data-type="news" data-section="trending" data-ts="1775280000" data-score="1597752000">
+    <article class="stream-card" data-type="news" data-section="trending" data-topic="trending" data-priority="trending" data-ts="1775280000" data-base-score="1597752000" data-source-tier="Monitor" data-key="the guardian movie"> 
       <div class="card-header">
         <div class="badge-row"><span class="pill pill-news">Trending</span><span class="pill pill-importance">Trending</span></div>
         <span class="muted">Apr 4, 1:20 AM ET</span>
@@ -536,24 +377,11 @@
       <p class="card-copy">the guardian movie</p>
       <div class="card-footer">
         <span class="muted source-meta">trends.google.com · <span class="source-tier tier-3">Monitor</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="the guardian movie">Less like this</button><a class="chip-link" href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener">Open story ↗</a></div>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="the guardian movie">Less like this</button><button class="save-chip" data-save-key="the guardian movie" data-save-title="the guardian movie" data-save-url="https://trends.google.com/trending/rss?geo=US" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="the guardian movie" data-track-section="trending" data-track-type="news" href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener">Open story ↗</a></div>
       </div>
     </article>
     
-    <article class="stream-card" data-type="news" data-section="trending" data-ts="1775280000" data-score="1597752000">
-      <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">Trending</span><span class="pill pill-importance">Trending</span></div>
-        <span class="muted">Apr 4, 1:20 AM ET</span>
-      </div>
-      <div class="card-title">josh naylor</div>
-      <p class="card-copy">josh naylor</p>
-      <div class="card-footer">
-        <span class="muted source-meta">trends.google.com · <span class="source-tier tier-3">Monitor</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="josh naylor">Less like this</button><a class="chip-link" href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener">Open story ↗</a></div>
-      </div>
-    </article>
-    
-    <article class="stream-card" data-type="news" data-section="trending" data-ts="1775280000" data-score="1597752000">
+    <article class="stream-card" data-type="news" data-section="trending" data-topic="trending" data-priority="trending" data-ts="1775280000" data-base-score="1597752000" data-source-tier="Monitor" data-key="heidi klum"> 
       <div class="card-header">
         <div class="badge-row"><span class="pill pill-news">Trending</span><span class="pill pill-importance">Trending</span></div>
         <span class="muted">Apr 4, 1:20 AM ET</span>
@@ -562,65 +390,78 @@
       <p class="card-copy">heidi klum</p>
       <div class="card-footer">
         <span class="muted source-meta">trends.google.com · <span class="source-tier tier-3">Monitor</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="heidi klum">Less like this</button><a class="chip-link" href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener">Open story ↗</a></div>
+        <div class="card-actions"><button class="dismiss-chip" data-hide-key="heidi klum">Less like this</button><button class="save-chip" data-save-key="heidi klum" data-save-title="heidi klum" data-save-url="https://trends.google.com/trending/rss?geo=US" data-save-type="news">Save</button><a class="chip-link track-link" data-track-key="heidi klum" data-track-section="trending" data-track-type="news" href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener">Open story ↗</a></div>
       </div>
     </article>
-    
-    <article class="stream-card" data-type="news" data-section="trending" data-ts="1775279825" data-score="1597751842">
-      <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">Trending</span><span class="pill pill-importance">Trending</span></div>
-        <span class="muted">Apr 4, 1:17 AM ET</span>
+    </div><p class="footer-note">Updated 2026-04-04 02:06 AM EDT. Top rails stay unique; the stream below only shows fresh items not already featured above.</p></section>
+        <section class="section-shell pulse-bottom"><div class="section-kicker">Briefing pulse</div><h2>Pulse</h2><div class="metric-grid metric-grid-wide"><div class="metric-card"><div class="metric-label">Updated</div><div class="metric-value">2026-04-04 02:06 AM EDT</div></div><div class="metric-card"><div class="metric-label">Stories</div><div class="metric-value">25</div></div><div class="metric-card"><div class="metric-label">Tracked X accounts</div><div class="metric-value">4</div></div><div class="metric-card"><div class="metric-label">Markets</div><div class="metric-value">7</div></div><div class="metric-card"><div class="metric-label">Podcast</div><div class="metric-value">Playable</div></div></div><p class="overview compact-overview">Tensions escalate in the Iran conflict with multiple US military aircraft shot down, including an F-15E and an A-10, prompting ongoing search and rescue efforts. In US politics, Trump engages with the Supreme Court and proposes new spending and budget cuts, while China signals diplomatic support amid the Iran war. AI continues to impact industries, with advances in medical devices and film production, and Duolingo pivots toward AI-driven growth.</p></section>
+        <section class="roster-shell"><div class="section-kicker">Watchlist</div><h2>Tracked accounts</h2><div class="roster-grid"><a class="roster-card track-link" data-track-key="profile-sentdefender" data-track-section="watchlist" data-track-type="x" href="https://x.com/sentdefender" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/><div><div class="identity-title">OSINTdefender</div><div class="muted">@sentdefender · 2128495 followers</div></div></a><a class="roster-card track-link" data-track-key="profile-NatashaBertrand" data-track-section="watchlist" data-track-type="x" href="https://x.com/NatashaBertrand" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1507284795486879753/uMQ_pbsq_normal.jpg" alt="@NatashaBertrand avatar"/><div><div class="identity-title">Natasha Bertrand</div><div class="muted">@NatashaBertrand · 728956 followers</div></div></a><a class="roster-card track-link" data-track-key="profile-claudeai" data-track-section="watchlist" data-track-type="x" href="https://x.com/claudeai" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/><div><div class="identity-title">Claude</div><div class="muted">@claudeai · 973717 followers</div></div></a><a class="roster-card track-link" data-track-key="profile-OpenAI" data-track-section="watchlist" data-track-type="x" href="https://x.com/OpenAI" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/><div><div class="identity-title">OpenAI</div><div class="muted">@OpenAI · 4707723 followers</div></div></a></div></section>
       </div>
-      <div class="card-title">Iran and US race to find missing American crew member downed in fighter jet - reports - BBC</div>
-      <p class="card-copy">Iran and US race to find missing American crew member downed in fighter jet - reports BBC U.S. fighter jet shot down: One crew member rescued, other alive in Iran, sources say Axi…</p>
-      <div class="card-footer">
-        <span class="muted source-meta">news.google.com · <span class="source-tier tier-2">Tier 2</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="iran and us race to find missing american crew member downed in fighter jet reports bbc">Less like this</button><a class="chip-link" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE0tTlR0dkR4SnBGQVhjeTVJNUZNUGNrdWdxYlhRYUFtSm1IOURIbXlMSEttODR4ZjdOVkRidFB0cXFwek80bWx5bzBPVmFCbmpRSll5Mg?oc=5" target="_blank" rel="noopener">Open story ↗</a></div>
-      </div>
-    </article>
-    
-    <article class="stream-card" data-type="news" data-section="trending" data-ts="1775279400" data-score="1597751460">
-      <div class="card-header">
-        <div class="badge-row"><span class="pill pill-news">Trending</span><span class="pill pill-importance">Trending</span></div>
-        <span class="muted">Apr 4, 1:10 AM ET</span>
-      </div>
-      <div class="card-title">travis scott</div>
-      <p class="card-copy">travis scott</p>
-      <div class="card-footer">
-        <span class="muted source-meta">trends.google.com · <span class="source-tier tier-3">Monitor</span></span>
-        <div class="card-actions"><button class="dismiss-chip" data-hide-key="travis scott">Less like this</button><a class="chip-link" href="https://trends.google.com/trending/rss?geo=US" target="_blank" rel="noopener">Open story ↗</a></div>
-      </div>
-    </article>
+      <aside class="right-rail"><section class="right-rail-card"><div class="section-kicker">Saved items</div><h3>Bookmarks</h3><div id="savedRail" class="saved-list"><div class="empty-state">Nothing saved yet.</div></div></section><section class="right-rail-card"><div class="section-kicker">Recurring narratives</div><h3>Clusters</h3><div class="narrative-list"><div class="empty-state">No recurring narratives yet.</div></div></section></aside>
     </div>
-      <p class="footer-note">Updated 2026-04-04 01:36 AM EDT. Markets are shown once up top for quick scanning. The feed below focuses on tweets + news only.</p>
-    </section>
-
-    <section class="section-shell pulse-bottom"><div class="section-kicker">Briefing pulse</div><h2>Pulse</h2><div class="metric-grid metric-grid-wide"><div class="metric-card"><div class="metric-label">Updated</div><div class="metric-value">2026-04-04 01:36 AM EDT</div></div><div class="metric-card"><div class="metric-label">Stories</div><div class="metric-value">25</div></div><div class="metric-card"><div class="metric-label">Tracked X accounts</div><div class="metric-value">4</div></div><div class="metric-card"><div class="metric-label">Markets</div><div class="metric-value">7</div></div><div class="metric-card"><div class="metric-label">Podcast</div><div class="metric-value">Playable</div></div></div><p class="overview compact-overview">Tensions escalate as two US military aircraft are shot down in Iran, with one crew member still missing, marking a significant development in the Iran conflict. Meanwhile, Iran executes two individuals linked to opposition groups, and China signals support for diplomacy amid the US-Israel-Iran war. In tech, AI continues to reshape industries including film, while market indexes show modest gains and cryptocurrencies dip slightly.</p></section>
-    <section class="roster-shell"><div class="section-kicker">Watchlist</div><h2>Tracked accounts</h2><div class="roster-grid"><a class="roster-card" href="https://x.com/sentdefender" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/><div><div class="identity-title">OSINTdefender</div><div class="muted">@sentdefender · 2128426 followers</div></div></a><a class="roster-card" href="https://x.com/NatashaBertrand" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1507284795486879753/uMQ_pbsq_normal.jpg" alt="@NatashaBertrand avatar"/><div><div class="identity-title">Natasha Bertrand</div><div class="muted">@NatashaBertrand · 728954 followers</div></div></a><a class="roster-card" href="https://x.com/claudeai" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/><div><div class="identity-title">Claude</div><div class="muted">@claudeai · 973595 followers</div></div></a><a class="roster-card" href="https://x.com/OpenAI" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/><div><div class="identity-title">OpenAI</div><div class="muted">@OpenAI · 4707698 followers</div></div></a></div></section>
   </div>
   <script>
     (function() {
       const defaultFilter = "news";
-      const defaultSort = "smart";
+      const defaultSort = "for-you";
       const storageKey = 'briefing-feed-prefs-trending';
+      const hiddenKey = storageKey + '-hidden';
+      const savedKey = storageKey + '-saved';
       const chips = Array.from(document.querySelectorAll('.filter-chip'));
+      const tabs = Array.from(document.querySelectorAll('.section-tab'));
       const grid = document.getElementById('streamGrid');
       const cards = Array.from(grid.querySelectorAll('.stream-card'));
       const searchInput = document.getElementById('streamSearch');
       const sortSelect = document.getElementById('streamSort');
       let savedPrefs = {};
       try { savedPrefs = JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch (err) { savedPrefs = {}; }
+      let hiddenItems = [];
+      let savedItems = [];
+      try { hiddenItems = JSON.parse(localStorage.getItem(hiddenKey) || '[]'); } catch (err) { hiddenItems = []; }
+      try { savedItems = JSON.parse(localStorage.getItem(savedKey) || '[]'); } catch (err) { savedItems = []; }
       let currentFilter = savedPrefs.filter || defaultFilter;
+      let currentTab = savedPrefs.tab || 'all';
       sortSelect.value = savedPrefs.sort || defaultSort;
       searchInput.value = savedPrefs.search || '';
-
-      function setActiveChip() {
-        chips.forEach(chip => chip.classList.toggle('active', chip.dataset.filter === currentFilter));
-      }
+      let sectionAffinity = savedPrefs.sectionAffinity || {};
+      let typeAffinity = savedPrefs.typeAffinity || {};
 
       function persistPrefs() {
-        const prefs = { filter: currentFilter, sort: sortSelect.value, search: searchInput.value || '' };
+        const prefs = { filter: currentFilter, sort: sortSelect.value, search: searchInput.value || '', tab: currentTab, sectionAffinity, typeAffinity };
         try { localStorage.setItem(storageKey, JSON.stringify(prefs)); } catch (err) {}
+      }
+
+      function setActiveControls() {
+        chips.forEach(chip => chip.classList.toggle('active', chip.dataset.filter === currentFilter));
+        tabs.forEach(tab => tab.classList.toggle('active', tab.dataset.tab === currentTab));
+      }
+
+      function renderSavedRail() {
+        const container = document.getElementById('savedRail');
+        if (!savedItems.length) {
+          container.innerHTML = '<div class="empty-state">Nothing saved yet.</div>';
+          return;
+        }
+        container.innerHTML = savedItems.map(item => `
+          <div class="saved-item">
+            <div><a href="${item.url}" target="_blank" rel="noopener">${item.title}</a><div class="muted">${item.type}</div></div>
+            <button class="saved-remove" data-remove-key="${item.key}">Remove</button>
+          </div>
+        `).join('');
+        container.querySelectorAll('.saved-remove').forEach(btn => btn.addEventListener('click', () => {
+          savedItems = savedItems.filter(item => item.key !== btn.dataset.removeKey);
+          try { localStorage.setItem(savedKey, JSON.stringify(savedItems)); } catch (err) {}
+          renderSavedRail();
+        }));
+      }
+
+      function personalizedScore(card) {
+        const base = Number(card.dataset.baseScore || 0);
+        const section = card.dataset.section || 'all';
+        const type = card.dataset.type || 'all';
+        const sectionBoost = (sectionAffinity[section] || 0) * 500000;
+        const typeBoost = (typeAffinity[type] || 0) * 400000;
+        return base + sectionBoost + typeBoost;
       }
 
       function applyFilterAndSort() {
@@ -628,17 +469,25 @@
         cards.forEach(card => {
           const text = card.innerText.toLowerCase();
           const type = card.dataset.type;
-          const hideKey = card.querySelector('.dismiss-chip')?.dataset.hideKey || '';
-          const isHidden = hideKey && hiddenItems.includes(hideKey);
-          const visible = !isHidden && (currentFilter === 'all' || type === currentFilter) && (!term || text.includes(term));
+          const section = card.dataset.section;
+          const priority = card.dataset.priority || '';
+          const key = card.dataset.key || '';
+          const isHidden = key && hiddenItems.includes(key);
+          const matchesFilter = currentFilter === 'all' || type === currentFilter;
+          const matchesTab = currentTab === 'all' || (currentTab === 'x' ? type === 'x' : currentTab === 'breaking' ? ['breaking','high-signal'].includes(priority) : section === currentTab);
+          const visible = !isHidden && matchesFilter && matchesTab && (!term || text.includes(term));
           card.classList.toggle('hidden', !visible);
         });
         const visibleCards = cards.filter(card => !card.classList.contains('hidden'));
         const sortMode = sortSelect.value;
         visibleCards.sort((a, b) => {
+          if (sortMode === 'for-you') {
+            const diff = personalizedScore(b) - personalizedScore(a);
+            if (diff !== 0) return diff;
+          }
           if (sortMode === 'engagement' || sortMode === 'smart') {
-            const scoreDiff = Number(b.dataset.score || 0) - Number(a.dataset.score || 0);
-            if (scoreDiff !== 0) return scoreDiff;
+            const diff = Number(b.dataset.baseScore || 0) - Number(a.dataset.baseScore || 0);
+            if (diff !== 0) return diff;
           }
           if (sortMode === 'type') {
             const typeCompare = (a.dataset.type || '').localeCompare(b.dataset.type || '');
@@ -650,14 +499,41 @@
         persistPrefs();
       }
 
-      chips.forEach(chip => chip.addEventListener('click', () => {
-        currentFilter = chip.dataset.filter;
-        setActiveChip();
+      document.querySelectorAll('.dismiss-chip').forEach(btn => btn.addEventListener('click', () => {
+        const key = btn.dataset.hideKey;
+        if (!key) return;
+        const card = btn.closest('.stream-card');
+        const section = card?.dataset.section || 'all';
+        const type = card?.dataset.type || 'all';
+        if (!hiddenItems.includes(key)) hiddenItems.push(key);
+        sectionAffinity[section] = (sectionAffinity[section] || 0) - 1;
+        typeAffinity[type] = (typeAffinity[type] || 0) - 1;
+        try { localStorage.setItem(hiddenKey, JSON.stringify(hiddenItems)); } catch (err) {}
         applyFilterAndSort();
       }));
+
+      document.querySelectorAll('.save-chip').forEach(btn => btn.addEventListener('click', () => {
+        const item = { key: btn.dataset.saveKey, title: btn.dataset.saveTitle, url: btn.dataset.saveUrl, type: btn.dataset.saveType };
+        if (!savedItems.find(existing => existing.key === item.key)) savedItems.unshift(item);
+        savedItems = savedItems.slice(0, 20);
+        try { localStorage.setItem(savedKey, JSON.stringify(savedItems)); } catch (err) {}
+        renderSavedRail();
+      }));
+
+      document.querySelectorAll('.track-link').forEach(link => link.addEventListener('click', () => {
+        const section = link.dataset.trackSection || 'all';
+        const type = link.dataset.trackType || 'all';
+        sectionAffinity[section] = (sectionAffinity[section] || 0) + 1;
+        typeAffinity[type] = (typeAffinity[type] || 0) + 1;
+        persistPrefs();
+      }));
+
+      chips.forEach(chip => chip.addEventListener('click', () => { currentFilter = chip.dataset.filter; setActiveControls(); applyFilterAndSort(); }));
+      tabs.forEach(tab => tab.addEventListener('click', () => { currentTab = tab.dataset.tab; setActiveControls(); applyFilterAndSort(); }));
       searchInput.addEventListener('input', applyFilterAndSort);
       sortSelect.addEventListener('change', applyFilterAndSort);
-      setActiveChip();
+      setActiveControls();
+      renderSavedRail();
       applyFilterAndSort();
     })();
   </script>
