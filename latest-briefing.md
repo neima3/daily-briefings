@@ -1,75 +1,75 @@
-# Neima Briefing — 2026-04-04 05:31 AM EDT
+# Neima Briefing — 2026-04-04 07:00 PM EDT
 
-Tensions escalate between the US and Iran following the downing of a US F-15 fighter jet over southern Iran, with ongoing search and rescue operations for missing crew members. Meanwhile, AI developments continue with new tools and leadership appointments, alongside legislative efforts addressing AI-generated child abuse material. Financial markets saw modest gains, led by tech-heavy indexes, while cryptocurrencies showed mixed performance.
+Tensions between the US and Iran escalate with conflicting claims over military strikes and threats, including Iran targeting an Israel-linked vessel and the US searching for a downed pilot. In technology, AI-powered innovations like robot police dogs are gaining traction, while political developments include Trump's emergency appeal to preserve a White House ballroom and Elon Musk's announcement of a new US political party. Markets show modest gains in major US indexes with mixed moves in crypto and stable commodity prices.
 
 ## Markets
 
 - Dow: 46,504.67 (+0.08%)
-  Dow edged up 0.08%, showing modest market stability.
+  Dow edges up 0.08%, showing modest investor confidence
 - S&P 500: 6,582.69 (+1.08%)
-  S&P 500 gained 1.08%, led by strong tech sector performance.
+  S&P 500 rises over 1%, led by tech and growth stocks
 - Nasdaq 100: 21,879.18 (+1.89%)
-  Nasdaq 100 rose 1.89%, reflecting robust gains in technology stocks.
-- Bitcoin: 66,977.58 (+0.01%)
-  Bitcoin remained nearly flat with a slight 0.01% increase.
-- Ethereum: 2,050.26 (-0.41%)
-  Ethereum declined 0.41%, indicating some crypto market weakness.
+  Nasdaq 100 gains nearly 1.9%, driven by tech sector strength
+- Bitcoin: 67,406.66 (+0.05%)
+  Bitcoin holds steady with a slight 0.05% increase
+- Ethereum: 2,069.44 (-0.01%)
+  Ethereum dips marginally by 0.01%, showing minor volatility
 - Gold: 4,679.70 (+0.00%)
-  Gold prices held steady with no change.
+  Gold prices remain flat, indicating stable safe-haven demand
 - Crude Oil: 111.54 (+0.00%)
-  Crude oil prices were unchanged, maintaining recent levels.
+  Crude oil prices unchanged amid geopolitical tensions
 
 ## X watchlist
 
 ### @sentdefender (OSINTdefender)
 
-- A U.S. Navy MH-60S “Knighthawk” Multi-Mission Helicopter assigned to the “Island Knights” of Helicopter Sea Combat Squadron 25 (HSC-25), conducts nighttime flight operations on the deck of the America-class amphibious assault ship, USS Tripoli (LHA-7), in the U.S. Central Comman…
-  Why it matters: Highlights US Navy helicopter operations in Central Command area
-  Apr 3, 11:25 PM ET • TWEET
-  https://x.com/sentdefender/status/2040269522817454474
-- RT @sentdefender: U.S. Marines with Force Reconnaissance Platoon, assigned to the 31st Marine Expeditionary Unit (31st MEU) attached to the…
-  Why it matters: Shows US Marines conducting simulated reconnaissance exercises
-  Apr 3, 9:32 PM ET • RETWEET
-  https://x.com/sentdefender/status/2040240937733943503
-- A U.S. Army CH-47F “Chinook” Dual-Rotor Transport Helicopter suffered significant damage to its cockpit and front rotor in an Iranian one-way drone attack sometime in the last few days on Camp Buehring in Kuwait. https://t.co/g1gtOUIhkK
-  Why it matters: Reports damage to US Army Chinook helicopter from Iranian drone attack
-  Apr 3, 9:17 PM ET • TWEET
-  https://x.com/sentdefender/status/2040237225456123954
+- India’s Oil and Natural Gas Ministry has announced the purchase of both crude oil and liquefied petroleum gas from Iran amid the ongoing war in the Middle East and the blockage of the Strait of Hormuz, constituting the first purchase of energy products from Iran in several years…
+  Why it matters: India resumes energy imports from Iran amid Middle East conflict
+  Apr 4, 3:33 PM ET • TWEET
+  https://x.com/sentdefender/status/2040513206494339462
+- U.S. Federal Agents have detained the niece and grand-niece of Qassem ‌Soleimani, the Former Commander of the Quds Force under Iran’s Islamic Revolutionary Guard Corps who was killed in a strike order by President Donald J. Trump on Baghdad in 2020. According to a statement from…
+  Why it matters: US detains relatives of Qassem Soleimani
+  Apr 4, 12:40 PM ET • TWEET
+  https://x.com/sentdefender/status/2040469609162195209
+- President Trump with a quick “Subhan Allah” at the end of his post about Iran earlier on TruthSocial. https://t.co/N7aupArhPi
+  Why it matters: Trump invokes religious phrase in Iran-related post
+  Apr 4, 10:38 AM ET • QUOTE
+  https://x.com/sentdefender/status/2040438769573052751
 
 ### @NatashaBertrand (Natasha Bertrand)
 
-- An A-10 Thunderbolt II was struck by Iran on Friday, forcing the pilot to eject, according to a US official familiar with the matter. The pilot of the A-10, also known as a Warthog, was able to navigate the plane out of Iranian territory before ejecting from the aircraft and htt…
-  Why it matters: Reports A-10 pilot ejected safely after Iranian strike
-  Apr 3, 5:15 PM ET • QUOTE
-  https://x.com/NatashaBertrand/status/2040176398845821314
-- RT @TheIntelFrog: 🤯🤯🤯 2 aircraft lost in combat with at least 1 crew member unaccounted for at this time...
-  Why it matters: Notes loss of two US aircraft with missing crew member
-  Apr 3, 3:59 PM ET • RETWEET
-  https://x.com/NatashaBertrand/status/2040157216544522433
-- Good news: US forces rescued one of the crew members of a downed US fighter jet in Iran, according to three sources familiar with the matter. Two of the sources said the pilot was alive, in US custody and receiving medical treatment. It wasn’t clear what the status of the
-  Why it matters: Confirms rescue of one US crew member from downed fighter jet
-  Apr 3, 12:16 PM ET • TWEET
-  https://x.com/NatashaBertrand/status/2040101081296896162
+- RT @sahilkapur: “It’s war. We’re in war,” says the president. Meanwhile, congressional Republicans continue to treat it as a non-war to av…
+  Why it matters: President declares war; Congress avoids formal war vote
+  Apr 4, 11:22 AM ET • RETWEET
+  https://x.com/NatashaBertrand/status/2040450044600496555
+- This message follows Secretary Hegseth saying at a press conference last month that the US would provide “no quarter, no mercy for our enemies.” https://t.co/tMwp8BQJhO https://t.co/r8oLs3VYJO
+  Why it matters: US official vows no mercy for enemies
+  Apr 4, 9:14 AM ET • QUOTE
+  https://x.com/NatashaBertrand/status/2040417654205190414
+- Context here in our story from September about Hegseth and Driscoll and their.. interesting relationship: https://t.co/gcNAksa8SK https://t.co/kEKnkZkRTO
+  Why it matters: Background on US military officials' relationships
+  Apr 4, 9:02 AM ET • QUOTE
+  https://x.com/NatashaBertrand/status/2040414619349520437
 
 ### @claudeai (Claude)
 
 - Microsoft 365 connectors are now available on every Claude plan. Connect Outlook, OneDrive, and SharePoint to bring your email, docs, and files into the conversation. Get started here: https://t.co/EdoQeT8BBN https://t.co/sOrigP41FJ
-  Why it matters: Announces Microsoft 365 integration with Claude AI plans
+  Why it matters: Microsoft 365 integration now available for Claude AI
   Apr 3, 11:17 AM ET • TWEET
   https://x.com/claudeai/status/2040086268562842097
 - Computer use in Claude Cowork and Claude Code Desktop is now available on Windows. https://t.co/TXjkhVhS7W
-  Why it matters: Releases Claude Cowork and Code Desktop for Windows
+  Why it matters: Claude AI desktop use now supported on Windows
   Apr 2, 6:46 PM ET • QUOTE
   https://x.com/claudeai/status/2039836891508261106
 - Auto mode for Claude Code is now available on the Enterprise plan and for API users. To try it out, update your install and run claude --enable-auto-mode. https://t.co/m3CdLEfNeZ
-  Why it matters: Introduces auto mode for Claude Code on Enterprise and API
+  Why it matters: Auto mode enabled for Claude Code on Enterprise and API
   Mar 30, 3:03 PM ET • QUOTE
   https://x.com/claudeai/status/2038693742094246032
 
 ### @OpenAI (OpenAI)
 
 - RT @tbpn: OpenAI Acquires TBPN https://t.co/Sdw32Weo4z
-  Why it matters: Announces OpenAI acquisition of TBPN
+  Why it matters: OpenAI acquires TBPN
   Apr 2, 2:27 PM ET • RETWEET
   https://x.com/OpenAI/status/2039771689131897173
 - ChatGPT is now available in CarPlay. The voice mode you know, now available on-the-go. Rolling out to iPhone users running iOS 26.4+ where CarPlay is supported. https://t.co/yk3qdLa99r https://t.co/aXQqH9MNuG
@@ -77,128 +77,128 @@ Tensions escalate between the US and Iran following the downing of a US F-15 fig
   Apr 2, 12:56 PM ET • QUOTE
   https://x.com/OpenAI/status/2039748699350532097
 - Today, we closed our latest funding round with $122 billion in committed capital at an $852B post-money valuation. The fastest way to expand AI’s benefits is to put useful intelligence in people’s hands early and let access compound globally. This funding gives us resources to
-  Why it matters: Shares details of OpenAI's $122B funding round and valuation
+  Why it matters: OpenAI raises $122B funding at $852B valuation
   Mar 31, 4:59 PM ET • TWEET
   https://x.com/OpenAI/status/2039085161971896807
 
 ## Top headlines / world news
 
-- Rise in Legal Sports Betting Linked to Increased Financial Problems in US
-  As legal sports betting expands across the US, reports indicate a corresponding rise in Americans' financial difficulties, highlighting potential social risks.
-  news.google.com • Apr 4, 5:15 AM ET
-  https://news.google.com/rss/articles/CBMixAFBVV95cUxNQWt1ekwyWEJGTWtUSlFxYl91QnMzVmRIQXpvbkkxcHZReDhHZC1hbmgyZWV5VUNFbnp3cjJOZUJKdS1oQ25yejVMQkxyYXNIcndjTHByNklWbm9nRWlObEpiNzNWdlE1clJsbmUtWHNzNk1HRElXckc2Qm14cHZJOVpDb0hQbUxGeTJtRUhuYzg3VmhYZmUtTGtUbGsydlQ0RHI4M1hLLU9hZmZUejhkTFFkZ2tQTnlvY3hoUWlxWTVyNHVn?oc=5
-- Tax Refunds Slightly Higher This Year; Spending Patterns Vary
-  Tax refunds are trending higher this year, with consumers allocating funds across diverse spending categories, reflecting varied economic priorities.
-  news.google.com • Apr 4, 5:00 AM ET
-  https://news.google.com/rss/articles/CBMi2AFBVV95cUxORXI1aWRzY2RscVFGYjk3dXVEVnlrQWFSNkQ5LXFEcDJwUENfUTVuMTFSUGVHcWk2YjRkcDEwT2s4d0pOMVVVU2FUWFlJN193Sl9velpvbm5qdG5PSHFvMGFQVjJkMjJ3aWl0X3AwdF90T0FfSlYxU2FzVm9fS1UwcjBWdzF6Sks3Zi1HXzc0RGxFa3FJRE1ocmFFT3pXNGRQdjFpbzc4MElId1JaNXkxaW5obTZ0YU5DbTNvcjBNLXBKS1hqZG1ockhRQkwwS1lSR1NyLXNoekk?oc=5
-- US and Iran Race to Locate Crew Member from Downed F-15 Jet
-  Following the downing of a US F-15 fighter jet over Iran, both nations are actively searching for the missing crew member amid heightened tensions.
-  news.google.com • Apr 4, 4:50 AM ET
-  https://news.google.com/rss/articles/CBMid0FVX3lxTFAwcDNPX2dza212VFlCdC1NWDJfV19kaTNpNlpfdllON3BLNG5GVlAwSmVROUVTc0lFUF9QQU1FWVhXY3hfakRhX0VQbkNUNTV5QzhsNUpkWk5yb29wLVFXYmd1UzBLUlpNcUFLRF9hNUhsQUhieUpv?oc=5
-- Iran Reports Strike Near Bushehr Nuclear Facility, Causing Casualties and Damage
-  A strike near Iran's Bushehr nuclear site killed a guard and damaged a building, raising concerns over regional security and nuclear safety.
-  news.google.com • Apr 4, 4:47 AM ET
-  https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRzFTUU55RGdyN0VDeWtOaHdWNHlhcnJhVE5zRXJLYS1sRmpzbXU3eWxkcXJHNEZJLVh6UkRaRlBLZUNUcGFybnN1T1NsdlJ4MnZsdUFKSDFCUGtqZHJaUnhYQ29CcV9LeXg5Mm11QTcxOGJ4SE9jb3FVTHFkNGhjZWJ5OXlEX2NDdndVY1BXaWs5ejdmQXYtMFI5VEV4S0VBZXRMVkJ0dURtWkZFczFjOGFCR2JremRxcnVzbnNzR0x3dVk3dmdxbF9RMlRLdnVGeFE?oc=5
-- US and Tehran Intensify Search for Missing American Pilot
-  Efforts continue by US and Iranian authorities to find the missing pilot from the downed F-15, with one pilot already rescued and receiving care.
-  news.google.com • Apr 4, 4:45 AM ET
+- Trump claims many Iranian military leaders killed; Tehran rejects ultimatum
+  President Trump asserts a strike killed numerous Iranian military leaders, while Iran dismisses his 48-hour ultimatum amid rising tensions.
+  news.google.com • Apr 4, 6:49 PM ET
+  https://news.google.com/rss/articles/CBMijwJBVV95cUxQTndzbU5QdDJ3YkNPaFduVmtVYjNZSjVFZFB1ZDh5TV83NDhwWHJsWGROWThuUTMzVWd3TXBkSXN1UGlxdGFDUnhHNDR2ZkFvb045VUh2V2ZFX1Z0QldlTnhlejFvS0dGSWJENi1xOVB5bkhNT3c1X2lCN2JSVHNBSFI0X2duNno5ejVCWXJ3VXBVVE1BbXpCTnZ3NnFGOG9YZHNTODFtV29NQzJlUGt3YnJraWUzTmlIUDBJcU9UaWlPSTFaMWt4UHBBekdYdUFCN3BwcjFDN0x4SWEybUNIbk1IcVg0aEg2c0RNS2hqeHpjS1pzaWxjQnZlaHBiWE5YX1NXX0lqQVlDNU1mYzdj0gGUAkFVX3lxTFBYd21FbnNPaDVSNE51Sy1vM19lb0VWS3FtektPZ1VXTUFzcjJrM2h5enZjOFg2TVpRUDg3Q19hZnNYMkFTOGY0enIwT2JSbEpkTmI1VloxaUJxdGFER2h5d01VS19DUW54cDFMNWJaWkp0QVZqR2tQaFlOUjVJN1hNMzRCSXUtWnUta0ZuaEl3eDhxdUR1T2ppTFFsZFVaMnRqX3lrbGN0VDNPamdDUl9iMmxzOUxtcy1YY1NtNFBsWlFhZWtJUVk0M19IUGZsVDZmQWFfZGprd25lTHNfMkk4YmZheDQ0VU5oaFlVOTBMeHA2Qkl3Z1dvRjA3c1g0dTR4ZWdGLVd6dTluX1VHNzJBbVVRdA?oc=5
+- Trump shares video of 'massive strike' on Iranian targets
+  Trump posts video evidence of a significant strike he claims targeted Iranian military leadership.
+  news.google.com • Apr 4, 6:25 PM ET
   https://news.google.com/rss/articles/CBMiwAFBVV95cUxOeExncTAyMW9PR1BKZzk4Z0hHa2tFR0JOXzFxejFYdTFDZjRZeGVhclg0MEw1djZtZWFlckJkbUg3aUhhQWVKY0Ztdi1fWm43ZmY2OThRQ0ktUDhYb0wyNzlFS2YtaWdZWFVJR0JRQU5Za2lPbTZSbFc3YjJFSXBzb3B4SWNudTJrSXFXTFZ0T0l6dVEwMEhtYWxNdnJnVlp2ZDMwSFZqZUZrOXd0UUphdU1sMVdXcEVDek1tUHhUVHI?oc=5
+- Iran says it hit Israel-linked vessel in Hormuz Strait
+  Iran reports attacking a vessel linked to Israel in the critical Strait of Hormuz, escalating regional conflict.
+  news.google.com • Apr 4, 6:12 PM ET
+  https://news.google.com/rss/articles/CBMiqAFBVV95cUxOaDR0NGUycEFhMWVqd1g4dUtLY1lyeWhIV1JnckZwdy1oOFA2R0ZMdG4tMXpOaEdqTzA0SnFRQm0wdHdJU0VSM3NZSWZzV1AwSVlUQzB6WnFYbEotY0ZFRk1lTzd4enU1X2FjWlVvcnlmOEdiemI5NUFRdWtNZUh2TXh1c1pybVV5M3BITkU3NXM5cDZfRFJNM2xoWWdTc3M5OE9GY1ViS2s?oc=5
+- US and Iran exchange threats as search for downed US airman continues
+  Both nations trade warnings of unleashing 'hell' while the US searches for a pilot forced to eject after Iranian attack.
+  news.google.com • Apr 4, 5:56 PM ET
+  https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ld2pRU1JfQWJYRll2M0NzZ1RHSnFSZm4td2RiS1RQRERjWEVNRkk4VTVzMl9GR01GOW5VSW16N1BvQ0dsTEZYbDhwVTdncUlQSDIxeFg1allFQQ?oc=5
+- Lauren Price retains welterweight titles, challenges Claressa Shields
+  Boxer Lauren Price successfully defends her welterweight world titles and calls out Claressa Shields for a future fight.
+  news.google.com • Apr 4, 5:54 PM ET
+  https://news.google.com/rss/articles/CBMi8wFBVV95cUxNR1FmTWU2MkFGUTlFTzJGUVAxeVgwQThnSXc0VUpuVHN5MTNIY211bE5vdUVsTklXc3RFckk2TXRZS3pjSzhFczJIM2t3ZkFoVXpTTm9reWlwY2cyM1JzSnUzeGFTcjQ5NVlOVXkzUDNrNjN4WGxYNTRhN2FqazlMcGJwTlZwM0hqUkRCQWFRUnBpOFV4Y2xHSUpZN0J1UEVDWnBldWQ2aHRkbVJIRHdfcU5YeTlxV0VxMDJob1Nmem5NUDNFT1BSR2RBOHlYSW8tb0R1SmFnV3MxNjBrbS0zUkRiX1paaDBkY0w0dGFaQVVLalE?oc=5
 
 ## AI / tech / business highlights
 
-- Professors Develop AI Tools That Encourage Questioning Over Answers
-  New AI tools have been created to foster inquiry and critical thinking by asking questions rather than providing direct answers.
-  news.google.com • Apr 4, 5:27 AM ET
-  https://news.google.com/rss/articles/CBMiugFBVV95cUxOYzN2dWxaQURTRDY3ZzdxUUpVeXRKRTFqRnd1dXVsX3JYNXRtay10YzQ5bFNsa1Bma1pWa1hzOE9YOG82anBGenpGWnlsM2Y5enBJQ2k3OUpmRnZmbDZMOF9qTEN4SUNvWUhibllVT1Rvb2dLZDlVbDduQlhiQW5CMlJ6Qi0wSFhrYXVHTDZmeXkwUXNTZmJzRWk3VkxNeHN3UDRqVFp1SEVpdDVtQWZHVWFYVUlrU25vNGc?oc=5
-- Comprehensive Review of Artificial Intelligence Advances Published
-  The fourth part of an AI review discusses recent developments and implications in artificial intelligence research and applications.
-  news.google.com • Apr 4, 5:23 AM ET
-  https://news.google.com/rss/articles/CBMifEFVX3lxTE0yX1RCTDJ5WnhmbTdXQlhwekFWNFo5cHczTDhhWmFudUVCa3hMTDlqUURLcWZIM0V6Z1loYUk1TUNkLTlhZGNkc3labGJ6amYzRFpsdHdpTkxtcEJvNkQ2bGIxcE93NTRuOC1Jc1BXNFFmaW9nTDNYOVR0aUo?oc=5
-- Investors Advised to Consider Two AI Stocks Over Sandisk
-  Market analysis suggests potential value in two AI-focused stocks currently trading at attractive prices compared to Sandisk.
-  news.google.com • Apr 4, 5:17 AM ET
-  https://news.google.com/rss/articles/CBMiiwFBVV95cUxPendFZmFZNW44emFDQWVybVRmQWQ3SU5DaWJTU29CdHZnT3FCREJ0OWdkUjFJYVdYeV9tSXFjZHJHMFdtNHhkcnFBMkJta3Z0X0VNT2wwaTJLSVlmYm01aHR1SjNxa2lvcXV5dkE3NU1yOG40WEUwcWFVUDkwU19nVnV2Y091aWdOdW9F?oc=5
-- HSBC, Manulife, Barclays Appoint AI Leaders in Hong Kong
-  Major financial firms in Hong Kong are strengthening AI leadership roles to accelerate digital transformation and innovation.
-  news.google.com • Apr 4, 5:10 AM ET
-  https://news.google.com/rss/articles/CBMilAFBVV95cUxQUkdWSk5tSnNJdWk2UFZGT2pEUC1NTHhwb2tqeERkSmpZREFRakd2T1NJdlJZRGRFV0YwRGp1UnJ2TE5ucGxhODNFMkR4Y3hUdTF4MTBnbDFnang4QzkzdXY3TC0zcndtZVZqdmp5cFBpRWxHa1VhZlQycng1YXQwMmNydzFpYlZ2Z1NoVDlUVnhONkZh?oc=5
-- Louisiana Enacts Law to Combat AI-Generated Child Sexual Abuse Material
-  New legislation targets the rise of AI-generated child sexual abuse content, aiming to enhance protections and legal responses.
-  news.google.com • Apr 4, 5:06 AM ET
-  https://news.google.com/rss/articles/CBMi9AFBVV95cUxQRERvVkFYdkdwX0dkV25SMjVhWS1BX2dvbS1JN0FIQXRiYUNnSVRFSHJKS1Zid0t2bllJN0FfM1NQMXROX3ptZm1reXVqeVpzT3BtMmk4aW55a2pEZWhBS3FZcTFDbllheHBTX2EteGlZYnFoYllSY3lVcHVpX2lHcU9LS2R5Q0pUZkgtQzJuYUlmTm9Ja1AxbUhWWG9HeGF5S0libnFMZlNONWJXMmNPbmQtb2N1amJQVzYyOEJfZkxrRnhwM3ZiRW1FOGtQT2IwRDdKWW5uS2lwczMtNHl3SGlvSmY4WFJUTS1lV3pZRFdCd2pS?oc=5
+- Factory fire near Dhaka kills 5
+  A fire at a gas lighter factory near Bangladesh's capital results in five fatalities.
+  news.google.com • Apr 4, 6:19 PM ET
+  https://news.google.com/rss/articles/CBMizwFBVV95cUxOQW03cTUwNlBnYUFmV0ZFWXp1SnloX1NYMnBSNU55c2dncldmZnowUmdBMmlHR3pIdzgzc2lybVdHdlpKWWVkNXExV2dZQzUtRnZEeHZob1hmNHVFd1dBR2tqNHN0V1JSUHZ4N216N1VGRDY4bE9IYWl4R3hYOXJCTkZzR0tpZTlZX2FoVEcxbEp6NkRmOHQtQkhhbHQtS0IweEJEb3M3WnhVbWljNkNVY0pScm1OaVJWV054MzhmMVNjcTV2b21SUkJNNWtGS00?oc=5
+- AI-powered robot police dogs deployed in Atlanta
+  Atlanta introduces AI-driven robot police dogs to patrol city streets, marking a new era in law enforcement technology.
+  news.google.com • Apr 4, 6:16 PM ET
+  https://news.google.com/rss/articles/CBMilwFBVV95cUxQZ0I5dHZsTmFFU0RBUUVrZ1c0LXZpVFgyRFJHZHJDOVZhNlI1TURzMEgyY1A1RGh0OTJZT1MtdnlMU1RBX3J3SlljeEdSSU8wSlV2cnREclpWSmstQnl3NjdwTXB4NGhTbWZyOUVhUWU0RFBVTnZGYVo4OWI4V2dBaTBrVXdCaWpFQ1ZRVkIteVNHRFUzd2Zz?oc=5
+- The long history behind AI's recent surge
+  An overview of AI's 80-year development culminating in its current rapid advancements.
+  news.google.com • Apr 4, 6:05 PM ET
+  https://news.google.com/rss/articles/CBMiyAFBVV95cUxNaWROSUxIUmd1OVh6WGFrWVBQMjdCU3BCam1XNVhtYzZmSHM3OUV2UHRzUU9TNXNIbFB2VHR2NkxwQ2xmOFA2VFVaNkJmT3dwa1lKN3ZfQjkzcWdTTDZiR250Y3lVdVRiOWhwNldPWDlhZTBaaEd0dzBLNTFDQzJvc2xrcWM0dGFvYWF6Rk50OTg1cEhHMTdzQmtyaWViUWZrcXUyZFNFMWdySTRQeWFPZV9KVFNLLTEyb1MwTmcxYjhGZHNiNnhoTA?oc=5
+- Italian authorities arrest top crime family suspect
+  Following a raid at an Italian resort, authorities apprehend a leading suspect in organized crime.
+  news.google.com • Apr 4, 6:03 PM ET
+  https://news.google.com/rss/articles/CBMi0gFBVV95cUxNOURqR3RxcUpQX1lndGhhQXgzd3l4bVFUUlJaU3Zhd05DczI0NXBwdW5ra2k2R243OVA3eWpoNUFHXzd5ZzRJMkhjbzNMR2hHamJjNmZpS2FRWTl2QmVBdE16aldaWGxSZnBxQjgzQW5EcFJfcENRVmRFZWhBOHhkZU55YU42dTJMY2FZZk1NTDFRUldibHF5U05LR2d6enhDT0E0NmRPMlFzcmcyZEJ5R19saVBQcFk3c2lUWHo2VVR2dXZkUUdoQ2VPRThuUGcyVUE?oc=5
+- Challenges for rural Chinese mothers who contributed to AI development
+  Exploring the struggles faced by rural mothers in China who played a role in building AI technologies.
+  news.google.com • Apr 4, 6:00 PM ET
+  https://news.google.com/rss/articles/CBMiuAFBVV95cUxNU2tkMmNaUzZOc1JqcFF2dmZpaTVwaS1uRm5rb1JHYVB4M0g4LTk2SHlaMENmNjV4dVVwbWFZdlMwQ3dlM3BDN1VBcThwM2dxNXlUcHphUUpXaGFPMk9JUEVUZGRubGRiNzNwRnEya0RtSktKZUNqNGx2UTUxbTZNWE1Ja3RsM1YzYWlIUF9rUE5iX010eTd3cUVkMHVNM0tZTER1SmVlcjhoYjA4TkU4RFRlMVFpWDFX0gG4AUFVX3lxTFB3MGs1a3RPdzN4Wmt6emZuU1NMbHJrS1pyUXhfWHJxdmM3dmZnbFkxNEtHZmhqNTZmX3kwOU9XZVdRUkdRRVhFYWJYUGs2cWtHUEpIekJHT252NENrZXRXTWVMb1FJNnBLNDBaU2ZEcUdfeVg4Qm1iSEtDUy1BRjVISXl0Q3o5OE5FY2RpWUJOQlhnSmdZSldvcDJDVE9yOUJTaDhPNVM0VFFxakxYMm9waFNCNk15cHY?oc=5
 
 ## US political news
 
-- Pam Bondi's Job Loss Examined
-  An analysis of the circumstances and factors leading to former Florida Attorney General Pam Bondi losing her position.
-  news.google.com • Apr 4, 5:08 AM ET
-  https://news.google.com/rss/articles/CBMihwFBVV95cUxPTEdjY29GM2YxbTNGNXdBX0laOUFTWnplRTZIRU81YmFCdnVjQkp3aGszdDdPbXdieXRBSVlXbl9RV3FRS2NDNk8xcUM3STlJOE9SM21qdngwSW10ZHNmY3Q2ekwyZXJNSjJYYzR4NlZsQWpmTkNiRGtaUWdhTEswcnBtWS14SXM?oc=5
-- Trump Uses Harsh Language Against Iran
-  Former President Trump adopts unabashedly vicious rhetoric in his statements regarding Iran, moving away from euphemisms.
-  news.google.com • Apr 4, 5:01 AM ET
-  https://news.google.com/rss/articles/CBMilwFBVV95cUxNWmJSd0RPWGlTQUdVLV8tbUlvSjlvU2ppVDIwT0wxQmhuaVdic015OVBYZXplTG5JUEFWQl96VVVVTGROcFlqWGtwa3Q1eDJVQ0EzOWtiZVc1dVU2dEwzNDQ1MWJIbkpwTUVaZkF5RmJVYU83c2tVdkh6WTVUemc0VG1DXzc5QnFGT1lqTmZNRmZheHlhN2Jz?oc=5
-- Nebraska Meat Plant Closure Spurs Political Engagement Among Latinos
-  The shutdown of a meat plant in Nebraska has galvanized political focus and activism within the local Latino community.
-  news.google.com • Apr 4, 5:00 AM ET
-  https://news.google.com/rss/articles/CBMijwFBVV95cUxONVVGVU5LWGRocUw3QktvU0NidkpVRHVBWWlZNE1tRlc4ZXZHZmNZSnpGdVJVSDdueTVqaTJJSzJucXV5TEVrb0c5d05iQ0N4VDg2Tzl0NmNvckVjUk5wdnN5WC1nUE5XdUFhU25XelJrYTVqNXZyM0pEOWNvVjlxeVFmeWEySjVqVFhtbGdjTQ?oc=5
-- Trump Proposes Spending and Budget Cuts to Congress
-  Former President Trump presents his initial proposals for federal spending and budget reductions to the US Congress.
-  news.google.com • Apr 4, 4:32 AM ET
-  https://news.google.com/rss/articles/CBMitAFBVV95cUxQS3RoMUZhWmRCdmdraDd3dGdJZXZ4SjRLcVF0NEEweklteHd2NjNjNEZ3Z1NzMXdQekNEeHBxTU9mSEs4TFJvdkZBcDlfRHFCa3ZnazRQd0IzNjk2Y056cVZZSmlQbXNqYXVOejVIcVFWSVJOM2habk1idkNQbUFUNnVVRDV6X05fYUQ1Z2dtTjZ2OTE3STZPNC1DSHdFTTlmRjBQa04teWhXTEozaG84MXQzbTU?oc=5
-- Tracking Donald Trump's Approval Ratings
-  Current polls and trends monitoring the popularity and approval ratings of Donald Trump are updated.
-  news.google.com • Apr 4, 3:30 AM ET
-  https://news.google.com/rss/articles/CBMipAFBVV95cUxNdUlad0pzLUU5YlhIUXUyTUVVR1ZPSGFQX2h3ZDk2eW5wXzEwdXg4eXZiRE5KN0FQVU4wSlRUNkxnQnlzSzB2OTFDQVg0ZS1yQnhzY1B3UlNZNXlKQnZ0dEV0ODFTRmpuWVBEM09wVUlHNGlwNWdybm13VTRlMExEQVdFYzlyUnNXNG1oSHFrdjVuc2JWN2VvZWYwWGtvVzVvelNsMw?oc=5
+- Iranian official promises 'big surprise' for US-Israeli forces
+  A senior Iranian security figure vows significant retaliation against US and Israeli aggressors.
+  news.google.com • Apr 4, 6:55 PM ET
+  https://news.google.com/rss/articles/CBMivwFBVV95cUxQbk9zQTRhVk80bjdaZWhrajZKYUI4bHNDaXVTTGJtQ0l3VHJiWEQzakg2MXpETEEzcTJrTzROa2VyXzd3WV91ZFJZRWNsNlQ3SWlYUF9XS0hVZWJ5VU85d1JGcG5xSzduSTBTdUFVcDlZQ3BlLXJId2VaRmMyVGM4RnVDZi1rcGxHSDVIRy1tcGdlVlNEeDdnUnpxd1FRZ0N3N0V4T1pNT1U2RDhpZW5kcEdCdVN0RmxRaXlxd3U0WdIBxAFBVV95cUxQZFlNc19HZXVibm10LTVVUHdKNjc5N3BCSEtsd250LTM0MEF5MFcwVUs1RTdCTURtWFppUURCNXkxTjJ0T290b3Uya1VmQk9pUTg5aDROeGpaalJSUVdSREx4cVdCNUNKaUFDYTRNbTFyYmhhdXhGamVySUZpQWM3X01mWHFRSUJsckktRWY5dnVsX0lJUVl3VTRMVTFLY3IxdFpQeHZCYThzVVJjVS0yUklTZm1yeUNUakF0UmpRVHFvdTcw?oc=5
+- Trump files emergency appeal to keep White House ballroom
+  Former President Trump seeks urgent legal action to preserve a ballroom at the White House.
+  news.google.com • Apr 4, 6:40 PM ET
+  https://news.google.com/rss/articles/CBMiiwFBVV95cUxONTRYS0JaT2RlUnl6VllqRkg1SWVVVmtxdnhyRjJuSkFPYjg1dGxNMm01Y2sxaUVQNzRMcEsxdUNLYXRnMmhLa1AtZTVXTENMbWJDQW1CN3YxS1JWc29Kc04xdWdJSDJtZ3dLeW1QNG5RWGNJc1VJRk9JOW5qeWFuWUNZU0R0bXFOVVNv?oc=5
+- Elon Musk announces new US political party
+  Elon Musk declares the formation of a new political party in the United States.
+  news.google.com • Apr 4, 5:24 PM ET
+  https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNVZFLW1EYlJfYm5aUjZKaTV1QkVLaHBEd2R1T2lJeTgyQXZjRklVY1ZNaXBFRG90VUZIZW9iWlo5OTFpVEYwUm9WUHZNeUJCR01ZaXVBYkhtTV80blNKcUE3M0tVVEhlcmE1SEY0Z0xDRXJIZUhCYk4zc1NTQUt2YlN5bFdwYVVKeXQwNWVJUEZZYUJzTU9abTdUckpRZGh0bkU3MERha2Q?oc=5
+- Polymarket halts betting on missing US pilot amid backlash
+  Polymarket suspends wagers on the fate of a US pilot missing in Iran following public criticism.
+  news.google.com • Apr 4, 4:52 PM ET
+  https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdDhFMVNmaDM2a182VWl6NzU5Tk1mb2NDYkFBZDU5MjI0bEtTeENRcEwxYU1udWJTUy1FSmVFM1NoUFl5MlpUdlduQ0tPRGNDMkF2LTBOR1lwRXFqczNQMWFKS1N1SjFCdnc1QW5WUENtbnAxbVFiN24wNWluR3d2SmtuRWxGUVRldktnWE0tUkJIWDRxaU1XNlRRWjFRZ3ZBbkVDbEpXNU8?oc=5
+- Trump budget proposes $1.5T defense spending with domestic cuts
+  Trump's budget plan calls for increased defense funding alongside reductions in domestic programs.
+  news.google.com • Apr 4, 4:43 PM ET
+  https://news.google.com/rss/articles/CBMivAFBVV95cUxQaDRJdl9wc01UeXF4WERsT3RiMkJCY3JfbHpVZlFGZVhRTWF2Y2hXVEo0WkN2OUh0Rkk3d1ViZmQzeUtScmxkdUFMR0x1d1ZIYWRub3poQjlHRHFvOXM1LVhUbWdkdEdoUk5JbXhreGFIQmtXN0NPSnI2NzRHa2M2bWZmdzNnUU5CLVlHOThoWjk3djRoNTNIcjlzczI0QlJNejhOclRqRXd1SGpYUDdPNm1iVWFjY3Y1ZVAxcA?oc=5
 
 ## Boston / local
 
-- Boston Prepares as FIFA World Cup 2026 Host City
-  Boston is highlighted in a host city guide as preparations continue for the 2026 FIFA World Cup events.
-  news.google.com • Apr 4, 5:21 AM ET
-  https://news.google.com/rss/articles/CBMikgFBVV95cUxPOExKeXpkVXQ5a2FZOTRCOU5wblRnQ3F3OXYtdnZZTDhJa0RPY2w3NFdiMVhxYnoyYzZvU1h5UzA1cnZBME5QX2x0OFhvQ0d1cDd1Z3c0MjBheXVWejdQSGpNWVpEX2cxcVhoaHZEaUI5dDRKS2sydTRiZi10QS16YWo5UUFWWmJIWnVTTnZhV1ZrZw?oc=5
-- Viewing Options for Padres vs Red Sox Game on April 4
-  Information on TV channels, start times, and streaming options for the upcoming San Diego Padres versus Boston Red Sox game.
-  news.google.com • Apr 4, 5:07 AM ET
-  https://news.google.com/rss/articles/CBMiygFBVV95cUxPUC1NdG5aUzBRcWREcXZXMkdCNDBqUTQ2VDNpWEFCVF9WWTAwbm0zdG84YzNSNXpBakNIU1otZ1o5WFdZNnh4YWZmVk5iT3JJOGwzY2tWWDZuMkdHMnphYjNrcG93dTE3U0VtcktUZGtFeW9La0hDUkV2MS05eW0tM2FvVlNSVHBqTC15NGhwRUVJRENNbjZpRDlvbVhNcUVIZkJ2ZGUtdE5xb25DaFVlZ3NXZ2tKU2daSFBNOUhCZjZXRjRsUG0tRHlB?oc=5
-- Red Sox’s Marcelo Mayer Impresses in Home Opener
-  Marcelo Mayer delivers a strong performance and message during the Boston Red Sox home opener.
-  news.google.com • Apr 4, 5:03 AM ET
-  https://news.google.com/rss/articles/CBMihAFBVV95cUxOQ21jR2J4WERTTHFoOUI3UHJpZkZZUFZlTEVvYmNQU2JiNWVMaHdhNXRiYzl5N1k0TjJEQXBUdXpLenpUZk05NS1nd3hnbkRuV1FhcFdyVHJjVTQxSUR4UHVZYnhvdnVhT2tHaFVwa1BLb1MzcjNEYW5EMGNGT0hrSGRYd18?oc=5
-- Celtics’ Jayson Tatum Shares Thoughts on Playoff Return
-  Jayson Tatum offers a heartfelt quote reflecting on the Boston Celtics' return to the playoffs.
-  news.google.com • Apr 4, 4:45 AM ET
-  https://news.google.com/rss/articles/CBMikwFBVV95cUxPeFowYWxCRG1NX0kxMVc0UG9zZ2RpNm91NlpkNXVQQTUzUThxaVRMTHQ3QnNzWThYcFFQTEwtNU50cWExT1ZCRHVJT1lvSWN6R28tdmZZaXlMZ0dIekNSZ3MtZ3ZWZDBlMGtuaG13ZkZvWHdBYjU2WGRKQURTLWlRcXptVURjTmxiZDBXZ1FhQVhBUFk?oc=5
-- New Spring Beverages Launch Across Massachusetts
-  Massachusetts sees a variety of new spring-themed beverages becoming available statewide.
-  news.google.com • Apr 4, 4:26 AM ET
-  https://news.google.com/rss/articles/CBMipgFBVV95cUxQem92Sm1Qa003dzNRc2lxd3NNeXRISXROZ3FseE01MC0zekVPelNqSXBRdHBWWTNPRW5IcnUwb3pzb3B0cnNXbVhOWGZUM2ZiVmpiX3h2T3E5MWc2VTF3SUJTUFphTFBCNFJwOUNMQjFBRmxUWi1IdVdkTDhrYzNIaktFV01qSGl5MHBSNjNUamh4Y09leENEQy00dE9uVUYwZnp5VXdR?oc=5
+- Five surprising facts about Boston
+  An article highlighting lesser-known facts about the city of Boston.
+  news.google.com • Apr 4, 6:56 PM ET
+  https://news.google.com/rss/articles/CBMiiAFBVV95cUxORkFaNXZ0MmdOT1loVHYyV1FsbWJlcE5WMmU0c0hQM3dTVlBleWktTUdHMXBiZU1yeEEwSU42bFd3RFJIMHd0M1NWdzJGQ1A2SjVJQVVPZWtRa1FDd3ZaVmN2YnA4ZlFGYlVFQklITzEwdWxMLXhEbjZKZmU0VFNrWHEtR2hrUWJX?oc=5
+- Boston police shoot man who stabbed officer near NU campus
+  Police fatally shoot a man who attacked an officer with a sword close to Northeastern University.
+  news.google.com • Apr 4, 6:37 PM ET
+  https://news.google.com/rss/articles/CBMijgFBVV95cUxPdmVKVUtkNTVwdHptMGlRQVlRUDUtU0RKZXhaamNDZ090R0dmcFZnSjFXM2hPOTJvWHluTnNxSVpRdkhsbXVLWXV4ZlBVRjlSc0Q5VXBFUjVNeElZbTIxR0JIeEtxVTJFY0NjNlVYa1VWb1lscDZUOW50YW5VdkxQRkZLaHRJQTY4LWtaZE5R?oc=5
+- Proposal for pension funds for Massachusetts police dogs
+  Plans to honor Boston Marathon hero K-9 with pension funds for police dogs in Massachusetts.
+  news.google.com • Apr 4, 6:33 PM ET
+  https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSEFUeVZjdDdiSjY3SFU2eFg4eER0NHRNZEhLM0xaeWVRRjdqZWtGWWJKdXZNenhJYmw2bGtxYk9qU2FFeXlKaFJFWUxFTWdfZUw2ckVybjNjMEE3eUdLMG50YnNUa2JPejFFQUFXRXo2aDFUVHZnNDZhRnZYcEw2Mk42MkxWb28zUUtuNVpwVkd5RGxMMUFJVkVubnRNTkdnX0dGTUE1V0VnUHd3Wm1ibkpUSTdadWp3M084eUdrWFlpUQ?oc=5
+- Early morning house fire in Brockton kills one
+  A fatal house fire occurs early morning in Brockton, resulting in one death.
+  news.google.com • Apr 4, 6:22 PM ET
+  https://news.google.com/rss/articles/CBMihgFBVV95cUxPa3Z3Vy0yWkctZTl0QWF6RnhDeEk2clBYNTVaWURkVm1FLXR2RTNucFgwT1VoU18wNTBHR19PR2M0am5GZ2V3RzRrY2NpOXBRa0I0dWtTRnVEdmFHLXdWeENsajdUWHVuMzdQeUxIdlZWQXczb0xodVZaM0xxb1NOOVFMd1h0UQ?oc=5
+- Suspect shot after attacking officer and EMS clinician with sword
+  Boston police fatally shoot a suspect who assaulted an officer and EMS worker with a sword.
+  news.google.com • Apr 4, 6:12 PM ET
+  https://news.google.com/rss/articles/CBMihAFBVV95cUxOR3BYMjJXYjk5TlhkdTgydG1lc3Rpb2k3QlRPTXJyeE5jT0EwbGtWbjZ4UlhuZGxVdkN6d0NRMWNtZ3RwelRuRUhjTkY0eC1SM1c1Ui05YmRaTUUxcHJvdmkzNENyOGc4enBYcVlYNl9wajdnQm52Njk0MVB2azQwUnloN3Y?oc=5
 
 ## Popular / trending
 
-- Chicago Trending Topic
-  Chicago is currently a popular search and discussion topic.
-  trends.google.com • Apr 4, 5:10 AM ET
+- Deontay Wilder vs. Derek Chisora fight updates
+  Live results and round-by-round updates for the heavyweight boxing match between Wilder and Chisora.
+  news.google.com • Apr 4, 6:49 PM ET
+  https://news.google.com/rss/articles/CBMi8wFBVV95cUxNdlhGOEswV1RGMnNEZzJSZTRjOXkzb0RUVHJoa2xibEZFaFctMUxMQzl1RmlxQV8xMmYtRmVMOUp5UlBSR3RZS1VjZDZmc0hnWmFreTN5emZ6THR6eXJkanFjSmtpek1uQ3c0RHM0UnJnYzJfc2o0X2M2TXc4a00yVVBlM3RiQ0Y2UFRzZG9YUTZ6Tmt3NWFDOFltNnRRTHNPa3B0cHRhZmRWUl9HOEZ3MkhCVFJrRHIzZlQ0UDJrOUVvQmlXdUtpVm1RSFNqN21KZElKQnE5amFTdk5hTDd2YkFEZzBKYmd2SGtxWlVJWHJ3d1U?oc=5
+- Austin FC vs. Inter Miami
+  Trending search topic related to the soccer match between Austin FC and Inter Miami.
+  trends.google.com • Apr 4, 6:40 PM ET
   https://trends.google.com/trending/rss?geo=US
-- Crimson Desert Patch Notes Released
-  Updates and patch notes for the game Crimson Desert are trending.
-  trends.google.com • Apr 4, 5:00 AM ET
+- Alex Karaban trending
+  Alex Karaban is a trending topic, likely related to sports or news.
+  trends.google.com • Apr 4, 6:40 PM ET
   https://trends.google.com/trending/rss?geo=US
-- US-Iran Conflict and Downed F-15 Jet Dominate News
-  Live updates on the downed US F-15 jet over Iran and related geopolitical developments are trending.
-  news.google.com • Apr 4, 4:50 AM ET
-  https://news.google.com/rss/articles/CBMid0FVX3lxTFAwcDNPX2dza212VFlCdC1NWDJfV19kaTNpNlpfdllON3BLNG5GVlAwSmVROUVTc0lFUF9QQU1FWVhXY3hfakRhX0VQbkNUNTV5QzhsNUpkWk5yb29wLVFXYmd1UzBLUlpNcUFLRF9hNUhsQUhieUpv?oc=5
-- Solo Leveling Gains Popularity
-  The series Solo Leveling is currently trending in popular searches.
-  trends.google.com • Apr 4, 4:40 AM ET
+- Sabres vs Capitals game trending
+  Trending topic centered on the hockey game between the Buffalo Sabres and Washington Capitals.
+  trends.google.com • Apr 4, 6:40 PM ET
   https://trends.google.com/trending/rss?geo=US
-- The Chosen Season Six Trending
-  Season six of The Chosen is a trending topic among viewers.
-  trends.google.com • Apr 4, 4:30 AM ET
+- David Mirkovic trending
+  David Mirkovic is trending, possibly due to recent news or sports events.
+  trends.google.com • Apr 4, 6:40 PM ET
   https://trends.google.com/trending/rss?geo=US
 
 ## Podcast script
 
-Welcome to today's briefing. The geopolitical spotlight remains on the US-Iran conflict after an F-15 fighter jet was shot down over southern Iran. US and Iranian forces are racing to locate the missing crew, with one pilot reportedly rescued and receiving medical care. This incident underscores rising tensions in the region and has drawn significant international attention. On the technology front, AI innovation advances as professors develop AI tools that prioritize questioning over answering, aiming to enhance critical thinking. Major financial institutions in Hong Kong are appointing AI leaders, signaling growing corporate investment in artificial intelligence. Additionally, Louisiana has introduced legislation to combat the rise of AI-generated child sexual abuse material, reflecting increasing regulatory focus on AI's societal impacts. In markets, the Dow inched up slightly by 0.08%, while the S&P 500 and Nasdaq 100 posted stronger gains of 1.08% and 1.89%, respectively, driven by tech sector momentum. Bitcoin remained stable with a minor increase, whereas Ethereum dipped by 0.41%. Commodities like gold and crude oil held steady. That's the essential update for today. Stay informed and have a great day.
+Welcome to today's briefing. The geopolitical spotlight remains on escalating US-Iran tensions. President Trump claims a successful strike killing multiple Iranian military leaders, while Tehran rejects his 48-hour ultimatum and reports hitting an Israel-linked vessel in the strategic Strait of Hormuz. The US continues searching for a downed A-10 pilot, with both sides trading threats of severe retaliation. In technology, AI advances with robot police dogs deployed in Atlanta, showcasing growing integration of AI in public safety. Meanwhile, political news includes former President Trump filing an emergency appeal to preserve a White House ballroom and Elon Musk announcing the creation of a new US political party. On the markets, US indexes saw modest gains led by the Nasdaq 100, while Bitcoin edged slightly higher and Ethereum dipped marginally. Commodities like gold and crude oil remained steady. That’s your concise update for today.
 
 Audio file: podcast.mp3
 
