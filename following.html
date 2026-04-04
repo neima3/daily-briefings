@@ -5,110 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Following — Deep Midnight Edition | The Informed Curator</title>
   <style>
-    :root {
-      --bg: #0b1020;
-      --panel: #11182b;
-      --panel-2: #182139;
-      --border: rgba(255,255,255,0.08);
-      --text: #e8ecf8;
-      --muted: #9ea8c7;
-      --brand: #8fa9ff;
-      --brand-2: #5f7dff;
-      --green: #67d18e;
-      --red: #ff7b89;
-      --shadow: 0 20px 60px rgba(0,0,0,0.35);
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif; background: radial-gradient(circle at top right, rgba(95,125,255,0.18), transparent 24%), var(--bg); color: var(--text); }
-    a { color: inherit; text-decoration: none; }
-    .layout { max-width: 1420px; margin: 0 auto; padding: 24px; }
-    .topbar { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(16px); background: rgba(11,16,32,0.88); border-bottom: 1px solid var(--border); }
-    .topbar-inner { max-width: 1420px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .brand { font-weight: 800; letter-spacing: -0.04em; color: var(--brand); font-size: 22px; }
-    .nav { display: flex; gap: 12px; flex-wrap: wrap; }
-    .nav a { padding: 10px 14px; border-radius: 999px; color: var(--muted); border: 1px solid transparent; }
-    .nav a.active { background: rgba(143,169,255,0.12); color: var(--text); border-color: rgba(143,169,255,0.25); }
-    .masthead { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 22px; margin-top: 28px; }
-    .hero, .metrics-shell, .section-shell, .audio-panel, .controls-shell, .roster-shell { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border: 1px solid var(--border); border-radius: 26px; box-shadow: var(--shadow); }
-    .hero { padding: 28px; min-height: 320px; display: flex; flex-direction: column; justify-content: flex-end; background-image: radial-gradient(circle at top right, rgba(143,169,255,0.22), transparent 26%), linear-gradient(160deg, rgba(24,33,57,0.96), rgba(11,16,32,0.96)); }
-    .hero .eyebrow { display: inline-flex; width: fit-content; padding: 8px 12px; border-radius: 999px; background: rgba(95,125,255,0.18); color: var(--brand); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
-    .hero h1 { margin: 16px 0 12px; font-size: clamp(34px, 5vw, 56px); line-height: 0.98; letter-spacing: -0.05em; max-width: 900px; }
-    .hero p { margin: 0 0 20px; color: var(--muted); font-size: 17px; line-height: 1.6; max-width: 860px; }
-    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-    .button, .chip-link { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border: 1px solid var(--border); border-radius: 999px; background: rgba(255,255,255,0.03); color: var(--text); font-size: 14px; }
-    .button.primary { background: linear-gradient(135deg, var(--brand-2), #7f97ff); color: #061022; border-color: transparent; font-weight: 700; }
-    .metrics-shell { padding: 20px; }
-    .section-kicker { color: var(--brand); font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 10px; }
-    .section-copy { color: var(--muted); line-height: 1.65; }
-    .metric-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
-    .metric-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 18px; padding: 14px; }
-    .metric-label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; }
-    .metric-value { font-size: 18px; font-weight: 800; margin-top: 6px; }
-    .overview { margin-top: 24px; color: var(--muted); line-height: 1.75; }
-    .two-up { display: grid; grid-template-columns: 1fr; gap: 22px; margin-top: 22px; }
-    .section-shell { padding: 22px; }
-    .section-shell h2, .audio-panel h2, .roster-shell h2 { margin: 0 0 10px; font-size: 28px; letter-spacing: -0.03em; }
-    .markets-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); gap: 14px; margin-top: 18px; }
-    .market-card { display: block; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 20px; padding: 16px; min-height: 160px; }
-    .market-top { display: flex; justify-content: space-between; gap: 10px; align-items: start; }
-    .market-label { font-weight: 800; font-size: 15px; }
-    .market-kind, .muted { color: var(--muted); font-size: 13px; }
-    .market-price { margin-top: 18px; font-weight: 800; font-size: 28px; letter-spacing: -0.03em; }
-    .market-delta { margin-top: 8px; font-weight: 800; }
-    .market-delta.up { color: var(--green); }
-    .market-delta.down { color: var(--red); }
-    .market-note { margin-top: 12px; color: var(--muted); font-size: 13px; line-height: 1.45; }
-    .audio-panel { padding: 22px; }
-    .audio-panel audio { width: 100%; margin-top: 18px; }
-    .audio-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
-    .transcript-label { margin: 18px 0 8px; font-weight: 800; color: var(--brand); text-transform: uppercase; letter-spacing: 0.08em; font-size: 12px; }
-    .transcript-copy { color: var(--muted); line-height: 1.7; margin: 0; }
-    .roster-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 18px; }
-    .roster-card { display: flex; gap: 12px; align-items: center; padding: 14px; border-radius: 18px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); }
-    .avatar { width: 48px; height: 48px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(255,255,255,0.08); }
-    .avatar-fallback { display: grid; place-items: center; background: linear-gradient(135deg, rgba(143,169,255,0.3), rgba(95,125,255,0.15)); font-weight: 800; color: var(--text); }
-    .identity-title { font-weight: 800; }
-    .identity-subtitle { color: var(--muted); font-size: 13px; margin-top: 4px; }
-    .controls-shell { padding: 18px 22px; margin-top: 22px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; }
-    .filter-group, .sort-group { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-    .filter-chip { border: 1px solid var(--border); background: rgba(255,255,255,0.02); color: var(--muted); border-radius: 999px; padding: 10px 14px; cursor: pointer; font-weight: 700; }
-    .filter-chip.active { color: var(--text); border-color: rgba(143,169,255,0.3); background: rgba(143,169,255,0.1); }
-    select, input[type="search"] { background: rgba(255,255,255,0.03); color: var(--text); border: 1px solid var(--border); border-radius: 14px; padding: 10px 12px; font-size: 14px; }
-    .stream-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; margin-top: 20px; }
-    .stream-card { background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.06); border-radius: 22px; padding: 18px; display: flex; flex-direction: column; gap: 14px; min-height: 250px; }
-    .stream-card.hidden { display: none; }
-    .card-header { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
-    .identity-header { align-items: center; }
-    .identity-wrap { display: flex; gap: 12px; align-items: center; }
-    .pill { display: inline-flex; padding: 7px 10px; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
-    .pill-news { background: rgba(95,125,255,0.12); color: var(--brand); }
-    .pill-x { background: rgba(255,255,255,0.08); color: #d9e1ff; }
-    .pill-markets { background: rgba(103,209,142,0.14); color: var(--green); }
-    .card-title { font-size: 22px; line-height: 1.15; font-weight: 800; letter-spacing: -0.03em; }
-    .card-copy { color: var(--muted); line-height: 1.65; margin: 0; }
-    .tweet-stats { margin-top: auto; }
-    .card-footer { display: flex; gap: 10px; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-top: auto; }
-    .market-stream-price { font-size: 24px; font-weight: 800; letter-spacing: -0.03em; }
-    .empty-state { padding: 28px; border: 1px dashed rgba(255,255,255,0.15); border-radius: 18px; color: var(--muted); }
-    .footer-note { color: var(--muted); font-size: 13px; margin: 24px 0 8px; }
-    @media (max-width: 980px) {
-      .masthead { grid-template-columns: 1fr; }
-    }
-    @media (max-width: 720px) {
-      .layout { padding: 16px; }
-      .topbar-inner { padding: 14px 16px; flex-direction: column; align-items: start; }
-      .hero { min-height: 280px; }
-      .controls-shell { align-items: start; }
-    }
+    :root { --bg:#0b1020; --panel:#11182b; --panel-2:#182139; --border:rgba(255,255,255,0.08); --text:#e8ecf8; --muted:#9ea8c7; --brand:#8fa9ff; --brand-2:#5f7dff; --green:#67d18e; --red:#ff7b89; --shadow:0 20px 60px rgba(0,0,0,0.35); }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,sans-serif; background:radial-gradient(circle at top right, rgba(95,125,255,0.18), transparent 24%), var(--bg); color:var(--text); }
+    a { color:inherit; text-decoration:none; }
+    .layout { max-width:1420px; margin:0 auto; padding:24px; }
+    .topbar { position:sticky; top:0; z-index:20; backdrop-filter:blur(16px); background:rgba(11,16,32,0.88); border-bottom:1px solid var(--border); }
+    .topbar-inner { max-width:1420px; margin:0 auto; padding:16px 24px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .brand { font-weight:800; letter-spacing:-0.04em; color:var(--brand); font-size:22px; }
+    .nav { display:flex; gap:12px; flex-wrap:wrap; }
+    .nav a { padding:10px 14px; border-radius:999px; color:var(--muted); border:1px solid transparent; }
+    .nav a.active { background:rgba(143,169,255,0.12); color:var(--text); border-color:rgba(143,169,255,0.25); }
+    .masthead { display:grid; grid-template-columns:1.35fr .65fr; gap:18px; margin-top:26px; align-items:stretch; }
+    .hero, .section-shell, .audio-panel, .controls-shell, .roster-shell { background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid var(--border); border-radius:26px; box-shadow:var(--shadow); }
+    .hero { padding:28px; min-height:300px; display:flex; flex-direction:column; justify-content:flex-end; background-image:radial-gradient(circle at top right, rgba(143,169,255,0.22), transparent 26%), linear-gradient(160deg, rgba(24,33,57,0.96), rgba(11,16,32,0.96)); }
+    .hero .eyebrow { display:inline-flex; width:fit-content; padding:8px 12px; border-radius:999px; background:rgba(95,125,255,0.18); color:var(--brand); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; }
+    .hero h1 { margin:16px 0 12px; font-size:clamp(34px,5vw,56px); line-height:0.98; letter-spacing:-0.05em; max-width:900px; }
+    .hero p { margin:0 0 18px; color:var(--muted); font-size:17px; line-height:1.6; max-width:860px; }
+    .hero-actions,.audio-actions,.filter-group,.sort-group { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+    .button,.chip-link { display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border:1px solid var(--border); border-radius:999px; background:rgba(255,255,255,0.03); color:var(--text); font-size:14px; }
+    .button.primary { background:linear-gradient(135deg,var(--brand-2),#7f97ff); color:#061022; border-color:transparent; font-weight:700; }
+    .section-shell,.audio-panel,.controls-shell,.roster-shell { padding:20px; }
+    .section-kicker { color:var(--brand); font-size:12px; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:8px; }
+    .section-copy,.overview,.card-copy,.muted,.transcript-copy { color:var(--muted); line-height:1.65; }
+    .section-shell h2,.audio-panel h2,.roster-shell h2 { margin:0 0 8px; font-size:26px; letter-spacing:-0.03em; }
+    .overview.compact-overview { margin:14px 0 0; }
+    .market-strip { margin-top:18px; }
+    .markets-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:10px; }
+    .market-card.compact { display:grid; gap:4px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); border-radius:18px; padding:12px; min-height:auto; }
+    .market-label { font-weight:800; font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); }
+    .market-price { font-weight:800; font-size:20px; letter-spacing:-0.03em; }
+    .market-delta { font-size:13px; font-weight:800; }
+    .market-delta.up { color:var(--green); }
+    .market-delta.down { color:var(--red); }
+    .compact-player { display:grid; gap:12px; align-content:start; }
+    .compact-player audio { width:100%; }
+    details.transcript-toggle { width:100%; }
+    details.transcript-toggle summary { cursor:pointer; color:var(--brand); font-weight:700; }
+    .smart-top-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:18px; }
+    .emphasis-shell { background:linear-gradient(180deg, rgba(143,169,255,0.06), rgba(255,255,255,0.01)); }
+    .mini-stack { display:grid; gap:14px; margin-top:14px; }
+    .controls-shell { margin-top:18px; display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; }
+    .filter-chip { border:1px solid var(--border); background:rgba(255,255,255,0.02); color:var(--muted); border-radius:999px; padding:10px 14px; cursor:pointer; font-weight:700; }
+    .filter-chip.active { color:var(--text); border-color:rgba(143,169,255,0.3); background:rgba(143,169,255,0.1); }
+    select,input[type="search"] { background:rgba(255,255,255,0.03); color:var(--text); border:1px solid var(--border); border-radius:14px; padding:10px 12px; font-size:14px; }
+    .stream-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:16px; margin-top:18px; }
+    .stream-card { background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border:1px solid rgba(255,255,255,0.06); border-radius:22px; padding:18px; display:flex; flex-direction:column; gap:12px; min-height:230px; }
+    .stream-card.hidden { display:none; }
+    .card-header { display:flex; justify-content:space-between; gap:12px; align-items:start; }
+    .identity-header { align-items:center; }
+    .identity-wrap { display:flex; gap:12px; align-items:center; }
+    .avatar { width:48px; height:48px; border-radius:999px; object-fit:cover; border:1px solid rgba(255,255,255,0.08); }
+    .avatar-fallback { display:grid; place-items:center; background:linear-gradient(135deg, rgba(143,169,255,0.3), rgba(95,125,255,0.15)); font-weight:800; color:var(--text); }
+    .identity-title { font-weight:800; }
+    .identity-subtitle { color:var(--muted); font-size:13px; margin-top:4px; }
+    .pill { display:inline-flex; padding:7px 10px; border-radius:999px; font-size:11px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; }
+    .pill-news { background:rgba(95,125,255,0.12); color:var(--brand); }
+    .pill-x { background:rgba(255,255,255,0.08); color:#d9e1ff; }
+    .card-title { font-size:22px; line-height:1.15; font-weight:800; letter-spacing:-0.03em; }
+    .tweet-stats { margin-top:auto; }
+    .card-footer { display:flex; gap:10px; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-top:auto; }
+    .metric-grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:12px; }
+    .metric-grid-wide { grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); }
+    .metric-card { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.05); border-radius:18px; padding:14px; }
+    .metric-label { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:0.08em; font-weight:700; }
+    .metric-value { font-size:18px; font-weight:800; margin-top:6px; }
+    .roster-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:16px; }
+    .roster-card { display:flex; gap:12px; align-items:center; padding:14px; border-radius:18px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); }
+    .pulse-bottom,.roster-shell { margin-top:18px; }
+    .empty-state { padding:28px; border:1px dashed rgba(255,255,255,0.15); border-radius:18px; color:var(--muted); }
+    .footer-note { color:var(--muted); font-size:13px; margin:22px 0 0; }
+    @media (max-width: 980px) { .masthead,.smart-top-grid { grid-template-columns:1fr; } }
+    @media (max-width: 720px) { .layout { padding:16px; } .topbar-inner { padding:14px 16px; flex-direction:column; align-items:start; } .hero { min-height:260px; } }
   </style>
 </head>
 <body>
   <header class="topbar">
     <div class="topbar-inner">
-      <div>
-        <div class="brand">The Informed Curator</div>
-        <div class="muted">Your watchlist feed with profile pictures, direct profile links, and sort controls.</div>
-      </div>
+      <div><div class="brand">The Informed Curator</div><div class="muted">Your watchlist feed with avatars, profile links, and smart ranking based on engagement and recency.</div></div>
       <nav class="nav">
         <a href="./index.html" class="">Home Feed</a>
         <a href="./trending.html" class="">Trending</a>
@@ -120,131 +94,168 @@
   <div class="layout">
     <section class="masthead">
       <article class="hero">
-        <span class="eyebrow">X watchlist</span>
-        <h1>Updates on U.S. casualties in Iran conflict</h1>
-        <p>As the Iran War continues to rage in the Middle East, the U.S. Department of Defense has now added the number of American casualties sustained so far during the conflict to the Defense Casualty Analysis System (DCAS), which states that a total of 365 American servicemembers have</p>
+        <span class="eyebrow">Smart watchlist pick</span>
+        <h1>Announces Microsoft 365 integration with Claude AI.</h1>
+        <p>Microsoft 365 connectors are now available on every Claude plan. Connect Outlook, OneDrive, and SharePoint to bring your email, docs, and files into the conversation. Get started here: https://t.co/EdoQeT8BBN https://t.co/sOrigP41FJ</p>
         <div class="hero-actions">
-          <a class="button primary" href="https://x.com/sentdefender/status/2040205899424497849" target="_blank" rel="noopener">Open lead item ↗</a>
+          <a class="button primary" href="https://x.com/claudeai/status/2040086268562842097" target="_blank" rel="noopener">Open lead item ↗</a>
           <a class="button" href="https://neima3.github.io/daily-briefings/" target="_blank" rel="noopener">Open public page ↗</a>
         </div>
       </article>
-      <aside class="metrics-shell">
-        <div class="section-kicker">Briefing pulse</div>
-        <div class="metric-grid"><div class="metric-card"><div class="metric-label">Updated</div><div class="metric-value">2026-04-03 08:00 PM EDT</div></div><div class="metric-card"><div class="metric-label">Stories</div><div class="metric-value">25</div></div><div class="metric-card"><div class="metric-label">Tracked X accounts</div><div class="metric-value">4</div></div><div class="metric-card"><div class="metric-label">Markets</div><div class="metric-value">7</div></div><div class="metric-card"><div class="metric-label">Podcast</div><div class="metric-value">Playable</div></div></div>
-        <p class="overview">Tensions escalate as a U.S. fighter jet was shot down over Iran, with one crew member rescued and the other still missing amid ongoing military conflict. In tech and business, AI continues to reshape education and economies, while markets show gains in major U.S. indices despite mixed crypto performance. Locally, Boston sports and legislative issues remain in focus.</p>
-      </aside>
-    </section>
-
-    <section class="two-up">
-      <section class="section-shell">
-        <div class="section-kicker">Markets</div>
-        <h2>Full market pulse</h2>
-        <p class="section-copy">Dow, Nasdaq, S&P, crypto, and key commodity moves are baked into every run now.</p>
-        <div class="markets-grid">
-    <a class="market-card" href="https://stooq.com/q/?s=%5Edji" target="_blank" rel="noopener">
-      <div class="market-top">
-        <span class="market-label">Dow</span>
-        <span class="market-kind">index</span>
-      </div>
-      <div class="market-price">46,504.67</div>
-      <div class="market-delta up">+0.08%</div>
-      <p class="market-note">Dow slightly up by 0.08%, showing modest gains.</p>
-    </a>
-    
-    <a class="market-card" href="https://stooq.com/q/?s=%5Espx" target="_blank" rel="noopener">
-      <div class="market-top">
-        <span class="market-label">S&amp;P 500</span>
-        <span class="market-kind">index</span>
-      </div>
-      <div class="market-price">6,582.69</div>
-      <div class="market-delta up">+1.08%</div>
-      <p class="market-note">S&amp;P 500 rises over 1%, indicating positive market sentiment.</p>
-    </a>
-    
-    <a class="market-card" href="https://stooq.com/q/?s=%5Endq" target="_blank" rel="noopener">
-      <div class="market-top">
-        <span class="market-label">Nasdaq 100</span>
-        <span class="market-kind">index</span>
-      </div>
-      <div class="market-price">21,879.18</div>
-      <div class="market-delta up">+1.89%</div>
-      <p class="market-note">Nasdaq leads with nearly 1.9% gain, driven by tech stocks.</p>
-    </a>
-    
-    <a class="market-card" href="https://stooq.com/q/?s=btc.v" target="_blank" rel="noopener">
-      <div class="market-top">
-        <span class="market-label">Bitcoin</span>
-        <span class="market-kind">crypto</span>
-      </div>
-      <div class="market-price">66,935.20</div>
-      <div class="market-delta down">-0.05%</div>
-      <p class="market-note">Bitcoin dips slightly by 0.05%, reflecting minor volatility.</p>
-    </a>
-    
-    <a class="market-card" href="https://stooq.com/q/?s=eth.v" target="_blank" rel="noopener">
-      <div class="market-top">
-        <span class="market-label">Ethereum</span>
-        <span class="market-kind">crypto</span>
-      </div>
-      <div class="market-price">2,052.56</div>
-      <div class="market-delta down">-0.29%</div>
-      <p class="market-note">Ethereum declines by 0.29%, continuing recent downward trend.</p>
-    </a>
-    
-    <a class="market-card" href="https://stooq.com/q/?s=gc.f" target="_blank" rel="noopener">
-      <div class="market-top">
-        <span class="market-label">Gold</span>
-        <span class="market-kind">commodity</span>
-      </div>
-      <div class="market-price">4,679.70</div>
-      <div class="market-delta up">+0.00%</div>
-      <p class="market-note">Gold prices remain steady with no change.</p>
-    </a>
-    
-    <a class="market-card" href="https://stooq.com/q/?s=cl.f" target="_blank" rel="noopener">
-      <div class="market-top">
-        <span class="market-label">Crude Oil</span>
-        <span class="market-kind">commodity</span>
-      </div>
-      <div class="market-price">111.54</div>
-      <div class="market-delta up">+0.00%</div>
-      <p class="market-note">Crude oil prices stable with no movement.</p>
-    </a>
-    </div>
-      </section>
       
-        <section id="podcast" class="audio-panel">
-          <div class="section-kicker">Podcast mode</div>
-          <h2>Listen in the browser</h2>
-          <p class="section-copy">The latest podcast version is uploaded with each briefing run. Hit play, scrub, or download it directly from the page.</p>
+        <section id="podcast" class="audio-panel compact-player">
+          <div>
+            <div class="section-kicker">Podcast mode</div>
+            <h2>Listen in browser</h2>
+          </div>
           <audio controls preload="none" src="./podcast.mp3"></audio>
           <div class="audio-actions">
             <a class="chip-link" href="./podcast.mp3" target="_blank" rel="noopener">Open audio ↗</a>
             <a class="chip-link" href="./podcast.mp3" download>Download MP3</a>
+            <details class="transcript-toggle"><summary>Expand transcript</summary><p class="transcript-copy">Welcome to today’s briefing. The Iran conflict intensifies as a US fighter jet was downed over southern Iran, with one pilot rescued and others still unaccounted for, prompting active search and rescue efforts. Meanwhile, China seeks to assert diplomatic leadership in the region, contrasting with a less engaged US stance. On the tech front, AI continues to reshape business and governance: ChatGPT’s new browser aids entrepreneurs, Maine moves to halt new AI data centers, and concerns rise over deepfakes in politics. In US politics, former President Trump considers cabinet reshuffles and appoints JD Vance as a &#x27;fraud czar&#x27; targeting Democratic states, while military spending priorities come into focus amid the Iran war. Boston sees local highlights from Red Sox fan reactions to rising church attendance and cultural events. Market-wise, the Dow edges up slightly, the S&amp;P 500 and Nasdaq 100 post stronger gains, while Bitcoin and Ethereum dip marginally. Commodities like gold and crude oil remain steady. That’s your concise update for today.</p></details>
           </div>
-          <p class="transcript-label">Transcript</p>
-          <p class="transcript-copy">Welcome to your daily briefing. Today, geopolitical tensions rise sharply after a U.S. fighter jet was downed over Iran. One crew member has been rescued and is receiving medical care, while the other remains missing. This incident adds complexity to the ongoing conflict in the Middle East, with U.S. intelligence noting Iran&#x27;s rapid missile bunker repairs. Meanwhile, in the tech sector, AI&#x27;s impact grows as college students reconsider majors and regions like Ireland and Scotland push to scale their tech economies. Markets responded positively with the S&amp;P 500 and Nasdaq 100 posting solid gains, while Bitcoin and Ethereum saw slight declines. On the local front, Boston sports fans are tracking key player injuries ahead of the Bucks-Celtics game, and political developments continue as Massachusetts faces legislative audit disputes. Stay tuned for more updates and have a productive day.</p>
         </section>
         
     </section>
 
-    <section class="roster-shell"><div class="section-kicker">Watchlist</div><h2>Tracked accounts</h2><div class="roster-grid"><a class="roster-card" href="https://x.com/sentdefender" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/><div><div class="identity-title">OSINTdefender</div><div class="muted">@sentdefender · 2127436 followers</div></div></a><a class="roster-card" href="https://x.com/NatashaBertrand" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1507284795486879753/uMQ_pbsq_normal.jpg" alt="@NatashaBertrand avatar"/><div><div class="identity-title">Natasha Bertrand</div><div class="muted">@NatashaBertrand · 728947 followers</div></div></a><a class="roster-card" href="https://x.com/claudeai" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/><div><div class="identity-title">Claude</div><div class="muted">@claudeai · 972343 followers</div></div></a><a class="roster-card" href="https://x.com/OpenAI" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/><div><div class="identity-title">OpenAI</div><div class="muted">@OpenAI · 4707424 followers</div></div></a></div></section>
+    <section class="section-shell market-strip">
+      <div class="section-kicker">Markets</div>
+      <h2>Quick tape</h2>
+      <div class="markets-grid">
+    <a class="market-card compact" href="https://stooq.com/q/?s=%5Edji" target="_blank" rel="noopener">
+      <span class="market-label">Dow</span>
+      <span class="market-price">46,504.67</span>
+      <span class="market-delta up">+0.08%</span>
+    </a>
+    
+    <a class="market-card compact" href="https://stooq.com/q/?s=%5Espx" target="_blank" rel="noopener">
+      <span class="market-label">S&amp;P 500</span>
+      <span class="market-price">6,582.69</span>
+      <span class="market-delta up">+1.08%</span>
+    </a>
+    
+    <a class="market-card compact" href="https://stooq.com/q/?s=%5Endq" target="_blank" rel="noopener">
+      <span class="market-label">Nasdaq 100</span>
+      <span class="market-price">21,879.18</span>
+      <span class="market-delta up">+1.89%</span>
+    </a>
+    
+    <a class="market-card compact" href="https://stooq.com/q/?s=btc.v" target="_blank" rel="noopener">
+      <span class="market-label">Bitcoin</span>
+      <span class="market-price">66,856.76</span>
+      <span class="market-delta down">-0.17%</span>
+    </a>
+    
+    <a class="market-card compact" href="https://stooq.com/q/?s=eth.v" target="_blank" rel="noopener">
+      <span class="market-label">Ethereum</span>
+      <span class="market-price">2,050.36</span>
+      <span class="market-delta down">-0.40%</span>
+    </a>
+    
+    <a class="market-card compact" href="https://stooq.com/q/?s=gc.f" target="_blank" rel="noopener">
+      <span class="market-label">Gold</span>
+      <span class="market-price">4,679.70</span>
+      <span class="market-delta up">+0.00%</span>
+    </a>
+    
+    <a class="market-card compact" href="https://stooq.com/q/?s=cl.f" target="_blank" rel="noopener">
+      <span class="market-label">Crude Oil</span>
+      <span class="market-price">111.54</span>
+      <span class="market-delta up">+0.00%</span>
+    </a>
+    </div>
+    </section>
+
+    
+    <section class="smart-top-grid">
+      <div class="section-shell emphasis-shell">
+        <div class="section-kicker">Popular watchlist</div>
+        <h2>Top tweets</h2>
+        <div class="mini-stack">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775229444" data-score="1790374444">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/>
+          <div>
+            <div class="identity-title">Claude</div>
+            <div class="identity-subtitle">@claudeai</div>
+          </div>
+        </div>
+        <span class="pill pill-x">TWEET</span>
+      </div>
+      <div class="card-title">Announces Microsoft 365 integration with Claude AI.</div>
+      <p class="card-copy">Microsoft 365 connectors are now available on every Claude plan. Connect Outlook, OneDrive, and SharePoint to bring your email, docs, and files into the conversation. Get started here: https://t.co/EdoQeT8BBN https://t.co/sOrigP41FJ</p>
+      <div class="tweet-stats muted">❤ 12509 · ↻ 998 · 💬 640 · Apr 3, 11:17 AM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/claudeai" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/claudeai/status/2040086268562842097" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775169987" data-score="1788678987">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/>
+          <div>
+            <div class="identity-title">Claude</div>
+            <div class="identity-subtitle">@claudeai</div>
+          </div>
+        </div>
+        <span class="pill pill-x">QUOTE</span>
+      </div>
+      <div class="card-title">Introduces Claude AI desktop use on Windows.</div>
+      <p class="card-copy">Computer use in Claude Cowork and Claude Code Desktop is now available on Windows. https://t.co/TXjkhVhS7W</p>
+      <div class="tweet-stats muted">❤ 10853 · ↻ 1016 · 💬 624 · Apr 2, 6:46 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/claudeai" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/claudeai/status/2039836891508261106" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775148961" data-score="1787766961">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/>
+          <div>
+            <div class="identity-title">OpenAI</div>
+            <div class="identity-subtitle">@OpenAI</div>
+          </div>
+        </div>
+        <span class="pill pill-x">QUOTE</span>
+      </div>
+      <div class="card-title">ChatGPT now available on CarPlay for iPhone users.</div>
+      <p class="card-copy">ChatGPT is now available in CarPlay. The voice mode you know, now available on-the-go. Rolling out to iPhone users running iOS 26.4+ where CarPlay is supported. https://t.co/yk3qdLa99r https://t.co/aXQqH9MNuG</p>
+      <div class="tweet-stats muted">❤ 10400 · ↻ 786 · 💬 646 · Apr 2, 12:56 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/OpenAI" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/OpenAI/status/2039748699350532097" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    </div>
+      </div>
+      <div class="section-shell emphasis-shell">
+        <div class="section-kicker">Top headlines</div>
+        <h2>Most important news</h2>
+        <div class="mini-stack"><div class="empty-state">No stories right now.</div></div>
+      </div>
+    </section>
+    
 
     <section class="controls-shell">
       <div>
-        <div class="section-kicker">Stream controls</div>
+        <div class="section-kicker">Smart feed controls</div>
         <div class="filter-group">
           <button class="filter-chip" data-filter="all">All</button>
           <button class="filter-chip" data-filter="news">News</button>
           <button class="filter-chip" data-filter="x">X / Twitter</button>
-          <button class="filter-chip" data-filter="markets">Markets</button>
         </div>
       </div>
       <div class="sort-group">
         <input id="streamSearch" type="search" placeholder="Search cards..." />
         <select id="streamSort">
+          <option value="smart">Smart feed</option>
           <option value="latest">Latest</option>
-          <option value="engagement">Highest engagement / move</option>
+          <option value="engagement">Popularity / impact</option>
           <option value="type">Group by type</option>
         </select>
       </div>
@@ -252,10 +263,10 @@
 
     <section class="section-shell">
       <div class="section-kicker">Live briefing stream</div>
-      <h2>Watchlist first</h2>
-      <p class="section-copy">Filter by source type, search by keyword, or sort by latest versus biggest move.</p>
+      <h2>Smart watchlist feed</h2>
+      <p class="section-copy">Default ranking blends popularity, importance, relevance, and recency. You can still switch the sort any time.</p>
       <div id="streamGrid" class="stream-grid">
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775257966" data-score="972">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775264924" data-score="1775614924">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/>
@@ -266,16 +277,76 @@
         </div>
         <span class="pill pill-x">TWEET</span>
       </div>
-      <div class="card-title">Updates on U.S. casualties in Iran conflict</div>
+      <div class="card-title">Reveals extent of damage from Iranian drone attack on US embassy.</div>
+      <p class="card-copy">An Iranian one-way drone attack last month on the U.S. Embassy in Saudi Arabia’s capital of Riyadh did more extensive damage than previously disclosed, penetrating a secure part of the embassy and heavily damaging three floors as well as a station for the Central Intelligence ht…</p>
+      <div class="tweet-stats muted">❤ 244 · ↻ 38 · 💬 30 · Apr 3, 9:08 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/sentdefender" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/sentdefender/status/2040235082343227857" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775263675" data-score="1776082675">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/>
+          <div>
+            <div class="identity-title">OSINTdefender</div>
+            <div class="identity-subtitle">@sentdefender</div>
+          </div>
+        </div>
+        <span class="pill pill-x">TWEET</span>
+      </div>
+      <div class="card-title">Confirms origin of downed US fighter jet in Iran conflict.</div>
+      <p class="card-copy">The F-15E Strike Eagle shot down earlier today over Southern Iran is believed to be based out of Royal Air Force (RAF) Lakenheath in the United Kingdom, a U.S. official told NBC News, appearing to confirm earlier reports that the F-15E was assigned to the U.S. Air Force’s 494th…</p>
+      <div class="tweet-stats muted">❤ 665 · ↻ 58 · 💬 38 · Apr 3, 8:47 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/sentdefender" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/sentdefender/status/2040229843720176010" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775262825" data-score="1776127825">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/>
+          <div>
+            <div class="identity-title">OSINTdefender</div>
+            <div class="identity-subtitle">@sentdefender</div>
+          </div>
+        </div>
+        <span class="pill pill-x">TWEET</span>
+      </div>
+      <div class="card-title">Indicates rising regional alert with sirens in Bahrain.</div>
+      <p class="card-copy">Sirens sounding now in Bahrain.</p>
+      <div class="tweet-stats muted">❤ 717 · ↻ 59 · 💬 30 · Apr 3, 8:33 PM ET</div>
+      <div class="card-footer">
+        <a class="chip-link" href="https://x.com/sentdefender" target="_blank" rel="noopener">Profile ↗</a>
+        <a class="chip-link" href="https://x.com/sentdefender/status/2040226281971708114" target="_blank" rel="noopener">View on X ↗</a>
+      </div>
+    </article>
+    
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775257966" data-score="1776707966">
+      <div class="card-header identity-header">
+        <div class="identity-wrap">
+          <img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/>
+          <div>
+            <div class="identity-title">OSINTdefender</div>
+            <div class="identity-subtitle">@sentdefender</div>
+          </div>
+        </div>
+        <span class="pill pill-x">TWEET</span>
+      </div>
+      <div class="card-title">Updates US casualty count in ongoing Iran war.</div>
       <p class="card-copy">As the Iran War continues to rage in the Middle East, the U.S. Department of Defense has now added the number of American casualties sustained so far during the conflict to the Defense Casualty Analysis System (DCAS), which states that a total of 365 American servicemembers have</p>
-      <div class="tweet-stats muted">❤ 682 · ↻ 102 · 💬 86 · Apr 3, 7:12 PM ET</div>
+      <div class="tweet-stats muted">❤ 1066 · ↻ 143 · 💬 98 · Apr 3, 7:12 PM ET</div>
       <div class="card-footer">
         <a class="chip-link" href="https://x.com/sentdefender" target="_blank" rel="noopener">Profile ↗</a>
         <a class="chip-link" href="https://x.com/sentdefender/status/2040205899424497849" target="_blank" rel="noopener">View on X ↗</a>
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775256683" data-score="1085">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775256683" data-score="1776583683">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/>
@@ -286,76 +357,16 @@
         </div>
         <span class="pill pill-x">TWEET</span>
       </div>
-      <div class="card-title">Reports of explosions near Damascus</div>
+      <div class="card-title">Reports possible explosions near Syrian capital.</div>
       <p class="card-copy">Reports of possible explosions in and around the Syrian capital of Damascus.</p>
-      <div class="tweet-stats muted">❤ 862 · ↻ 90 · 💬 43 · Apr 3, 6:51 PM ET</div>
+      <div class="tweet-stats muted">❤ 1079 · ↻ 102 · 💬 44 · Apr 3, 6:51 PM ET</div>
       <div class="card-footer">
         <a class="chip-link" href="https://x.com/sentdefender" target="_blank" rel="noopener">Profile ↗</a>
         <a class="chip-link" href="https://x.com/sentdefender/status/2040200520128716996" target="_blank" rel="noopener">View on X ↗</a>
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775253606" data-score="1855">
-      <div class="card-header identity-header">
-        <div class="identity-wrap">
-          <img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/>
-          <div>
-            <div class="identity-title">OSINTdefender</div>
-            <div class="identity-subtitle">@sentdefender</div>
-          </div>
-        </div>
-        <span class="pill pill-x">TWEET</span>
-      </div>
-      <div class="card-title">Republican support and dissent over Iran war</div>
-      <p class="card-copy">Statement today from Republican Sen. John Curtis of Utah, as several Republican lawmakers begin to break from President Trump over the ongoing and escalating Iran War: “I stand by the President’s actions taken in defense of our national security interests in the Middle East. But…</p>
-      <div class="tweet-stats muted">❤ 1362 · ↻ 196 · 💬 101 · Apr 3, 6:00 PM ET</div>
-      <div class="card-footer">
-        <a class="chip-link" href="https://x.com/sentdefender" target="_blank" rel="noopener">Profile ↗</a>
-        <a class="chip-link" href="https://x.com/sentdefender/status/2040187613185749297" target="_blank" rel="noopener">View on X ↗</a>
-      </div>
-    </article>
-    
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775253180" data-score="606">
-      <div class="card-header identity-header">
-        <div class="identity-wrap">
-          <img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/>
-          <div>
-            <div class="identity-title">OSINTdefender</div>
-            <div class="identity-subtitle">@sentdefender</div>
-          </div>
-        </div>
-        <span class="pill pill-x">TWEET</span>
-      </div>
-      <div class="card-title">Uncertainty over drone footage from Iran</div>
-      <p class="card-copy">There is a possibility this could also be footage from the shoot down of one of the MQ-9s that were also downed earlier today over Iran, though the location of the screen graphics and the angle of the aircraft makes it difficult to discern whether this is an MQ-9 or in fact an h…</p>
-      <div class="tweet-stats muted">❤ 500 · ↻ 37 · 💬 32 · Apr 3, 5:53 PM ET</div>
-      <div class="card-footer">
-        <a class="chip-link" href="https://x.com/sentdefender" target="_blank" rel="noopener">Profile ↗</a>
-        <a class="chip-link" href="https://x.com/sentdefender/status/2040185828446773542" target="_blank" rel="noopener">View on X ↗</a>
-      </div>
-    </article>
-    
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775252370" data-score="2510">
-      <div class="card-header identity-header">
-        <div class="identity-wrap">
-          <img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/>
-          <div>
-            <div class="identity-title">OSINTdefender</div>
-            <div class="identity-subtitle">@sentdefender</div>
-          </div>
-        </div>
-        <span class="pill pill-x">QUOTE</span>
-      </div>
-      <div class="card-title">Multiple U.S. aircraft incidents in CENTCOM area</div>
-      <p class="card-copy">There have been several incidents involving U.S. aircraft in the U.S. Central Command (CENTCOM) area of operation (AO) within the last 24 hours: 1. A U.S. Air Force F-15E &quot;Strike Eagle&quot; was hit by Iranian fire and crashed in Iran. Both crew members survived, with 1 being rescued…</p>
-      <div class="tweet-stats muted">❤ 1853 · ↻ 274 · 💬 109 · Apr 3, 5:39 PM ET</div>
-      <div class="card-footer">
-        <a class="chip-link" href="https://x.com/sentdefender" target="_blank" rel="noopener">Profile ↗</a>
-        <a class="chip-link" href="https://x.com/sentdefender/status/2040182428807905314" target="_blank" rel="noopener">View on X ↗</a>
-      </div>
-    </article>
-    
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775250932" data-score="383">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775250932" data-score="1775659932">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1507284795486879753/uMQ_pbsq_normal.jpg" alt="@NatashaBertrand avatar"/>
@@ -366,16 +377,16 @@
         </div>
         <span class="pill pill-x">QUOTE</span>
       </div>
-      <div class="card-title">A-10 pilot ejects after Iran strike</div>
+      <div class="card-title">Details pilot ejection after Iranian strike on US A-10.</div>
       <p class="card-copy">An A-10 Thunderbolt II was struck by Iran on Friday, forcing the pilot to eject, according to a US official familiar with the matter. The pilot of the A-10, also known as a Warthog, was able to navigate the plane out of Iranian territory before ejecting from the aircraft and htt…</p>
-      <div class="tweet-stats muted">❤ 211 · ↻ 86 · 💬 0 · Apr 3, 5:15 PM ET</div>
+      <div class="tweet-stats muted">❤ 229 · ↻ 90 · 💬 0 · Apr 3, 5:15 PM ET</div>
       <div class="card-footer">
         <a class="chip-link" href="https://x.com/NatashaBertrand" target="_blank" rel="noopener">Profile ↗</a>
         <a class="chip-link" href="https://x.com/NatashaBertrand/status/2040176398845821314" target="_blank" rel="noopener">View on X ↗</a>
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775246359" data-score="74">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775246359" data-score="1775320359">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1507284795486879753/uMQ_pbsq_normal.jpg" alt="@NatashaBertrand avatar"/>
@@ -386,7 +397,7 @@
         </div>
         <span class="pill pill-x">RETWEET</span>
       </div>
-      <div class="card-title">Two U.S. aircraft lost, crew status unclear</div>
+      <div class="card-title">Confirms loss of two US aircraft in combat.</div>
       <p class="card-copy">RT @TheIntelFrog: 🤯🤯🤯 2 aircraft lost in combat with at least 1 crew member unaccounted for at this time...</p>
       <div class="tweet-stats muted">❤ 0 · ↻ 37 · 💬 0 · Apr 3, 3:59 PM ET</div>
       <div class="card-footer">
@@ -395,7 +406,7 @@
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775232975" data-score="958">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775232975" data-score="1776196975">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1507284795486879753/uMQ_pbsq_normal.jpg" alt="@NatashaBertrand avatar"/>
@@ -406,16 +417,16 @@
         </div>
         <span class="pill pill-x">TWEET</span>
       </div>
-      <div class="card-title">One crew member rescued, receiving care</div>
+      <div class="card-title">Confirms rescue of downed US pilot in Iran.</div>
       <p class="card-copy">Good news: US forces rescued one of the crew members of a downed US fighter jet in Iran, according to three sources familiar with the matter. Two of the sources said the pilot was alive, in US custody and receiving medical treatment. It wasn’t clear what the status of the</p>
-      <div class="tweet-stats muted">❤ 578 · ↻ 190 · 💬 0 · Apr 3, 12:16 PM ET</div>
+      <div class="tweet-stats muted">❤ 582 · ↻ 191 · 💬 0 · Apr 3, 12:16 PM ET</div>
       <div class="card-footer">
         <a class="chip-link" href="https://x.com/NatashaBertrand" target="_blank" rel="noopener">Profile ↗</a>
         <a class="chip-link" href="https://x.com/NatashaBertrand/status/2040101081296896162" target="_blank" rel="noopener">View on X ↗</a>
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775226872" data-score="1139">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775226872" data-score="1776371872">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1507284795486879753/uMQ_pbsq_normal.jpg" alt="@NatashaBertrand avatar"/>
@@ -426,16 +437,16 @@
         </div>
         <span class="pill pill-x">TWEET</span>
       </div>
-      <div class="card-title">Confirmation of U.S. fighter jet downed over Iran</div>
+      <div class="card-title">Confirms US fighter jet shot down over Iran.</div>
       <p class="card-copy">A US fighter jet has been shot down over Iran, three US sources said confirming Iranian state media reports. US forces have launched search and rescue efforts, the sources said. Potential rescue efforts appeared to be captured in video posted to social media and geolocated by</p>
-      <div class="tweet-stats muted">❤ 753 · ↻ 192 · 💬 2 · Apr 3, 10:34 AM ET</div>
+      <div class="tweet-stats muted">❤ 757 · ↻ 193 · 💬 2 · Apr 3, 10:34 AM ET</div>
       <div class="card-footer">
         <a class="chip-link" href="https://x.com/NatashaBertrand" target="_blank" rel="noopener">Profile ↗</a>
         <a class="chip-link" href="https://x.com/NatashaBertrand/status/2040075482666852663" target="_blank" rel="noopener">View on X ↗</a>
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775172604" data-score="610">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775172604" data-score="1775782604">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1507284795486879753/uMQ_pbsq_normal.jpg" alt="@NatashaBertrand avatar"/>
@@ -446,7 +457,7 @@
         </div>
         <span class="pill pill-x">RETWEET</span>
       </div>
-      <div class="card-title">Iran retains significant missile and drone capabilities</div>
+      <div class="card-title">Highlights remaining Iranian missile and drone capabilities.</div>
       <p class="card-copy">RT @halbritz: NEW: Roughly half of Iran’s missile launchers are still intact and thousands of one-way attack drones remain in Iran’s arsena…</p>
       <div class="tweet-stats muted">❤ 0 · ↻ 305 · 💬 0 · Apr 2, 7:30 PM ET</div>
       <div class="card-footer">
@@ -455,7 +466,7 @@
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775229444" data-score="14525">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775229444" data-score="1790374444">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/>
@@ -466,16 +477,16 @@
         </div>
         <span class="pill pill-x">TWEET</span>
       </div>
-      <div class="card-title">Microsoft 365 integration now in Claude plans</div>
+      <div class="card-title">Announces Microsoft 365 integration with Claude AI.</div>
       <p class="card-copy">Microsoft 365 connectors are now available on every Claude plan. Connect Outlook, OneDrive, and SharePoint to bring your email, docs, and files into the conversation. Get started here: https://t.co/EdoQeT8BBN https://t.co/sOrigP41FJ</p>
-      <div class="tweet-stats muted">❤ 12019 · ↻ 938 · 💬 630 · Apr 3, 11:17 AM ET</div>
+      <div class="tweet-stats muted">❤ 12509 · ↻ 998 · 💬 640 · Apr 3, 11:17 AM ET</div>
       <div class="card-footer">
         <a class="chip-link" href="https://x.com/claudeai" target="_blank" rel="noopener">Profile ↗</a>
         <a class="chip-link" href="https://x.com/claudeai/status/2040086268562842097" target="_blank" rel="noopener">View on X ↗</a>
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775169987" data-score="13437">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775169987" data-score="1788678987">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/>
@@ -486,16 +497,16 @@
         </div>
         <span class="pill pill-x">QUOTE</span>
       </div>
-      <div class="card-title">Claude Cowork and Code Desktop now on Windows</div>
+      <div class="card-title">Introduces Claude AI desktop use on Windows.</div>
       <p class="card-copy">Computer use in Claude Cowork and Claude Code Desktop is now available on Windows. https://t.co/TXjkhVhS7W</p>
-      <div class="tweet-stats muted">❤ 10793 · ↻ 1010 · 💬 624 · Apr 2, 6:46 PM ET</div>
+      <div class="tweet-stats muted">❤ 10853 · ↻ 1016 · 💬 624 · Apr 2, 6:46 PM ET</div>
       <div class="card-footer">
         <a class="chip-link" href="https://x.com/claudeai" target="_blank" rel="noopener">Profile ↗</a>
         <a class="chip-link" href="https://x.com/claudeai/status/2039836891508261106" target="_blank" rel="noopener">View on X ↗</a>
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774897439" data-score="6276">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774897439" data-score="1781177439">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/>
@@ -506,16 +517,16 @@
         </div>
         <span class="pill pill-x">QUOTE</span>
       </div>
-      <div class="card-title">Auto mode enabled for Claude Code Enterprise users</div>
+      <div class="card-title">Launches auto mode for Claude Code on enterprise plans.</div>
       <p class="card-copy">Auto mode for Claude Code is now available on the Enterprise plan and for API users. To try it out, update your install and run claude --enable-auto-mode. https://t.co/m3CdLEfNeZ</p>
-      <div class="tweet-stats muted">❤ 4919 · ↻ 373 · 💬 611 · Mar 30, 3:03 PM ET</div>
+      <div class="tweet-stats muted">❤ 4922 · ↻ 373 · 💬 612 · Mar 30, 3:03 PM ET</div>
       <div class="card-footer">
         <a class="chip-link" href="https://x.com/claudeai" target="_blank" rel="noopener">Profile ↗</a>
         <a class="chip-link" href="https://x.com/claudeai/status/2038693742094246032" target="_blank" rel="noopener">View on X ↗</a>
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774890115" data-score="2193">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774890115" data-score="1777084115">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/>
@@ -526,16 +537,16 @@
         </div>
         <span class="pill pill-x">TWEET</span>
       </div>
-      <div class="card-title">Research preview features available on macOS</div>
+      <div class="card-title">Releases research preview features for Claude on macOS.</div>
       <p class="card-copy">Now available in research preview on Pro and Max on macOS. Enable it with /mcp. Docs: https://t.co/x9kSKedkjz</p>
-      <div class="tweet-stats muted">❤ 1911 · ↻ 97 · 💬 88 · Mar 30, 1:01 PM ET</div>
+      <div class="tweet-stats muted">❤ 1912 · ↻ 97 · 💬 88 · Mar 30, 1:01 PM ET</div>
       <div class="card-footer">
         <a class="chip-link" href="https://x.com/claudeai" target="_blank" rel="noopener">Profile ↗</a>
         <a class="chip-link" href="https://x.com/claudeai/status/2038663019983479234" target="_blank" rel="noopener">View on X ↗</a>
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774890114" data-score="1991">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774890114" data-score="1776882114">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/>
@@ -546,16 +557,16 @@
         </div>
         <span class="pill pill-x">TWEET</span>
       </div>
-      <div class="card-title">Claude works on various Mac applications</div>
+      <div class="card-title">Demonstrates Claude AI compatibility with various Mac apps.</div>
       <p class="card-copy">It works on anything you can open on your Mac: a compiled SwiftUI app, a local Electron build, or a GUI tool that doesn&#x27;t have a CLI.</p>
-      <div class="tweet-stats muted">❤ 1870 · ↻ 39 · 💬 43 · Mar 30, 1:01 PM ET</div>
+      <div class="tweet-stats muted">❤ 1871 · ↻ 39 · 💬 43 · Mar 30, 1:01 PM ET</div>
       <div class="card-footer">
         <a class="chip-link" href="https://x.com/claudeai" target="_blank" rel="noopener">Profile ↗</a>
         <a class="chip-link" href="https://x.com/claudeai/status/2038663018427420698" target="_blank" rel="noopener">View on X ↗</a>
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775154442" data-score="184">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775154442" data-score="1775340442">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/>
@@ -566,16 +577,16 @@
         </div>
         <span class="pill pill-x">RETWEET</span>
       </div>
-      <div class="card-title">OpenAI acquires TBPN</div>
+      <div class="card-title">Announces OpenAI acquisition of TBPN.</div>
       <p class="card-copy">RT @tbpn: OpenAI Acquires TBPN https://t.co/Sdw32Weo4z</p>
-      <div class="tweet-stats muted">❤ 0 · ↻ 92 · 💬 0 · Apr 2, 2:27 PM ET</div>
+      <div class="tweet-stats muted">❤ 0 · ↻ 93 · 💬 0 · Apr 2, 2:27 PM ET</div>
       <div class="card-footer">
         <a class="chip-link" href="https://x.com/OpenAI" target="_blank" rel="noopener">Profile ↗</a>
         <a class="chip-link" href="https://x.com/OpenAI/status/2039771689131897173" target="_blank" rel="noopener">View on X ↗</a>
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775148961" data-score="12563">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1775148961" data-score="1787766961">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/>
@@ -586,16 +597,16 @@
         </div>
         <span class="pill pill-x">QUOTE</span>
       </div>
-      <div class="card-title">ChatGPT now available on CarPlay</div>
+      <div class="card-title">ChatGPT now available on CarPlay for iPhone users.</div>
       <p class="card-copy">ChatGPT is now available in CarPlay. The voice mode you know, now available on-the-go. Rolling out to iPhone users running iOS 26.4+ where CarPlay is supported. https://t.co/yk3qdLa99r https://t.co/aXQqH9MNuG</p>
-      <div class="tweet-stats muted">❤ 10355 · ↻ 783 · 💬 642 · Apr 2, 12:56 PM ET</div>
+      <div class="tweet-stats muted">❤ 10400 · ↻ 786 · 💬 646 · Apr 2, 12:56 PM ET</div>
       <div class="card-footer">
         <a class="chip-link" href="https://x.com/OpenAI" target="_blank" rel="noopener">Profile ↗</a>
         <a class="chip-link" href="https://x.com/OpenAI/status/2039748699350532097" target="_blank" rel="noopener">View on X ↗</a>
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774990761" data-score="10942">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774990761" data-score="1785931761">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/>
@@ -606,16 +617,16 @@
         </div>
         <span class="pill pill-x">TWEET</span>
       </div>
-      <div class="card-title">OpenAI closes $122B funding round at $852B valuation</div>
+      <div class="card-title">Shares $122B funding round and $852B valuation.</div>
       <p class="card-copy">Today, we closed our latest funding round with $122 billion in committed capital at an $852B post-money valuation. The fastest way to expand AI’s benefits is to put useful intelligence in people’s hands early and let access compound globally. This funding gives us resources to</p>
-      <div class="tweet-stats muted">❤ 8391 · ↻ 741 · 💬 1069 · Mar 31, 4:59 PM ET</div>
+      <div class="tweet-stats muted">❤ 8392 · ↻ 740 · 💬 1069 · Mar 31, 4:59 PM ET</div>
       <div class="card-footer">
         <a class="chip-link" href="https://x.com/OpenAI" target="_blank" rel="noopener">Profile ↗</a>
         <a class="chip-link" href="https://x.com/OpenAI/status/2039085161971896807" target="_blank" rel="noopener">View on X ↗</a>
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774564891" data-score="1196">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774564891" data-score="1775760891">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/>
@@ -626,7 +637,7 @@
         </div>
         <span class="pill pill-x">RETWEET</span>
       </div>
-      <div class="card-title">Codex plugins rolling out for key tools</div>
+      <div class="card-title">Rolls out Codex plugins integrating popular tools.</div>
       <p class="card-copy">RT @OpenAIDevs: We&#x27;re rolling out plugins in Codex. Codex now works seamlessly out of the box with the most important tools builders alrea…</p>
       <div class="tweet-stats muted">❤ 0 · ↻ 598 · 💬 0 · Mar 26, 6:41 PM ET</div>
       <div class="card-footer">
@@ -635,7 +646,7 @@
       </div>
     </article>
     
-    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774464872" data-score="202">
+    <article class="stream-card" data-type="x" data-section="watchlist" data-ts="1774464872" data-score="1774666872">
       <div class="card-header identity-header">
         <div class="identity-wrap">
           <img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/>
@@ -646,7 +657,7 @@
         </div>
         <span class="pill pill-x">RETWEET</span>
       </div>
-      <div class="card-title">Codex Creator Challenge offers $10K in API credits</div>
+      <div class="card-title">Launches Codex Creator Challenge with $10K prizes.</div>
       <p class="card-copy">RT @OpenAIDevs: Students: build something real in the Codex Creator Challenge, powered by @joinHandshake Try new tools. Have fun. Break th…</p>
       <div class="tweet-stats muted">❤ 0 · ↻ 101 · 💬 0 · Mar 25, 2:54 PM ET</div>
       <div class="card-footer">
@@ -654,116 +665,23 @@
         <a class="chip-link" href="https://x.com/OpenAI/status/2036879423040086036" target="_blank" rel="noopener">View on X ↗</a>
       </div>
     </article>
-    
-    <article class="stream-card market-stream" data-type="markets" data-section="markets" data-ts="0" data-score="0.07598555263080377">
-      <div class="card-header">
-        <span class="pill pill-markets">Markets</span>
-        <span class="market-kind">index</span>
-      </div>
-      <div class="market-stream-price">Dow · 46,504.67</div>
-      <div class="market-delta up">35.31 / +0.08%</div>
-      <p class="card-copy">Dow slightly up by 0.08%, showing modest gains.</p>
-      <div class="card-footer">
-        <span class="muted">stooq.com</span>
-        <a class="chip-link" href="https://stooq.com/q/?s=%5Edji" target="_blank" rel="noopener">Open market ↗</a>
-      </div>
-    </article>
-    
-    <article class="stream-card market-stream" data-type="markets" data-section="markets" data-ts="0" data-score="1.076066277575349">
-      <div class="card-header">
-        <span class="pill pill-markets">Markets</span>
-        <span class="market-kind">index</span>
-      </div>
-      <div class="market-stream-price">S&amp;P 500 · 6,582.69</div>
-      <div class="market-delta up">70.08 / +1.08%</div>
-      <p class="card-copy">S&amp;P 500 rises over 1%, indicating positive market sentiment.</p>
-      <div class="card-footer">
-        <span class="muted">stooq.com</span>
-        <a class="chip-link" href="https://stooq.com/q/?s=%5Espx" target="_blank" rel="noopener">Open market ↗</a>
-      </div>
-    </article>
-    
-    <article class="stream-card market-stream" data-type="markets" data-section="markets" data-ts="0" data-score="1.8938624809756837">
-      <div class="card-header">
-        <span class="pill pill-markets">Markets</span>
-        <span class="market-kind">index</span>
-      </div>
-      <div class="market-stream-price">Nasdaq 100 · 21,879.18</div>
-      <div class="market-delta up">406.66 / +1.89%</div>
-      <p class="card-copy">Nasdaq leads with nearly 1.9% gain, driven by tech stocks.</p>
-      <div class="card-footer">
-        <span class="muted">stooq.com</span>
-        <a class="chip-link" href="https://stooq.com/q/?s=%5Endq" target="_blank" rel="noopener">Open market ↗</a>
-      </div>
-    </article>
-    
-    <article class="stream-card market-stream" data-type="markets" data-section="markets" data-ts="0" data-score="0.05332165861268184">
-      <div class="card-header">
-        <span class="pill pill-markets">Markets</span>
-        <span class="market-kind">crypto</span>
-      </div>
-      <div class="market-stream-price">Bitcoin · 66,935.20</div>
-      <div class="market-delta down">-35.71 / -0.05%</div>
-      <p class="card-copy">Bitcoin dips slightly by 0.05%, reflecting minor volatility.</p>
-      <div class="card-footer">
-        <span class="muted">stooq.com</span>
-        <a class="chip-link" href="https://stooq.com/q/?s=btc.v" target="_blank" rel="noopener">Open market ↗</a>
-      </div>
-    </article>
-    
-    <article class="stream-card market-stream" data-type="markets" data-section="markets" data-ts="0" data-score="0.2941782245936124">
-      <div class="card-header">
-        <span class="pill pill-markets">Markets</span>
-        <span class="market-kind">crypto</span>
-      </div>
-      <div class="market-stream-price">Ethereum · 2,052.56</div>
-      <div class="market-delta down">-6.06 / -0.29%</div>
-      <p class="card-copy">Ethereum declines by 0.29%, continuing recent downward trend.</p>
-      <div class="card-footer">
-        <span class="muted">stooq.com</span>
-        <a class="chip-link" href="https://stooq.com/q/?s=eth.v" target="_blank" rel="noopener">Open market ↗</a>
-      </div>
-    </article>
-    
-    <article class="stream-card market-stream" data-type="markets" data-section="markets" data-ts="0" data-score="0">
-      <div class="card-header">
-        <span class="pill pill-markets">Markets</span>
-        <span class="market-kind">commodity</span>
-      </div>
-      <div class="market-stream-price">Gold · 4,679.70</div>
-      <div class="market-delta up">0.0000 / +0.00%</div>
-      <p class="card-copy">Gold prices remain steady with no change.</p>
-      <div class="card-footer">
-        <span class="muted">stooq.com</span>
-        <a class="chip-link" href="https://stooq.com/q/?s=gc.f" target="_blank" rel="noopener">Open market ↗</a>
-      </div>
-    </article>
-    
-    <article class="stream-card market-stream" data-type="markets" data-section="markets" data-ts="0" data-score="0">
-      <div class="card-header">
-        <span class="pill pill-markets">Markets</span>
-        <span class="market-kind">commodity</span>
-      </div>
-      <div class="market-stream-price">Crude Oil · 111.54</div>
-      <div class="market-delta up">0.0000 / +0.00%</div>
-      <p class="card-copy">Crude oil prices stable with no movement.</p>
-      <div class="card-footer">
-        <span class="muted">stooq.com</span>
-        <a class="chip-link" href="https://stooq.com/q/?s=cl.f" target="_blank" rel="noopener">Open market ↗</a>
-      </div>
-    </article>
     </div>
-      <p class="footer-note">Updated 2026-04-03 08:00 PM EDT. Markets sourced from Stooq. News from tested RSS feeds. X cards now carry profile pictures when available.</p>
+      <p class="footer-note">Updated 2026-04-03 09:17 PM EDT. Markets are shown once up top for quick scanning. The feed below focuses on tweets + news only.</p>
     </section>
+
+    <section class="section-shell pulse-bottom"><div class="section-kicker">Briefing pulse</div><h2>Pulse</h2><div class="metric-grid metric-grid-wide"><div class="metric-card"><div class="metric-label">Updated</div><div class="metric-value">2026-04-03 09:17 PM EDT</div></div><div class="metric-card"><div class="metric-label">Stories</div><div class="metric-value">25</div></div><div class="metric-card"><div class="metric-label">Tracked X accounts</div><div class="metric-value">4</div></div><div class="metric-card"><div class="metric-label">Markets</div><div class="metric-value">7</div></div><div class="metric-card"><div class="metric-label">Podcast</div><div class="metric-value">Playable</div></div></div><p class="overview compact-overview">Tensions escalate in the Iran war with a US fighter jet shot down and the status of the crew partially unknown amid ongoing military actions. In technology, AI developments continue with new tools and regulatory moves, while US politics focus on Trump’s cabinet and spending priorities. Markets show modest gains in major indexes, with mixed movements in crypto and stable commodities.</p></section>
+    <section class="roster-shell"><div class="section-kicker">Watchlist</div><h2>Tracked accounts</h2><div class="roster-grid"><a class="roster-card" href="https://x.com/sentdefender" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg" alt="@sentdefender avatar"/><div><div class="identity-title">OSINTdefender</div><div class="muted">@sentdefender · 2127709 followers</div></div></a><a class="roster-card" href="https://x.com/NatashaBertrand" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1507284795486879753/uMQ_pbsq_normal.jpg" alt="@NatashaBertrand avatar"/><div><div class="identity-title">Natasha Bertrand</div><div class="muted">@NatashaBertrand · 728947 followers</div></div></a><a class="roster-card" href="https://x.com/claudeai" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg" alt="@claudeai avatar"/><div><div class="identity-title">Claude</div><div class="muted">@claudeai · 972652 followers</div></div></a><a class="roster-card" href="https://x.com/OpenAI" target="_blank" rel="noopener"><img class="avatar" src="https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg" alt="@OpenAI avatar"/><div><div class="identity-title">OpenAI</div><div class="muted">@OpenAI · 4707470 followers</div></div></a></div></section>
   </div>
   <script>
     (function() {
       const defaultFilter = "x";
+      const defaultSort = "smart";
       const chips = Array.from(document.querySelectorAll('.filter-chip'));
       const cards = Array.from(document.querySelectorAll('.stream-card'));
       const searchInput = document.getElementById('streamSearch');
       const sortSelect = document.getElementById('streamSort');
       let currentFilter = defaultFilter;
+      sortSelect.value = defaultSort;
 
       function setActiveChip() {
         chips.forEach(chip => chip.classList.toggle('active', chip.dataset.filter === currentFilter));
@@ -777,12 +695,12 @@
           const visible = (currentFilter === 'all' || type === currentFilter) && (!term || text.includes(term));
           card.classList.toggle('hidden', !visible);
         });
-
         const visibleCards = cards.filter(card => !card.classList.contains('hidden'));
         const sortMode = sortSelect.value;
         visibleCards.sort((a, b) => {
-          if (sortMode === 'engagement') {
-            return Number(b.dataset.score || 0) - Number(a.dataset.score || 0);
+          if (sortMode === 'engagement' || sortMode === 'smart') {
+            const scoreDiff = Number(b.dataset.score || 0) - Number(a.dataset.score || 0);
+            if (scoreDiff !== 0) return scoreDiff;
           }
           if (sortMode === 'type') {
             const typeCompare = (a.dataset.type || '').localeCompare(b.dataset.type || '');
@@ -790,7 +708,6 @@
           }
           return Number(b.dataset.ts || 0) - Number(a.dataset.ts || 0);
         });
-
         const grid = document.getElementById('streamGrid');
         visibleCards.forEach(card => grid.appendChild(card));
       }
