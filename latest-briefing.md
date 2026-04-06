@@ -1,204 +1,204 @@
-# Neima Briefing — 2026-04-05 07:00 PM EDT
+# Neima Briefing — 2026-04-06 05:30 AM EDT
 
-Tensions escalate between the U.S. and Iran following a successful U.S. rescue mission of a downed airman, with former President Trump issuing strong threats against Iran. Meanwhile, Hollywood studios reach a tentative agreement with the writers union, and significant investments and regulatory actions advance AI technology development.
+Tensions escalate globally with Iran and the US exchanging threats amid ongoing conflict concerns, while Ukraine and Russia continue hostilities. AI technology advances with new applications in gemstone analysis and cardiac imaging, alongside debates over innovation protection. Markets show mixed reactions, with tech and crypto gains contrasting a drop in crude oil prices.
 
 ## Markets
 
 - Dow: 46,504.67 (+0.08%)
-  Dow edged up 0.08%, showing modest investor confidence amid geopolitical tensions.
+  Dow up slightly by 0.08%, showing modest gains
 - S&P 500: 6,582.69 (+1.08%)
-  S&P 500 gained 1.08%, reflecting positive market sentiment.
+  S&P 500 rises over 1%, led by tech and growth stocks
 - Nasdaq 100: 21,879.18 (+1.89%)
-  Nasdaq 100 led gains with a 1.89% rise, driven by tech sector strength.
-- Bitcoin: 68,412.73 (+1.27%)
-  Bitcoin rose 1.27%, continuing its upward momentum in crypto markets.
-- Ethereum: 2,088.33 (+1.38%)
-  Ethereum increased 1.38%, mirroring broader cryptocurrency gains.
-- Gold: 4,676.50 (+0.14%)
-  Gold prices inched up 0.14%, indicating cautious investor demand for safe havens.
-- Crude Oil: 113.35 (+0.16%)
-  Crude oil rose 0.16%, supported by ongoing geopolitical risks.
+  Nasdaq 100 gains nearly 1.9%, strong tech sector performance
+- Bitcoin: 69,940.91 (+3.53%)
+  Bitcoin surges 3.5%, continuing recent upward momentum
+- Ethereum: 2,160.20 (+4.87%)
+  Ethereum climbs nearly 4.9%, outperforming major cryptos
+- Gold: 4,728.92 (+1.26%)
+  Gold prices increase 1.26%, reflecting safe-haven demand
+- Crude Oil: 109.48 (-3.26%)
+  Crude oil drops 3.26%, pressured by geopolitical and supply factors
 
 ## X watchlist
 
 ### @sentdefender (OSINTdefender)
 
 - Iran has rejected a proposal to open the Strait of Hormuz in exchange for a temporary ceasefire, while telling mediators from Turkey, Egypt and Pakistan that it is unwilling to meet American officials in Islamabad in the coming days and considers U.S. demands to end the war http…
-  Why it matters: Iran rejects ceasefire proposal and refuses U.S. talks, escalating conflict risks.
+  Why it matters: Iran rejects ceasefire proposal, refuses US talks
   Apr 5, 3:29 PM ET • TWEET
   https://x.com/sentdefender/status/2040874446349570165
 - RT @DefenceGeek: So the UK MoD confirming HMS Dragon (pictured front here) has NOT been hit! IF the Israelis are sure on the shape, they m…
-  Why it matters: Clarification on UK ship status reduces misinformation about military incidents.
+  Why it matters: UK MoD clarifies no damage to HMS Dragon amid confusion
   Apr 5, 3:22 PM ET • RETWEET
   https://x.com/sentdefender/status/2040872666047893849
 - For the first time since the incident occurred late last week, U.S. Central Command (CENTCOM) has published a statement confirming the shoot down of an American F-15E Strike Eagle during a combat mission over Iran. CENTCOM additionally confirms the successful recovery of both th…
-  Why it matters: CENTCOM confirms F-15E shootdown and successful airman recovery, validating military reports.
+  Why it matters: US confirms shootdown of F-15E over Iran and recovery
   Apr 5, 1:36 PM ET • TWEET
   https://x.com/sentdefender/status/2040846089763316191
 
 ### @NatashaBertrand (Natasha Bertrand)
 
 - RT @Mpolymer: Kudos to the independent journalists who so often get it right 👊.
-  Why it matters: Independent journalists recognized for accurate reporting on complex issues.
+  Why it matters: Praise for independent journalism accuracy
   Apr 5, 11:56 AM ET • RETWEET
   https://x.com/NatashaBertrand/status/2040820976309485816
 - “President Trump told Fox News during an interview this morning that the US sent weapons to Kurdish forces with the intent of arming Iranian protesters, seeming to confirm a CNN report from last month. “President Trump told me the United States sent guns to the Iranian
-  Why it matters: Trump confirms U.S. arms sent to Kurdish forces to support Iranian protesters.
+  Why it matters: Trump confirms US arms sent to Kurdish forces
   Apr 5, 11:20 AM ET • TWEET
   https://x.com/NatashaBertrand/status/2040811891631526228
 - RT @biannagolodryga: Interesting detail from @brett_mcgurk this morning on the U.S. military’s highly sophisticated rescue capabilities: He…
-  Why it matters: Insight into U.S. military's advanced rescue capabilities highlights operational sophistication.
+  Why it matters: US military’s secret rescue of Iranian helicopter crew
   Apr 5, 10:11 AM ET • RETWEET
   https://x.com/NatashaBertrand/status/2040794570712023518
 
 ### @claudeai (Claude)
 
 - Microsoft 365 connectors are now available on every Claude plan. Connect Outlook, OneDrive, and SharePoint to bring your email, docs, and files into the conversation. Get started here: https://t.co/EdoQeT8BBN https://t.co/sOrigP41FJ
-  Why it matters: Microsoft 365 integration expands Claude AI's productivity capabilities.
+  Why it matters: Claude AI integrates Microsoft 365 connectors
   Apr 3, 11:17 AM ET • TWEET
   https://x.com/claudeai/status/2040086268562842097
 - Computer use in Claude Cowork and Claude Code Desktop is now available on Windows. https://t.co/TXjkhVhS7W
-  Why it matters: Claude AI now supports computer use on Windows, broadening accessibility.
+  Why it matters: Claude Cowork and Code Desktop now on Windows
   Apr 2, 6:46 PM ET • QUOTE
   https://x.com/claudeai/status/2039836891508261106
 - Auto mode for Claude Code is now available on the Enterprise plan and for API users. To try it out, update your install and run claude --enable-auto-mode. https://t.co/m3CdLEfNeZ
-  Why it matters: Auto mode feature for Claude Code enhances developer experience.
+  Why it matters: Auto mode enabled for Claude Code on Enterprise and API
   Mar 30, 3:03 PM ET • QUOTE
   https://x.com/claudeai/status/2038693742094246032
 
 ### @OpenAI (OpenAI)
 
 - RT @tbpn: OpenAI Acquires TBPN https://t.co/Sdw32Weo4z
-  Why it matters: OpenAI expands capabilities through acquisition of TBPN.
+  Why it matters: OpenAI acquires TBPN
   Apr 2, 2:27 PM ET • RETWEET
   https://x.com/OpenAI/status/2039771689131897173
 - ChatGPT is now available in CarPlay. The voice mode you know, now available on-the-go. Rolling out to iPhone users running iOS 26.4+ where CarPlay is supported. https://t.co/yk3qdLa99r https://t.co/aXQqH9MNuG
-  Why it matters: ChatGPT now accessible via CarPlay, enabling voice interaction on the go.
+  Why it matters: ChatGPT voice mode now on CarPlay
   Apr 2, 12:56 PM ET • QUOTE
   https://x.com/OpenAI/status/2039748699350532097
 - Today, we closed our latest funding round with $122 billion in committed capital at an $852B post-money valuation. The fastest way to expand AI’s benefits is to put useful intelligence in people’s hands early and let access compound globally. This funding gives us resources to
-  Why it matters: OpenAI secures $122B funding, boosting AI development and global access.
+  Why it matters: OpenAI closes $122B funding round at $852B valuation
   Mar 31, 4:59 PM ET • TWEET
   https://x.com/OpenAI/status/2039085161971896807
 
 ## Top headlines / world news
 
-- Trump Escalates Threats After U.S. Rescues Downed Airman in Iran
-  Following a successful U.S. rescue mission, former President Trump intensified his threats against Iran via Truth Social, escalating tensions in the Middle East.
-  news.google.com • Apr 5, 6:40 PM ET
-  https://news.google.com/rss/articles/CBMic0FVX3lxTE5qSHMxMnFKRTJKM1pOck9RdlVnWjZtMkZMZzNxZ3ZiTWY5eEJkeGlJdm1EQkFnQnBxclFmYmpIS085Z1dtOW1tdEdyQkZIUjdkMU1la0xIUHJFNHlGaEVaVjBteDFNVzRPUlc3bjNKakQtUG8?oc=5
-- U.S. Rescue Mission Successfully Recovers Airman Evading Capture in Iran
-  The U.S. military completed a high-risk operation to rescue an Air Force officer whose fighter jet was downed over Iran.
-  news.google.com • Apr 5, 6:14 PM ET
-  https://news.google.com/rss/articles/CBMid0FVX3lxTE9RbTdBTHFCWjJNaFctSHJJR2FmUHY5eEYyTGMycG9TZWRnZTdTc3ZCcmNoY25oNkxkVlR4LWEtZEVrQ2lCNjBmT3Fjd1BtMmZuNVlVb2pXVHRtbGNacVN0V2hlYWJvOEFIVzdzUXFUaVkta180UDJ3?oc=5
-- Tehran Condemns Trump's Threats as Reckless Amid Middle East Crisis
-  Iran's government accused Trump of reckless actions following his expletive-laden threats targeting Iran's infrastructure.
-  news.google.com • Apr 5, 5:53 PM ET
-  https://news.google.com/rss/articles/CBMizwFBVV95cUxOQ2ZlQVRMcnU3RzQ2RFpxZll3YzBUS2g4dGI3MmtvTDluSmRpaDE0ZHpLRW41R2Q5Z2g2VF81eUM4c2x3b2dGNlVyeWYwcVN2QUhlMGZDWkpHWWNjUHZsMXNpT09yWFpsWVJ6ai1VdzhkQUkzYXZYOXAtMDhNUk82dVNuME14NnVVMFRFMmJmVVF0akJNUzBsYjhncGgyTXREZnZIQ1VyeFhiOEFHcDZzSzRfVVBoYVItbGp2OF9JcmJlcWJycEc1cUdaX3NVNFU?oc=5
-- Hollywood Studios Reach Tentative Agreement With Writers Union
-  A tentative deal between Hollywood studios and the writers union offers hope for ending the ongoing strike impacting the entertainment industry.
-  news.google.com • Apr 5, 5:09 PM ET
-  https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVlNhcjlrM1ZyNTdrTUpMajhESUdWTV9zS0lGc3J5Q2dSV3ZyaHlHS3JrM3NtZXJaZkJFZTVIeUwyOGJCXzl3WVlKSVdjWmplZHJKTEZuWG5JSm90Rjc5aDlsSm5wLXpSNkVMcVVDMEZ0c2tNSmlDcGs5TWMtR3ZRVW1lTElSSFRJdVJlZkF6TG1pU0tTM190eFVUaEszSnIzMWxvNEc5MGdpLVVWOHlxSkpjSDJRTUEtUFhocWJYSkg?oc=5
-- Trump Warns of Severe Action if No Iran Deal Within 48 Hours
-  Trump declared that the U.S. would 'blow up the whole country' if an agreement with Iran is not reached within two days.
-  news.google.com • Apr 5, 4:47 PM ET
-  https://news.google.com/rss/articles/CBMiowFBVV95cUxOODVSNEEtLVQzUnBYcWNoTDJDdF9ZZUpudmRCLVJleVlyV1dLM1A2aGthbnk2YUZMNHE0SGFWMWI4VkhsMFVNTE1Fd3N6d2hIS1JRVXNhSG9wd3FrSTFSMENZb3FkbV81dHJtWGZhR1lHTmUyY19BNEc5d2N2aVZROW9SWFNmc1ByWWE5V291TEZxcFlBUFhsd0ZwT29sSy00bXd30gGoAUFVX3lxTE10YTRndzZ5OWwwZGxTQnNNM1U4Wnc4QVFYTHdxZWVWNnYxMi12d1BIRzBxS042OXJhZGRCN09leEhwUEpMV1hNeHg2OTVpYTJWbDJQeHY5OUxtZEZNX3U0ajkwdkVtTVU0ODFlV1M1SG9pN3J2S1RCbzU3cmdxaUhlRXoxYkE5MzNhNGZnaHdacThWQWxONGFYRy1Obm1jYjkyNHZWM0c1LQ?oc=5
+- Guthrie Returns to 'Today' Show After Mother's Disappearance
+  Guthrie has resumed hosting the 'Today' show months after the disappearance of her mother.
+  news.google.com • Apr 6, 5:00 AM ET
+  https://news.google.com/rss/articles/CBMixgFBVV95cUxQNFB6YjIwVGxJZEQ4M1QtY3AxcEwzUGFZSkJZbEVrY2xoak84Nkh4Q3NnQnNva1cwT3lnMTA5bHcyeGE5LTV6TjdjWU9uektWbEJGcHZkN0pPUHdlSWF4MDk5b2F4QUdPc19mQVhBMEdXeEJiWlotcDhNTko5SC1CdGtBM0xqd3otelhtQnNCWXpicktvMXd4NWlyWUFnRzEwUHhsaDZLX0pHMmpYMllNSjdERXhTNWpld0M0NWtvUWk5YUF1bHc?oc=5
+- Russian Attack Kills 3 in Odesa Amid Ukraine Strikes
+  A Russian attack in Odesa killed three people while Ukraine targeted Russian oil infrastructure.
+  news.google.com • Apr 6, 4:54 AM ET
+  https://news.google.com/rss/articles/CBMi5AFBVV95cUxPSmFkUGduN2ptRnZQOWFmRDU0V0twM3BwMWxvdkNBTm05YTZ4MlVaQktxamsxSEo2QW5MVVZsVGI5b01PMk9adlMxYXNkWUZIbXg1WmhucVROdGdEOGFKTHRPMjRoSEdMTU5vcmdta1E4bmtycFFaenJzQ21nVnVaWGdzWmxNRkV4cnlaNGtnNXQ2cVJiYURPdmxYOWZCbjM1NEk2M2ZiVVRsR2JpNkdyWmRDUkhFWUR0eEh4NnNiTHJfVTVCVk1yWU9IWGtEY3lpMkh0alBHSW9aNTZQdTRBMGJMVl8?oc=5
+- Iran Vows 'Devastating Offensive' After US Threats
+  Tehran promises a severe retaliation following expletive-filled threats from former President Trump.
+  news.google.com • Apr 6, 4:50 AM ET
+  https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOUprN0Itc1pObVJTNXBhMnYxNWJSWVVrc05aTUp6Z1BaMzAyclhNcUw2OExFVDRpVHRueHRhWVRDNERGR3BtY1dHUE9oLWY2QnNoSVZPOU9GSlAtNFdLSl94QzRjcWJjQjFGQUNPcGkzSjlRVkRmQVVBWjNBN0RuaU9vME13dUVadG1xTjZybDR4RlZyWFBLWmNxR29Ncnc0UFdxNGJmTzdsS2M?oc=5
+- Iran Warns of 'Devastating' Retaliation Post Trump Threat
+  Iran issues warnings of harsh retaliation in response to US threats.
+  news.google.com • Apr 6, 4:13 AM ET
+  https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVVJDMkFXdi1tQ3BEVWdzdVphc0VwS2k5OUgzamxDamhfVXNQZkx0Y3oxSEFVbXh3clgxS1EwYjUtZUhCUkljZGlkQWVERDA1NXNBRFhvZTNRRDhYYjltM2xuVElqRGdOb0hMd3BuZGI2S0taUFg4Ml9yQnZBalBlTWJ6eEgxVlNvSnRJSmQ1Y1dpUDZkUHFKV25pMEoyT0I2elVER0ZJUDhxanZwQWQ3OTVvSmZVRk92b0xv?oc=5
+- Japanese and French Castles Form Sister Castle Partnership
+  Masterpieces from Japan and France have been officially linked as 'sister castles' to promote cultural exchange.
+  news.google.com • Apr 6, 4:02 AM ET
+  https://news.google.com/rss/articles/CBMiYkFVX3lxTE1WRWhmUHE1R2JyNV9fenIyZHZRUzFqNEF2bDEtODcyV2ZLb1ZuZkxkQnZORXBuOGtYMkg1MUZhTVRndGxXaGx1Y2dyY2h3N1ZiYVdrZ2FfZ2FicksxSGhZNmpB?oc=5
 
 ## AI / tech / business highlights
 
-- Faraday Future to Launch Scaled EAI Education System in U.S.
-  Faraday Future announced plans to deploy its EAI robotics technology to establish the first large-scale EAI education system in the United States.
-  news.google.com • Apr 5, 6:58 PM ET
-  https://news.google.com/rss/articles/CBMi-gJBVV95cUxQRGk5cWhrMXJ2cHZLcXZrVE95amY0aEk1MHpuSjZ5THpIWEZPelQ3WV8wc0RiVFpPaXZkZVJ4NVFWM3NXT0JLT28wTFg4RWRDUnpRbFlZUzJHNHVOLWpjb0ZIZWNVQnFTVzFlbE1Ta1dMM2NjY0k5QkRxaUNkSFNpVVk3ZTZHWGxiQTBuaUJiRHBzVXJYei1MQ19qMlo1THdwZmQyRWpCaE1RZ2pVeC00SklvMkMyaV9rVkdSS1NxUDVvR3VIVWNHV0p6S1VaMzFRVlNCdGpSRlZmRkdfRDBNLVNqV1dMSkFqUl81dlVyNDBaY1NwaHZtR0FhRTYzQnlicGpWMlJRa0JmR29HTGwwR1RFVF9IbVZYQVIyXzFyN010WUNEYWxPU3JqUVdOTnE0b3lhSXhaLUJ5M1lLWXJyajZ2NUw4Y1N1ekhISG41ckpUeWxkV19FWGg1ckQwdWI3MDc3NFNoS0k0T0t3dndPUlVhMFNPbEJWN2c?oc=5
-- California Governor Signs Executive Order to Enhance AI Protections
-  Governor Newsom signed a new executive order aimed at increasing regulatory protections around artificial intelligence.
-  news.google.com • Apr 5, 6:37 PM ET
-  https://news.google.com/rss/articles/CBMinAFBVV95cUxQeHN0LTJ2dTlkWko2RmRwMkUzVnAyVjJPQlZiYndsOFpJaU14OUtqNXpTbUtySjVaZ2JuRUEzWGpqWEJQWHluSkZzZjBPdVB6dHBJX3ZZVkRGXzVkZ1lveXpXZDYzamZJSlREdHRXdV9EMmxmSnZJZm13c0dDV1dlUHdJck9LSUtnOWdKc0h0emxaM3ItaWVVLS1tWVM?oc=5
-- Suze Orman Encourages Skill Improvement Amid Changing Work Landscape
-  Financial expert Suze Orman advises workers to upgrade their skills now to stay competitive in evolving job markets.
-  news.google.com • Apr 5, 6:28 PM ET
-  https://news.google.com/rss/articles/CBMifEFVX3lxTE95eHVHNDBDTnhNWnZiOXNrbjhQTmtOWUdiOWNlZFpQd0JFcGlZVFp0M3JhMkxyWWFMUko0b05UenhrbFlSSXdXZnhpVDI0dHk1R3VyNHhyREpjMl81S2xDa2JqQktmZWdfZzJzNlltc0FqOWNqcmJ3LWswWlk?oc=5
-- People Tend to Devalue AI-Generated Creative Writing
-  Research shows consistent undervaluation of creative writing produced by artificial intelligence compared to human work.
-  news.google.com • Apr 5, 6:15 PM ET
-  https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMWM4d3ZpOGdXRG0zaFVLZnRCU0xieUhtay1Sc2xPcnF0eEVPMjBVR1laWTJmMHVsTUpHd1BzNldfUXRIMXQ5d0lxQ1BlVGtTakp2elRfTDFKVUJJejJMSzhqUWwyX1JnQXFEV1Q1WkN3OGZUelYwaWQ1MUdybm85WWpsYkJBejY2ZFFwRWQ1eUFaLWttejRpaEpmZ2EyT2xxdlEwa01vX3NoUQ?oc=5
-- Microsoft Commits $10 Billion to Expand AI Infrastructure in Japan
-  Microsoft announced a major investment to grow AI infrastructure capabilities in Japan, signaling a strategic focus on the region.
-  news.google.com • Apr 5, 6:09 PM ET
-  https://news.google.com/rss/articles/CBMikgFBVV95cUxOTEdfblNGRm1WZEVpV05Vanp2M3ZPT0IxeThNYTZIbE5DbVFxYVFjV1VkZm5CZE1Cck9MUUt4Z0hoVHBGS2lnTklBYlQxQjZjNGgzOGhhM3dLOGhYU3IxT08zMkNPUEVmaXVWRTRfOHpjYVR4ZElhZnA5em5PTUhCTjZ1MlNIZGxISXZlQkVJU3ZkUdIBlwFBVV95cUxOYjRzTEFGYXVVWjc4UVlVYXpMLXRzZDZoMHBTZnZzTGQxVGdxRm1jRXUzcFlFMnpTamkwVi1kMjJJVU1GbVEwOXNRXzN3Q2ltajRvVGRjOURPWEIxMERMS2tKa3phVUxJLUhmdlFmak5QVzBxVGNEVVh4YVhDdDktM1NycUxHVlEtcEN2aGFGVlljNFlRd2FJ?oc=5
+- Gemologists Launch AI-Aided Gemstone Lab
+  A new lab uses AI technology to enhance gemstone analysis and certification.
+  news.google.com • Apr 6, 5:29 AM ET
+  https://news.google.com/rss/articles/CBMidkFVX3lxTE1XRzRWeVlLUzdpSl9wUDZVUzFITjRCQTBuVWJuT1E5dnJhV0MxWGVWTFJOZWxxQkZISmNPVDU0MUJnbGdWSkU5dFpBN3d2UjBJRGlsMjY5WUV1VHp0cUZ1Q0VaZU1aVFZyRmxhazlNZDdBRkdneEE?oc=5
+- AI Innovation Clash in Connecticut Remains Unresolved
+  Connecticut faces ongoing debates over protecting AI innovation versus residents’ rights.
+  news.google.com • Apr 6, 5:26 AM ET
+  https://news.google.com/rss/articles/CBMitgFBVV95cUxNdm5jLVdDWWlCdXhOUWd1Yk1YY0RtRkItNWpHTEtDQ3J2WjYtdkRScmZweWhDMy0weTUzM1dsYVQ1bmZsZHlsWUlPWXVrUjFXaVZzQ3d6azU5RXNsWTRvQjBLUXlLcDc5QVFEdmJwSU0yX3RERmJYVEpkREdFYzFmSjhFVXowQ01TTWMtZFRHVHo3TC1JdnA1MkFQdktJcTM5WC1YQUNQYlYwQnpJNVNrcWpHZi1Idw?oc=5
+- Right-Wing Perspectives on AI Critiqued
+  Analysis highlights common misconceptions about AI within right-wing discourse.
+  news.google.com • Apr 6, 5:16 AM ET
+  https://news.google.com/rss/articles/CBMiggFBVV95cUxQY0h3REI2dkNjYTlOQVJQLXA0dnZld3g1M3ZLNTM4SUg2bC1RZ2xUXy0wRTFsMlp0N05Mb3FhOXVOVXBabERLT1puUUwwWG11Z2twNWtjWWlPUWJDOWVMVGIyLWx6UlpUV2ZNWU9oby03eGZBQ3p2TVh6cUJGTklhaFRR?oc=5
+- Faster Security and Compliance Bring Hidden Risks
+  Accelerated security and compliance processes may introduce unforeseen vulnerabilities.
+  news.google.com • Apr 6, 5:15 AM ET
+  https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbHU0cmNYMUExTXNZMkZoNGhFcFBvRFloeGtmTjZ6aW1tZVN6d3Fpc2U2Uy1ZSW9jdVNqZ19QM2laM2otdThac3RNYnBYLU9yZ2lucjVQQkpxanFSZGp6TDF0U2lfT2lYQV9sS0Z1V0Q0R1Fseld0Q0tyTXRIQjNmanVmRHk1akhaMUZCYXB3WTFhbUZSaFVIaG1VaWVfYjVmSHVnS0tWb1Y?oc=5
+- AI Advances Cardiac Imaging Targeting Right Ventricle
+  Greek researchers apply AI to improve imaging and diagnosis of the heart’s right ventricle.
+  news.google.com • Apr 6, 5:13 AM ET
+  https://news.google.com/rss/articles/CBMikwFBVV95cUxQUlNsOGdtbTBmSnlZT3NjN1ZBa3V4U1B6c1l3TldLSkZDNUMwd1lJMjBBaEI1RjJ4R3hrMm0tN3RQdklhcHlyR2dXT0FMRWVaZXFRUWxWWlVpZHFMSk1nTFI2N2syYi1ncVNPTmlMa1gyc3hvQ3cyRndfQ2JDZk1PdDVPVUhTQktoclVPYW9LWHB0R0k?oc=5
 
 ## US political news
 
-- U.S. Rescues Air Force Officer After Jet Downed by Iran
-  The U.S. military successfully recovered a missing Air Force officer following a combat incident over Iran.
-  news.google.com • Apr 5, 6:35 PM ET
-  https://news.google.com/rss/articles/CBMihgFBVV95cUxPZzBuZUExQnY1d1pyTndnTlBzM0lYR20xdUdJQlQ1M2R0UVN4Q0tiRWdGTlVmQmx1WmQ0R180TzdZQjFmdzc5cWQtTFptLWJIdFBxMmpKTFlvQWhNb3NfNHVOeFRrX3RnWUc2T2dtbHhtMU5TVVNDN2VJWnpYcElXd2tvb19SZw?oc=5
-- Trump Signals Harder Stance on Iran Following Rescue Mission
-  Trump indicated plans to escalate pressure on Iran after the risky rescue operation.
-  news.google.com • Apr 5, 6:25 PM ET
-  https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbWNTdXMzRHlZanBTQ1gzQk55ZklHeFN6eWdGQVU2N1lGTWUxWTc3bk9kVk1BNzd6bXg2MUJLNFFUMjEtZGdOeTJ3NndlMHhUVFVTVU5HdEVFdktkdWdaaWhkWVZmeTZLdF9ycV9TUjVnX19yVERhUkZkeThxMFYtZ2pLTnhjOW42Smcw?oc=5
-- Trump Sets Deadline Before Unleashing 'Hell' on Iran
-  Trump revealed a specific deadline for his ultimatum to Iran, accompanied by profanity-laced threats.
-  news.google.com • Apr 5, 4:38 PM ET
-  https://news.google.com/rss/articles/CBMitAFBVV95cUxOdHo0eHp5MkZWWU1xSmJHeGhnSFQ2YUpfeFQzMXFWWXdkLVNqakpnS0tRNy1HZ3ZBZDhOQ0RkTVRibXQ3ZDFZNENJUk5hWFVDeTVzeGdDcmN6cHpoTWxJa2tRWnpOck43Q1IzYlJNcDRkQVBUR1ZSMzNwd2lRSThjTE1JdWdtY3MxYzdMUkRPYXBJNWVnTUZma215YlRVLVBFcE96VnpONEM3QlN2eUVXZ1VyVEc?oc=5
-- Trump's Threat Over Strait of Hormuz Draws Shock
-  Trump's foul-mouthed warning regarding the strategic Strait of Hormuz has caused widespread concern.
-  news.google.com • Apr 5, 4:37 PM ET
-  https://news.google.com/rss/articles/CBMi7wFBVV95cUxOU0Z4OUhGZEJ0ZDd1RW4tMHFsUjh4bjNFcGdudU1xeDBBejN5MEJPamZfZXc2ck03YXlxMTZQSjVRVkRGdnlpNDNJVWttVl93RkFjTi1zQ3dldGZwMGxINExaLVREdXBGdHBOa1ZGbUozX0J4dG4xbDNJV200SVB3RUZZZFVCUTBKRUI3V1VYNFB6ekhjWjFwME1mWUVmVmo1dE9NYlFZMmdubEtoVF9RTnVVeVM3dU1MVzNxeWthQ1RoV2xCcE9sWk9KbUotRWFOZFlKc200aUpCejRwdkxzOWlIU2VKdUdMZmpuY0Ixcw?oc=5
-- Zelensky Suggests Iran War May Shift U.S. Focus Away From Ukraine
-  Ukraine's President Zelensky warned that the conflict with Iran could deprioritize U.S. support for Ukraine.
-  news.google.com • Apr 5, 4:28 PM ET
-  https://news.google.com/rss/articles/CBMi-wFBVV95cUxQTE83VWR4XzVaaWlmU2lJTjJ4ZHdzUVFoRmVxXzNaQ2h3NElMMHMtZHhNSmZhS1RXUUNhT1JUMnhWZlR6eFNPVjRxMW15T2F2NXZFTDU5TV9CN2RxcFBtbnhYbWt3amV1TnQ4QjF4QjNCNzh6d2lIUGJ5MExoNEt0eUxCeTdQLWQxcUJheVA0eFowbWNYSldLM1RXYkpvSHhQemZpV3VBQjE5eVpLQktJTVQ4TC1YN1BJdnpBaUJFbVBVbVRZZUc2OFl0VEpPdG5xVGMtb0puMmJyb3RfNHBKMTNoZk9aOVJEeG5VM1U3UUNQQy00aTZVQXMxbw?oc=5
+- Iran Condemns US Threats to Energy Facilities as 'War Crimes'
+  Iran labels US threats targeting its energy infrastructure as acts of war crimes.
+  news.google.com • Apr 6, 5:29 AM ET
+  https://news.google.com/rss/articles/CBMisAFBVV95cUxOd2I0Y2tobWlSWm15bExXdTlOcGZVQmlyblRxUkVsZmFQQktiem5idkhGQ2RkNU5od19sMlhCUUk1U0RXcXVrUmppZS02aVN1NHN6Z0NyYy1vdnJ6OWNWdWhFT2dvY2VSQkcyV1hEMXR6STFfUjF6TWdWSWhBNVBSMFd6ekhTZjVtc1hzSEdxRUdRN3V5UGdPaFlDVHBVcXZZZjI0TnZVem1NaWZKVmV0d9IBtgFBVV95cUxQNDIyUU4xeEN6a3k2VldCWnAzY1ljdTVsejdRN0ZJRk40dUY4ZjZMVy12SG9qZlNIeW5ONTZKdnNmd21PMnlicnNNUFd4OWNBN0w5WWlmeDhIY0VCZmcyZVZkUC0tN2lITnBlT1RJdjVSYUFvakRQTEhXMnJTQVZSdUtLQlFhemdqM1FIQ3RHNU1nQkY1NGJMaHpKRTlJNEFLcmwwLXNVbWlGQ0Rnc0lYbWw5b3MyUQ?oc=5
+- Voters Face Iran War Test in Race to Replace Marjorie Taylor Greene
+  The contest to succeed Greene is seen as a referendum on US policy toward Iran.
+  news.google.com • Apr 6, 5:02 AM ET
+  https://news.google.com/rss/articles/CBMipAFBVV95cUxQenZFRF9MWnFyRFlHOFRta2xROXloc0pPUEtvVElOdDBISzdobEpERWw2SWxTaDlyQWhrdS0tZFRmZDNpbUtVSm5jaVNodm1hVHd1VEVjQmF2X1A3T0Z3emRicGdrdk01bWFpSGZkZlhfcVZBbWdhUWc0UGhTcEpHakJHZjB0TkFnSC15N0xXNzZHUjZ2QXBKdU9RSUFYdlNzRnNtQg?oc=5
+- US Political Divide Deepens Over Iran War
+  Political factions in the US increasingly split over approaches to the Iran conflict.
+  news.google.com • Apr 6, 3:39 AM ET
+  https://news.google.com/rss/articles/CBMipgFBVV95cUxPall0Sk1IU25QTkNncFdOdjNhT2ZYUWp6d1dWVTlCYUtFUVBDM2c2aHNMMGtHLWZYVVNEaHFHM01va2dNenJOazd0STRYUWp2WDVLaWROUXpMOVh3cDR5NncwRTM2Y29yS0I1bjQ0OTZxYUxzUXM4MHNIZXlEeVI3N24wbER0VWZuS2pndXlfYzJaU28yV1Nvanpjd291NEFSLWlZcTNR0gGrAUFVX3lxTFBMbVBzSjZOQlpJSi1yOVcwWHgyZU9jd1B6Ty1uVDdtdDYtaURQY1ZQRTNBbzJaclBVUGlrTWphQ1hKRk53UjhiWVNZU3Q4aWl1YS0xRzUwRGFsVWJkWWM2MC1PRWZ1TlE4X2pfYXhBdjlreWhIcUVzMURhY0gxa0tJc3dVWGZWU1lvWU9kd3hlbWVINE9oV0xUXzJDX3hKenJhWkE3TGVHRndocw?oc=5
+- Debate Over 'Boots on the Ground' Creates US Political Divisions
+  Talks of deploying ground troops in West Asia fuel partisan disagreements.
+  news.google.com • Apr 6, 3:34 AM ET
+  https://news.google.com/rss/articles/CBMizwFBVV95cUxNNkFrMjdTTnpuZUt3WnFXX1N5ZWR4WkoxMWNiSjdkVWlqSTBBZ096bW1TTE5DUVhCTFhTVWo5NzhjZmNHdFBtdzJmcXJ5TlZNcFBxWm9vbkZuRnpkYXF0UmNpWS1ZLVlMdkJQTlhJWll3Y1BXbFVTUUwwUlZLV2dQMlRGcVB2Ty1YUy13eDlEZFRDRVFteGdnc1hwRkU4TWphQWdPRnhvaTBmSlppSGFZS0hVTFptdC12OE9qU0xuTTdNc09uclNraGdWNVl3WVk?oc=5
+- Candace Owens Labels Trump White House 'Satanic Administration'
+  Owens calls for Congress to remove former President Trump, criticizing his administration.
+  news.google.com • Apr 6, 3:16 AM ET
+  https://news.google.com/rss/articles/CBMisgFBVV95cUxQREFaUzN3OERPV2NlZGp4QzRLR3RwMUtvS0tvazZvSEFuZkYtd2FmN3NKVjFEYlUycV9NT05KREJTcWJwcktIWGhEbms1eklTd2czTjVMak1lU0xmYmVjWUtSMFpVUXlIaWRLLVpCUVpJYTBUTkFSc0gtTDN5d3p1R2NJNDQyTFc2cHAzUnEySHRDOFk0MWxmRThnZTBkRW13dm9PeEtsNkFMVF90Z0tWeDlR?oc=5
 
 ## Boston / local
 
-- Fishing Crew Rescued After Running Aground in Gloucester, MA
-  A fishing crew was safely rescued after their vessel ran aground off the coast of Gloucester, Massachusetts.
-  news.google.com • Apr 5, 6:48 PM ET
-  https://news.google.com/rss/articles/CBMirAFBVV95cUxPSWxmUHgydmRTZk9hVUt4YVkzSzlmM3pZS3dRTDc5YVhJOFFoX0RBSzN1Rkh1S2d2QV9JTzNWdjRzSHNHem5lb2otT2hxbXU0Y0UtTUNXNF9FUWdLRVFjUUE2TmRhYTd2NnQwekp4Q05oVHpjLVo4WVQ2SEo5VVFUMGN2MDNFQXVrbHVEWGlLNEEwYmFRdWJfM25sQVJUZWl5WXRCeDVaMGh6bVVR?oc=5
-- Fatal Fire in Brockton, MA Kills Woman in Her 40s
-  A devastating fire in Brockton claimed the life of a woman in her 40s.
-  news.google.com • Apr 5, 6:45 PM ET
-  https://news.google.com/rss/articles/CBMifEFVX3lxTE9xaDhWVXBvUFFpMXdlU3JOTU9SakFwdk0wcnd4a1E1UkMzMVY0bml4TURieE9MQ3hBbGV0ek92VXFiTzJsVkg2SFV0eV9BYkpnYUVPQkJ0cVZmeTl4djBMaGlMWU5SRndyM1N2V08xaG5JajU2OXcteGtNdEo?oc=5
-- Brockton Fire Claims Life of Woman in Her 40s
-  Authorities confirmed a fatal fire in Brockton that resulted in one death.
-  news.google.com • Apr 5, 6:40 PM ET
-  https://news.google.com/rss/articles/CBMif0FVX3lxTFBpTzNwS3E0WlY1eUJaRlp3THFKVWRLMGIxZ0VWdTlOT3l5eTNZYjl2TjdHZjRGRm9PMDZ5bHZYem53UXo0TkJPdF9HbXpYTGE1LUQyMkNfVkdlM3BkMkdab0JWbzh4bFliZ1hHRklYLS1BNk5QckVTNVVpVVd0azQ?oc=5
-- Tatum and Brown Lead Celtics to 115-101 Win Over Raptors
-  Jayson Tatum and Jaylen Brown powered the Boston Celtics to a decisive victory against the Toronto Raptors.
-  news.google.com • Apr 5, 6:20 PM ET
-  https://news.google.com/rss/articles/CBMie0FVX3lxTE1qSXhDVS1wWW85UmtINGxaTWdZazZXVDZQZ2JLQ3V1enZmQXA3VXl5UlUzbjlMM29zM3NNM1BtRmtwUDBSZTFkTjlOV2xhMVk0aFkzeHJlNVZKVVd3SE1yc0o1bTJUQ1IxQThQM3VwMkRTcEMtWnVaVGJObw?oc=5
-- Celtics Dominate Raptors Behind Brown and Tatum; 5 Key Takeaways
-  Analysis highlights key factors in the Celtics' commanding win over the Raptors, led by Brown and Tatum.
-  news.google.com • Apr 5, 6:12 PM ET
-  https://news.google.com/rss/articles/CBMirAFBVV95cUxOeG5xMVJSRlF0OWNhbEZRLWFBcXQzRzhvQ0Jha2pkSnoySjRaVFpYckJjZUFLS1FWT2NuelFUcU5rc1BHZEF5ZDZmUC1CcTRhNWlCTVNsVmE4RHk1RlpmemFNODBPVU5KZFdxZ1ZFbG1ZQmtxbXZKTTFGMlhlSVRVb1JMdDdFTU1zVkU2bk14UjBaNkFVUzNKb1V5OGJRUVg0NEVhR3JKMjJQd1o1?oc=5
+- Home Heating Assistance Available Through April 30
+  Residents can still apply for heating aid until the end of April.
+  news.google.com • Apr 6, 5:15 AM ET
+  https://news.google.com/rss/articles/CBMimgFBVV95cUxNMm5pbER6cEJBU0ZtTEZISWw2VkNEemZ4bUdRV0VjcDZvcVo1NHVkaUpLSFFndE9rYjUyYTRjQmhJcG9tV2pWWTROV1l2VnRWVFA4WDhiMlhRcV9tMmJVZXgzWjJIem82eHd0S0MwM01fNHFsV3VhVkpSYllrbXJLbEduUGtaZThHbm9jQjhUYU9GRzJEZUd5R0V3?oc=5
+- Massachusetts Bill Would Let Illegal Immigrants Sue ICE Agents
+  Proposed legislation aims to allow undocumented immigrants to take legal action against ICE.
+  news.google.com • Apr 6, 5:02 AM ET
+  https://news.google.com/rss/articles/CBMiswFBVV95cUxOeTFiZkNjalhNRjRrUjJBdTh4MG8tSGFFQ252YW9YdEtUS1pSYXhHQlBlWlViNDhnaFpwUndXVnNwZEdxWWFRQ2pVSWxpNENXVUpvUmV5T0RjM3lSbzhmeEpSOWxYTFgzc2tRZlAyV1VvLThYaXg4aUpMUHZhN1N4VzdlVDdpRW41d20wTGdiVG95d2U5eHM1R1ZLa3dqcVBiMF8yc2RFWmZzcFlGSUJ5QmtvRQ?oc=5
+- Biotech Layoffs Rise as 14 Companies Cut 745 Jobs in Q1
+  The biotech sector in Boston sees increased layoffs during the first quarter.
+  news.google.com • Apr 6, 5:00 AM ET
+  https://news.google.com/rss/articles/CBMie0FVX3lxTE1iQWF2X19lME13QmttTWRSUUJqRlR2dnVfeGRsU2pOVnE5OXlqV0hhSnJaajNmYkhzVFh0T19YU2Z4TE9raHdWVDloc29KSXA5Q3FONXQ4eEtsNVBFZGxxM3lYRFlFV3J3a3NzV25xR3pCU2o1SGJXMTJoQQ?oc=5
+- Property Listing: 34 Saranac St, Boston, MA 02122
+  Real estate listing available for a property in Boston.
+  news.google.com • Apr 6, 3:04 AM ET
+  https://news.google.com/rss/articles/CBMiigFBVV95cUxNSUFvNG8yNkxtd0p6aFBRRlZ3Q2dJTkR6Vm0ycWNfOXAxekM3Ui1QbU1TcHppLVUyU2hEWmk1dmNrLXJMRjN6WlhLLUE2c29icmszTUJLZEhSV3k3dl9saVZoQmZ4VDhMLWZ5Ri0wM3B6TG9zOXFPYWpPTVl6NzZraTdDbzdpeUJ0Z2c?oc=5
+- Unexpected Red Sox Struggles Shock MLB Fans
+  The Boston Red Sox face an unforeseen downturn in performance this season.
+  news.google.com • Apr 6, 2:42 AM ET
+  https://news.google.com/rss/articles/CBMimwFBVV95cUxNTnotOTI2bU54N2ZxSF9vLTUta2xfbGM4eTZSdkhvZ3c1R2xrQXVtYmFTQlVrdUhRamd6emR6UG42YUVVU3MwR2h3eUZ3cHNRX3Ezckhfd3QtUUJEUXJTZ2FrNS1ZcFJKZi15Mk45dTczcFA4NXVGODM2d3FzWERtQnhWN0I4cTB6WmE4aFF4T1otR3lYYlRySVM4dw?oc=5
 
 ## Popular / trending
 
-- Capitals vs Rangers Hockey Game Trending
-  The Capitals vs Rangers matchup is currently a popular search topic.
-  trends.google.com • Apr 5, 6:40 PM ET
+- Majid Khademi Trending
+  Majid Khademi is a current trending topic.
+  trends.google.com • Apr 6, 5:10 AM ET
   https://trends.google.com/trending/rss?geo=US
-- San Marcos Fire Trending Topic
-  Recent fire events in San Marcos are drawing significant public attention.
-  trends.google.com • Apr 5, 6:40 PM ET
+- Cleveland Trending
+  Cleveland is a trending search term.
+  trends.google.com • Apr 6, 5:00 AM ET
   https://trends.google.com/trending/rss?geo=US
-- Devils vs Canadiens Hockey Game Trending
-  The Devils vs Canadiens game is trending among sports fans.
-  trends.google.com • Apr 5, 6:40 PM ET
+- Andrey Rublev Trending
+  Tennis player Andrey Rublev is trending.
+  trends.google.com • Apr 6, 5:00 AM ET
   https://trends.google.com/trending/rss?geo=US
-- Dan Vladar Trending
-  Dan Vladar is a trending search term, likely related to sports.
-  trends.google.com • Apr 5, 6:40 PM ET
-  https://trends.google.com/trending/rss?geo=US
-- Mike Yastrzemski Trending
-  Mike Yastrzemski is trending, possibly due to recent sports performances.
-  trends.google.com • Apr 5, 6:40 PM ET
-  https://trends.google.com/trending/rss?geo=US
+- Pope Leo XIV Calls for Peace in Easter Mass
+  Pope Leo XIV delivers a strong message of peace amid global conflicts during Easter.
+  news.google.com • Apr 6, 4:57 AM ET
+  https://news.google.com/rss/articles/CBMid0FVX3lxTE5SUjZQb1NkWGJhOGluaF92dlYweGhocWZDLXhkLXVqcnlRYjJZeTd6ZUlxRHByMWpEMXZ6d2RDVjUwMWNaczJpeEQzQjhvSGJWUFlsZFZKU2lQRW9HeHBiLUZ3aWN0RlRXYzVuRnhjYm43eWtuR29n?oc=5
+- Stock Futures Rise After Winning Week; Oil Prices Tick Higher
+  Markets show optimism with stock futures up and oil prices increasing slightly.
+  news.google.com • Apr 6, 4:57 AM ET
+  https://news.google.com/rss/articles/CBMid0FVX3lxTE5vbk04ZFk5c2NiZHN3QWhPMXFpd1NtTkxKWHpmNEtwbDBCdFZxZnNqUWhZa3BPNzhBRjJBRUJoZks3UGVzOEw1bHBNaGIwZDRRc3hiRTBfNDN4R1VZZmZoTUI1RzJaOURabWFNX2V2azUtZzlpQ0pv0gF8QVVfeXFMTmdjSGJqQnFXZkxveDdsR0RHZDBudldTb3B4QXZyUlJIZUtBUUxYSGk3RUN4MnlwZHBKZTRaa0JCbTRBU0hURkNzSG9GUnJWcWxBWEdwel9XZDM2Y1lnNndVUldQc2RENmxBOTVuSDFzdnlDemNtTlRtUWtiRQ?oc=5
 
 ## Podcast script
 
-Welcome to your smart briefing. Today, the spotlight is on escalating tensions in the Middle East after the U.S. successfully rescued an Air Force officer whose fighter jet was downed by Iran. Former President Trump has issued harsh warnings, threatening severe retaliation if a deal with Iran isn't reached within 48 hours, raising concerns about further destabilization in the region. Tehran has condemned these threats as reckless, intensifying the crisis. In other news, Hollywood studios and the writers union have reached a tentative agreement, potentially ending a prolonged strike affecting the entertainment industry. On the technology front, Microsoft announced a $10 billion investment to expand AI infrastructure in Japan, while California Governor Newsom signed an executive order to increase AI protections. Additionally, Faraday Future plans to establish the first scaled EAI education system in the U.S., deploying advanced robotics technology. These developments underscore the rapid evolution and regulatory focus on artificial intelligence. Finally, U.S. markets showed modest gains today, with the Nasdaq 100 leading the rise, reflecting investor confidence amid geopolitical uncertainties. That's your briefing for today.
+Welcome to your daily briefing. Today, global tensions remain high as Iran vows devastating retaliation following US threats, intensifying concerns over potential wider conflict. Meanwhile, Ukraine faces deadly Russian attacks even as it targets Russian oil infrastructure. In the US, political divisions deepen over the Iran war, influencing key elections and policy debates. On the tech front, AI continues to make strides with gemologists launching AI-powered labs and Greek researchers revolutionizing cardiac imaging. However, Connecticut faces unresolved disputes balancing AI innovation and resident protections. Financial markets reflect this uncertainty: major US indexes and cryptocurrencies gained ground, while crude oil prices declined sharply. Stay tuned as we continue to monitor these developments.
 
 Audio file: podcast.mp3
 
